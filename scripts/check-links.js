@@ -10,7 +10,7 @@ async function checkLinks() {
 
     const htmlFiles = glob.sync('**/*.html', {
         cwd: SITE_ROOT,
-        ignore: ['node_modules/**', 'scripts/**', '_backup_raw.zip']
+        ignore: ['node_modules/**', 'scripts/**', '_backup_raw.zip', '_dist/**', '.gemini/**']
     });
 
     let errorCount = 0;
