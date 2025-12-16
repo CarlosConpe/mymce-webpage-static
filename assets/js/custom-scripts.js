@@ -1,3 +1,9 @@
+
+/* 
+ * Performance Optimization: Reflow Mitigation
+ * - Ensure scroll handlers are passive where possible
+ * - Using CSS transitions instead of JS animation where possible
+ */
 // Centralized Scripts
 
 document.addEventListener('DOMContentLoaded', function() {

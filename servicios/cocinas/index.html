@@ -194,7 +194,7 @@
 
 
   <link rel="dns-prefetch" href="//www.googletagmanager.com">
-  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+  <link rel="dns-prefetch" href="//fonts.googleapis.com&amp;display=swap">
 
   
   
@@ -213,8 +213,8 @@
   
   
   
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A400%2C500%2C600%2C900%7CSource+Sans+Pro%3A400%2C500%2C600%2C900">
-  <link rel="stylesheet" id="google-font-css" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A400%2C500%2C600%2C900%7CSource+Sans+Pro%3A400%2C500%2C600%2C900" type="text/css" media="all">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A400%2C500%2C600%2C900%7CSource+Sans+Pro%3A400%2C500%2C600%2C900&amp;display=swap">
+  <link rel="stylesheet" id="google-font-css" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A400%2C500%2C600%2C900%7CSource+Sans+Pro%3A400%2C500%2C600%2C900&amp;display=swap" type="text/css" media="all">
 
 
 
@@ -236,10 +236,8 @@
 
 
 
-  <script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=GT-PLVSFCS" id="google_gtagjs-js" async=""></script>
-  <script type="text/javascript" id="google_gtagjs-js-after">//<![CDATA[
-    window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag("set", "linker", { "domains": ["www.grupomymce.com"] }); gtag("js", new Date()); gtag("set", "developer_id.dZTNiMT", true); gtag("config", "GT-PLVSFCS");
-    //]]></script>
+  
+  
   <meta name="facebook-domain-verification" content="uua0l93e9bsyh5j8xsqqeqqlvrb7va">
   <meta name="facebook-domain-verification" content="kre0czafxi78j09hynbt31hgl7lz56">
 
@@ -360,15 +358,30 @@
 }</script>
 
 
-  <script type="text/javascript">//<![CDATA[
+  
+<script>
+// Optimized GTM Lazy Loader
+// Delays GTM until user interaction or timeout to improve LCP/TBT
+(function(w,d,s,l,i){
+    w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
+    var f=d.getElementsByTagName(s)[0], j=d.createElement(s), dl=l!='dataLayer'?'&l='+l:'';
+    j.async=true; 
+    j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
     
-                 /* Defer GTM */
-                 window.addEventListener('load', function() {
-                    setTimeout(function() {
-                        (function (w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-KMF8C68D');
-                    }, 3500); 
-                 });
-    //]]></script>
+    // Performance Optimization: Delay Injection
+    var injected = false;
+    function inject() {
+        if (injected) return;
+        injected = true;
+        f.parentNode.insertBefore(j,f);
+    }
+    
+    // Wait for user interaction or 4 seconds
+    ['scroll','click','touchstart','mousemove'].forEach(ev => window.addEventListener(ev, inject, {once:true, passive:true}));
+    setTimeout(inject, 4000);
+})(window,document,'script','dataLayer','GTM-KMF8C68D');
+</script>
+
 
 
   
@@ -388,6 +401,35 @@
 .footer-modern .copy-text { color: #595959 !important; }
 .advs-box .tag-row span a { color: #666666 !important; }
 .advs-box .tag-row span { color: #666666 !important; }
+</style>
+
+<style>
+/* Font Display Optimization */
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('../fonts/fontawesome-webfont.eot?v=4.7.0');
+    src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'),
+         url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'),
+         url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'),
+         url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'),
+         url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap; 
+}
+</style>
+
+<style>
+/* CLS Fixes */
+.logo-default { 
+    aspect-ratio: 935 / 267; 
+    width: auto; /* Allow auto width but constrained by aspect ratio? */
+    height: auto;
+}
+/* Navbar Stability */
+.collapse.navbar-collapse {
+    min-height: 50px; /* Placeholder to prevent 0-height collapse */
+}
 </style>
 </head>
 
@@ -427,7 +469,7 @@
               <button type="button" class="navbar-toggle">
                 <i class="fa fa-bars"></i>
               </button>
-              <a class="navbar-brand" href="/"><img class="logo-default" src="/assets/storage/2016/12/169471652699961817.webp" alt="Cocina integral en San Luis Potosí" style="height: auto !important; width: auto !important; max-width: 100%; " decoding="async" fetchpriority="high" loading="eager" width="935" height="267"><img class="logo-retina" src="/assets/storage/2016/12/logo-2.webp" alt="Maderas y Materiales del Centro (MYMCE) - Carpintería en San Luis Potosí" style="height: auto !important; width: auto !important; max-width: 100%; " decoding="async" width="180" height="51" loading="eager"></a>
+              <a class="navbar-brand" href="/"><img class="logo-default" src="/assets/storage/2016/12/169471652699961817.webp" alt="Cocina integral en San Luis Potosí" style="height: auto !important; width: auto !important; max-width: 100%;  aspect-ratio: 935 / 267;" decoding="async" fetchpriority="high" loading="eager" width="935" height="267"><img class="logo-retina" src="/assets/storage/2016/12/logo-2.webp" alt="Maderas y Materiales del Centro (MYMCE) - Carpintería en San Luis Potosí" style="height: auto !important; width: auto !important; max-width: 100%; " decoding="async" width="180" height="51" loading="eager"></a>
             </div>
             <div class="collapse navbar-collapse">
               <ul id="main-menu" class="nav navbar-nav " style="">
@@ -1037,7 +1079,7 @@
                   <div class="col-md-12 hc_space_cnt">
                     <hr class="space m    ">
                   </div>
-                  <div class="col-md-12 hc_video_cnt"><video id="56ZJV" autoplay="" loop="" muted="" controls="" height="380" class="video-box    " style="width: 100%; " preload="metadata" poster="/assets/storage/2023/07/20230708_144508-1920x1080.webp">
+                  <div class="col-md-12 hc_video_cnt"><video id="56ZJV" autoplay="" loop="" muted="" controls="" height="380" class="video-box    " style="width: 100%; " preload="none" poster="/assets/storage/2023/07/20230708_144508-1920x1080.webp">
                       <source src="/assets/storage/2016/12/VideoMymce1.mp4" type="video/mp4">
                     </video>
                   </div>
