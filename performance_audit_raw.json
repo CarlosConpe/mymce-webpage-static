@@ -1,0 +1,1838 @@
+{
+  "scanDate": "2025-12-16T19:37:11.845Z",
+  "totalPages": 110,
+  "pages": [
+    {
+      "file": "index.html",
+      "score": 87,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/07/Copy-of-VIDEO.00_01_09_05.Imagen-fija0111-1200x750.webp)",
+        "Heavy Image: 512KB (/assets/storage/2023/07/6ec5806a14a992c9bc107d1f0f81d454.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)"
+      ],
+      "assets": {
+        "totalSize": 1167304,
+        "heavyImages": [
+          {
+            "src": "/assets/storage/2023/07/6ec5806a14a992c9bc107d1f0f81d454.webp",
+            "size": 524758
+          }
+        ],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "404.html",
+      "score": 96,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)"
+      ],
+      "assets": {
+        "totalSize": 420562,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "soluciones\\carpinteria-para-particulares\\index.html",
+      "score": 87,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/07/Copy-of-VIDEO.00_01_09_05.Imagen-fija0111-1200x750.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "Too many blocking CSS files (4)",
+        "Meta Description length warning (167 chars)"
+      ],
+      "assets": {
+        "totalSize": 693581,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "soluciones\\carpinteria-para-constructoras\\index.html",
+      "score": 87,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/07/Copy-of-VIDEO.00_01_09_05.Imagen-fija0111-1200x750.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "Too many blocking CSS files (4)",
+        "Meta Description length warning (164 chars)"
+      ],
+      "assets": {
+        "totalSize": 693709,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "soluciones\\carpinteria-para-cocinistas\\index.html",
+      "score": 87,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/07/Copy-of-VIDEO.00_01_09_05.Imagen-fija0111-1200x750.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "Too many blocking CSS files (4)",
+        "Meta Description length warning (161 chars)"
+      ],
+      "assets": {
+        "totalSize": 759719,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "soluciones\\carpinteria-para-arquitectos\\index.html",
+      "score": 87,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/07/Copy-of-VIDEO.00_01_09_05.Imagen-fija0111-1200x750.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "Too many blocking CSS files (4)",
+        "Meta Description length warning (162 chars)"
+      ],
+      "assets": {
+        "totalSize": 693581,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "servicios\\index.html",
+      "score": 92,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/07/cocina-11-768x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "Meta Description length warning (172 chars)"
+      ],
+      "assets": {
+        "totalSize": 1174596,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "servicios\\pvc-foil-covered-cabinet-doors-drawer-fronts\\index.html",
+      "score": 92,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2025/11/7cd49092-37b3-44b1-8b3c-d066dc6ee638-removebg-preview.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "Meta Description length warning (161 chars)"
+      ],
+      "assets": {
+        "totalSize": 628148,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "servicios\\puertas-y-piezas-recubiertas-con-foil-pvc\\index.html",
+      "score": 92,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/07/Diseno-sin-titulo2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)"
+      ],
+      "assets": {
+        "totalSize": 534274,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "servicios\\puertas-frentes-de-cajon-en-mdf-forrados-con-foil-pvc\\index.html",
+      "score": 92,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2025/11/7cd49092-37b3-44b1-8b3c-d066dc6ee638-removebg-preview.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "Meta Description length warning (175 chars)"
+      ],
+      "assets": {
+        "totalSize": 613564,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "servicios\\maquila-de-partes\\index.html",
+      "score": 92,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/Copy-of-C0081.00_14_46_07.Imagen-fija010-1024x576.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "Meta Description length warning (161 chars)"
+      ],
+      "assets": {
+        "totalSize": 558682,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "servicios\\diseno-y-fabricacion-de-puertas\\index.html",
+      "score": 92,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/07/laminado-e1689895153463.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)"
+      ],
+      "assets": {
+        "totalSize": 694132,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "servicios\\diseno-y-fabricacion-de-muebles-de-bano\\index.html",
+      "score": 92,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/furniture-bath-1024x576.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)"
+      ],
+      "assets": {
+        "totalSize": 557786,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "servicios\\diseno-y-fabricacion-de-escritorios\\index.html",
+      "score": 92,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/core/modules/d9a1c27cc2/images/loader.svg)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "Meta Description length warning (166 chars)"
+      ],
+      "assets": {
+        "totalSize": 513462,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "servicios\\cocinas\\index.html",
+      "score": 87,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/core/modules/d9a1c27cc2/images/loader.svg)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "Too many blocking CSS files (4)"
+      ],
+      "assets": {
+        "totalSize": 527945,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "servicios\\closets-vestidores\\index.html",
+      "score": 87,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/core/modules/d9a1c27cc2/images/loader.svg)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "Too many blocking CSS files (4)"
+      ],
+      "assets": {
+        "totalSize": 524667,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "portafolio\\index.html",
+      "score": -72,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/cocina-1-9-768x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/cocina-15-6-767x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/20230708_114853-1-768x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2024/01/Santa-Ana-4-1.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2024/03/Da-Vinci-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/20230708_125607-768x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/cocina-20-766x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/20230628_131233-768x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/20230708_143715-768x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/20230628_115236-768x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/20230708_142117-768x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2024/03/Monet-1.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/20230708_135056-1-768x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2024/03/Santa-Ana-5.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/cocina-21-2-766x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/20230628_133806-768x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/cocina-18-5-766x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/cocina-14-2-768x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/cocina-7-766x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/20230708_112403-1-768x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/cocina-15-3-766x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/20230708_143117-1-768x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/20230708_132656-2-768x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/cocina-15-11-1024x768.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2024/03/Da-Vinci-6.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/20230628_123140-768x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/20230628_112021-1-768x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/20230708_124213-1-768x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/20230628_113558-768x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2024/03/Rembrandt-4-1.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2024/03/San-Patricio-2-1.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2024/03/Picasso-6.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/cocina-6-768x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/cocina-11-9-768x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/cocina-21-5-768x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/Cocina-10-2-766x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/cocina-26-766x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2024/03/Carrington-3.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/20230708_141256-768x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2024/03/San-Marcos-1-1.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2024/03/Picasso-1.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2024/03/Rembrandt-1-1.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/cocinas-17-766x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2024/03/Buonarroti-1-1.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2024/03/Buonarroti-6-1.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/cocina-5-14-768x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2024/03/San-Patricio-1-1.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2024/03/Van-Gogh-5.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/cocina-16-2-766x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/20230708_133449-1-768x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/20230708_115749-768x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2024/03/Van-Gogh-1.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2024/03/Botticelli-6-1.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/20230628_141220-1-768x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/20230708_134311-1-768x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/20230708_121906-768x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/cocina-20-1-768x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/cocina-18-7-768x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/cocina-12-7-768x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/cocina-4-4-767x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/20230708_113107-1-768x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2024/03/San-Marcos-5.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/cocina-13-2-766x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/20230708_122830-768x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/20230628_120115-1-768x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2024/03/Botticelli-1-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/cocina-9-6-767x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2024/03/Dali-4.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/20230708_140058-768x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/20230708_144911-2-768x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/cocina-17-4-768x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/cocina-12-1-766x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/cocina-15-8-768x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/20230708_110902-3-768x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/cocina-26-1-768x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/20230708_120836-1-768x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/cocina-17-10-766x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/cocina-9-3-766x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2024/01/Carrington-15.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2024/03/San-Alberto-1-1.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/20230628_124629-1-768x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/20230628_135029-1-768x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/cocina-13-766x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)"
+      ],
+      "assets": {
+        "totalSize": 6159590,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "portafolio\\cocina-valle-real-modelo-van-gogh\\index.html",
+      "score": 92,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/cocina-26-1-768x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "Meta Description length warning (169 chars)"
+      ],
+      "assets": {
+        "totalSize": 634618,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "portafolio\\cocina-valle-real-modelo-santa-teresa\\index.html",
+      "score": 92,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/cocina-1-9-768x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "Meta Description length warning (173 chars)"
+      ],
+      "assets": {
+        "totalSize": 613576,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "portafolio\\cocina-valle-real-modelo-san-patricio\\index.html",
+      "score": 92,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/cocina-5-14-768x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "Meta Description length warning (173 chars)"
+      ],
+      "assets": {
+        "totalSize": 755212,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "portafolio\\cocina-valle-real-modelo-san-marcos\\index.html",
+      "score": 92,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/cocina-14-2-768x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "Meta Description length warning (171 chars)"
+      ],
+      "assets": {
+        "totalSize": 664548,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "portafolio\\cocina-valle-real-modelo-san-david\\index.html",
+      "score": 92,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/cocina-12-7-768x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "Meta Description length warning (170 chars)"
+      ],
+      "assets": {
+        "totalSize": 633438,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "portafolio\\cocina-valle-real-modelo-san-alberto\\index.html",
+      "score": 92,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/cocina-20-1-768x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "Meta Description length warning (172 chars)"
+      ],
+      "assets": {
+        "totalSize": 608690,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "portafolio\\cocina-valle-real-modelo-rembrandt\\index.html",
+      "score": 92,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/cocina-17-4-768x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "Meta Description length warning (170 chars)"
+      ],
+      "assets": {
+        "totalSize": 687344,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "portafolio\\cocina-valle-real-modelo-monet\\index.html",
+      "score": 92,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/cocina-18-7-768x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "Meta Description length warning (166 chars)"
+      ],
+      "assets": {
+        "totalSize": 677722,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "portafolio\\cocina-valle-real-modelo-goya\\index.html",
+      "score": 92,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/cocina-9-6-767x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "Meta Description length warning (165 chars)"
+      ],
+      "assets": {
+        "totalSize": 647122,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "portafolio\\cocina-valle-real-modelo-buonarroti\\index.html",
+      "score": 92,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/cocina-15-6-767x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "Meta Description length warning (171 chars)"
+      ],
+      "assets": {
+        "totalSize": 654056,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "portafolio\\cocina-sirenia-modelo-van-gogh\\index.html",
+      "score": 92,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/cocina-16-2-766x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "Meta Description length warning (166 chars)"
+      ],
+      "assets": {
+        "totalSize": 710862,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "portafolio\\cocina-sirenia-modelo-santa-teresa\\index.html",
+      "score": 92,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/cocina-12-1-766x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "Meta Description length warning (170 chars)"
+      ],
+      "assets": {
+        "totalSize": 692962,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "portafolio\\cocina-sirenia-modelo-san-patricio\\index.html",
+      "score": 92,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/cocina-4-4-767x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "Meta Description length warning (170 chars)"
+      ],
+      "assets": {
+        "totalSize": 691182,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "portafolio\\cocina-sirenia-modelo-san-marcos\\index.html",
+      "score": 92,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/cocina-9-3-766x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "Meta Description length warning (168 chars)"
+      ],
+      "assets": {
+        "totalSize": 805838,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "portafolio\\cocina-sirenia-modelo-san-david\\index.html",
+      "score": 92,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/cocina-13-2-766x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "Meta Description length warning (167 chars)"
+      ],
+      "assets": {
+        "totalSize": 705158,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "portafolio\\cocina-sirenia-modelo-san-alberto\\index.html",
+      "score": 92,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/cocina-7-766x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "Meta Description length warning (169 chars)"
+      ],
+      "assets": {
+        "totalSize": 686736,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "portafolio\\cocina-sirenia-modelo-rembrandt\\index.html",
+      "score": 92,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/cocina-21-5-768x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "Meta Description length warning (167 chars)"
+      ],
+      "assets": {
+        "totalSize": 727632,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "portafolio\\cocina-sirenia-modelo-monet\\index.html",
+      "score": 92,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/cocina-15-11-1024x768.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "Meta Description length warning (163 chars)"
+      ],
+      "assets": {
+        "totalSize": 795272,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "portafolio\\cocina-sirenia-modelo-goya\\index.html",
+      "score": 92,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/cocina-13-766x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "Meta Description length warning (162 chars)"
+      ],
+      "assets": {
+        "totalSize": 795386,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "portafolio\\cocina-sirenia-modelo-buonarroti\\index.html",
+      "score": 92,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/cocina-6-768x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "Meta Description length warning (168 chars)"
+      ],
+      "assets": {
+        "totalSize": 787314,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "portafolio\\cocina-imperia-modelo-van-gogh\\index.html",
+      "score": 92,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2024/03/Van-Gogh-1.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "Meta Description length warning (166 chars)"
+      ],
+      "assets": {
+        "totalSize": 719848,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "portafolio\\cocina-imperia-modelo-santa-ana\\index.html",
+      "score": 92,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2024/01/Santa-Ana-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "Meta Description length warning (167 chars)"
+      ],
+      "assets": {
+        "totalSize": 665666,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "portafolio\\cocina-imperia-modelo-san-patricio\\index.html",
+      "score": 92,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2024/03/San-Patricio-1-1.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "Meta Description length warning (170 chars)"
+      ],
+      "assets": {
+        "totalSize": 675156,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "portafolio\\cocina-imperia-modelo-san-marcos\\index.html",
+      "score": 92,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2024/03/San-Marcos-1-1.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "Meta Description length warning (168 chars)"
+      ],
+      "assets": {
+        "totalSize": 769062,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "portafolio\\cocina-imperia-modelo-san-alberto\\index.html",
+      "score": 92,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2024/03/San-Alberto-1-1.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "Meta Description length warning (169 chars)"
+      ],
+      "assets": {
+        "totalSize": 718818,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "portafolio\\cocina-imperia-modelo-rembrandt\\index.html",
+      "score": 92,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2024/03/Rembrandt-4-1.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "Meta Description length warning (167 chars)"
+      ],
+      "assets": {
+        "totalSize": 744576,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "portafolio\\cocina-imperia-modelo-picasso\\index.html",
+      "score": 92,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2024/03/Picasso-6.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "Meta Description length warning (165 chars)"
+      ],
+      "assets": {
+        "totalSize": 724302,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "portafolio\\cocina-imperia-modelo-monet\\index.html",
+      "score": 92,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2024/03/Monet-1.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "Meta Description length warning (163 chars)"
+      ],
+      "assets": {
+        "totalSize": 566308,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "portafolio\\cocina-imperia-modelo-dali\\index.html",
+      "score": 92,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2024/03/Dali-4.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "Meta Description length warning (162 chars)"
+      ],
+      "assets": {
+        "totalSize": 590970,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "portafolio\\cocina-imperia-modelo-da-vinci\\index.html",
+      "score": 92,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2024/03/Da-Vinci-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "Meta Description length warning (166 chars)"
+      ],
+      "assets": {
+        "totalSize": 668798,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "portafolio\\cocina-imperia-modelo-carrington\\index.html",
+      "score": 92,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2024/01/Carrington-3.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "Meta Description length warning (168 chars)"
+      ],
+      "assets": {
+        "totalSize": 608570,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "portafolio\\cocina-imperia-modelo-buonarroti\\index.html",
+      "score": 92,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2024/03/Buonarroti-6-1.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "Meta Description length warning (168 chars)"
+      ],
+      "assets": {
+        "totalSize": 724158,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "portafolio\\cocina-imperia-modelo-botticelli\\index.html",
+      "score": 92,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2024/03/Botticelli-1-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "Meta Description length warning (168 chars)"
+      ],
+      "assets": {
+        "totalSize": 663136,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "portafolio\\cocina-catara-modelo-van-gogh\\index.html",
+      "score": 92,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/cocina-17-10-766x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "Meta Description length warning (165 chars)"
+      ],
+      "assets": {
+        "totalSize": 750374,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "portafolio\\cocina-catara-modelo-santa-ana\\index.html",
+      "score": 92,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/cocina-18-5-766x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "Meta Description length warning (166 chars)"
+      ],
+      "assets": {
+        "totalSize": 648688,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "portafolio\\cocina-catara-modelo-san-david\\index.html",
+      "score": 92,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/cocina-11-9-768x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "Meta Description length warning (166 chars)"
+      ],
+      "assets": {
+        "totalSize": 769786,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "portafolio\\cocina-catara-modelo-san-antonio\\index.html",
+      "score": 92,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/cocina-15-8-768x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "Meta Description length warning (168 chars)"
+      ],
+      "assets": {
+        "totalSize": 606644,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "portafolio\\cocina-catara-modelo-picasso\\index.html",
+      "score": 92,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/cocina-26-766x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "Meta Description length warning (164 chars)"
+      ],
+      "assets": {
+        "totalSize": 725142,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "portafolio\\cocina-catara-modelo-monet\\index.html",
+      "score": 92,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/cocina-21-2-766x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "Meta Description length warning (162 chars)"
+      ],
+      "assets": {
+        "totalSize": 796714,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "portafolio\\cocina-catara-modelo-kahlo\\index.html",
+      "score": 92,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/cocina-15-3-766x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "Meta Description length warning (162 chars)"
+      ],
+      "assets": {
+        "totalSize": 854884,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "portafolio\\cocina-catara-modelo-dali\\index.html",
+      "score": 92,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/Cocina-10-2-766x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "Meta Description length warning (161 chars)"
+      ],
+      "assets": {
+        "totalSize": 707496,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "portafolio\\cocina-catara-modelo-da-vinci\\index.html",
+      "score": 92,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/cocina-20-766x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "Meta Description length warning (165 chars)"
+      ],
+      "assets": {
+        "totalSize": 680538,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "portafolio\\cocina-catara-modelo-botticelli\\index.html",
+      "score": 92,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/cocinas-17-766x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "Meta Description length warning (167 chars)"
+      ],
+      "assets": {
+        "totalSize": 769386,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "portafolio\\closets-y-vestidores-valle-real-modelo-van-gogh\\index.html",
+      "score": 92,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/20230628_113558-768x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "Meta Description length warning (164 chars)"
+      ],
+      "assets": {
+        "totalSize": 621364,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "portafolio\\closets-y-vestidores-valle-real-modelo-san-patricio\\index.html",
+      "score": 92,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/20230628_135029-1-768x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "Meta Description length warning (168 chars)"
+      ],
+      "assets": {
+        "totalSize": 620590,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "portafolio\\closets-y-vestidores-valle-real-modelo-san-marcos\\index.html",
+      "score": 92,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/20230628_133806-768x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "Meta Description length warning (166 chars)"
+      ],
+      "assets": {
+        "totalSize": 660120,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "portafolio\\closets-y-vestidores-valle-real-modelo-rembrandt\\index.html",
+      "score": 92,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/20230628_112021-1-768x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "Meta Description length warning (165 chars)"
+      ],
+      "assets": {
+        "totalSize": 691398,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "portafolio\\closets-y-vestidores-valle-real-modelo-monet\\index.html",
+      "score": 92,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/20230628_115236-768x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "Meta Description length warning (161 chars)"
+      ],
+      "assets": {
+        "totalSize": 684990,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "portafolio\\closets-y-vestidores-sirenia-modelo-van-gogh\\index.html",
+      "score": 92,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/20230708_114853-1-768x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "Meta Description length warning (161 chars)"
+      ],
+      "assets": {
+        "totalSize": 692238,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "portafolio\\closets-y-vestidores-sirenia-modelo-san-patricio\\index.html",
+      "score": 92,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/20230708_110902-3-768x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "Meta Description length warning (165 chars)"
+      ],
+      "assets": {
+        "totalSize": 617300,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "portafolio\\closets-y-vestidores-sirenia-modelo-san-marcos\\index.html",
+      "score": 92,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/20230708_112403-1-768x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "Meta Description length warning (163 chars)"
+      ],
+      "assets": {
+        "totalSize": 798880,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "portafolio\\closets-y-vestidores-sirenia-modelo-rembrandt\\index.html",
+      "score": 92,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/20230708_124213-1-768x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "Meta Description length warning (162 chars)"
+      ],
+      "assets": {
+        "totalSize": 716692,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "portafolio\\closets-y-vestidores-sirenia-modelo-monet\\index.html",
+      "score": 92,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/20230708_115749-768x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)"
+      ],
+      "assets": {
+        "totalSize": 707436,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "portafolio\\closets-y-vestidores-sirenia-modelo-buonarroti\\index.html",
+      "score": 92,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/20230708_125607-768x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "Meta Description length warning (163 chars)"
+      ],
+      "assets": {
+        "totalSize": 690790,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "portafolio\\closets-y-vestidores-imperia-modelo-van-gogh\\index.html",
+      "score": 92,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2024/03/Van-Gogh-5.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "Meta Description length warning (161 chars)"
+      ],
+      "assets": {
+        "totalSize": 590764,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "portafolio\\closets-y-vestidores-imperia-modelo-santa-ana\\index.html",
+      "score": 92,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2024/03/Santa-Ana-5.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "Meta Description length warning (162 chars)"
+      ],
+      "assets": {
+        "totalSize": 626806,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "portafolio\\closets-y-vestidores-imperia-modelo-san-patricio\\index.html",
+      "score": 92,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2024/03/San-Patricio-2-1.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "Meta Description length warning (165 chars)"
+      ],
+      "assets": {
+        "totalSize": 602520,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "portafolio\\closets-y-vestidores-imperia-modelo-san-marcos\\index.html",
+      "score": 92,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2024/03/San-Marcos-5.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "Meta Description length warning (163 chars)"
+      ],
+      "assets": {
+        "totalSize": 631468,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "portafolio\\closets-y-vestidores-imperia-modelo-rembrandt\\index.html",
+      "score": 92,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2024/03/Rembrandt-1-1.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "Meta Description length warning (162 chars)"
+      ],
+      "assets": {
+        "totalSize": 619528,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "portafolio\\closets-y-vestidores-imperia-modelo-picasso\\index.html",
+      "score": 92,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2024/03/Picasso-1.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)"
+      ],
+      "assets": {
+        "totalSize": 547130,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "portafolio\\closets-y-vestidores-imperia-modelo-da-vinci\\index.html",
+      "score": 92,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2024/03/Da-Vinci-6.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "Meta Description length warning (161 chars)"
+      ],
+      "assets": {
+        "totalSize": 609232,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "portafolio\\closets-y-vestidores-imperia-modelo-carrington\\index.html",
+      "score": 92,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2024/03/Carrington-3.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "Meta Description length warning (163 chars)"
+      ],
+      "assets": {
+        "totalSize": 625292,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "portafolio\\closets-y-vestidores-imperia-modelo-buonarroti\\index.html",
+      "score": 92,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2024/03/Buonarroti-1-1.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "Meta Description length warning (163 chars)"
+      ],
+      "assets": {
+        "totalSize": 562464,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "portafolio\\closets-y-vestidores-imperia-modelo-botticelli\\index.html",
+      "score": 92,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2024/03/Botticelli-6-1.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "Meta Description length warning (163 chars)"
+      ],
+      "assets": {
+        "totalSize": 603930,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "portafolio\\closets-y-vestidores-catara-modelo-van-gogh\\index.html",
+      "score": 92,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/20230708_140058-768x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)"
+      ],
+      "assets": {
+        "totalSize": 714768,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "portafolio\\closets-y-vestidores-catara-modelo-santa-ana\\index.html",
+      "score": 92,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/20230708_133449-1-768x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "Meta Description length warning (161 chars)"
+      ],
+      "assets": {
+        "totalSize": 646318,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "portafolio\\closets-y-vestidores-catara-modelo-san-antonio\\index.html",
+      "score": 92,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/20230708_132656-2-768x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "Meta Description length warning (163 chars)"
+      ],
+      "assets": {
+        "totalSize": 593344,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "portafolio\\closets-y-vestidores-catara-modelo-picasso\\index.html",
+      "score": 92,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/20230708_143715-768x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)"
+      ],
+      "assets": {
+        "totalSize": 732276,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "portafolio\\closets-y-vestidores-catara-modelo-monet\\index.html",
+      "score": 92,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/20230708_141256-768x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)"
+      ],
+      "assets": {
+        "totalSize": 738556,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "portafolio\\closets-y-vestidores-catara-modelo-dali\\index.html",
+      "score": 92,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/20230708_134311-1-768x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)"
+      ],
+      "assets": {
+        "totalSize": 742696,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "portafolio\\closets-y-vestidores-catara-modelo-da-vinci\\index.html",
+      "score": 92,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/20230708_135056-1-768x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)"
+      ],
+      "assets": {
+        "totalSize": 745698,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "portafolio\\closets-y-vestidores-catara-modelo-botticelli\\index.html",
+      "score": 92,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/20230708_144911-2-768x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "Meta Description length warning (162 chars)"
+      ],
+      "assets": {
+        "totalSize": 752358,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "portafolio\\closets-valle-real-modelo-santa-teresa\\index.html",
+      "score": 92,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/20230628_124629-1-768x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)"
+      ],
+      "assets": {
+        "totalSize": 624086,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "portafolio\\closets-valle-real-modelo-san-david\\index.html",
+      "score": 92,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/20230628_120115-1-768x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "Meta Description length warning (171 chars)"
+      ],
+      "assets": {
+        "totalSize": 593412,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "portafolio\\closets-valle-real-modelo-san-alberto\\index.html",
+      "score": 92,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/20230628_131233-768x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "Meta Description length warning (173 chars)"
+      ],
+      "assets": {
+        "totalSize": 583148,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "portafolio\\closets-valle-real-modelo-goya\\index.html",
+      "score": 92,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/20230628_123140-768x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "Meta Description length warning (166 chars)"
+      ],
+      "assets": {
+        "totalSize": 620234,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "portafolio\\closets-valle-real-modelo-buonarroti\\index.html",
+      "score": 92,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/20230628_141220-1-768x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "Meta Description length warning (172 chars)"
+      ],
+      "assets": {
+        "totalSize": 606376,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "portafolio\\closets-sirenia-modelo-santa-teresa\\index.html",
+      "score": 92,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/20230708_120836-1-768x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "Meta Description length warning (171 chars)"
+      ],
+      "assets": {
+        "totalSize": 664324,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "portafolio\\closets-sirenia-modelo-san-david\\index.html",
+      "score": 92,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/20230708_122830-768x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "Meta Description length warning (168 chars)"
+      ],
+      "assets": {
+        "totalSize": 654882,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "portafolio\\closets-sirenia-modelo-san-alberto\\index.html",
+      "score": 92,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/20230708_113107-1-768x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "Meta Description length warning (170 chars)"
+      ],
+      "assets": {
+        "totalSize": 681346,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "portafolio\\closets-sirenia-modelo-goya\\index.html",
+      "score": 92,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/20230708_121906-768x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "Meta Description length warning (163 chars)"
+      ],
+      "assets": {
+        "totalSize": 644378,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "portafolio\\closets-catara-modelo-san-david\\index.html",
+      "score": 92,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/20230708_142117-768x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "Meta Description length warning (167 chars)"
+      ],
+      "assets": {
+        "totalSize": 695588,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "portafolio\\closets-catara-modelo-kahlo\\index.html",
+      "score": 92,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/08/20230708_143117-1-768x1024.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "Meta Description length warning (163 chars)"
+      ],
+      "assets": {
+        "totalSize": 749878,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "equipamiento\\index.html",
+      "score": 92,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/07/parrilla-campana-teka-pack-duetto-plus-70-ex.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "Meta Description length warning (172 chars)"
+      ],
+      "assets": {
+        "totalSize": 589196,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "corporate\\preguntas-frecuentes\\index.html",
+      "score": 92,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/07/cocina1--1024x305.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)"
+      ],
+      "assets": {
+        "totalSize": 440426,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "corporate\\politica-privacidad\\index.html",
+      "score": 94,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)"
+      ],
+      "assets": {
+        "totalSize": 423706,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "corporate\\contact\\index.html",
+      "score": 92,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/core/modules/d9a1c27cc2/images/loader.svg)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)"
+      ],
+      "assets": {
+        "totalSize": 424978,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "corporate\\blog\\index.html",
+      "score": 87,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/07/1-2.webp)",
+        "Heavy Image: 512KB (/assets/storage/2023/07/6ec5806a14a992c9bc107d1f0f81d454.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)"
+      ],
+      "assets": {
+        "totalSize": 1038582,
+        "heavyImages": [
+          {
+            "src": "/assets/storage/2023/07/6ec5806a14a992c9bc107d1f0f81d454.webp",
+            "size": 524758
+          }
+        ],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "corporate\\blog\\2023\\07\\17\\tendencias-modernas-en-cocinas-integrales\\index.html",
+      "score": 92,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/07/20230708452_123811.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)"
+      ],
+      "assets": {
+        "totalSize": 536670,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "corporate\\blog\\2023\\07\\17\\tendencias-de-color\\index.html",
+      "score": 92,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/07/blogger-image-136032213.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)"
+      ],
+      "assets": {
+        "totalSize": 552810,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "corporate\\blog\\2023\\07\\17\\consejos-de-organizacion-para-un-closet\\index.html",
+      "score": 94,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)"
+      ],
+      "assets": {
+        "totalSize": 423706,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "corporate\\blog\\2023\\07\\04\\tendencias-de-color-refleja-tu-personalidad\\index.html",
+      "score": 94,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "Meta Description length warning (188 chars)"
+      ],
+      "assets": {
+        "totalSize": 423706,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    },
+    {
+      "file": "corporate\\acerca-de-mymce-carpinteria-profesional-en-san-luis-potosi\\index.html",
+      "score": 92,
+      "issues": [
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/logo-2.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2023/07/logo-b25182a6ba332cf6a342eb4a73974ef2-1.webp)",
+        "CLS Risk: Image missing width/height (/assets/storage/2016/12/169471652699961817.webp)",
+        "Meta Description length warning (170 chars)"
+      ],
+      "assets": {
+        "totalSize": 445674,
+        "heavyImages": [],
+        "blockingCSS": 0
+      }
+    }
+  ]
+}
