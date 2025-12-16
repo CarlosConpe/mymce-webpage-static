@@ -1,0 +1,17 @@
+{
+  "2023": "blog/2023",
+  "diseno-y-fabricacion-de-closets-y-vestidores": "services\\diseno-y-fabricacion-de-closets-y-vestidores",
+  "diseno-y-fabricacion-de-cocinas-integrales": "services\\diseno-y-fabricacion-de-cocinas-integrales",
+  "diseno-y-fabricacion-de-escritorios": "services\\diseno-y-fabricacion-de-escritorios",
+  "diseno-y-fabricacion-de-muebles-de-bano": "services\\diseno-y-fabricacion-de-muebles-de-bano",
+  "diseno-y-fabricacion-de-puertas": "services\\diseno-y-fabricacion-de-puertas",
+  "electrodomesticos": "services\\electrodomesticos",
+  "maquila-de-partes": "services\\maquila-de-partes",
+  "servicios-carpinteria": "services\\servicios-carpinteria",
+  "venta-de-electrodomesticos": "services\\venta-de-electrodomesticos",
+  "venta-de-lectrodomesticos": "services\\venta-de-lectrodomesticos",
+  "core": "assets/core",
+  "lib": "assets/lib",
+  "storage": "assets/storage",
+  "wp-content": "assets/wp-content"
+}

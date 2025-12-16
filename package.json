@@ -1,0 +1,28 @@
+{
+  "name": "simply-static-1-1765817436",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "cheerio": "^1.1.2",
+    "clean-css": "^5.3.3",
+    "fs-extra": "^11.3.2",
+    "glob": "^13.0.0",
+    "lunr": "^2.3.9",
+    "sharp": "^0.34.5",
+    "terser": "^5.44.1"
+  },
+  "devDependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.1.0"
+  }
+}

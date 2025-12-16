@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /assets/core/
+Disallow: /assets/lib/
+Disallow: /assets/wp-content/
+
+Sitemap: https://www.grupomymce.com/sitemap.xml
