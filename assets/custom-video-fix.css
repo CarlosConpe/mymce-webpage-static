@@ -18,3 +18,8 @@
 .video-box {
     max-width: 100%;
 }
+
+/* FIX: Hide form result boxes by default */
+.success-box, .error-box, .cf-loader {
+    display: none !important;
+}

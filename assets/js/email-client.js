@@ -2,13 +2,19 @@ document.addEventListener("DOMContentLoaded", function () {
     const forms = document.querySelectorAll("form[data-worker-form='true']");
 
     forms.forEach((form) => {
+        // Initial Reset
+        const successBox = form.querySelector(".success-box");
+        const errorBox = form.querySelector(".error-box");
+        const loader = form.querySelector(".cf-loader");
+
+        if (successBox) successBox.style.display = "none";
+        if (errorBox) errorBox.style.display = "none";
+        if (loader) loader.style.display = "none";
+
         form.addEventListener("submit", async function (e) {
             e.preventDefault();
 
-            // UI Elements
-            const loader = form.querySelector(".cf-loader");
-            const successBox = form.querySelector(".success-box");
-            const errorBox = form.querySelector(".error-box");
+            // UI Elements (Re-select or use closure vars)
             const submitBtn = form.querySelector("button[type='submit']");
 
             // Reset UI
