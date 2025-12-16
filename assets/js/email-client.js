@@ -7,20 +7,21 @@ document.addEventListener("DOMContentLoaded", function () {
         const errorBox = form.querySelector(".error-box");
         const loader = form.querySelector(".cf-loader");
 
-        if (successBox) successBox.style.display = "none";
-        if (errorBox) errorBox.style.display = "none";
-        if (loader) loader.style.display = "none";
+        // Ensure clean state classes
+        if (successBox) successBox.classList.remove("show");
+        if (errorBox) errorBox.classList.remove("show");
+        if (loader) loader.classList.remove("show");
 
         form.addEventListener("submit", async function (e) {
             e.preventDefault();
 
-            // UI Elements (Re-select or use closure vars)
+            // UI Elements
             const submitBtn = form.querySelector("button[type='submit']");
 
             // Reset UI
-            if (successBox) successBox.style.display = "none";
-            if (errorBox) errorBox.style.display = "none";
-            if (loader) loader.style.display = "inline-block";
+            if (successBox) successBox.classList.remove("show");
+            if (errorBox) errorBox.classList.remove("show");
+            if (loader) loader.classList.add("show");
             if (submitBtn) submitBtn.disabled = true;
 
             // Gather Data
@@ -51,22 +52,21 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 if (response.ok) {
                     if (successBox) {
-                        successBox.style.display = "block";
-                        // Optionally hide form
-                        // form.reset();
+                        successBox.classList.add("show");
+                        form.reset();
                     } else {
                         alert("Mensaje enviado con éxito!");
                     }
                 } else {
                     console.error("Server Error:", await response.text());
-                    if (errorBox) errorBox.style.display = "block";
+                    if (errorBox) errorBox.classList.add("show");
                     else alert("Error al enviar el mensaje.");
                 }
             } catch (err) {
                 console.error("Network Error:", err);
-                if (errorBox) errorBox.style.display = "block";
+                if (errorBox) errorBox.classList.add("show");
             } finally {
-                if (loader) loader.style.display = "none";
+                if (loader) loader.classList.remove("show");
                 if (submitBtn) submitBtn.disabled = false;
             }
         });
