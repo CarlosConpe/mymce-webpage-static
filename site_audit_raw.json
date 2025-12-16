@@ -1,0 +1,23 @@
+{
+  "summary": {
+    "totalFiles": 110,
+    "filesWithIssues": 0,
+    "totalIssues": 0
+  },
+  "seo": {
+    "missingTitle": [],
+    "missingMetaDescription": [],
+    "missingH1": [],
+    "multipleH1": [],
+    "duplicateTitles": {}
+  },
+  "accessibility": {
+    "imagesMissingAlt": []
+  },
+  "integrity": {
+    "brokenInternalLinks": []
+  },
+  "performance": {
+    "largeImages": []
+  }
+}

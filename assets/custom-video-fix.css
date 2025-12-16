@@ -10,6 +10,8 @@
 /* Ensure container has height if needed */
 .flexslider .slides > li {
     height: auto !important; /* Allow it to grow */
+    padding-left : 20px !important;
+    padding-right : 20px !important;
 }
 
 /* Ensure video box class doesn't interfere */

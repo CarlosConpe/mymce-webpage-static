@@ -1,0 +1,1223 @@
+{
+  "assets": {
+    "images": [],
+    "videos": [],
+    "scripts": [],
+    "styles": [],
+    "links": [],
+    "other": [
+      "https://www.grupomymce.com/",
+      "https://www.grupomymce.com/404/",
+      "https://www.grupomymce.com/soluciones/carpinteria-para-particulares/",
+      "https://www.grupomymce.com/soluciones/carpinteria-para-constructoras/",
+      "https://www.grupomymce.com/soluciones/carpinteria-para-cocinistas/",
+      "https://www.grupomymce.com/soluciones/carpinteria-para-arquitectos/",
+      "https://www.grupomymce.com/servicios-carpinteria/",
+      "https://www.grupomymce.com/servicios-carpinteria/venta-de-electrodomesticos/",
+      "https://www.grupomymce.com/servicios-carpinteria/pvc-foil-covered-cabinet-doors-drawer-fronts/",
+      "https://www.grupomymce.com/servicios-carpinteria/puertas-y-piezas-recubiertas-con-foil-pvc/",
+      "https://www.grupomymce.com/servicios-carpinteria/puertas-frentes-de-cajon-en-mdf-forrados-con-foil-pvc/",
+      "https://www.grupomymce.com/servicios-carpinteria/maquila-de-partes/",
+      "https://www.grupomymce.com/servicios-carpinteria/diseno-y-fabricacion-de-puertas/",
+      "https://www.grupomymce.com/servicios-carpinteria/diseno-y-fabricacion-de-muebles-de-bano/",
+      "https://www.grupomymce.com/servicios-carpinteria/diseno-y-fabricacion-de-escritorios/",
+      "https://www.grupomymce.com/servicios-carpinteria/diseno-y-fabricacion-de-cocinas-integrales/",
+      "https://www.grupomymce.com/servicios-carpinteria/diseno-y-fabricacion-de-closets-y-vestidores/",
+      "https://www.grupomymce.com/portafolio/",
+      "https://www.grupomymce.com/portafolio/cocina-valle-real-modelo-van-gogh/",
+      "https://www.grupomymce.com/portafolio/cocina-valle-real-modelo-santa-teresa/",
+      "https://www.grupomymce.com/portafolio/cocina-valle-real-modelo-san-patricio/",
+      "https://www.grupomymce.com/portafolio/cocina-valle-real-modelo-san-marcos/",
+      "https://www.grupomymce.com/portafolio/cocina-valle-real-modelo-san-david/",
+      "https://www.grupomymce.com/portafolio/cocina-valle-real-modelo-san-alberto/",
+      "https://www.grupomymce.com/portafolio/cocina-valle-real-modelo-rembrandt/",
+      "https://www.grupomymce.com/portafolio/cocina-valle-real-modelo-monet/",
+      "https://www.grupomymce.com/portafolio/cocina-valle-real-modelo-goya/",
+      "https://www.grupomymce.com/portafolio/cocina-valle-real-modelo-buonarroti/",
+      "https://www.grupomymce.com/portafolio/cocina-sirenia-modelo-van-gogh/",
+      "https://www.grupomymce.com/portafolio/cocina-sirenia-modelo-santa-teresa/",
+      "https://www.grupomymce.com/portafolio/cocina-sirenia-modelo-san-patricio/",
+      "https://www.grupomymce.com/portafolio/cocina-sirenia-modelo-san-marcos/",
+      "https://www.grupomymce.com/portafolio/cocina-sirenia-modelo-san-david/",
+      "https://www.grupomymce.com/portafolio/cocina-sirenia-modelo-san-alberto/",
+      "https://www.grupomymce.com/portafolio/cocina-sirenia-modelo-rembrandt/",
+      "https://www.grupomymce.com/portafolio/cocina-sirenia-modelo-monet/",
+      "https://www.grupomymce.com/portafolio/cocina-sirenia-modelo-goya/",
+      "https://www.grupomymce.com/portafolio/cocina-sirenia-modelo-buonarroti/",
+      "https://www.grupomymce.com/portafolio/cocina-imperia-modelo-van-gogh/",
+      "https://www.grupomymce.com/portafolio/cocina-imperia-modelo-santa-ana/",
+      "https://www.grupomymce.com/portafolio/cocina-imperia-modelo-san-patricio/",
+      "https://www.grupomymce.com/portafolio/cocina-imperia-modelo-san-marcos/",
+      "https://www.grupomymce.com/portafolio/cocina-imperia-modelo-san-alberto/",
+      "https://www.grupomymce.com/portafolio/cocina-imperia-modelo-rembrandt/",
+      "https://www.grupomymce.com/portafolio/cocina-imperia-modelo-picasso/",
+      "https://www.grupomymce.com/portafolio/cocina-imperia-modelo-monet/",
+      "https://www.grupomymce.com/portafolio/cocina-imperia-modelo-dali/",
+      "https://www.grupomymce.com/portafolio/cocina-imperia-modelo-da-vinci/",
+      "https://www.grupomymce.com/portafolio/cocina-imperia-modelo-carrington/",
+      "https://www.grupomymce.com/portafolio/cocina-imperia-modelo-buonarroti/",
+      "https://www.grupomymce.com/portafolio/cocina-imperia-modelo-botticelli/",
+      "https://www.grupomymce.com/portafolio/cocina-catara-modelo-van-gogh/",
+      "https://www.grupomymce.com/portafolio/cocina-catara-modelo-santa-ana/",
+      "https://www.grupomymce.com/portafolio/cocina-catara-modelo-san-david/",
+      "https://www.grupomymce.com/portafolio/cocina-catara-modelo-san-antonio/",
+      "https://www.grupomymce.com/portafolio/cocina-catara-modelo-picasso/",
+      "https://www.grupomymce.com/portafolio/cocina-catara-modelo-monet/",
+      "https://www.grupomymce.com/portafolio/cocina-catara-modelo-kahlo/",
+      "https://www.grupomymce.com/portafolio/cocina-catara-modelo-dali/",
+      "https://www.grupomymce.com/portafolio/cocina-catara-modelo-da-vinci/",
+      "https://www.grupomymce.com/portafolio/cocina-catara-modelo-botticelli/",
+      "https://www.grupomymce.com/portafolio/closets-y-vestidores-valle-real-modelo-van-gogh/",
+      "https://www.grupomymce.com/portafolio/closets-y-vestidores-valle-real-modelo-san-patricio/",
+      "https://www.grupomymce.com/portafolio/closets-y-vestidores-valle-real-modelo-san-marcos/",
+      "https://www.grupomymce.com/portafolio/closets-y-vestidores-valle-real-modelo-rembrandt/",
+      "https://www.grupomymce.com/portafolio/closets-y-vestidores-valle-real-modelo-monet/",
+      "https://www.grupomymce.com/portafolio/closets-y-vestidores-sirenia-modelo-van-gogh/",
+      "https://www.grupomymce.com/portafolio/closets-y-vestidores-sirenia-modelo-san-patricio/",
+      "https://www.grupomymce.com/portafolio/closets-y-vestidores-sirenia-modelo-san-marcos/",
+      "https://www.grupomymce.com/portafolio/closets-y-vestidores-sirenia-modelo-rembrandt/",
+      "https://www.grupomymce.com/portafolio/closets-y-vestidores-sirenia-modelo-monet/",
+      "https://www.grupomymce.com/portafolio/closets-y-vestidores-sirenia-modelo-buonarroti/",
+      "https://www.grupomymce.com/portafolio/closets-y-vestidores-imperia-modelo-van-gogh/",
+      "https://www.grupomymce.com/portafolio/closets-y-vestidores-imperia-modelo-santa-ana/",
+      "https://www.grupomymce.com/portafolio/closets-y-vestidores-imperia-modelo-san-patricio/",
+      "https://www.grupomymce.com/portafolio/closets-y-vestidores-imperia-modelo-san-marcos/",
+      "https://www.grupomymce.com/portafolio/closets-y-vestidores-imperia-modelo-rembrandt/",
+      "https://www.grupomymce.com/portafolio/closets-y-vestidores-imperia-modelo-picasso/",
+      "https://www.grupomymce.com/portafolio/closets-y-vestidores-imperia-modelo-da-vinci/",
+      "https://www.grupomymce.com/portafolio/closets-y-vestidores-imperia-modelo-carrington/",
+      "https://www.grupomymce.com/portafolio/closets-y-vestidores-imperia-modelo-buonarroti/",
+      "https://www.grupomymce.com/portafolio/closets-y-vestidores-imperia-modelo-botticelli/",
+      "https://www.grupomymce.com/portafolio/closets-y-vestidores-catara-modelo-van-gogh/",
+      "https://www.grupomymce.com/portafolio/closets-y-vestidores-catara-modelo-santa-ana/",
+      "https://www.grupomymce.com/portafolio/closets-y-vestidores-catara-modelo-san-antonio/",
+      "https://www.grupomymce.com/portafolio/closets-y-vestidores-catara-modelo-picasso/",
+      "https://www.grupomymce.com/portafolio/closets-y-vestidores-catara-modelo-monet/",
+      "https://www.grupomymce.com/portafolio/closets-y-vestidores-catara-modelo-dali/",
+      "https://www.grupomymce.com/portafolio/closets-y-vestidores-catara-modelo-da-vinci/",
+      "https://www.grupomymce.com/portafolio/closets-y-vestidores-catara-modelo-botticelli/",
+      "https://www.grupomymce.com/portafolio/closets-valle-real-modelo-santa-teresa/",
+      "https://www.grupomymce.com/portafolio/closets-valle-real-modelo-san-david/",
+      "https://www.grupomymce.com/portafolio/closets-valle-real-modelo-san-alberto/",
+      "https://www.grupomymce.com/portafolio/closets-valle-real-modelo-goya/",
+      "https://www.grupomymce.com/portafolio/closets-valle-real-modelo-buonarroti/",
+      "https://www.grupomymce.com/portafolio/closets-sirenia-modelo-santa-teresa/",
+      "https://www.grupomymce.com/portafolio/closets-sirenia-modelo-san-david/",
+      "https://www.grupomymce.com/portafolio/closets-sirenia-modelo-san-alberto/",
+      "https://www.grupomymce.com/portafolio/closets-sirenia-modelo-goya/",
+      "https://www.grupomymce.com/portafolio/closets-catara-modelo-san-david/",
+      "https://www.grupomymce.com/portafolio/closets-catara-modelo-kahlo/",
+      "https://www.grupomymce.com/corporate/preguntas-frecuentes/",
+      "https://www.grupomymce.com/corporate/politica-privacidad/",
+      "https://www.grupomymce.com/corporate/contact/",
+      "https://www.grupomymce.com/corporate/blog/",
+      "https://www.grupomymce.com/corporate/blog/2023/07/17/tendencias-modernas-en-cocinas-integrales/",
+      "https://www.grupomymce.com/corporate/blog/2023/07/17/tendencias-de-color/",
+      "https://www.grupomymce.com/corporate/blog/2023/07/17/consejos-de-organizacion-para-un-closet/",
+      "https://www.grupomymce.com/corporate/blog/2023/07/04/tendencias-de-color-refleja-tu-personalidad/",
+      "https://www.grupomymce.com/corporate/acerca-de-mymce-carpinteria-profesional-en-san-luis-potosi/"
+    ]
+  },
+  "files": [
+    {
+      "file": "index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/"
+        }
+      ]
+    },
+    {
+      "file": "404.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/404/"
+        }
+      ]
+    },
+    {
+      "file": "soluciones\\carpinteria-para-particulares\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/soluciones/carpinteria-para-particulares/"
+        }
+      ]
+    },
+    {
+      "file": "soluciones\\carpinteria-para-constructoras\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/soluciones/carpinteria-para-constructoras/"
+        }
+      ]
+    },
+    {
+      "file": "soluciones\\carpinteria-para-cocinistas\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/soluciones/carpinteria-para-cocinistas/"
+        }
+      ]
+    },
+    {
+      "file": "soluciones\\carpinteria-para-arquitectos\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/soluciones/carpinteria-para-arquitectos/"
+        }
+      ]
+    },
+    {
+      "file": "servicios-carpinteria\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/servicios-carpinteria/"
+        }
+      ]
+    },
+    {
+      "file": "servicios-carpinteria\\venta-de-electrodomesticos\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/servicios-carpinteria/venta-de-electrodomesticos/"
+        }
+      ]
+    },
+    {
+      "file": "servicios-carpinteria\\pvc-foil-covered-cabinet-doors-drawer-fronts\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/servicios-carpinteria/pvc-foil-covered-cabinet-doors-drawer-fronts/"
+        }
+      ]
+    },
+    {
+      "file": "servicios-carpinteria\\puertas-y-piezas-recubiertas-con-foil-pvc\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/servicios-carpinteria/puertas-y-piezas-recubiertas-con-foil-pvc/"
+        }
+      ]
+    },
+    {
+      "file": "servicios-carpinteria\\puertas-frentes-de-cajon-en-mdf-forrados-con-foil-pvc\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/servicios-carpinteria/puertas-frentes-de-cajon-en-mdf-forrados-con-foil-pvc/"
+        }
+      ]
+    },
+    {
+      "file": "servicios-carpinteria\\maquila-de-partes\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/servicios-carpinteria/maquila-de-partes/"
+        }
+      ]
+    },
+    {
+      "file": "servicios-carpinteria\\diseno-y-fabricacion-de-puertas\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/servicios-carpinteria/diseno-y-fabricacion-de-puertas/"
+        }
+      ]
+    },
+    {
+      "file": "servicios-carpinteria\\diseno-y-fabricacion-de-muebles-de-bano\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/servicios-carpinteria/diseno-y-fabricacion-de-muebles-de-bano/"
+        }
+      ]
+    },
+    {
+      "file": "servicios-carpinteria\\diseno-y-fabricacion-de-escritorios\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/servicios-carpinteria/diseno-y-fabricacion-de-escritorios/"
+        }
+      ]
+    },
+    {
+      "file": "servicios-carpinteria\\diseno-y-fabricacion-de-cocinas-integrales\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/servicios-carpinteria/diseno-y-fabricacion-de-cocinas-integrales/"
+        }
+      ]
+    },
+    {
+      "file": "servicios-carpinteria\\diseno-y-fabricacion-de-closets-y-vestidores\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/servicios-carpinteria/diseno-y-fabricacion-de-closets-y-vestidores/"
+        }
+      ]
+    },
+    {
+      "file": "portafolio\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/portafolio/"
+        }
+      ]
+    },
+    {
+      "file": "portafolio\\cocina-valle-real-modelo-van-gogh\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/portafolio/cocina-valle-real-modelo-van-gogh/"
+        }
+      ]
+    },
+    {
+      "file": "portafolio\\cocina-valle-real-modelo-santa-teresa\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/portafolio/cocina-valle-real-modelo-santa-teresa/"
+        }
+      ]
+    },
+    {
+      "file": "portafolio\\cocina-valle-real-modelo-san-patricio\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/portafolio/cocina-valle-real-modelo-san-patricio/"
+        }
+      ]
+    },
+    {
+      "file": "portafolio\\cocina-valle-real-modelo-san-marcos\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/portafolio/cocina-valle-real-modelo-san-marcos/"
+        }
+      ]
+    },
+    {
+      "file": "portafolio\\cocina-valle-real-modelo-san-david\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/portafolio/cocina-valle-real-modelo-san-david/"
+        }
+      ]
+    },
+    {
+      "file": "portafolio\\cocina-valle-real-modelo-san-alberto\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/portafolio/cocina-valle-real-modelo-san-alberto/"
+        }
+      ]
+    },
+    {
+      "file": "portafolio\\cocina-valle-real-modelo-rembrandt\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/portafolio/cocina-valle-real-modelo-rembrandt/"
+        }
+      ]
+    },
+    {
+      "file": "portafolio\\cocina-valle-real-modelo-monet\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/portafolio/cocina-valle-real-modelo-monet/"
+        }
+      ]
+    },
+    {
+      "file": "portafolio\\cocina-valle-real-modelo-goya\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/portafolio/cocina-valle-real-modelo-goya/"
+        }
+      ]
+    },
+    {
+      "file": "portafolio\\cocina-valle-real-modelo-buonarroti\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/portafolio/cocina-valle-real-modelo-buonarroti/"
+        }
+      ]
+    },
+    {
+      "file": "portafolio\\cocina-sirenia-modelo-van-gogh\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/portafolio/cocina-sirenia-modelo-van-gogh/"
+        }
+      ]
+    },
+    {
+      "file": "portafolio\\cocina-sirenia-modelo-santa-teresa\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/portafolio/cocina-sirenia-modelo-santa-teresa/"
+        }
+      ]
+    },
+    {
+      "file": "portafolio\\cocina-sirenia-modelo-san-patricio\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/portafolio/cocina-sirenia-modelo-san-patricio/"
+        }
+      ]
+    },
+    {
+      "file": "portafolio\\cocina-sirenia-modelo-san-marcos\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/portafolio/cocina-sirenia-modelo-san-marcos/"
+        }
+      ]
+    },
+    {
+      "file": "portafolio\\cocina-sirenia-modelo-san-david\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/portafolio/cocina-sirenia-modelo-san-david/"
+        }
+      ]
+    },
+    {
+      "file": "portafolio\\cocina-sirenia-modelo-san-alberto\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/portafolio/cocina-sirenia-modelo-san-alberto/"
+        }
+      ]
+    },
+    {
+      "file": "portafolio\\cocina-sirenia-modelo-rembrandt\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/portafolio/cocina-sirenia-modelo-rembrandt/"
+        }
+      ]
+    },
+    {
+      "file": "portafolio\\cocina-sirenia-modelo-monet\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/portafolio/cocina-sirenia-modelo-monet/"
+        }
+      ]
+    },
+    {
+      "file": "portafolio\\cocina-sirenia-modelo-goya\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/portafolio/cocina-sirenia-modelo-goya/"
+        }
+      ]
+    },
+    {
+      "file": "portafolio\\cocina-sirenia-modelo-buonarroti\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/portafolio/cocina-sirenia-modelo-buonarroti/"
+        }
+      ]
+    },
+    {
+      "file": "portafolio\\cocina-imperia-modelo-van-gogh\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/portafolio/cocina-imperia-modelo-van-gogh/"
+        }
+      ]
+    },
+    {
+      "file": "portafolio\\cocina-imperia-modelo-santa-ana\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/portafolio/cocina-imperia-modelo-santa-ana/"
+        }
+      ]
+    },
+    {
+      "file": "portafolio\\cocina-imperia-modelo-san-patricio\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/portafolio/cocina-imperia-modelo-san-patricio/"
+        }
+      ]
+    },
+    {
+      "file": "portafolio\\cocina-imperia-modelo-san-marcos\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/portafolio/cocina-imperia-modelo-san-marcos/"
+        }
+      ]
+    },
+    {
+      "file": "portafolio\\cocina-imperia-modelo-san-alberto\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/portafolio/cocina-imperia-modelo-san-alberto/"
+        }
+      ]
+    },
+    {
+      "file": "portafolio\\cocina-imperia-modelo-rembrandt\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/portafolio/cocina-imperia-modelo-rembrandt/"
+        }
+      ]
+    },
+    {
+      "file": "portafolio\\cocina-imperia-modelo-picasso\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/portafolio/cocina-imperia-modelo-picasso/"
+        }
+      ]
+    },
+    {
+      "file": "portafolio\\cocina-imperia-modelo-monet\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/portafolio/cocina-imperia-modelo-monet/"
+        }
+      ]
+    },
+    {
+      "file": "portafolio\\cocina-imperia-modelo-dali\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/portafolio/cocina-imperia-modelo-dali/"
+        }
+      ]
+    },
+    {
+      "file": "portafolio\\cocina-imperia-modelo-da-vinci\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/portafolio/cocina-imperia-modelo-da-vinci/"
+        }
+      ]
+    },
+    {
+      "file": "portafolio\\cocina-imperia-modelo-carrington\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/portafolio/cocina-imperia-modelo-carrington/"
+        }
+      ]
+    },
+    {
+      "file": "portafolio\\cocina-imperia-modelo-buonarroti\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/portafolio/cocina-imperia-modelo-buonarroti/"
+        }
+      ]
+    },
+    {
+      "file": "portafolio\\cocina-imperia-modelo-botticelli\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/portafolio/cocina-imperia-modelo-botticelli/"
+        }
+      ]
+    },
+    {
+      "file": "portafolio\\cocina-catara-modelo-van-gogh\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/portafolio/cocina-catara-modelo-van-gogh/"
+        }
+      ]
+    },
+    {
+      "file": "portafolio\\cocina-catara-modelo-santa-ana\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/portafolio/cocina-catara-modelo-santa-ana/"
+        }
+      ]
+    },
+    {
+      "file": "portafolio\\cocina-catara-modelo-san-david\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/portafolio/cocina-catara-modelo-san-david/"
+        }
+      ]
+    },
+    {
+      "file": "portafolio\\cocina-catara-modelo-san-antonio\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/portafolio/cocina-catara-modelo-san-antonio/"
+        }
+      ]
+    },
+    {
+      "file": "portafolio\\cocina-catara-modelo-picasso\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/portafolio/cocina-catara-modelo-picasso/"
+        }
+      ]
+    },
+    {
+      "file": "portafolio\\cocina-catara-modelo-monet\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/portafolio/cocina-catara-modelo-monet/"
+        }
+      ]
+    },
+    {
+      "file": "portafolio\\cocina-catara-modelo-kahlo\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/portafolio/cocina-catara-modelo-kahlo/"
+        }
+      ]
+    },
+    {
+      "file": "portafolio\\cocina-catara-modelo-dali\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/portafolio/cocina-catara-modelo-dali/"
+        }
+      ]
+    },
+    {
+      "file": "portafolio\\cocina-catara-modelo-da-vinci\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/portafolio/cocina-catara-modelo-da-vinci/"
+        }
+      ]
+    },
+    {
+      "file": "portafolio\\cocina-catara-modelo-botticelli\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/portafolio/cocina-catara-modelo-botticelli/"
+        }
+      ]
+    },
+    {
+      "file": "portafolio\\closets-y-vestidores-valle-real-modelo-van-gogh\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/portafolio/closets-y-vestidores-valle-real-modelo-van-gogh/"
+        }
+      ]
+    },
+    {
+      "file": "portafolio\\closets-y-vestidores-valle-real-modelo-san-patricio\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/portafolio/closets-y-vestidores-valle-real-modelo-san-patricio/"
+        }
+      ]
+    },
+    {
+      "file": "portafolio\\closets-y-vestidores-valle-real-modelo-san-marcos\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/portafolio/closets-y-vestidores-valle-real-modelo-san-marcos/"
+        }
+      ]
+    },
+    {
+      "file": "portafolio\\closets-y-vestidores-valle-real-modelo-rembrandt\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/portafolio/closets-y-vestidores-valle-real-modelo-rembrandt/"
+        }
+      ]
+    },
+    {
+      "file": "portafolio\\closets-y-vestidores-valle-real-modelo-monet\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/portafolio/closets-y-vestidores-valle-real-modelo-monet/"
+        }
+      ]
+    },
+    {
+      "file": "portafolio\\closets-y-vestidores-sirenia-modelo-van-gogh\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/portafolio/closets-y-vestidores-sirenia-modelo-van-gogh/"
+        }
+      ]
+    },
+    {
+      "file": "portafolio\\closets-y-vestidores-sirenia-modelo-san-patricio\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/portafolio/closets-y-vestidores-sirenia-modelo-san-patricio/"
+        }
+      ]
+    },
+    {
+      "file": "portafolio\\closets-y-vestidores-sirenia-modelo-san-marcos\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/portafolio/closets-y-vestidores-sirenia-modelo-san-marcos/"
+        }
+      ]
+    },
+    {
+      "file": "portafolio\\closets-y-vestidores-sirenia-modelo-rembrandt\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/portafolio/closets-y-vestidores-sirenia-modelo-rembrandt/"
+        }
+      ]
+    },
+    {
+      "file": "portafolio\\closets-y-vestidores-sirenia-modelo-monet\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/portafolio/closets-y-vestidores-sirenia-modelo-monet/"
+        }
+      ]
+    },
+    {
+      "file": "portafolio\\closets-y-vestidores-sirenia-modelo-buonarroti\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/portafolio/closets-y-vestidores-sirenia-modelo-buonarroti/"
+        }
+      ]
+    },
+    {
+      "file": "portafolio\\closets-y-vestidores-imperia-modelo-van-gogh\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/portafolio/closets-y-vestidores-imperia-modelo-van-gogh/"
+        }
+      ]
+    },
+    {
+      "file": "portafolio\\closets-y-vestidores-imperia-modelo-santa-ana\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/portafolio/closets-y-vestidores-imperia-modelo-santa-ana/"
+        }
+      ]
+    },
+    {
+      "file": "portafolio\\closets-y-vestidores-imperia-modelo-san-patricio\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/portafolio/closets-y-vestidores-imperia-modelo-san-patricio/"
+        }
+      ]
+    },
+    {
+      "file": "portafolio\\closets-y-vestidores-imperia-modelo-san-marcos\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/portafolio/closets-y-vestidores-imperia-modelo-san-marcos/"
+        }
+      ]
+    },
+    {
+      "file": "portafolio\\closets-y-vestidores-imperia-modelo-rembrandt\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/portafolio/closets-y-vestidores-imperia-modelo-rembrandt/"
+        }
+      ]
+    },
+    {
+      "file": "portafolio\\closets-y-vestidores-imperia-modelo-picasso\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/portafolio/closets-y-vestidores-imperia-modelo-picasso/"
+        }
+      ]
+    },
+    {
+      "file": "portafolio\\closets-y-vestidores-imperia-modelo-da-vinci\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/portafolio/closets-y-vestidores-imperia-modelo-da-vinci/"
+        }
+      ]
+    },
+    {
+      "file": "portafolio\\closets-y-vestidores-imperia-modelo-carrington\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/portafolio/closets-y-vestidores-imperia-modelo-carrington/"
+        }
+      ]
+    },
+    {
+      "file": "portafolio\\closets-y-vestidores-imperia-modelo-buonarroti\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/portafolio/closets-y-vestidores-imperia-modelo-buonarroti/"
+        }
+      ]
+    },
+    {
+      "file": "portafolio\\closets-y-vestidores-imperia-modelo-botticelli\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/portafolio/closets-y-vestidores-imperia-modelo-botticelli/"
+        }
+      ]
+    },
+    {
+      "file": "portafolio\\closets-y-vestidores-catara-modelo-van-gogh\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/portafolio/closets-y-vestidores-catara-modelo-van-gogh/"
+        }
+      ]
+    },
+    {
+      "file": "portafolio\\closets-y-vestidores-catara-modelo-santa-ana\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/portafolio/closets-y-vestidores-catara-modelo-santa-ana/"
+        }
+      ]
+    },
+    {
+      "file": "portafolio\\closets-y-vestidores-catara-modelo-san-antonio\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/portafolio/closets-y-vestidores-catara-modelo-san-antonio/"
+        }
+      ]
+    },
+    {
+      "file": "portafolio\\closets-y-vestidores-catara-modelo-picasso\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/portafolio/closets-y-vestidores-catara-modelo-picasso/"
+        }
+      ]
+    },
+    {
+      "file": "portafolio\\closets-y-vestidores-catara-modelo-monet\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/portafolio/closets-y-vestidores-catara-modelo-monet/"
+        }
+      ]
+    },
+    {
+      "file": "portafolio\\closets-y-vestidores-catara-modelo-dali\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/portafolio/closets-y-vestidores-catara-modelo-dali/"
+        }
+      ]
+    },
+    {
+      "file": "portafolio\\closets-y-vestidores-catara-modelo-da-vinci\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/portafolio/closets-y-vestidores-catara-modelo-da-vinci/"
+        }
+      ]
+    },
+    {
+      "file": "portafolio\\closets-y-vestidores-catara-modelo-botticelli\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/portafolio/closets-y-vestidores-catara-modelo-botticelli/"
+        }
+      ]
+    },
+    {
+      "file": "portafolio\\closets-valle-real-modelo-santa-teresa\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/portafolio/closets-valle-real-modelo-santa-teresa/"
+        }
+      ]
+    },
+    {
+      "file": "portafolio\\closets-valle-real-modelo-san-david\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/portafolio/closets-valle-real-modelo-san-david/"
+        }
+      ]
+    },
+    {
+      "file": "portafolio\\closets-valle-real-modelo-san-alberto\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/portafolio/closets-valle-real-modelo-san-alberto/"
+        }
+      ]
+    },
+    {
+      "file": "portafolio\\closets-valle-real-modelo-goya\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/portafolio/closets-valle-real-modelo-goya/"
+        }
+      ]
+    },
+    {
+      "file": "portafolio\\closets-valle-real-modelo-buonarroti\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/portafolio/closets-valle-real-modelo-buonarroti/"
+        }
+      ]
+    },
+    {
+      "file": "portafolio\\closets-sirenia-modelo-santa-teresa\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/portafolio/closets-sirenia-modelo-santa-teresa/"
+        }
+      ]
+    },
+    {
+      "file": "portafolio\\closets-sirenia-modelo-san-david\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/portafolio/closets-sirenia-modelo-san-david/"
+        }
+      ]
+    },
+    {
+      "file": "portafolio\\closets-sirenia-modelo-san-alberto\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/portafolio/closets-sirenia-modelo-san-alberto/"
+        }
+      ]
+    },
+    {
+      "file": "portafolio\\closets-sirenia-modelo-goya\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/portafolio/closets-sirenia-modelo-goya/"
+        }
+      ]
+    },
+    {
+      "file": "portafolio\\closets-catara-modelo-san-david\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/portafolio/closets-catara-modelo-san-david/"
+        }
+      ]
+    },
+    {
+      "file": "portafolio\\closets-catara-modelo-kahlo\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/portafolio/closets-catara-modelo-kahlo/"
+        }
+      ]
+    },
+    {
+      "file": "corporate\\preguntas-frecuentes\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/corporate/preguntas-frecuentes/"
+        }
+      ]
+    },
+    {
+      "file": "corporate\\politica-privacidad\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/corporate/politica-privacidad/"
+        }
+      ]
+    },
+    {
+      "file": "corporate\\contact\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/corporate/contact/"
+        }
+      ]
+    },
+    {
+      "file": "corporate\\blog\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/corporate/blog/"
+        }
+      ]
+    },
+    {
+      "file": "corporate\\blog\\2023\\07\\17\\tendencias-modernas-en-cocinas-integrales\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/corporate/blog/2023/07/17/tendencias-modernas-en-cocinas-integrales/"
+        }
+      ]
+    },
+    {
+      "file": "corporate\\blog\\2023\\07\\17\\tendencias-de-color\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/corporate/blog/2023/07/17/tendencias-de-color/"
+        }
+      ]
+    },
+    {
+      "file": "corporate\\blog\\2023\\07\\17\\consejos-de-organizacion-para-un-closet\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/corporate/blog/2023/07/17/consejos-de-organizacion-para-un-closet/"
+        }
+      ]
+    },
+    {
+      "file": "corporate\\blog\\2023\\07\\04\\tendencias-de-color-refleja-tu-personalidad\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/corporate/blog/2023/07/04/tendencias-de-color-refleja-tu-personalidad/"
+        }
+      ]
+    },
+    {
+      "file": "corporate\\acerca-de-mymce-carpinteria-profesional-en-san-luis-potosi\\index.html",
+      "references": [
+        {
+          "tag": "link",
+          "attr": "href",
+          "val": "https://www.grupomymce.com/corporate/acerca-de-mymce-carpinteria-profesional-en-san-luis-potosi/"
+        }
+      ]
+    }
+  ]
+}
