@@ -17,23 +17,23 @@
 /services/carpinteria-para-cocinistas /soluciones/carpinteria-para-cocinistas 301
 /services/carpinteria-para-constructoras /soluciones/carpinteria-para-constructoras 301
 
-/services/servicios-carpinteria /servicios-carpinteria 301
-/services/diseno-y-fabricacion-de-cocinas-integrales /servicios-carpinteria/diseno-y-fabricacion-de-cocinas-integrales 301
-/services/diseno-y-fabricacion-de-closets-y-vestidores /servicios-carpinteria/diseno-y-fabricacion-de-closets-y-vestidores 301
-/services/diseno-y-fabricacion-de-puertas /servicios-carpinteria/diseno-y-fabricacion-de-puertas 301
-/services/diseno-y-fabricacion-de-muebles-de-bano /servicios-carpinteria/diseno-y-fabricacion-de-muebles-de-bano 301
-/services/diseno-y-fabricacion-de-escritorios /servicios-carpinteria/diseno-y-fabricacion-de-escritorios 301
-/services/maquila-de-partes /servicios-carpinteria/maquila-de-partes 301
-/services/venta-de-electrodomesticos /servicios-carpinteria/venta-de-electrodomesticos 301
+/services/servicios-carpinteria /servicios 301
+/services/diseno-y-fabricacion-de-cocinas-integrales /servicios/cocinas 301
+/services/diseno-y-fabricacion-de-closets-y-vestidores /servicios/closets-vestidores 301
+/services/diseno-y-fabricacion-de-puertas /servicios/diseno-y-fabricacion-de-puertas 301
+/services/diseno-y-fabricacion-de-muebles-de-bano /servicios/diseno-y-fabricacion-de-muebles-de-bano 301
+/services/diseno-y-fabricacion-de-escritorios /servicios/diseno-y-fabricacion-de-escritorios 301
+/services/maquila-de-partes /servicios/maquila-de-partes 301
+/services/venta-de-electrodomesticos /servicios/venta-de-electrodomesticos 301
 
-/servicios-carpinteria /servicios-carpinteria 301
-/diseno-y-fabricacion-de-cocinas-integrales /servicios-carpinteria/diseno-y-fabricacion-de-cocinas-integrales 301
-/diseno-y-fabricacion-de-closets-y-vestidores /servicios-carpinteria/diseno-y-fabricacion-de-closets-y-vestidores 301
-/diseno-y-fabricacion-de-puertas /servicios-carpinteria/diseno-y-fabricacion-de-puertas 301
-/diseno-y-fabricacion-de-muebles-de-bano /servicios-carpinteria/diseno-y-fabricacion-de-muebles-de-bano 301
-/diseno-y-fabricacion-de-escritorios /servicios-carpinteria/diseno-y-fabricacion-de-escritorios 301
-/maquila-de-partes /servicios-carpinteria/maquila-de-partes 301
-/venta-de-electrodomesticos /servicios-carpinteria/venta-de-electrodomesticos 301
+/servicios-carpinteria /servicios 301
+/diseno-y-fabricacion-de-cocinas-integrales /servicios/cocinas 301
+/diseno-y-fabricacion-de-closets-y-vestidores /servicios/closets-vestidores 301
+/diseno-y-fabricacion-de-puertas /servicios/diseno-y-fabricacion-de-puertas 301
+/diseno-y-fabricacion-de-muebles-de-bano /servicios/diseno-y-fabricacion-de-muebles-de-bano 301
+/diseno-y-fabricacion-de-escritorios /servicios/diseno-y-fabricacion-de-escritorios 301
+/maquila-de-partes servicios/maquila-de-partes/ 301
+/venta-de-electrodomesticos /servicios/venta-de-electrodomesticos 301
 
 /carpinteria-para-arquitectos /soluciones/carpinteria-para-arquitectos 301
 /carpinteria-para-clientes-finales /soluciones/carpinteria-para-particulares 301
