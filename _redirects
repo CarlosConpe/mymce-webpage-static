@@ -3,6 +3,16 @@
 /wp-login.php / 301
 /feed/* / 301
 /xmlrpc.php / 301
+/index.php / 301
+
+# Legacy WordPress Assets & Taxonomies (Robustness)
+/wp-content/uploads/* /assets/storage/:splat 301
+/category/* /corporate/blog 301
+/tag/* /corporate/blog 301
+/author/* /corporate/blog 301
+# Catch-all for old date-based archives not matched by specific files
+/201* /corporate/blog 301
+/202* /corporate/blog 301
 
 # 301 Redirects for Site Restructuring (Phase 4)
 /services/acerca-de-mymce-carpinteria-profesional-en-san-luis-potosi /corporate/acerca-de-mymce-carpinteria-profesional-en-san-luis-potosi 301
