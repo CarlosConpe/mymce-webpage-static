@@ -1,19 +1,19 @@
 export async function onRequestPost({ request, env }) {
-    try {
-        const { name, email, phone, message, otherDetails } = await request.json();
+  try {
+    const { name, email, phone, message, otherDetails } = await request.json();
 
-        if (!env.RESEND_API_KEY) {
-            return new Response(JSON.stringify({ error: "Missing RESEND_API_KEY" }), { status: 500 });
-        }
+    if (!env.RESEND_API_KEY) {
+      return new Response(JSON.stringify({ error: "Missing RESEND_API_KEY" }), { status: 500 });
+    }
 
-        const RESEND_FROM = env.RESEND_FROM || "onboarding@resend.dev";
-        const RESEND_TO = env.RESEND_TO || "contacto@grupomymce.com";
-        const LOGO_URL = "https://www.grupomymce.com/assets/storage/2016/12/mymce-logo-1664856016.webp";
+    const RESEND_FROM = env.RESEND_FROM || "onboarding@resend.dev";
+    const RESEND_TO = env.RESEND_TO || "contacto@grupomymce.com";
+    const LOGO_URL = "https://www.grupomymce.com/assets/storage/2016/12/logo-2.webp";
 
-        // Format Extra Details Table
-        let extraDetailsRows = "";
-        if (Object.keys(otherDetails).length > 0) {
-            extraDetailsRows = `
+    // Format Extra Details Table
+    let extraDetailsRows = "";
+    if (Object.keys(otherDetails).length > 0) {
+      extraDetailsRows = `
           <div style="margin-top: 30px;">
             <h3 style="color: #355669; font-size: 16px; border-bottom: 2px solid #eee; padding-bottom: 10px;">Detalles Adicionales</h3>
             <table style="width: 100%; border-collapse: collapse; font-size: 14px;">
@@ -26,10 +26,10 @@ export async function onRequestPost({ request, env }) {
             </table>
           </div>
         `;
-        }
+    }
 
-        // Modern HTML Template
-        const htmlContent = `
+    // Modern HTML Template
+    const htmlContent = `
       <!DOCTYPE html>
       <html>
       <head>
@@ -98,33 +98,33 @@ export async function onRequestPost({ request, env }) {
       </html>
     `;
 
-        const resendResponse = await fetch("https://api.resend.com/emails", {
-            method: "POST",
-            headers: {
-                "Authorization": `Bearer ${env.RESEND_API_KEY}`,
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify({
-                from: `MYMCE Web <${RESEND_FROM}>`,
-                to: [RESEND_TO],
-                reply_to: email,
-                subject: `🔔 Nuevo Lead: ${name}`,
-                html: htmlContent,
-            }),
-        });
+    const resendResponse = await fetch("https://api.resend.com/emails", {
+      method: "POST",
+      headers: {
+        "Authorization": `Bearer ${env.RESEND_API_KEY}`,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        from: `MYMCE Web <${RESEND_FROM}>`,
+        to: [RESEND_TO],
+        reply_to: email,
+        subject: `🔔 Nuevo Lead: ${name}`,
+        html: htmlContent,
+      }),
+    });
 
-        if (!resendResponse.ok) {
-            const errorText = await resendResponse.text();
-            return new Response(JSON.stringify({ error: "Resend API Error", details: errorText }), { status: 500 });
-        }
-
-        const data = await resendResponse.json();
-        return new Response(JSON.stringify({ success: true, id: data.id }), {
-            headers: { "Content-Type": "application/json" },
-            status: 200,
-        });
-
-    } catch (err) {
-        return new Response(JSON.stringify({ error: "Invalid request", details: err.message }), { status: 400 });
+    if (!resendResponse.ok) {
+      const errorText = await resendResponse.text();
+      return new Response(JSON.stringify({ error: "Resend API Error", details: errorText }), { status: 500 });
     }
+
+    const data = await resendResponse.json();
+    return new Response(JSON.stringify({ success: true, id: data.id }), {
+      headers: { "Content-Type": "application/json" },
+      status: 200,
+    });
+
+  } catch (err) {
+    return new Response(JSON.stringify({ error: "Invalid request", details: err.message }), { status: 400 });
+  }
 }

@@ -12,7 +12,9 @@
     "lint:html": "html-validate \"**/*.html\"",
     "audit:seo": "lighthouse http://localhost:3000/index.html --view --only-categories=seo,accessibility,best-practices,performance",
     "check:links": "linkinator --recurse .",
-    "test:seo": "npm run lint:html && npm run check:links"
+    "test:seo": "npm run lint:html && npm run check:links",
+    "check:minified": "node scripts/audit_minified_usage.js",
+    "build:assets": "node scripts/minify_assets.js && node scripts/apply_html_fixes.js"
   },
   "keywords": [],
   "author": "",
