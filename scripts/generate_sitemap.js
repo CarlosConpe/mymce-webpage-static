@@ -17,41 +17,45 @@ function getPriority(urlPath) {
 
 function generateSitemap() {
     const files = glob.sync('**/*.html', { cwd: ROOT_DIR, ignore: ['node_modules/**', 'scripts/**', 'functions/**'] });
-
-    let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
-    xml += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">\n';
-
     files.sort(); // Consistent order
 
-    files.forEach(file => {
-        // Construct URL path
-        let urlPath = '/' + file.replace(/\\/g, '/');
+    function createSitemap(baseUrl, filename) {
+        let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
+        xml += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">\n';
 
-        // Remove index.html for clean URLs
-        if (urlPath.endsWith('index.html')) {
-            urlPath = urlPath.substring(0, urlPath.length - 'index.html'.length);
-        }
+        files.forEach(file => {
+            // Construct URL path
+            let urlPath = '/' + file.replace(/\\/g, '/');
 
-        // Skip 404 pages or raw assets if accidentally included (though glob limits to html)
-        if (urlPath.includes('404')) return;
+            // Remove index.html for clean URLs
+            if (urlPath.endsWith('index.html')) {
+                urlPath = urlPath.substring(0, urlPath.length - 'index.html'.length);
+            }
 
-        const fullPath = path.join(ROOT_DIR, file);
-        const stats = fs.statSync(fullPath);
-        const lastMod = stats.mtime.toISOString().split('T')[0]; // YYYY-MM-DD
-        const priority = getPriority(urlPath);
+            // Skip 404 pages or raw assets if accidentally included (though glob limits to html)
+            if (urlPath.includes('404')) return;
 
-        xml += '  <url>\n';
-        xml += `    <loc>${SITE_URL}${urlPath}</loc>\n`;
-        xml += `    <lastmod>${lastMod}</lastmod>\n`;
-        xml += `    <priority>${priority}</priority>\n`;
-        xml += '  </url>\n';
-    });
+            const fullPath = path.join(ROOT_DIR, file);
+            const stats = fs.statSync(fullPath);
+            const lastMod = stats.mtime.toISOString().split('T')[0]; // YYYY-MM-DD
+            const priority = getPriority(urlPath);
 
-    xml += '</urlset>';
+            xml += '  <url>\n';
+            xml += `    <loc>${baseUrl}${urlPath}</loc>\n`;
+            xml += `    <lastmod>${lastMod}</lastmod>\n`;
+            xml += `    <priority>${priority}</priority>\n`;
+            xml += '  </url>\n';
+        });
 
-    const outputPath = path.join(ROOT_DIR, 'sitemap.xml');
-    fs.writeFileSync(outputPath, xml, 'utf8');
-    console.log(`Sitemap generated with ${files.length} URLs at ${outputPath}`);
+        xml += '</urlset>';
+
+        const outputPath = path.join(ROOT_DIR, filename);
+        fs.writeFileSync(outputPath, xml, 'utf8');
+        console.log(`Sitemap generated for ${baseUrl} at ${outputPath}`);
+    }
+
+    createSitemap('https://www.grupomymce.com', 'sitemap.xml');
+    createSitemap('https://www.mymce.com.mx', 'sitemap_mx.xml');
 }
 
 generateSitemap();

@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://www.grupomymce.com/sitemap.xml
+Sitemap: https://www.mymce.com.mx/sitemap_mx.xml
