@@ -1,86 +1,57 @@
 const fs = require('fs');
 const path = require('path');
+const glob = require('glob');
 
-const BASE_URL = 'https://www.grupomymce.com';
-const ROOT_DIR = path.resolve(__dirname, '..');
-const OUTPUT_FILE = path.join(ROOT_DIR, 'sitemap.xml');
+const SITE_URL = 'https://www.grupomymce.com';
+const ROOT_DIR = path.join(__dirname, '..');
 
-// Directories to scan
-const ROUTES = [
-    '', // Root for index.html
-    'corporate',
-    'soluciones',
-    'servicios-carpinteria',
-    'portafolio'
-];
-
-let urls = [];
-
-console.log('Generating Sitemap...');
-
-ROUTES.forEach(route => {
-    const dirPath = path.join(ROOT_DIR, route);
-    if (!fs.existsSync(dirPath)) return;
-
-    if (route === '') {
-        // Root index
-        urls.push({ loc: BASE_URL, priority: '1.0' });
-    } else {
-        scanDirectory(dirPath, route);
-    }
-});
-
-function scanDirectory(directory, baseRoute) {
-    const files = fs.readdirSync(directory);
-
-    files.forEach(file => {
-        const fullPath = path.join(directory, file);
-        const stat = fs.statSync(fullPath);
-
-        if (stat.isDirectory()) {
-            // Recursive scan for subdirectories
-            scanDirectory(fullPath, `${baseRoute}/${file}`);
-        } else if (file === 'index.html') {
-            // It's a page!
-            let urlPath = `${BASE_URL}/${baseRoute}`;
-            // If it's a subdirectory index, usually we want the folder URL, not /index.html
-            // e.g. /corporate/contact/index.html -> /corporate/contact/
-
-            // Normalize path separators for Windows
-            urlPath = urlPath.replace(/\\/g, '/');
-
-            // Ensure trailing slash for directories (standard for clean URLs)
-            if (!urlPath.endsWith('/')) urlPath += '/';
-
-            // Calculate Priority
-            let priority = '0.8';
-            if (baseRoute.includes('portafolio')) priority = '0.6';
-            if (baseRoute.includes('blog')) priority = '0.6';
-
-            urls.push({
-                loc: urlPath,
-                lastmod: new Date().toISOString(),
-                priority: priority
-            });
-        }
-    });
+// Logic derived from existing sitemap.xml
+// Home: 1.0
+// Main Sections (/portafolio/, /servicios/, /equipamiento/): 0.80
+// Others: 0.64
+function getPriority(urlPath) {
+    if (urlPath === '/') return '1.00';
+    if (urlPath === '/portafolio/' || urlPath === '/servicios/' || urlPath === '/equipamiento/') return '0.80';
+    return '0.64';
 }
 
-// Generate XML
-const xmlHeader = `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">`;
-const xmlFooter = `</urlset>`;
+function generateSitemap() {
+    const files = glob.sync('**/*.html', { cwd: ROOT_DIR, ignore: ['node_modules/**', 'scripts/**', 'functions/**'] });
 
-const urlNodes = urls.map(u => {
-    return `  <url>
-    <loc>${u.loc}</loc>
-    <lastmod>${u.lastmod || new Date().toISOString()}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>${u.priority}</priority>
-  </url>`;
-}).join('\n');
+    let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
+    xml += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">\n';
 
-const sitemapContent = `${xmlHeader}\n${urlNodes}\n${xmlFooter}`;
+    files.sort(); // Consistent order
 
-fs.writeFileSync(OUTPUT_FILE, sitemapContent);
-console.log(`Generated sitemap.xml with ${urls.length} URLs to ${OUTPUT_FILE}`);
+    files.forEach(file => {
+        // Construct URL path
+        let urlPath = '/' + file.replace(/\\/g, '/');
+
+        // Remove index.html for clean URLs
+        if (urlPath.endsWith('index.html')) {
+            urlPath = urlPath.substring(0, urlPath.length - 'index.html'.length);
+        }
+
+        // Skip 404 pages or raw assets if accidentally included (though glob limits to html)
+        if (urlPath.includes('404')) return;
+
+        const fullPath = path.join(ROOT_DIR, file);
+        const stats = fs.statSync(fullPath);
+        const lastMod = stats.mtime.toISOString().split('T')[0]; // YYYY-MM-DD
+        const priority = getPriority(urlPath);
+
+        xml += '  <url>\n';
+        xml += `    <loc>${SITE_URL}${urlPath}</loc>\n`;
+        xml += `    <lastmod>${lastMod}</lastmod>\n`;
+        xml += `    <priority>${priority}</priority>\n`;
+        xml += '  </url>\n';
+    });
+
+    xml += '</urlset>';
+
+    const outputPath = path.join(ROOT_DIR, 'sitemap.xml');
+    fs.writeFileSync(outputPath, xml, 'utf8');
+    console.log(`Sitemap generated with ${files.length} URLs at ${outputPath}`);
+}
+
+generateSitemap();
