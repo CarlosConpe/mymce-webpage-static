@@ -5,16 +5,16 @@
   Referrer-Policy: strict-origin-when-cross-origin
   Permissions-Policy: geolocation=(), microphone=(), camera=(), payment=()
   Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
-  # Content-Security-Policy: permissive for static site with external scripts (GTM, Fonts, etc) + Explicit Cloudflare Analytics
+# Content-Security-Policy: permissive for static site with external scripts (GTM, Fonts, etc) + Explicit Cloudflare Analytics
   Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://ajax.cloudflare.com https://static.cloudflareinsights.com https://cloudflareinsights.com https://*.cloudflare.com; connect-src 'self' https://cloudflareinsights.com https://static.cloudflareinsights.com https://*.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' data: https://fonts.gstatic.com; img-src 'self' data: blob: https:; frame-ancestors 'none'; upgrade-insecure-requests;
 
 # Aggressive Caching for Assets (1 Year)
 /assets/*
   Cache-Control: public, max-age=31536000, immutable
 
-# HTML Caching (Revalidate immediately + prevent auto-minify breaking SRI)
+# HTML Caching (Revalidate immediately)
 /*.html
-  Cache-Control: public, max-age=0, must-revalidate, no-transform
+  Cache-Control: public, max-age=0, must-revalidate
 
 # Data/JSON (Revalidate)
 /*.json
