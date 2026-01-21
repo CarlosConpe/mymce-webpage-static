@@ -6,7 +6,7 @@
   Permissions-Policy: geolocation=(), microphone=(), camera=(), payment=()
   Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
   # Content-Security-Policy: permissive for static site with external scripts (GTM, Fonts, etc) + Explicit Cloudflare Analytics
-  Content-Security-Policy: default-src 'self' https: data: 'unsafe-inline' 'unsafe-eval' *.cloudflareinsights.com; img-src 'self' https: data: blob:; font-src 'self' https: data:; script-src 'self' https: 'unsafe-inline' 'unsafe-eval' *.cloudflareinsights.com; connect-src 'self' https: *.cloudflareinsights.com; upgrade-insecure-requests;
+  Content-Security-Policy: default-src 'self' https: data: 'unsafe-inline' 'unsafe-eval' https://static.cloudflareinsights.com https://cloudflareinsights.com https://*.cloudflareinsights.com; img-src 'self' https: data: blob:; font-src 'self' https: data:; script-src 'self' https: 'unsafe-inline' 'unsafe-eval' https://static.cloudflareinsights.com https://cloudflareinsights.com https://*.cloudflareinsights.com; connect-src 'self' https: https://cloudflareinsights.com https://static.cloudflareinsights.com https://*.cloudflareinsights.com; upgrade-insecure-requests;
 
 # Aggressive Caching for Assets (1 Year)
 /assets/*
