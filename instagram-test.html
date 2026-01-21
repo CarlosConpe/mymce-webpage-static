@@ -1,226 +1,333 @@
-<!DOCTYPE html><html lang="es"><head>
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
     <title>TEST: Instagram Carousel (Native Look) | MYMCE</title>
     <link rel="stylesheet" href="/assets/css/all.min.css">
-    <meta charset="UTF-8"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="/assets/storage/2016/12/favicon-1.webp">
     <!-- Fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A400%2C500%2C600%2C900&amp;display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A400%2C500%2C600%2C900&amp;display=swap">
     <link rel="stylesheet" href="/assets/core/modules/d9a1c27cc2/scripts/font-awesome/css/font-awesome.min.css">
     <style>
-    /* Essential Styles */
-    body { background-color: #fafafa; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; color: #262626; }
-    /* Instagram Card Styles */
-    .insta-card {
-        background: #fff;
-        border: 1px solid #dbdbdb;
-        border-radius: 3px;
-        margin-bottom: 20px;
-        max-width: 100%;
-    }
-    .insta-header {
-        display: flex;
-        align-items: center;
-        padding: 14px 16px;
-    }
-    .insta-avatar {
-        width: 32px;
-        height: 32px;
-        border-radius: 50%;
-        margin-right: 12px;
-        border: 1px solid #dbdbdb;
-        object-fit: cover;
-    }
-    .insta-user {
-        font-weight: 600;
-        font-size: 14px;
-        color: #262626;
-        text-decoration: none;
-        flex-grow: 1;
-    }
-    .insta-user:hover { text-decoration: underline; color: #262626; }
-    .insta-more { color: #262626; cursor: pointer; }
-    .insta-img-wrap {
-        width: 100%;
-        position: relative;
-        padding-top: 100%; /* 1:1 Aspect Ratio */
-        overflow: hidden;
-        background: #efefef;
-    }
-    .insta-img-wrap img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-    .insta-actions {
-        padding: 12px 16px 8px; /* Increased padding-top for icon space */
-        font-size: 24px;
-    }
-    .insta-actions i {
-        margin-right: 16px;
-        cursor: pointer;
-        color: #262626;
-    }
-    .insta-actions i:last-child { margin-right: 0; float: right; }
-    .insta-likes {
-        padding: 0 16px;
-        font-weight: 600;
-        font-size: 14px;
-        margin-bottom: 8px;
-        color: #262626;
-    }
-    .insta-caption {
-        padding: 0 16px;
-        font-size: 14px;
-        margin-bottom: 8px;
-        line-height: 18px;
-    }
-    .insta-caption-user { font-weight: 600; margin-right: 5px; color: #262626; text-decoration: none; }
-    .insta-time {
-        padding: 0 16px 16px;
-        font-size: 10px;
-        color: #8e8e8e;
-        text-transform: uppercase;
-        letter-spacing: 0.2px;
-    }
-    /* Grid Layout */
-    .row { display: flex; flex-wrap: wrap; margin: 0 -15px; }
-    .col { padding: 0 15px; width: 25%; box-sizing: border-box; }
-    @media (max-width: 992px) { .col { width: 50%; } }
-    @media (max-width: 600px) { .col { width: 100%; } }
-    .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        /* Essential Styles */
+        body {
+            background-color: #fafafa;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            color: #262626;
+        }
+
+        /* Instagram Card Styles */
+        .insta-card {
+            background: #fff;
+            border: 1px solid #dbdbdb;
+            border-radius: 3px;
+            margin-bottom: 20px;
+            max-width: 100%;
+        }
+
+        .insta-header {
+            display: flex;
+            align-items: center;
+            padding: 14px 16px;
+        }
+
+        .insta-avatar {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            margin-right: 12px;
+            border: 1px solid #dbdbdb;
+            object-fit: cover;
+        }
+
+        .insta-user {
+            font-weight: 600;
+            font-size: 14px;
+            color: #262626;
+            text-decoration: none;
+            flex-grow: 1;
+        }
+
+        .insta-user:hover {
+            text-decoration: underline;
+            color: #262626;
+        }
+
+        .insta-more {
+            color: #262626;
+            cursor: pointer;
+        }
+
+        .insta-img-wrap {
+            width: 100%;
+            position: relative;
+            padding-top: 100%;
+            /* 1:1 Aspect Ratio */
+            overflow: hidden;
+            background: #efefef;
+        }
+
+        .insta-img-wrap img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .insta-actions {
+            padding: 12px 16px 8px;
+            /* Increased padding-top for icon space */
+            font-size: 24px;
+        }
+
+        .insta-actions i {
+            margin-right: 16px;
+            cursor: pointer;
+            color: #262626;
+        }
+
+        .insta-actions i:last-child {
+            margin-right: 0;
+            float: right;
+        }
+
+        .insta-likes {
+            padding: 0 16px;
+            font-weight: 600;
+            font-size: 14px;
+            margin-bottom: 8px;
+            color: #262626;
+        }
+
+        .insta-caption {
+            padding: 0 16px;
+            font-size: 14px;
+            margin-bottom: 8px;
+            line-height: 18px;
+        }
+
+        .insta-caption-user {
+            font-weight: 600;
+            margin-right: 5px;
+            color: #262626;
+            text-decoration: none;
+        }
+
+        .insta-time {
+            padding: 0 16px 16px;
+            font-size: 10px;
+            color: #8e8e8e;
+            text-transform: uppercase;
+            letter-spacing: 0.2px;
+        }
+
+        /* Grid Layout */
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -15px;
+        }
+
+        .col {
+            padding: 0 15px;
+            width: 25%;
+            box-sizing: border-box;
+        }
+
+        @media (max-width: 992px) {
+            .col {
+                width: 50%;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .col {
+                width: 100%;
+            }
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
     </style>
-<link rel="canonical" href="https://www.grupomymce.com/instagram-test">
+
+
+    <!-- Dynamic Canonical & Hreflang -->
+    <link rel="alternate" hreflang="es" href="https://www.grupomymce.com/instagram-test.html">
+    <link rel="alternate" hreflang="es-MX" href="https://www.mymce.com.mx/instagram-test.html">
+    <script>
+        (function () {
+            var link = document.querySelector("link[rel='canonical']");
+            if (!link) {
+                link = document.createElement("link");
+                link.setAttribute("rel", "canonical");
+                document.head.appendChild(link);
+            }
+            // Use current origin and path to be self-referencing on both domains
+            link.setAttribute("href", window.location.origin + window.location.pathname);
+        })();
+    </script>
+    <!-- End Dynamic Canonical -->
 </head>
+
 <body>
     <div style="padding: 50px 0;">
-         <div class="content container">
-              <h2 style="text-align: center; margin-bottom: 10px;">Estilo: Instagram Nativo</h2>
-              <p style="text-align: center; margin-bottom: 50px; color: #666;">
-                  Simulación de posts reales con HTML estático (Google Friendly).
-              </p>
-              <!-- INSTAGRAM SECTION START -->
-              <div id="insta-feed-section">
-                  <div class="row">
-                       <!-- ITEM 1: Kitchen -->
-                       <div class="col">
-                           <div class="insta-card">
-                               <div class="insta-header">
-                                   <!-- AVATAR -->
-                                   <img src="/assets/storage/2023/07/logo-b25182a6ba332cf6a342eb4a73974ef2.webp" class="insta-avatar" alt="MYMCE Logo">
-                                   <a href="https://www.instagram.com/mymcecarpinteria/" target="_blank" class="insta-user">mymcecarpinteria</a>
-                                   <i class="fa fa-ellipsis-h insta-more"></i>
-                               </div>
-                               <div class="insta-img-wrap">
-                                   <img src="/assets/storage/2023/07/Copy-of-VIDEO.00_01_09_05.Imagen-fija0111-1200x750.webp" alt="Cocina Integral con Isla en San Luis Potosí">
-                               </div>
-                               <div class="insta-actions">
-                                   <i class="fa fa-heart-o"></i>
-                                   <i class="fa fa-comment-o"></i>
-                                   <i class="fa fa-paper-plane-o"></i>
-                                   <i class="fa fa-bookmark-o"></i>
-                               </div>
-                               <div class="insta-likes">48 Me gusta</div>
-                               <div class="insta-caption">
-                                   <a href="https://www.instagram.com/mymcecarpinteria/" target="_blank" class="insta-caption-user">mymcecarpinteria</a>
-                                   ✨ Transformación total en Valle Real. Esta cocina integral combina granito San Gabriel con madera de encino entintado. 🖤<br><br>
-                                   Diseñamos espacios funcionales para tu hogar. Cotiza tu proyecto con nosotros.<br><br>
-                                   #CocinasIntegrales #SanLuisPotosi #CarpinteriaResidencial #MYMCE #DiseñoDeInteriores #CocinasModernas
-                               </div>
-                               <div class="insta-time">HACE 2 DÍAS</div>
-                           </div>
-                       </div>
-                       <!-- ITEM 2: Doors -->
-                       <div class="col">
-                           <div class="insta-card">
-                               <div class="insta-header">
-                                   <img src="/assets/storage/2023/07/logo-b25182a6ba332cf6a342eb4a73974ef2.webp" class="insta-avatar" alt="MYMCE Logo">
-                                   <a href="https://www.instagram.com/mymcecarpinteria/" target="_blank" class="insta-user">mymcecarpinteria</a>
-                                   <i class="fa fa-ellipsis-h insta-more"></i>
-                               </div>
-                               <div class="insta-img-wrap">
-                                   <img src="/assets/storage/2023/07/PUERTAS-1200x750.webp" alt="Puerta Principal de Parota Sólida">
-                               </div>
-                               <div class="insta-actions">
-                                   <i class="fa fa-heart-o"></i>
-                                   <i class="fa fa-comment-o"></i>
-                                   <i class="fa fa-paper-plane-o"></i>
-                                   <i class="fa fa-bookmark-o"></i>
-                               </div>
-                               <div class="insta-likes">32 Me gusta</div>
-                               <div class="insta-caption">
-                                   <a href="https://www.instagram.com/mymcecarpinteria/" target="_blank" class="insta-caption-user">mymcecarpinteria</a>
-                                   La primera impresión cuenta. 🚪 Puerta principal fabricada en madera sólida de Parota con herrajes de alta seguridad.<br><br>
-                                   Calidad que se siente al entrar a casa. 🏡<br><br>
-                                   #PuertasDeMadera #Parota #ArquitecturaSLP #CarpinteriaFina #PuertasPrincipales #SLP
-                               </div>
-                               <div class="insta-time">HACE 5 DÍAS</div>
-                           </div>
-                       </div>
-                       <!-- ITEM 3: Closets -->
-                        <div class="col">
-                           <div class="insta-card">
-                               <div class="insta-header">
-                                   <img src="/assets/storage/2023/07/logo-b25182a6ba332cf6a342eb4a73974ef2.webp" class="insta-avatar" alt="MYMCE Logo">
-                                   <a href="https://www.instagram.com/mymcecarpinteria/" target="_blank" class="insta-user">mymcecarpinteria</a>
-                                   <i class="fa fa-ellipsis-h insta-more"></i>
-                               </div>
-                               <div class="insta-img-wrap">
-                                   <img src="/assets/storage/2023/07/Copy-of-VIDEO.00_01_30_22.Imagen-fija016-1200x750.webp" alt="Vestidor Walking CModerno">
-                               </div>
-                               <div class="insta-actions">
-                                   <i class="fa fa-heart-o"></i>
-                                   <i class="fa fa-comment-o"></i>
-                                   <i class="fa fa-paper-plane-o"></i>
-                                   <i class="fa fa-bookmark-o"></i>
-                               </div>
-                               <div class="insta-likes">156 Me gusta</div>
-                               <div class="insta-caption">
-                                   <a href="https://www.instagram.com/mymcecarpinteria/" target="_blank" class="insta-caption-user">mymcecarpinteria</a>
-                                   El orden da paz. 🧘‍♀️ Vestidor "Walk-in" diseñado a medida para aprovechar cada centímetro.<br><br>
-                                   Incluye zapatera extraíble, iluminación LED y cajoneras soft-close. 👌<br><br>
-                                   #ClosetsYVestidores #WalkingCloset #Organizacion #MueblesAMedida #SanLuisPotosi
-                               </div>
-                               <div class="insta-time">HACE 1 SEMANA</div>
-                           </div>
-                       </div>
-                       <!-- ITEM 4: Baths -->
-                        <div class="col">
-                           <div class="insta-card">
-                               <div class="insta-header">
-                                   <img src="/assets/storage/2023/07/logo-b25182a6ba332cf6a342eb4a73974ef2.webp" class="insta-avatar" alt="MYMCE Logo">
-                                   <a href="https://www.instagram.com/mymcecarpinteria/" target="_blank" class="insta-user">mymcecarpinteria</a>
-                                   <i class="fa fa-ellipsis-h insta-more"></i>
-                               </div>
-                               <div class="insta-img-wrap">
-                                   <img src="/assets/storage/2023/07/Copy-of-VIDEO.00_01_46_15.Imagen-fija018-1200x750.webp" alt="Mueble de Baño Flotante">
-                               </div>
-                               <div class="insta-actions">
-                                   <i class="fa fa-heart-o"></i>
-                                   <i class="fa fa-comment-o"></i>
-                                   <i class="fa fa-paper-plane-o"></i>
-                                   <i class="fa fa-bookmark-o"></i>
-                               </div>
-                               <div class="insta-likes">89 Me gusta</div>
-                               <div class="insta-caption">
-                                   <a href="https://www.instagram.com/mymcecarpinteria/" target="_blank" class="insta-caption-user">mymcecarpinteria</a>
-                                   Detalles que elevan tu baño. 🛁 Mueble flotante con cubierta de cuarzo y gabinete de espejo a juego.<br><br>
-                                   Resistente a la humedad y con mucho estilo. ✨<br><br>
-                                   #BañosModernos #MueblesDeBaño #DiseñoDeInteriores #Decoracion #SLP #Mexico
-                               </div>
-                               <div class="insta-time">HACE 2 SEMANAS</div>
-                           </div>
-                       </div>
-                  </div>
-              </div>
-              <!-- INSTAGRAM SECTION END -->
-         </div>
+        <div class="content container">
+            <h2 style="text-align: center; margin-bottom: 10px;">Estilo: Instagram Nativo</h2>
+            <p style="text-align: center; margin-bottom: 50px; color: #666;">
+                Simulación de posts reales con HTML estático (Google Friendly).
+            </p>
+            <!-- INSTAGRAM SECTION START -->
+            <div id="insta-feed-section">
+                <div class="row">
+                    <!-- ITEM 1: Kitchen -->
+                    <div class="col">
+                        <div class="insta-card">
+                            <div class="insta-header">
+                                <!-- AVATAR -->
+                                <img src="/assets/storage/2023/07/logo-b25182a6ba332cf6a342eb4a73974ef2.webp"
+                                    class="insta-avatar" alt="MYMCE Logo">
+                                <a href="https://www.instagram.com/mymcecarpinteria/" target="_blank"
+                                    class="insta-user">mymcecarpinteria</a>
+                                <i class="fa fa-ellipsis-h insta-more"></i>
+                            </div>
+                            <div class="insta-img-wrap">
+                                <img src="/assets/storage/2023/07/Copy-of-VIDEO.00_01_09_05.Imagen-fija0111-1200x750.webp"
+                                    alt="Cocina Integral con Isla en San Luis Potosí">
+                            </div>
+                            <div class="insta-actions">
+                                <i class="fa fa-heart-o"></i>
+                                <i class="fa fa-comment-o"></i>
+                                <i class="fa fa-paper-plane-o"></i>
+                                <i class="fa fa-bookmark-o"></i>
+                            </div>
+                            <div class="insta-likes">48 Me gusta</div>
+                            <div class="insta-caption">
+                                <a href="https://www.instagram.com/mymcecarpinteria/" target="_blank"
+                                    class="insta-caption-user">mymcecarpinteria</a>
+                                ✨ Transformación total en Valle Real. Esta cocina integral combina granito San Gabriel
+                                con madera de encino entintado. 🖤<br><br>
+                                Diseñamos espacios funcionales para tu hogar. Cotiza tu proyecto con nosotros.<br><br>
+                                #CocinasIntegrales #SanLuisPotosi #CarpinteriaResidencial #MYMCE #DiseñoDeInteriores
+                                #CocinasModernas
+                            </div>
+                            <div class="insta-time">HACE 2 DÍAS</div>
+                        </div>
+                    </div>
+                    <!-- ITEM 2: Doors -->
+                    <div class="col">
+                        <div class="insta-card">
+                            <div class="insta-header">
+                                <img src="/assets/storage/2023/07/logo-b25182a6ba332cf6a342eb4a73974ef2.webp"
+                                    class="insta-avatar" alt="MYMCE Logo">
+                                <a href="https://www.instagram.com/mymcecarpinteria/" target="_blank"
+                                    class="insta-user">mymcecarpinteria</a>
+                                <i class="fa fa-ellipsis-h insta-more"></i>
+                            </div>
+                            <div class="insta-img-wrap">
+                                <img src="/assets/storage/2023/07/PUERTAS-1200x750.webp"
+                                    alt="Puerta Principal de Parota Sólida">
+                            </div>
+                            <div class="insta-actions">
+                                <i class="fa fa-heart-o"></i>
+                                <i class="fa fa-comment-o"></i>
+                                <i class="fa fa-paper-plane-o"></i>
+                                <i class="fa fa-bookmark-o"></i>
+                            </div>
+                            <div class="insta-likes">32 Me gusta</div>
+                            <div class="insta-caption">
+                                <a href="https://www.instagram.com/mymcecarpinteria/" target="_blank"
+                                    class="insta-caption-user">mymcecarpinteria</a>
+                                La primera impresión cuenta. 🚪 Puerta principal fabricada en madera sólida de Parota
+                                con herrajes de alta seguridad.<br><br>
+                                Calidad que se siente al entrar a casa. 🏡<br><br>
+                                #PuertasDeMadera #Parota #ArquitecturaSLP #CarpinteriaFina #PuertasPrincipales #SLP
+                            </div>
+                            <div class="insta-time">HACE 5 DÍAS</div>
+                        </div>
+                    </div>
+                    <!-- ITEM 3: Closets -->
+                    <div class="col">
+                        <div class="insta-card">
+                            <div class="insta-header">
+                                <img src="/assets/storage/2023/07/logo-b25182a6ba332cf6a342eb4a73974ef2.webp"
+                                    class="insta-avatar" alt="MYMCE Logo">
+                                <a href="https://www.instagram.com/mymcecarpinteria/" target="_blank"
+                                    class="insta-user">mymcecarpinteria</a>
+                                <i class="fa fa-ellipsis-h insta-more"></i>
+                            </div>
+                            <div class="insta-img-wrap">
+                                <img src="/assets/storage/2023/07/Copy-of-VIDEO.00_01_30_22.Imagen-fija016-1200x750.webp"
+                                    alt="Vestidor Walking CModerno">
+                            </div>
+                            <div class="insta-actions">
+                                <i class="fa fa-heart-o"></i>
+                                <i class="fa fa-comment-o"></i>
+                                <i class="fa fa-paper-plane-o"></i>
+                                <i class="fa fa-bookmark-o"></i>
+                            </div>
+                            <div class="insta-likes">156 Me gusta</div>
+                            <div class="insta-caption">
+                                <a href="https://www.instagram.com/mymcecarpinteria/" target="_blank"
+                                    class="insta-caption-user">mymcecarpinteria</a>
+                                El orden da paz. 🧘‍♀️ Vestidor "Walk-in" diseñado a medida para aprovechar cada
+                                centímetro.<br><br>
+                                Incluye zapatera extraíble, iluminación LED y cajoneras soft-close. 👌<br><br>
+                                #ClosetsYVestidores #WalkingCloset #Organizacion #MueblesAMedida #SanLuisPotosi
+                            </div>
+                            <div class="insta-time">HACE 1 SEMANA</div>
+                        </div>
+                    </div>
+                    <!-- ITEM 4: Baths -->
+                    <div class="col">
+                        <div class="insta-card">
+                            <div class="insta-header">
+                                <img src="/assets/storage/2023/07/logo-b25182a6ba332cf6a342eb4a73974ef2.webp"
+                                    class="insta-avatar" alt="MYMCE Logo">
+                                <a href="https://www.instagram.com/mymcecarpinteria/" target="_blank"
+                                    class="insta-user">mymcecarpinteria</a>
+                                <i class="fa fa-ellipsis-h insta-more"></i>
+                            </div>
+                            <div class="insta-img-wrap">
+                                <img src="/assets/storage/2023/07/Copy-of-VIDEO.00_01_46_15.Imagen-fija018-1200x750.webp"
+                                    alt="Mueble de Baño Flotante">
+                            </div>
+                            <div class="insta-actions">
+                                <i class="fa fa-heart-o"></i>
+                                <i class="fa fa-comment-o"></i>
+                                <i class="fa fa-paper-plane-o"></i>
+                                <i class="fa fa-bookmark-o"></i>
+                            </div>
+                            <div class="insta-likes">89 Me gusta</div>
+                            <div class="insta-caption">
+                                <a href="https://www.instagram.com/mymcecarpinteria/" target="_blank"
+                                    class="insta-caption-user">mymcecarpinteria</a>
+                                Detalles que elevan tu baño. 🛁 Mueble flotante con cubierta de cuarzo y gabinete de
+                                espejo a juego.<br><br>
+                                Resistente a la humedad y con mucho estilo. ✨<br><br>
+                                #BañosModernos #MueblesDeBaño #DiseñoDeInteriores #Decoracion #SLP #Mexico
+                            </div>
+                            <div class="insta-time">HACE 2 SEMANAS</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- INSTAGRAM SECTION END -->
+        </div>
     </div>
     <!-- Hybrid Engine -->
     <script src="/assets/js/insta-feed.min.js" defer=""></script>
 
 
-</body></html>
+</body>
+
+</html>
