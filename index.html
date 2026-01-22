@@ -213,19 +213,28 @@ button.navbar-toggle { color: #444444 !important; }
 }
 @font-face{src:url(/assets/core/modules/d9a1c27cc2/scripts/font-awesome/fonts/fontawesome-webfont.eot?v=4.7.0);src:url(/assets/core/modules/d9a1c27cc2/scripts/font-awesome/fonts/fontawesome-webfont.eot#iefix&v=4.7.0) format('embedded-opentype'),url(/assets/core/modules/d9a1c27cc2/scripts/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0) format('woff2'),url(/assets/core/modules/d9a1c27cc2/scripts/font-awesome/fonts/fontawesome-webfont.woff?v=4.7.0) format('woff'),url(/assets/core/modules/d9a1c27cc2/scripts/font-awesome/fonts/fontawesome-webfont.ttf?v=4.7.0) format('truetype'),url(/assets/core/modules/d9a1c27cc2/scripts/font-awesome/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular) format('svg')font-display:swap;}</style>
 
+
+
+
+
 <!-- Dynamic Canonical & Hreflang -->
     <link rel="alternate" hreflang="es" href="https://www.grupomymce.com/">
     <link rel="alternate" hreflang="es-MX" href="https://www.mymce.com.mx/">
+    <link rel="canonical" href="/">
     <script>
     (function() {
         var link = document.querySelector("link[rel='canonical']");
+        var loc = window.location;
         if (!link) {
             link = document.createElement("link");
             link.setAttribute("rel", "canonical");
             document.head.appendChild(link);
         }
-        // Use current origin and path to be self-referencing on both domains
-        link.setAttribute("href", window.location.origin + window.location.pathname);
+        // Ensure canonical is absolute and self-referencing
+        // This makes the relative path absolute (e.g. /foo -> https://domain.com/foo)
+        if (link.getAttribute("href").indexOf("http") !== 0) {
+            link.setAttribute("href", loc.origin + loc.pathname);
+        }
     })();
     </script>
 <!-- End Dynamic Canonical -->

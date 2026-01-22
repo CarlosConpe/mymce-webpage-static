@@ -42,22 +42,27 @@ files.forEach(file => {
 
     // Prepare Injection Block
     const injectionBlock = `
-${scriptStartMarker}
+<!-- Dynamic Canonical & Hreflang -->
     <link rel="alternate" hreflang="es" href="https://www.grupomymce.com${urlPath}">
     <link rel="alternate" hreflang="es-MX" href="https://www.mymce.com.mx${urlPath}">
+    <link rel="canonical" href="${urlPath}">
     <script>
     (function() {
         var link = document.querySelector("link[rel='canonical']");
+        var loc = window.location;
         if (!link) {
             link = document.createElement("link");
             link.setAttribute("rel", "canonical");
             document.head.appendChild(link);
         }
-        // Use current origin and path to be self-referencing on both domains
-        link.setAttribute("href", window.location.origin + window.location.pathname);
+        // Ensure canonical is absolute and self-referencing
+        // This makes the relative path absolute (e.g. /foo -> https://domain.com/foo)
+        if (link.getAttribute("href").indexOf("http") !== 0) {
+            link.setAttribute("href", loc.origin + loc.pathname);
+        }
     })();
     </script>
-${scriptEndMarker}`;
+<!-- End Dynamic Canonical -->`;
 
     // Inject before </head>
     if (content.includes('</head>')) {
