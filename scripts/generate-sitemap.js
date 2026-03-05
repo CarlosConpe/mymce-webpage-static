@@ -3,7 +3,7 @@ const path = require('path');
 const glob = require('glob');
 
 const SITE_ROOT = '.';
-const DOMAIN = 'https://www.grupomymce.com';
+const DOMAIN = 'https://www.mymce.com.mx';
 
 async function generateSitemap() {
     console.log('Generating Sitemap...');

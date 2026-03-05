@@ -55,11 +55,11 @@ async function cleanHtml() {
         let html = $.html();
         
         // Replace localhost with production domain (or empty string for relative if appropriate, but sameAs needs absolute)
-        // We'll use a placeholder for now or the likely domain 'https://www.grupomymce.com'
-        html = html.replace(/http:\/\/localhost/g, 'https://www.grupomymce.com');
+        // We'll use a placeholder for now or the likely domain 'https://www.mymce.com.mx'
+        html = html.replace(/http:\/\/localhost/g, 'https://www.mymce.com.mx');
         
         // Also fix any https://localhost just in case
-        html = html.replace(/https:\/\/localhost/g, 'https://www.grupomymce.com');
+        html = html.replace(/https:\/\/localhost/g, 'https://www.mymce.com.mx');
 
         await fs.writeFile(filePath, html);
         // console.log(`Processed ${file}`);

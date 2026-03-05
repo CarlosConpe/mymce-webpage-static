@@ -209,7 +209,7 @@ async function runRefactor() {
         // We only need to fix canonicals if the FILE ITSELF moved, or if it points to a moved file.
         // It's safer to just run the replacement logic on the canonical text too.
 
-        const DOMAIN = 'https://www.grupomymce.com';
+        const DOMAIN = 'https://www.mymce.com.mx';
         REPLACEMENTS.forEach(rep => {
             if (!rep.regex) {
                 const oldFull = `${DOMAIN}${rep.old}`;

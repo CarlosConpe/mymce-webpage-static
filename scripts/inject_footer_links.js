@@ -11,7 +11,7 @@ let modifiedCount = 0;
 let skippedCount = 0;
 let notFoundCount = 0;
 
-const INJECTION_HTML = '<br><span style="font-size: 11px; opacity: 0.8; margin-top: 5px; display: inline-block;">Una empresa de <a href="https://grupomymce.com" style="color: inherit; text-decoration: underline;">Grupo MYMCE</a> y <a href="https://mymce.com.mx" style="color: inherit; text-decoration: underline;">MYMCE</a></span>';
+const INJECTION_HTML = '<br><span style="font-size: 11px; opacity: 0.8; margin-top: 5px; display: inline-block;">Una empresa de <a href="https://mymce.com.mx" style="color: inherit; text-decoration: underline;">Grupo MYMCE</a> y <a href="https://mymce.com.mx" style="color: inherit; text-decoration: underline;">MYMCE</a></span>';
 const MARKER = 'class="col-md-12 copy-text"';
 
 files.forEach(file => {
@@ -30,7 +30,7 @@ files.forEach(file => {
             const absoluteDivIndex = markerIndex + relativeDivIndex;
 
             // Check for existence in this block specifically or globally
-            if (content.includes('grupomymce.com')) {
+            if (content.includes('mymce.com.mx')) {
                 skippedCount++;
                 return;
             }

@@ -4,12 +4,12 @@ const glob = require('glob');
 const files = glob.sync('**/*.html', { ignore: ['node_modules/**', '.git/**'] });
 const targets = [
     {
-        find: 'https://www.grupomymce.com/assets/storage/2016/12/mymce-logo-1664856016.webp',
+        find: 'https://www.mymce.com.mx/assets/storage/2016/12/mymce-logo-1664856016.webp',
         replace: '/assets/storage/2016/12/logo-2.webp'
     },
     // Add other replacements here if found
     {
-        find: 'http://www.grupomymce.com/assets/storage/2016/12/mymce-logo-1664856016.webp', // Handle http just in case
+        find: 'http://www.mymce.com.mx/assets/storage/2016/12/mymce-logo-1664856016.webp', // Handle http just in case
         replace: '/assets/storage/2016/12/logo-2.webp'
     },
     {

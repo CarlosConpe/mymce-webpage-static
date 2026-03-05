@@ -58,7 +58,7 @@ function runExpertAudit() {
         const h1 = $('h1').first().text().trim();
         const h2s = $('h2').map((i, el) => $(el).text().trim()).get();
         const internalLinks = $('a[href^="/"], a[href^="."]').length; // Crude internal link check
-        const externalLinks = $('a[href^="http"]').not('a[href*="grupomymce.com"]').length;
+        const externalLinks = $('a[href^="http"]').not('a[href*="mymce.com.mx"]').length;
 
         // 3. Technical Checks
         const canonical = $('link[rel="canonical"]').attr('href');

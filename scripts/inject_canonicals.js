@@ -34,6 +34,14 @@ files.forEach(file => {
         content = content.replace(scriptBlockRegex, '');
     }
 
+    // Also remove the new format if we run it multiple times
+    const newStartMarker = '<!-- SEO Canonical & Hreflang -->';
+    const newEndMarker = '<!-- End SEO Canonical -->';
+    const newBlockRegex = new RegExp(`${newStartMarker}[\\s\\S]*?${newEndMarker}`, 'g');
+    if (newBlockRegex.test(content)) {
+        content = content.replace(newBlockRegex, '');
+    }
+
     // Calculate URL Path
     let urlPath = '/' + file.replace(/\\/g, '/');
     if (urlPath.endsWith('index.html')) {
@@ -42,26 +50,16 @@ files.forEach(file => {
 
     // Prepare Injection Block
     const injectionBlock = `
-${scriptStartMarker}
-    <link rel="alternate" hreflang="es" href="https://www.grupomymce.com${urlPath}">
+${newStartMarker}
+    <link rel="alternate" hreflang="es" href="https://www.mymce.com.mx${urlPath}">
     <link rel="alternate" hreflang="es-MX" href="https://www.mymce.com.mx${urlPath}">
-    <script>
-    (function() {
-        var link = document.querySelector("link[rel='canonical']");
-        if (!link) {
-            link = document.createElement("link");
-            link.setAttribute("rel", "canonical");
-            document.head.appendChild(link);
-        }
-        // Use current origin and path to be self-referencing on both domains
-        link.setAttribute("href", window.location.origin + window.location.pathname);
-    })();
-    </script>
-${scriptEndMarker}`;
+    <link rel="canonical" href="https://www.mymce.com.mx${urlPath}">
+${newEndMarker}`;
 
     // Inject before </head>
-    if (content.includes('</head>')) {
-        content = content.replace('</head>', `${injectionBlock}\n</head>`);
+    const headEndMatch = content.match(/<\/head\s*>/i);
+    if (headEndMatch) {
+        content = content.replace(headEndMatch[0], `${injectionBlock}\n${headEndMatch[0]}`);
         fs.writeFileSync(filePath, content, 'utf8');
         modifiedCount++;
     } else {
@@ -69,4 +67,4 @@ ${scriptEndMarker}`;
     }
 });
 
-console.log(`Total files updated: ${modifiedCount}`);
+console.log(`Total files updated: ${modifiedCount} `);

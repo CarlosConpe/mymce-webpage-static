@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const glob = require('glob');
 
-const SITE_URL = 'https://www.grupomymce.com';
+const SITE_URL = 'https://www.mymce.com.mx';
 const ROOT_DIR = path.join(__dirname, '..');
 
 // Logic derived from existing sitemap.xml
@@ -13,6 +13,12 @@ function getPriority(urlPath) {
     if (urlPath === '/') return '1.00';
     if (urlPath === '/portafolio/' || urlPath === '/servicios/' || urlPath === '/equipamiento/') return '0.80';
     return '0.64';
+}
+
+function getChangeFreq(urlPath) {
+    if (urlPath === '/') return 'daily';
+    if (urlPath === '/portafolio/' || urlPath === '/servicios/' || urlPath === '/equipamiento/') return 'weekly';
+    return 'monthly';
 }
 
 function generateSitemap() {
@@ -32,17 +38,20 @@ function generateSitemap() {
                 urlPath = urlPath.substring(0, urlPath.length - 'index.html'.length);
             }
 
-            // Skip 404 pages or raw assets if accidentally included (though glob limits to html)
+            // Skip 404 pages or test templates
             if (urlPath.includes('404')) return;
+            if (urlPath.includes('-test') || urlPath.includes('template')) return;
 
             const fullPath = path.join(ROOT_DIR, file);
             const stats = fs.statSync(fullPath);
             const lastMod = stats.mtime.toISOString().split('T')[0]; // YYYY-MM-DD
             const priority = getPriority(urlPath);
+            const changefreq = getChangeFreq(urlPath);
 
             xml += '  <url>\n';
             xml += `    <loc>${baseUrl}${urlPath}</loc>\n`;
             xml += `    <lastmod>${lastMod}</lastmod>\n`;
+            xml += `    <changefreq>${changefreq}</changefreq>\n`;
             xml += `    <priority>${priority}</priority>\n`;
             xml += '  </url>\n';
         });
@@ -54,7 +63,7 @@ function generateSitemap() {
         console.log(`Sitemap generated for ${baseUrl} at ${outputPath}`);
     }
 
-    createSitemap('https://www.grupomymce.com', 'sitemap.xml');
+    createSitemap('https://www.mymce.com.mx', 'sitemap.xml');
     createSitemap('https://www.mymce.com.mx', 'sitemap_mx.xml');
 }
 

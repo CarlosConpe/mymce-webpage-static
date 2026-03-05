@@ -126,7 +126,7 @@ async function applyBulkSEO() {
                 "@context": "https://schema.org",
                 "@type": "LocalBusiness",
                 "name": "Grupo MYMCE",
-                "image": "https://www.grupomymce.com/assets/logo.png", // Generic placeholder, script can't know specific
+                "image": "https://www.mymce.com.mx/assets/logo.png", // Generic placeholder, script can't know specific
                 "telephone": "+52 444-821-1917",
                 "email": "contacto@grupomymce.com",
                 "address": {
@@ -137,7 +137,7 @@ async function applyBulkSEO() {
                     "postalCode": "78390",
                     "addressCountry": "MX"
                 },
-                "url": "https://www.grupomymce.com/",
+                "url": "https://www.mymce.com.mx/",
                 "brand": {
                     "@type": "Brand",
                     "name": "Grupo MYMCE"

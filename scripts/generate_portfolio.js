@@ -65,7 +65,7 @@ projectFiles.forEach(file => {
         if (!webPath) return false;
         // relative path logic: webPath might start with / or http
         if (webPath.startsWith('http')) {
-            if (webPath.includes('grupomymce.com')) {
+            if (webPath.includes('mymce.com.mx')) {
                 webPath = webPath.replace(/^https?:\/\/[^\/]+/, '');
             } else {
                 return false; // External image

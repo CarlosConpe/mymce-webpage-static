@@ -8,8 +8,8 @@ const files = glob.sync('**/*.html', { cwd: ROOT_DIR, ignore: ['node_modules/**'
 const MYMCE_DATA = {
     name: "Grupo MYMCE",
     legalName: "MYMCE Carpintería Residencial",
-    url: "https://www.grupomymce.com",
-    logo: "https://www.grupomymce.com/assets/storage/2016/12/mymce-logo-1664856016.webp",
+    url: "https://www.mymce.com.mx",
+    logo: "https://www.mymce.com.mx/assets/storage/2016/12/mymce-logo-1664856016.webp",
     telephone: "+52 444-821-4890",
     email: "contacto@grupomymce.com",
     address: {

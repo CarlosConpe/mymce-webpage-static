@@ -4,7 +4,7 @@ const cheerio = require('cheerio');
 const glob = require('glob');
 
 const SEARCH_DIR = path.resolve(__dirname, '../');
-const BASE_URL = 'https://www.grupomymce.com';
+const BASE_URL = 'https://www.mymce.com.mx';
 
 // Configuration for specific H1 overrides based on analysis
 const H1_OVERRIDES = {

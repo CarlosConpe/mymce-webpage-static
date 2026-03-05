@@ -8,7 +8,7 @@ export async function onRequestPost({ request, env }) {
 
     const RESEND_FROM = env.RESEND_FROM || "onboarding@resend.dev";
     const RESEND_TO = env.RESEND_TO || "contacto@grupomymce.com";
-    const LOGO_URL = "https://www.grupomymce.com/assets/storage/2016/12/logo-2.webp";
+    const LOGO_URL = "https://www.mymce.com.mx/assets/storage/2016/12/logo-2.webp";
 
     // Format Extra Details Table
     let extraDetailsRows = "";
@@ -90,7 +90,7 @@ export async function onRequestPost({ request, env }) {
             </div>
           </div>
           <div class="footer">
-            <p>Este correo fue enviado automáticamente desde <strong>grupomymce.com</strong></p>
+            <p>Este correo fue enviado automáticamente desde <strong>mymce.com.mx</strong></p>
             <p>© ${new Date().getFullYear()} MYMCE. Todos los derechos reservados.</p>
           </div>
         </div>

@@ -4,7 +4,7 @@ const glob = require('glob');
 const cheerio = require('cheerio');
 
 const SITE_ROOT = '.';
-const DOMAIN = 'https://www.grupomymce.com';
+const DOMAIN = 'https://www.mymce.com.mx';
 
 async function fixSchema() {
     console.log('Fixing Schema...');
