@@ -87,10 +87,10 @@ async function applyBulkSEO() {
         if (isHome) {
             newTitle = CONFIG.home.title;
         } else {
-            // Construct dynamic title
-            let base = cleanH1;
-            if (base.length > 30) base = base.substring(0, 30) + '...';
-            newTitle = `${base} ${CONFIG.valueProp} | ${CONFIG.locationAbbr} | ${CONFIG.brand}`;
+            // Construct dynamic title. Do not truncate the H1: cutting it at 30 characters
+            // left 101 pages with titles like "Modelo San..." that Google showed as duplicates.
+            // Titles are now set by fix_titles_meta.js; run it after this script.
+            newTitle = `${cleanH1} | ${CONFIG.brand}`;
         }
 
         if ($('title').text() !== newTitle) {
