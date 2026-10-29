@@ -51,6 +51,12 @@ document.addEventListener("DOMContentLoaded", function () {
                 });
 
                 if (response.ok) {
+                    // Google Ads: count the lead only when the message was really sent.
+                    // Each page sets window.mymceFormConversion to its own action.
+                    const sendTo = window.mymceFormConversion || window.mymceLeadConversion;
+                    if (sendTo && typeof window.gtag === "function") {
+                        window.gtag("event", "conversion", { send_to: sendTo });
+                    }
                     if (successBox) {
                         successBox.classList.add("show");
                         form.reset();

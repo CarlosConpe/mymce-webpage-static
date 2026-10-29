@@ -47,7 +47,11 @@ var SF_LDATA={"ajax_url":"/ajax-call","home_url":"/","extensions":[]};
 <meta name="facebook-domain-verification" content="kre0czafxi78j09hynbt31hgl7lz56">
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=AW-11313299378"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','AW-11313299378');</script>
-<script>gtag('event','conversion',{'send_to':'AW-11313299378/pgxBCJvIztoYELL_zJIq'});</script>
+<script>window.mymceLeadConversion = 'AW-11313299378/pgxBCJvIztoYELL_zJIq';
+document.addEventListener('click', function (e) {
+    var link = e.target.closest && e.target.closest('a[href^="https://wa.me/"], a[href^="tel:"]');
+    if (link && typeof window.gtag === 'function') window.gtag('event', 'conversion', { send_to: window.mymceLeadConversion });
+});</script>
 <script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
@@ -151,7 +155,7 @@ var SF_LDATA={"ajax_url":"/ajax-call","home_url":"/","extensions":[]};
     "latitude":22.104,"longitude":-100.9079
   }
 }</script>
-<script>gtag('event','conversion',{'send_to':'AW-11313299378/RsXcCPz_nN0YELL_zJIq'});</script>
+<script>window.mymceFormConversion = 'AW-11313299378/RsXcCPz_nN0YELL_zJIq';</script>
 <script>
 // Optimized GTM Lazy Loader
 // Delays GTM until user interaction or timeout to improve LCP/TBT
@@ -680,7 +684,7 @@ Contáctanos </a>
 <script src="/assets/lib/js/jquery/ui/core.min.js" id="jquery-ui-core-js" defer=""></script>
 <script src="/assets/lib/js/jquery/ui/datepicker.min.js" id="jquery-ui-datepicker-js" defer=""></script>
 <script src="/assets/core/modules/d9a1c27cc2/scripts/jquery.tab-accordion.min.js" id="jquery.tab-accordion.js-js" defer=""></script>
-<script src="/assets/js/fuse.min.js" defer=""></script><script src="/assets/js/search-ui.min.js" defer=""></script><script src="/assets/js/email-client.min.js" defer=""></script>
+<script src="/assets/js/fuse.min.js" defer=""></script><script src="/assets/js/search-ui.min.js" defer=""></script><script src="/assets/js/email-client.min.js?v=20261029" defer=""></script>
         <a href="https://wa.me/524442335607?text=Hola%2C%20estoy%20buscando%20soluciones%20de%20carpinter%C3%ADa%20y%20mobiliario.%20Me%20interesa%20cotizar%20un%20proyecto%20con%20ustedes." class="wa-float" target="_blank" rel="noopener noreferrer" onclick="gtag('event', 'whatsapp_click', {'event_category': 'contact', 'event_label': 'default'});" aria-label="Enlace">
             <i class="fa fa-whatsapp"></i>
         </a>
