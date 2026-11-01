@@ -9,6 +9,10 @@
 # GTM, Google Ads/Analytics and the Maps embed were blocked by default-src 'self'.
   Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://ajax.cloudflare.com https://static.cloudflareinsights.com https://cloudflareinsights.com https://*.cloudflare.com https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://www.google.com; connect-src 'self' https://cloudflareinsights.com https://static.cloudflareinsights.com https://*.cloudflare.com https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://*.analytics.google.com https://www.google.com https://googleads.g.doubleclick.net https://*.g.doubleclick.net https://www.googleadservices.com; frame-src 'self' https://www.googletagmanager.com https://maps.google.com https://www.google.com https://td.doubleclick.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' data: https://fonts.gstatic.com; img-src 'self' data: blob: https:; frame-ancestors 'none'; upgrade-insecure-requests;
 
+# Portada: indica a los agentes dónde está el resumen del sitio
+/
+  Link: </llms.txt>; rel="describedby"; type="text/plain", </sitemap_mx.xml>; rel="sitemap"; type="application/xml"
+
 # Aggressive Caching for Assets (1 Year)
 /assets/*
   Cache-Control: public, max-age=31536000, immutable
