@@ -1,14 +1,62 @@
+const CORREO_VALIDO = /^[A-Za-z0-9._%+'-]{1,64}@[A-Za-z0-9.-]{1,190}\.[A-Za-z]{2,}$/;
+const MAX_CUERPO = 64 * 1024;
+const respuesta = (datos, status = 200) => new Response(JSON.stringify(datos), { status, headers: { "Content-Type": "application/json" } });
+const esc = (s) => String(s ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#39;");
+const texto = (v, max) => String(v ?? "").replace(/[\u0000-\u0008\u000b\u000c\u000e-\u001f]/g, "").trim().slice(0, max);
+
+// Límite por visitante dentro de cada instancia: frena ráfagas de bots sin guardar datos.
+const visitas = new Map();
+function excede(ip, maximo = 5, segundos = 600) {
+  const ahora = Date.now() / 1000;
+  const lista = (visitas.get(ip) || []).filter((t) => t > ahora - segundos);
+  if (lista.length >= maximo) return true;
+  lista.push(ahora);
+  visitas.set(ip, lista);
+  if (visitas.size > 5000) visitas.clear();
+  return false;
+}
+
 export async function onRequestPost({ request, env }) {
   try {
-    const { name, email, phone, message, otherDetails } = await request.json();
+    // Solo se aceptan envíos desde este mismo sitio.
+    const origen = request.headers.get("Origin");
+    if (!origen || new URL(origen).host !== new URL(request.url).host) return respuesta({ error: "Solicitud no permitida" }, 403);
+    if (Number(request.headers.get("Content-Length") || 0) > MAX_CUERPO) return respuesta({ error: "El mensaje es demasiado largo" }, 413);
+    const crudo = await request.text();
+    if (crudo.length > MAX_CUERPO) return respuesta({ error: "El mensaje es demasiado largo" }, 413);
+    const cuerpo = JSON.parse(crudo) || {};
+    const extra = cuerpo.otherDetails && typeof cuerpo.otherDetails === "object" ? cuerpo.otherDetails : {};
+
+    // Trampa para bots: campo invisible que una persona nunca llena.
+    if (texto(extra.sitio_web, 200)) return respuesta({ success: true });
+    delete extra.sitio_web;
+
+    const correo = texto(cuerpo.email, 254);
+    const nombreLimpio = texto(cuerpo.name, 120);
+    const telefono = texto(cuerpo.phone, 40);
+    if (!nombreLimpio || (!correo && !telefono)) return respuesta({ error: "Faltan datos: nombre y correo o teléfono" }, 400);
+    if (correo && !CORREO_VALIDO.test(correo)) return respuesta({ error: "Revisa tu correo" }, 400);
+    if (excede(request.headers.get("CF-Connecting-IP") || "local")) return respuesta({ error: "Demasiados envíos. Inténtalo más tarde o escríbenos por WhatsApp." }, 429);
 
     if (!env.RESEND_API_KEY) {
-      return new Response(JSON.stringify({ error: "Missing RESEND_API_KEY" }), { status: 500 });
+      console.error("Falta RESEND_API_KEY");
+      return respuesta({ error: "No se pudo enviar" }, 500);
     }
 
     const RESEND_FROM = env.RESEND_FROM || "onboarding@resend.dev";
     const RESEND_TO = env.RESEND_TO || "contacto@grupomymce.com";
     const LOGO_URL = "https://www.mymce.com.mx/assets/storage/2016/12/logo-2.webp";
+
+    // Todo lo que llega del visitante se escapa antes de entrar al correo.
+    const name = esc(nombreLimpio);
+    const email = esc(correo || "no proporcionado");
+    const phone = esc(telefono || "no proporcionado");
+    const message = esc(texto(cuerpo.message, 6000) || "(sin mensaje)");
+    const otherDetails = {};
+    for (const [k, v] of Object.entries(extra).slice(0, 30)) {
+      const valor = texto(typeof v === "object" ? "" : v, 1000);
+      if (valor) otherDetails[esc(texto(k, 80))] = esc(valor);
+    }
 
     // Format Extra Details Table
     let extraDetailsRows = "";
@@ -107,24 +155,21 @@ export async function onRequestPost({ request, env }) {
       body: JSON.stringify({
         from: `MYMCE Web <${RESEND_FROM}>`,
         to: [RESEND_TO],
-        reply_to: email,
-        subject: `🔔 Nuevo Lead: ${name}`,
+        ...(correo ? { reply_to: correo } : {}),
+        subject: `🔔 Nuevo Lead: ${nombreLimpio.replace(/[\r\n]+/g, " ")}`,
         html: htmlContent,
       }),
     });
 
     if (!resendResponse.ok) {
-      const errorText = await resendResponse.text();
-      return new Response(JSON.stringify({ error: "Resend API Error", details: errorText }), { status: 500 });
+      console.error("Resend rechazó el correo", resendResponse.status, (await resendResponse.text()).slice(0, 300));
+      return respuesta({ error: "No se pudo enviar" }, 502);
     }
 
-    const data = await resendResponse.json();
-    return new Response(JSON.stringify({ success: true, id: data.id }), {
-      headers: { "Content-Type": "application/json" },
-      status: 200,
-    });
+    return respuesta({ success: true });
 
   } catch (err) {
-    return new Response(JSON.stringify({ error: "Invalid request", details: err.message }), { status: 400 });
+    console.error("Error en el formulario", err.message);
+    return respuesta({ error: "Solicitud no válida" }, 400);
   }
 }
