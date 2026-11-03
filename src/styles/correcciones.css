@@ -13,10 +13,10 @@ header .navbar-main .custom-area .btn:hover { background-color: #2a4555; border-
 .header-title.white .title-base h1:before, .header-video.white .title-base h1:before { background: #fff; }
 /* Fichas del portafolio: el título se centraba desde su borde superior y el subtítulo quedaba cortado abajo. */
 .full-screen-title .overlaybox { top: 0 !important; bottom: 0; display: flex; align-items: center; padding: 30px 0; }
-.full-screen-title .overlaybox > .container { width: 100%; }
+.full-screen-title .overlaybox > .container { width: 100%; max-width: 1510px; }
 /* Portadas con video: el texto quedaba pegado al menú y en celular se cortaba el párrafo. */
 .header-video .overlaybox { height: 100%; display: flex; align-items: center; }
-.header-video .overlaybox > .container { width: 100%; }
+.header-video .overlaybox > .container { width: 100%; max-width: 1510px; }
 @media (max-width: 994px) {
     .header-video { height: auto !important; min-height: 205px; }
     .header-video .overlaybox { position: relative; padding: 30px 0; }
@@ -41,7 +41,7 @@ header .navbar-main .custom-area .btn:hover { background-color: #2a4555; border-
 
 /* ---------- Tarjetas ---------- */
 /* Tarjetas de una misma fila con alturas parejas y, si sobran huecos, centradas. */
-@media (min-width: 992px) {
+@media (min-width: 768px) {
     .row:has(> .bloque-columna > .row > .bloque-caja > .advs-box) { display: flex; flex-wrap: wrap; justify-content: center; }
     .row:has(> .bloque-columna > .row > .bloque-caja > .advs-box)::before,
     .row:has(> .bloque-columna > .row > .bloque-caja > .advs-box)::after { display: none; }
@@ -116,11 +116,11 @@ p + h4, div + h4:not(:first-child) { margin-top: 25px; }
 .icon-list:not(.boxed-inverse) .list-item > label { vertical-align: top; }
 /* El margen negativo sacaba la lista por la derecha (en celular y en las cajas grises de las fichas). */
 .icon-list.boxed-inverse { margin-right: 0; }
-@media (max-width: 767px) { .icon-list.text-left { margin-right: 0; } }
+@media (max-width: 991px) { .icon-list.text-left { margin-right: 0; } }
 
 /* ---------- Texto ---------- */
 /* El justificado abría "ríos" entre palabras en celular. */
-@media (max-width: 767px) { .text-justify, .text-justify * { text-align: left !important; } }
+@media (max-width: 991px) { .text-justify, .text-justify * { text-align: left !important; } }
 /* Barra de "habilidad" al 85 % junto a una frase que no es una medida: se deja solo la frase. */
 .bloque-progress-bar .progress { display: none; }
 .bloque-progress-bar .progress-label { font-size: 18px; line-height: 1.5; text-align: center; margin: 0; }
@@ -149,13 +149,13 @@ form .btn:hover, form button[type="submit"]:hover { background-color: #2a4555; b
 .white form .btn, .section-bg-color form .btn, .white form button[type="submit"], .section-bg-color form button[type="submit"] { background-color: #fff !important; border-color: #fff !important; color: #355669 !important; }
 .white form .btn i, .section-bg-color form .btn i { color: #355669 !important; }
 /* En celular las cajas del formulario tenían 50 px de relleno y los campos quedaban de 260 px. */
-@media (max-width: 767px) { .bloque-columna.boxed-inverse, .bloque-columna.boxed, .bloque-texto > .boxed-inverse { padding: 30px 20px !important; } }
+@media (max-width: 991px) { .bloque-columna.boxed-inverse, .bloque-columna.boxed, .bloque-texto > .boxed-inverse { padding: 30px 20px !important; } }
 /* Enlaces de descarga verdes casi ilegibles sobre gris claro. */
 .downloads-list a { color: #3f6b19; }
 
 /* ---------- Servicios ---------- */
 /* En celular la lista de cada servicio salía antes de su título. */
-@media (max-width: 767px) {
+@media (max-width: 991px) {
     .vertical-row > .row { display: flex !important; flex-direction: column; }
     .vertical-row > .row > .col-md-5.boxed-inverse { order: 2; }
 }
@@ -192,3 +192,97 @@ footer .fa-ul > li, .fa-ul.text-s > li { line-height: 1.6; margin-bottom: 8px; }
 footer .fa-ul a { color: inherit; }
 
 @media (max-width: 991px) { .bloque-columna.boxed-inverse + .bloque-columna.boxed { margin-top: 15px; } }
+
+/* ---------- Menús ---------- */
+/* El menú del portafolio se abría desde su botón y se salía por la derecha; ahora se alinea con el borde derecho del contenido. */
+@media (min-width: 992px) {
+    .navbar-main > .container { position: relative; }
+    .navbar-main .navbar-collapse, .navbar-main #main-menu, #main-menu > li.mega-tabs { position: static; }
+    #main-menu > li.mega-tabs > .mega-menu { left: auto; right: 15px; max-width: calc(100% - 30px); }
+}
+@media (max-width: 991px) {
+    /* Con el portafolio abierto el menú pasaba del alto de la pantalla y no se podía bajar. */
+    #menu-principal.in { max-height: calc(100vh - 70px); overflow-y: auto; }
+    /* Opciones largas cortadas por la derecha. */
+    #main-menu .dropdown-menu li a { white-space: normal; }
+    /* El botón Contáctanos quedaba montado en el borde del menú. */
+    #menu-principal .navbar-right .custom-area .button-cnt { padding: 10px 0 20px !important; }
+}
+/* El botón de WhatsApp quedaba encima del menú abierto. */
+.wa-float { z-index: 990 !important; }
+
+/* ---------- Tableta (768 a 991 px) ---------- */
+/* El tema dejaba las columnas de computadora en tableta: textos de tres palabras por renglón, correos partidos y tarjetas en escalera.
+   Aquí todo va a lo ancho, salvo las tarjetas y las fotos, que van de dos en dos. */
+@media (min-width: 768px) and (max-width: 991px) {
+    .row > .bloque-columna[class*="col-md-"] { width: 100% !important; float: none; }
+    .row > .bloque-columna.col-md-3:has(> .row > .bloque-caja > .advs-box),
+    .row > .bloque-columna.col-md-4:has(> .row > .bloque-caja > .advs-box),
+    .row > .bloque-columna.col-md-3:has(> .row > .bloque-image) { width: 50% !important; }
+    .row:has(> .bloque-columna.col-md-3 > .row > .bloque-image) { display: flex; flex-wrap: wrap; }
+    .row:has(> .bloque-columna.col-md-3 > .row > .bloque-image)::before,
+    .row:has(> .bloque-columna.col-md-3 > .row > .bloque-image)::after { display: none; }
+    .bloque-columna.col-md-2:has(img) { text-align: center; }
+    .grid-portfolio > .portfolio-item { width: 50%; }
+    .grid-box { display: flex; flex-wrap: wrap; }
+    .grid-box::before, .grid-box::after { display: none; }
+    footer .content .row > [class*="col-md-"] { width: 50%; float: left; }
+    footer .content .row > [class*="col-md-"]:nth-child(2n+1) { clear: left; }
+}
+@media (max-width: 991px) { .row > .bloque-columna.col-md-12 { clear: both; } .tag-row span:after { display: none; } }
+
+/* ---------- Ajustes de la revisión exhaustiva ---------- */
+/* Títulos que dejaban una palabra sola en el último renglón. */
+.title-base h1, .clean-card h3, .advs-box h3 { text-wrap: balance; }
+/* El pie quedaba 15 px más adentro que el contenido entre 1200 y 1540 px. */
+footer.footer-modern > .content { padding-left: 0; padding-right: 0; }
+/* Textos de tarjeta en negro puro cuando el resto es gris. */
+.advs-box-content p.text-s { color: inherit; }
+/* Ubicación y modelo: el texto quedaba más arriba que el centro de su icono. */
+.icon-list.boxed-inverse .list-item > i, .icon-list.boxed-inverse .list-item > label { vertical-align: middle; }
+/* Carruseles del blog: hueco desigual debajo según tuvieran puntos o no. */
+.bloque-carrusel .flexslider { margin-bottom: 0; }
+.bloque-carrusel .flex-control-nav { position: static; margin-top: 12px; }
+.bloque-carrusel { margin-bottom: 30px; }
+/* Botones de las tarjetas de pasos a distinta altura. */
+.advs-box-top-icon:has(> .btn) { display: flex; flex-direction: column; }
+.advs-box-top-icon > .btn { margin-top: auto; align-self: center; }
+/* Título pegado a la caja del formulario cuando entre ambos va la columna del video. */
+.bloque-columna:has(form) + .bloque-columna + .bloque-columna > .row > .bloque-titulo:first-child { margin-top: 50px; }
+/* Enlaces de descargas con el color de enlace del sitio. */
+.downloads-list a { color: #355669; font-weight: 600; }
+/* Textos guía de los campos casi ilegibles sobre la caja gris. */
+.form-box .form-control::placeholder, form .form-control::placeholder { color: #6b6b6b; opacity: 1; }
+/* Botones alineados a la derecha que en celular quedaban cargados a un lado. */
+@media (max-width: 767px) { .bloque-button .button-cnt[style*="text-align:right"] { text-align: center !important; } }
+/* Infografía ancha con texto: en celular el texto quedaba de 3 px; los mismos datos van en la lista de arriba. */
+@media (max-width: 767px) { img[src*="upscalemedia-transformed1"], img[src*="Minimo-Mantenimiento"] { display: none; } }
+/* Pantalla grande: el anuncio de fondo de electrodomésticos dejaba ver una palabra cortada. */
+@media (min-width: 1600px) { .header-title[style*="2023/08/Diseno-sin-titulo2"] { background-size: auto 100% !important; background-repeat: no-repeat; background-color: #111; } }
+/* Línea gris que solo aparecía en tableta y celular entre secciones. */
+@media (max-width: 991px) { .section-empty + .section-empty { border-top: 0; } }
+/* Tarjetas del blog de distinta altura en la misma fila. */
+.grid-box.row { display: flex; flex-wrap: wrap; }
+.grid-box.row::before, .grid-box.row::after { display: none; }
+.grid-box > .grid-item > .advs-box { height: 100%; }
+/* "Leer más" pegado al borde de la caja en pantalla grande. */
+.bloque-columna.white.boxed.no-padding-bottom { padding-bottom: 40px !important; }
+/* Página 404. */
+.error-message { line-height: 1.3; }
+.error-container .btn { background-color: #355669; border-color: #355669; color: #fff; }
+.error-container { min-height: calc(100vh - 560px); }
+/* Enlaces del pie con poco contraste por la transparencia. */
+footer a, .copy-grupo { opacity: 1 !important; }
+footer ul.list-unstyled a { color: #555; }
+/* El texto escrito quedaba corrido respecto a su etiqueta. */
+.form-box .form-control { padding-left: 0; }
+/* Flecha del submenú más alta que su texto. */
+.dropdown-submenu > a:after { top: 50% !important; transform: translateY(-50%); margin-top: 0 !important; }
+/* Celular: el tercer nivel del menú no se distinguía de su padre. */
+@media (max-width: 991px) { #main-menu .dropdown-menu .dropdown-menu > li > a { padding-left: 30px; } }
+/* Filtros del portafolio: un grupo de botones sin huecos entre ellos. */
+.btn-group > [data-filtro] + [data-filtro] { margin-left: -1px; }
+/* Blog: la fila de tarjetas se salía 15 px por los lados y la foto no llenaba su recuadro de 350 px. */
+.grid-box.row { margin-left: 0; margin-right: 0; width: auto; }
+.niche-box-post .img-box img { width: 100%; height: 100%; object-fit: cover; }
+@media (max-width: 767px) { .niche-box-post .img-box { height: auto !important; aspect-ratio: 16 / 10; } }
