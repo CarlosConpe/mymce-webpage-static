@@ -1,0 +1,194 @@
+/* Correcciones de diseño: cosas que ya se veían mal en el sitio de WordPress.
+   Mantienen el estilo del tema; solo alinean, igualan y dejan legible lo que estaba roto. */
+
+/* ---------- Cabecera ---------- */
+/* El botón Contáctanos iba pegado a la barra superior y más arriba que el menú; en la portada era azul y en las demás blanco con borde negro. */
+header .navbar-main .custom-area .btn { margin-top: 14px; background-color: #355669; border-color: #355669; color: #fff; }
+header .navbar-main .custom-area .btn:hover { background-color: #2a4555; border-color: #2a4555; color: #fff; }
+/* En la portada una regla de botones pintaba de blanco el ícono del menú del celular. */
+.navbar-toggle > i { color: #4c4c4c !important; }
+
+/* ---------- Portadas de cada página ---------- */
+/* La barrita bajo el título casi no se veía sobre fotos. */
+.header-title.white .title-base h1:before, .header-video.white .title-base h1:before { background: #fff; }
+/* Fichas del portafolio: el título se centraba desde su borde superior y el subtítulo quedaba cortado abajo. */
+.full-screen-title .overlaybox { top: 0 !important; bottom: 0; display: flex; align-items: center; padding: 30px 0; }
+.full-screen-title .overlaybox > .container { width: 100%; }
+/* Portadas con video: el texto quedaba pegado al menú y en celular se cortaba el párrafo. */
+.header-video .overlaybox { height: 100%; display: flex; align-items: center; }
+.header-video .overlaybox > .container { width: 100%; }
+@media (max-width: 994px) {
+    .header-video { height: auto !important; min-height: 205px; }
+    .header-video .overlaybox { position: relative; padding: 30px 0; }
+    .header-video .videobox { position: absolute; inset: 0; height: 100%; }
+    .header-video .videobox video { width: 100%; height: 100%; object-fit: cover; }
+}
+/* Portafolio: la foto de la portada apuntaba a una ruta rota y quedaba un bloque negro. */
+.portada-portafolio:after { background: linear-gradient(rgba(0, 0, 0, .55), rgba(0, 0, 0, .55)), #1d1d1d url(/assets/storage/2023/08/cocina-17-5-1920x1080.webp) center / cover no-repeat !important; }
+/* Foil PVC: las puertas de la foto quedaban fuera del cuadro. */
+.header-title[style*="2025/11/x.webp"] { background-position: right center !important; }
+/* Electrodomésticos: el anuncio de fondo trae letras propias del lado derecho; el texto se queda en la mitad oscura. */
+.header-title[style*="2023/08/Diseno-sin-titulo2"] { background-position: left center !important; }
+.header-title[style*="2023/08/Diseno-sin-titulo2"] .title-base { max-width: 60%; }
+@media (max-width: 767px) {
+    .header-title[style*="2023/08/Diseno-sin-titulo2"] .title-base { max-width: none; }
+    .header-title.white .title-base h1, .header-title.white .title-base p { text-shadow: 0 1px 4px rgba(0, 0, 0, .7); }
+}
+
+/* ---------- Rejilla ---------- */
+/* Una fila metida en un div sin columna sacaba su contenido 15 px por la derecha. */
+.row > div:not([class]) > .row { margin-left: 0; margin-right: 0; }
+
+/* ---------- Tarjetas ---------- */
+/* Tarjetas de una misma fila con alturas parejas y, si sobran huecos, centradas. */
+@media (min-width: 992px) {
+    .row:has(> .bloque-columna > .row > .bloque-caja > .advs-box) { display: flex; flex-wrap: wrap; justify-content: center; }
+    .row:has(> .bloque-columna > .row > .bloque-caja > .advs-box)::before,
+    .row:has(> .bloque-columna > .row > .bloque-caja > .advs-box)::after { display: none; }
+    .bloque-columna:not(.col-md-12):has(> .row > .bloque-caja > .advs-box) { display: flex; flex-direction: column; }
+    .bloque-columna:not(.col-md-12):has(> .row > .bloque-caja > .advs-box) > .row { flex: 1; display: flex; flex-direction: column; }
+    .bloque-columna > .row > .bloque-caja:has(> .advs-box) { flex: 1; display: flex; flex-direction: column; }
+    .bloque-caja > .advs-box { flex: 1; }
+    /* En las tarjetas con foto el marco lo lleva el contenido, no la caja. */
+    .bloque-caja > .advs-box:has(> .advs-box-content) { display: flex; flex-direction: column; }
+    .bloque-caja > .advs-box > .advs-box-content { flex: 1; display: flex; flex-direction: column; }
+    .bloque-caja > .advs-box > .advs-box-content > .btn-text { margin-top: auto; align-self: center; }
+    .bloque-caja > .advs-box > .advs-box-content > p:has(+ .btn-text) { margin-bottom: 15px; }
+    /* Bloque de contacto: la caja gris y la oscura con la misma altura. */
+    .row:has(> .bloque-columna.boxed-inverse + .bloque-columna:is(.boxed, .boxed-inverse)) { display: flex; flex-wrap: wrap; }
+    .row:has(> .bloque-columna.boxed-inverse + .bloque-columna:is(.boxed, .boxed-inverse))::before,
+    .row:has(> .bloque-columna.boxed-inverse + .bloque-columna:is(.boxed, .boxed-inverse))::after { display: none; }
+    .row:has(> .bloque-columna.white.boxed + .bloque-columna:has(form)) { display: flex; flex-wrap: wrap; }
+    .row:has(> .bloque-columna.white.boxed + .bloque-columna:has(form))::before,
+    .row:has(> .bloque-columna.white.boxed + .bloque-columna:has(form))::after { display: none; }
+    /* Caja gris que se estiraba a la altura de la lista de al lado con poco texto: el texto va centrado. */
+    .bloque-columna.col-md-4.boxed-inverse { display: flex; flex-direction: column; justify-content: center; }
+    /* Títulos de dos renglones bajaban el texto de su tarjeta. */
+    .advs-box-top-icon > h3 { min-height: 2.5em; display: flex; align-items: flex-end; justify-content: center; }
+}
+.row > .bloque-columna.boxed-inverse { margin-top: 15px; }
+@media (min-width: 992px) { .row:has(> .bloque-columna.boxed) > .bloque-columna.boxed-inverse { margin-top: 0; } }
+@media (max-width: 767px) { .white.boxed .bloque-image img { max-width: 160px; display: block; margin: 0 auto; } }
+@media (max-width: 991px) { .bloque-columna.col-md-4.boxed-inverse hr.space { display: none; } }
+.fa-ul .protected-email { overflow-wrap: anywhere; }
+.bloque-columna:has(form) + .bloque-columna.col-md-5 { margin-top: 15px; }
+/* Raya separadora pegada a lo que sigue. */
+.bloque-separator + .bloque-texto { margin-top: 20px; }
+.bloque-code-block img { display: block; margin: 0 auto; }
+/* Las rayas negras vienen dentro de estas dos fotos. */
+.adv-img-classic-box img[src*="parrilla-campana"], .adv-img-classic-box img[src*="DUETTO_PLUS"] { transform: scale(1.06); }
+/* El letrero del fondo asomaba una letra cortada a la derecha. */
+.header-title[style*="2023/08/Diseno-sin-titulo2"]::after { content: ""; position: absolute; top: 0; right: 0; bottom: 0; left: auto; z-index: 0; width: 35%; background: linear-gradient(90deg, transparent, #1d1d1d 45%); }
+.header-title[style*="2023/08/Diseno-sin-titulo2"] > .overlaybox { z-index: 1; }
+/* La foto de la parrilla trae fondo blanco hueso propio y se veía enmarcada. */
+.advs-box-top-icon-img .img-box img[src*="parrilla"] { mix-blend-mode: multiply; outline: 1px solid #ececec; outline-offset: -1px; }
+/* Renglones de lista sin icono quedaban sangrados distinto que los que sí tienen. */
+.icon-list .list-item:not(:has(> i)) > label { padding-left: 58px; }
+/* Justificado en columnas angostas: huecos entre palabras. */
+.icon-list.text-justify .list-item label, .text-justify .icon-list .list-item label { text-align: left !important; }
+/* Estrella sobre fotos de madera casi invisible. */
+.advs-box-top-icon-img > i.icon { color: #fff; text-shadow: 0 1px 3px rgba(0, 0, 0, .6); }
+/* Formulario pegado al título que sigue. */
+.bloque-contact-form + .bloque-titulo, .bloque-columna:has(form) + .bloque-columna > .row > .bloque-titulo:first-child { margin-top: 50px; }
+/* Subtítulos pegados al párrafo de arriba y separados del suyo. */
+p + h4, div + h4:not(:first-child) { margin-top: 25px; }
+@media (max-width: 767px) {
+    .section-bg-color .bloque-image img { max-width: 160px; display: block; margin: 0 auto; }
+}
+/* Las fotos de las tarjetas traían proporciones distintas y los títulos quedaban a alturas diferentes. */
+.advs-box-top-icon-img .img-box img { width: 100%; height: auto; aspect-ratio: 8 / 5; object-fit: cover; }
+.adv-img-classic-box img { width: 100%; height: auto; aspect-ratio: 8 / 5; object-fit: contain; }
+/* Títulos de tarjeta justificados con huecos entre palabras. */
+.advs-box.text-justify h3 { text-align: center !important; }
+/* La flecha del enlace no contaba en su ancho y el conjunto quedaba corrido. */
+.advs-box .btn-text { padding-right: 13px; }
+.advs-box .btn-text:after { right: 0; }
+/* Texto de preguntas en negro puro cuando todo lo demás es gris. */
+.advs-box-side-icon p.big-text { color: inherit; }
+
+/* ---------- Listas con iconos ---------- */
+/* Los renglones vacíos que separaban viñetas se quitaron; el espacio lo da el margen. */
+.icon-list .list-item { margin-bottom: 14px; vertical-align: top; }
+.icon-list .list-item:last-child { margin-bottom: 0; }
+/* Iconos de distinto ancho dejaban el texto en zigzag; en textos largos la viñeta flotaba a media altura. */
+.icon-list .list-item > i { width: 48px; min-width: 48px; text-align: center; }
+.icon-list:not(.boxed-inverse) .list-item > i { vertical-align: top; padding-top: 3px; }
+.icon-list:not(.boxed-inverse) .list-item > label { vertical-align: top; }
+/* El margen negativo sacaba la lista por la derecha (en celular y en las cajas grises de las fichas). */
+.icon-list.boxed-inverse { margin-right: 0; }
+@media (max-width: 767px) { .icon-list.text-left { margin-right: 0; } }
+
+/* ---------- Texto ---------- */
+/* El justificado abría "ríos" entre palabras en celular. */
+@media (max-width: 767px) { .text-justify, .text-justify * { text-align: left !important; } }
+/* Barra de "habilidad" al 85 % junto a una frase que no es una medida: se deja solo la frase. */
+.bloque-progress-bar .progress { display: none; }
+.bloque-progress-bar .progress-label { font-size: 18px; line-height: 1.5; text-align: center; margin: 0; }
+/* Imagen que no llenaba su columna. */
+.bloque-image > img { width: 100%; height: auto; }
+
+/* ---------- Videos ---------- */
+/* Tenían un alto fijo distinto a su proporción y salían franjas arriba y abajo. */
+.bloque-video video.video-box { display: block; width: 100%; height: auto; max-height: 600px; object-fit: cover; background: #1d1d1d; }
+.flexslider video.video-box { display: block; width: 100%; height: auto; aspect-ratio: 9 / 16; max-height: 75vh; object-fit: cover; background: #1d1d1d; }
+/* Botones de compartir corridos 3 px fuera del margen. */
+.social-group { margin-left: 0; margin-right: 0; }
+.bloque-video + .bloque-icon-links, .bloque-video ~ .bloque-icon-links { margin-top: 15px; }
+
+/* ---------- Carruseles ---------- */
+/* Fotos de un mismo carrusel con alturas distintas. */
+.bloque-carrusel .slides img { width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; }
+.flexslider .slides > li > img { width: 100%; height: auto; aspect-ratio: 8 / 5; object-fit: cover; }
+
+/* ---------- Formularios ---------- */
+/* El botón Enviar se veía gris, como desactivado. */
+form .btn, form button[type="submit"] { background-color: #355669; border-color: #355669; color: #fff; }
+form .btn i, form button[type="submit"] i { color: #fff; }
+form .btn:hover, form button[type="submit"]:hover { background-color: #2a4555; border-color: #2a4555; color: #fff; }
+/* En secciones oscuras el botón azul se perdía con el fondo. */
+.white form .btn, .section-bg-color form .btn, .white form button[type="submit"], .section-bg-color form button[type="submit"] { background-color: #fff !important; border-color: #fff !important; color: #355669 !important; }
+.white form .btn i, .section-bg-color form .btn i { color: #355669 !important; }
+/* En celular las cajas del formulario tenían 50 px de relleno y los campos quedaban de 260 px. */
+@media (max-width: 767px) { .bloque-columna.boxed-inverse, .bloque-columna.boxed, .bloque-texto > .boxed-inverse { padding: 30px 20px !important; } }
+/* Enlaces de descarga verdes casi ilegibles sobre gris claro. */
+.downloads-list a { color: #3f6b19; }
+
+/* ---------- Servicios ---------- */
+/* En celular la lista de cada servicio salía antes de su título. */
+@media (max-width: 767px) {
+    .vertical-row > .row { display: flex !important; flex-direction: column; }
+    .vertical-row > .row > .col-md-5.boxed-inverse { order: 2; }
+}
+
+/* ---------- Portafolio ---------- */
+.clean-card .content-wrap p { margin-top: 0; }
+
+/* ---------- Blog ---------- */
+/* La fila de datos del artículo se cortaba con puntos suspensivos. */
+.tag-row { white-space: normal !important; overflow: visible !important; text-overflow: clip !important; }
+.tag-row { display: flex; flex-wrap: wrap; align-items: center; }
+.tag-row span { display: inline-block; margin-bottom: 4px; }
+.tag-row span:last-of-type:after { content: none; }
+.tag-row .social-group-button { margin-left: 10px; }
+.bloque-editor + .bloque-carrusel { margin-top: 20px; }
+/* Direcciones en dos renglones que parecían dos datos. */
+.fa-ul.text-left > li { line-height: 1.6; margin-bottom: 8px; }
+.texto-libre h2, .texto-libre h3 { margin: 30px 0 12px; }
+.texto-libre h2:first-child, .texto-libre h3:first-child { margin-top: 0; }
+.texto-libre h3 strong, .texto-libre h2 strong { font-weight: inherit; }
+.texto-libre li { letter-spacing: .5px; }
+@media (max-width: 768px) { .section-empty > .content { padding-top: 40px; } }
+
+/* ---------- Páginas sueltas ---------- */
+.error-code { line-height: 1; margin-bottom: 20px; }
+body.pagina-clasica .header-base:not(.bg-cover) h1 { margin-left: 0; }
+.breadcrumb li { white-space: normal; }
+
+/* ---------- Pie de página ---------- */
+/* En celular los datos de contacto iban centrados y sus iconos quedaban regados; los demás bloques van a la izquierda. */
+@media (max-width: 992px) { footer .fa-ul > li { text-align: left !important; } }
+/* La dirección en dos renglones parecía dos datos distintos. */
+footer .fa-ul > li, .fa-ul.text-s > li { line-height: 1.6; margin-bottom: 8px; }
+footer .fa-ul a { color: inherit; }
+
+@media (max-width: 991px) { .bloque-columna.boxed-inverse + .bloque-columna.boxed { margin-top: 15px; } }

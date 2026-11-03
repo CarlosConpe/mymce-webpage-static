@@ -33,8 +33,8 @@ for (const p of paginas) {
   const html = readFileSync(p, 'utf8');
   const url = '/' + relative(DIST, p).split(sep).join('/').replace(/index\.html$/, '');
   const visible = html.replace(/<script[\s\S]*?<\/script>|<style[\s\S]*?<\/style>/g, ' ');
-  // Los correos protegidos se arman en el navegador con data-u y data-d: no quedan escritos en el código.
-  const publicado = html.replace(/\sdata-[ud]="[^"]*"/g, '');
+  // Los correos protegidos se arman en el navegador con data-u y data-d; el dominio sí se revisa.
+  const publicado = html.replace(/\sdata-u="[^"]*"/g, '');
   for (const [re, tipo] of prohibidas) {
     const m = publicado.match(re);
     if (m) errores.push(`${url}: ${tipo}: "${m[0]}"`);

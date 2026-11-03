@@ -76,7 +76,8 @@ function altoEncabezados() {
 }
 // El título queda centrado en vertical dentro de su franja con foto.
 function centraTitulos() {
-    $$('.header-title').forEach((franja) => {
+    // Las portadas de pantalla completa se centran con CSS.
+    $$('.header-title:not(.full-screen-title)').forEach((franja) => {
         const caja = $('.title-base', franja);
         if (!caja) return;
         caja.style.marginTop = '';
@@ -128,7 +129,8 @@ $$('.con-carrusel .flexslider').forEach((caja) => {
     let margen = 0;
     const cuantos = () => {
         if (!esTira) { margen = 0; return 1; }
-        const minimo = parseInt(o.minWidth, 10) || (window.innerWidth < 993 ? 180 : 110);
+        // En celular el tema metía dos fotos de 130 px por vista; aquí cada una mide al menos 260.
+        const minimo = window.innerWidth < 768 ? 260 : parseInt(o.minWidth, 10) || (window.innerWidth < 993 ? 180 : 110);
         const ancho = caja.clientWidth;
         let n = parseInt(o.numItems, 10) || 3;
         if (ancho / n < minimo) n = ancho / 3 > minimo ? 3 : ancho / 2 > minimo ? 2 : 1;
@@ -163,6 +165,8 @@ $$('.con-carrusel .flexslider').forEach((caja) => {
         actual = Math.min(actual, paginas() - 1);
         const primera = Math.max(0, Math.min(actual * n, fichas.length - n));
         lista.style.transform = `translateX(${-primera * (ancho + margen)}px)`;
+        // Si hay menos fotos que lugares, el tema las dejaba pegadas a la izquierda.
+        lista.style.justifyContent = fichas.length < n ? 'center' : '';
         flechas.hidden = paginas() < 2;
         puntos.hidden = paginas() < 2;
         if (puntos.children.length !== paginas()) {
