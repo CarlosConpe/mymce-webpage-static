@@ -2457,11 +2457,15 @@
   "noindex": false,
   "alternos": [
    [
-    "es",
+    "es-MX",
     "/servicios/puertas-frentes-de-cajon-en-mdf-forrados-con-foil-pvc/"
    ],
    [
-    "es-MX",
+    "en",
+    "/servicios/pvc-foil-covered-cabinet-doors-drawer-fronts/"
+   ],
+   [
+    "x-default",
     "/servicios/puertas-frentes-de-cajon-en-mdf-forrados-con-foil-pvc/"
    ]
   ],
@@ -2505,12 +2509,16 @@
   "noindex": false,
   "alternos": [
    [
-    "es",
+    "es-MX",
+    "/servicios/puertas-frentes-de-cajon-en-mdf-forrados-con-foil-pvc/"
+   ],
+   [
+    "en",
     "/servicios/pvc-foil-covered-cabinet-doors-drawer-fronts/"
    ],
    [
-    "es-MX",
-    "/servicios/pvc-foil-covered-cabinet-doors-drawer-fronts/"
+    "x-default",
+    "/servicios/puertas-frentes-de-cajon-en-mdf-forrados-con-foil-pvc/"
    ]
   ],
   "wa": "https://wa.me/524442335607?text=Hola%2C%20estoy%20buscando%20soluciones%20de%20carpinter%C3%ADa%20y%20mobiliario.%20Me%20interesa%20cotizar%20un%20proyecto%20con%20ustedes.",

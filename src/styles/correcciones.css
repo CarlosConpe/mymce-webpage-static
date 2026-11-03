@@ -345,7 +345,7 @@ footer .copy-row > .col-md-12, footer .copy-text { width: 100% !important; float
 /* Artículos: hueco de más después de cada galería. */
 .bloque-carrusel + .bloque-espacio hr.space { height: 20px; }
 /* Blog: los datos de la tarjeta ocupan lo mismo en las dos de la fila y el título va alineado como el texto. */
-.grid-item .tag-row { min-height: 58px; align-content: flex-start; }
+@media (min-width: 768px) { .grid-item .tag-row { min-height: 58px; align-content: flex-start; } }
 @media (min-width: 768px) and (max-width: 991px) { .grid-item .tag-row { min-height: 98px; } }
 .grid-item .advs-box-content > h3 { text-align: left; margin-top: 0; }
 /* Franja "¿Necesitas profesionales…?": renglones casi encimados. */
@@ -409,7 +409,7 @@ footer .copy-row > .col-md-12, footer .copy-text { width: 100% !important; float
 .grid-portfolio { justify-content: center; }
 @media (max-width: 991px) { .bloque-titulo h2 { font-size: 24px; } .bloque-slider { margin-bottom: 0; } }
 /* Tarjetas con un espaciador de más dentro de su columna. */
-.bloque-columna:has(> .row > .bloque-caja > .advs-box) > .row > .bloque-espacio { display: none; }
+.bloque-columna:has(> .row > .bloque-caja > :is(.advs-box-top-icon-img, .advs-box-top-icon)):not(:has(.advs-box-side-icon)) > .row > .bloque-espacio { display: none; }
 /* Textos de tarjeta sin clase: el mismo gris. */
 .advs-box-content > p:not([class]) { color: #4c4c4c; }
 /* Carruseles de servicios alineados con el borde del texto. */
@@ -428,7 +428,43 @@ footer .copy-row > .col-md-12, footer .copy-text { width: 100% !important; float
 /* Iconos redondos de tarjeta centrados aunque la caja esté justificada. */
 .advs-box-top-icon > i.icon { text-align: center !important; }
 /* Blog: títulos arriba y con lugar para dos renglones, así los datos quedan a la misma altura. */
-.grid-item .advs-box-content > h3 { align-items: flex-start; min-height: 2.9em; }
+@media (min-width: 768px) { .grid-item .advs-box-content > h3 { align-items: flex-start; min-height: 3.2em; } }
 @media (min-width: 768px) and (max-width: 991px) { .grid-item .advs-box-content > h3 { min-height: 4.3em; } }
 .texto-libre h3, .bloque-editor h3 { text-wrap: balance; }
 .bloque-carrusel + .bloque-editor { margin-top: 15px; }
+/* Flechas de carrusel visibles sobre fotos claras: círculo oscuro detrás. */
+.con-carrusel .flex-direction-nav li a { background: rgba(29, 29, 29, .45); border-radius: 50%; width: 44px !important; height: 44px !important; margin-top: -22px !important; display: flex !important; align-items: center; justify-content: center; }
+/* Tableta y celular: las flechas siguen visibles para que se note que hay más fotos. */
+@media (max-width: 992px) { .con-carrusel .flex-direction-nav { display: block !important; } .con-carrusel .flex-direction-nav li a { opacity: .9 !important; } }
+.section-item h2, .section-item h3 { text-wrap: balance; }
+/* Caja de preguntas frecuentes pegada a la de contacto. */
+.advs-box.advs-box-side-icon.boxed-inverse { margin-bottom: 60px; }
+/* Botones de las tarjetas de pasos alineados abajo (el tema les fijaba 15 px). */
+.advs-box.advs-box-top-icon > p + a.btn { margin-top: auto !important; }
+/* Al ocultar la infografía en tableta y celular, el título siguiente conserva su espacio. */
+@media (max-width: 991px) { .bloque-code-block:has(img[src*="Minimo-Mantenimiento"]) + .bloque-titulo, .bloque-code-block:has(img[src*="upscalemedia-transformed1"]) + .bloque-titulo, .bloque-code-block:has(img[src*="Minimo-Mantenimiento"]) + .bloque-espacio + .bloque-titulo, .bloque-code-block:has(img[src*="upscalemedia-transformed1"]) + .bloque-espacio + .bloque-titulo { margin-top: 70px; } }
+/* Portadas de foil: texto blanco legible sobre la madera clara. */
+.header-title[style*="2025/11/x.webp"] .title-base h1, .header-title[style*="2025/11/x.webp"] .title-base p { text-shadow: 0 1px 4px rgba(0, 0, 0, .7); }
+/* Foto junto al formulario centrada en su columna. */
+@media (min-width: 992px) { .bloque-columna.col-md-5:has(> .row > .bloque-image) { display: flex; flex-direction: column; justify-content: center; } }
+/* Listas verticales con icono: el icono a la altura del primer renglón. */
+.bloque-icon-list .vertical-icon-list .list-item > i { vertical-align: top !important; padding-top: 2px; }
+.bloque-icon-list .vertical-icon-list .list-item > label { vertical-align: top !important; }
+/* Fichas en tableta: lo que no es foto de la galería ocupa toda la fila (separadores, texto, botones). */
+@media (min-width: 768px) and (max-width: 991px) {
+    .row:has(> .bloque-columna.col-md-3 > .row > .bloque-image) > [class*="col-md-"]:not(.col-md-3) { flex: 0 0 100%; width: 100% !important; }
+    .bloque-columna.col-md-4:has(+ .bloque-columna.col-md-8) .bloque-image > img { height: 600px; width: 450px; max-width: 100%; object-fit: cover; display: block; margin: 0 auto; }
+}
+@media (max-width: 767px) { .bloque-columna.col-md-4:has(+ .bloque-columna.col-md-8) .bloque-image > img { height: 480px; width: 100%; object-fit: cover; } }
+/* Fotos de galería con la misma proporción aunque los archivos midan 766 o 768 px. */
+.row:has(> .bloque-columna.col-md-3 > .row > .bloque-image) .bloque-image img { aspect-ratio: 3 / 4; object-fit: cover; width: 100%; height: auto; }
+.header-title h1, .header-base h1 { text-wrap: balance; }
+/* Cajas de cuatro columnas con título de uno o dos renglones: el texto empieza a la misma altura. */
+@media (min-width: 992px) { .row:has(> .bloque-columna.col-md-3) .bloque-titulo > h2.text-left { min-height: 2.5em; } }
+/* Política de privacidad: títulos con el mismo peso que el resto del sitio. */
+body.pagina-clasica .section-item h2, body.pagina-clasica .section-item h3, body.pagina-clasica .section-item h4, body.pagina-clasica .section-item h2 strong, body.pagina-clasica .section-item h4 strong { font-weight: 400; }
+/* Segundo grupo de tarjetas de servicios con el mismo espacio que el primero. */
+.bloque-columna.col-md-12:has(> .row > .bloque-columna > .row > .bloque-caja > .advs-box-top-icon-img) { margin-top: 0; margin-bottom: 0; }
+.con-carrusel .flex-direction-nav li a:before { border-color: #fff !important; margin-left: 0; }
+.con-carrusel .flex-direction-nav li a.flex-prev:before { margin-left: 6px; }
+.con-carrusel .flex-direction-nav li a.flex-next:before { margin-left: -6px; }

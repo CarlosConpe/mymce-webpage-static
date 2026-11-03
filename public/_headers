@@ -18,3 +18,12 @@
 /assets/*
   ! Cache-Control
   Cache-Control: public, max-age=604800
+
+# La dirección técnica de Cloudflare no debe competir con el dominio en Google
+https://:project.pages.dev/*
+  X-Robots-Tag: noindex
+
+# El formulario no se indexa ni se guarda en caché
+/api/*
+  X-Robots-Tag: noindex
+  Cache-Control: no-store

@@ -13,7 +13,7 @@ const mapaDelSitio = {
       const imagenes = (ruta) => {
         const html = leer(ruta);
         const main = html.slice(html.indexOf('<main'), html.indexOf('</main>'));
-        const fotos = [...main.matchAll(/<img\b[^>]*>/g)].map((m) => (m[0].match(/data-grande="([^"]+)"/) || m[0].match(/\ssrc="(\/assets[^"]+)"/) || [])[1]).filter(Boolean);
+        const fotos = [...main.matchAll(/<img\b[^>]*>/g)].map((m) => (m[0].match(/data-grande="([^"]+)"/) || m[0].match(/\ssrc="(\/assets[^"]+)"/) || [])[1]).filter((f) => f && !f.startsWith('/assets/img/'));
         return [...new Set(fotos)].slice(0, 20).map((f) => `\n    <image:image><image:loc>${site}${f}</image:loc></image:image>`).join('');
       };
       const urls = pages
