@@ -1,0 +1,31 @@
+/* Ajustes propios sobre el tema: lo que antes iba en atributos style o en scripts. */
+.pie-logo { margin-bottom: 20px; max-width: 200px !important; height: auto !important; }
+.copy-grupo { display: inline-block; margin-top: 5px; font-size: 11px; opacity: .8; }
+.logo-default, .logo-retina { height: auto !important; width: auto !important; max-width: 100%; }
+.logo-default { aspect-ratio: 935 / 267; }
+
+/* Trampa para bots en los formularios */
+.trampa { position: absolute !important; left: -9999px !important; width: 1px; height: 1px; overflow: hidden; }
+
+
+/* Visor de fotos */
+.visor { max-width: min(96vw, 1200px); padding: 0; border: 0; background: transparent; }
+.visor::backdrop { background: rgba(0, 0, 0, .85); }
+.visor img { max-height: 86vh; width: auto; margin: 0 auto; }
+.visor button { position: fixed; min-width: 44px; min-height: 44px; border: 0; background: #fff; color: #333; font-size: 16px; cursor: pointer; }
+.visor__cerrar { top: 16px; right: 16px; padding: 0 14px; }
+.visor__ant { left: 16px; top: 50%; font-size: 26px !important; }
+.visor__sig { right: 16px; top: 50%; font-size: 26px !important; }
+
+/* Enlace para saltar al contenido: solo aparece con el teclado */
+.salto { position: absolute; left: -9999px; top: 0; z-index: 10000; padding: 10px 16px; background: #fff; color: #333; }
+.salto:focus { left: 16px; top: 16px; }
+
+/* Carruseles: el tema ocultaba las diapositivas hasta que su script las mostraba */
+.flexslider .slides > li:first-child, .carrusel-listo .slides > li { display: block; }
+.carrusel-listo .flex-viewport { overflow: hidden; }
+
+/* Mapa de la portada: se carga al llegar a él */
+.mapa-diferido { width: 100%; height: 450px; background: #f0f0f0; display: flex; align-items: center; justify-content: center; }
+.mapa-diferido p { color: #666; }
+.mapa-diferido iframe { border: 0; display: block; }

@@ -31,9 +31,19 @@ export async function onRequestPost({ request, env }) {
     if (texto(extra.sitio_web, 200)) return respuesta({ success: true });
     delete extra.sitio_web;
 
-    const correo = texto(cuerpo.email, 254);
-    const nombreLimpio = texto(cuerpo.name, 120);
-    const telefono = texto(cuerpo.phone, 40);
+    // Cada formulario nombra sus campos a su manera ("Nombre", "Correo Electrónico", "Phone"...):
+    // si el dato principal llegó vacío, se toma del campo equivalente.
+    const tomar = (patron) => {
+      const clave = Object.keys(extra).find((k) => patron.test(k.trim()) && texto(extra[k], 1000));
+      if (!clave) return "";
+      const valor = extra[clave];
+      delete extra[clave];
+      return valor;
+    };
+    const correo = texto(cuerpo.email, 254) || texto(tomar(/^(correo|email)/i), 254);
+    const nombreLimpio = texto(cuerpo.name, 120) || texto(tomar(/^(nombre|name)\b/i), 120);
+    const telefono = texto(cuerpo.phone, 40) || texto(tomar(/^(tel[eé]fono|phone)/i), 40);
+    if (!texto(cuerpo.message, 10)) cuerpo.message = tomar(/^(mensaje|message)\b/i);
     if (!nombreLimpio || (!correo && !telefono)) return respuesta({ error: "Faltan datos: nombre y correo o teléfono" }, 400);
     if (correo && !CORREO_VALIDO.test(correo)) return respuesta({ error: "Revisa tu correo" }, 400);
     if (excede(request.headers.get("CF-Connecting-IP") || "local")) return respuesta({ error: "Demasiados envíos. Inténtalo más tarde o escríbenos por WhatsApp." }, 429);

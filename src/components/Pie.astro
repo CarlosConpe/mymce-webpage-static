@@ -1,0 +1,56 @@
+---
+import { TEL, CORREO, DIRECCION, HORARIO_CORTO, REDES } from '../data/sitio';
+const anio = new Date().getFullYear();
+---
+<footer class="footer-modern">
+    <div class="content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 footer-left">
+                    <img src="/assets/storage/2016/12/169471652699961817.webp" alt="MYMCE" width="935" height="267" loading="lazy" class="pie-logo">
+                    <p class="text-s">Transformamos espacios con carpintería excepcional. Calidad, diseño y compromiso en cada proyecto.</p>
+                    <div class="btn-group social-group btn-group-icons">
+                        <a href={REDES.facebook} target="_blank" rel="noopener" aria-label="Facebook"><i class="fa fa-facebook text-xs circle"></i></a>
+                        <a href={REDES.linkedin} target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa fa-linkedin text-xs circle"></i></a>
+                        <a href={REDES.instagram} target="_blank" rel="noopener" aria-label="Instagram"><i class="fa fa-instagram text-xs circle"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <h4 class="text-color">Contacto</h4>
+                    <ul class="fa-ul text-s">
+                        <li><i class="fa-li fa fa-map-marker"></i>{DIRECCION.calle},<br>{DIRECCION.ciudad}, {DIRECCION.estado}</li>
+                        <li><i class="fa-li fa fa-phone"></i>+52 {TEL.texto.replace(/ /g, '-')}</li>
+                        <li><i class="fa-li fa fa-envelope"></i><a href={`mailto:${CORREO}`}>{CORREO}</a></li>
+                        <li><i class="fa-li fa fa-clock-o"></i>{HORARIO_CORTO}</li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h4 class="text-color">Menú</h4>
+                    <ul class="text-s list-unstyled">
+                        <li><a href="/">Inicio</a></li>
+                        <li><a href="/corporate/acerca-de-mymce-carpinteria-profesional-en-san-luis-potosi/">Nosotros</a></li>
+                        <li><a href="/portafolio/">Portafolio</a></li>
+                        <li><a href="/corporate/blog/">Blog</a></li>
+                        <li><a href="/corporate/contact/">Contacto</a></li>
+                        <li><a href="/corporate/politica-privacidad/">Política de Privacidad</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h4 class="text-color">Servicios</h4>
+                    <ul class="text-s list-unstyled">
+                        <li><a href="/servicios/cocinas/">Cocinas Integrales</a></li>
+                        <li><a href="/servicios/closets-vestidores/">Closets y Vestidores</a></li>
+                        <li><a href="/servicios/diseno-y-fabricacion-de-puertas/">Puertas</a></li>
+                        <li><a href="/servicios/diseno-y-fabricacion-de-muebles-de-bano/">Muebles de Baño</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row copy-row">
+            <div class="col-md-12 copy-text">
+                © {anio} Cocinas, Puertas y Closets. Todos los derechos reservados.<br>
+                <span class="copy-grupo">Una empresa de Grupo MYMCE</span>
+            </div>
+        </div>
+    </div>
+</footer>

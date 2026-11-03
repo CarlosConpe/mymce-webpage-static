@@ -1,0 +1,114 @@
+---
+import fichas from '../data/fichas.json';
+import { TEL, CORREO, DIRECCION, HORARIO_CORTO, REDES } from '../data/sitio';
+
+// El menú del portafolio sale de las fichas: por fraccionamiento, en el orden de siempre.
+const FRACCIONAMIENTOS = [['catara', 'Catara'], ['sirenia', 'Sirenia'], ['valle-real', 'Valle Real'], ['imperia', 'Imperia']];
+const menuDe = (tipo: string) => FRACCIONAMIENTOS.map(([id, nombre]) => ({
+  nombre,
+  modelos: fichas.filter((f) => f.frac === id && f.tipo === tipo).sort((a, b) => b.modelo.localeCompare(a.modelo, 'es')),
+}));
+const PESTANAS = [['Cocinas', menuDe('cocina')], ['Closets y Vestidores', menuDe('closet')]] as const;
+---
+<header class="scroll-change fixed-top">
+    <div class="navbar navbar-default mega-menu-fullwidth navbar-fixed-top" role="navigation">
+        <div class="navbar-mini scroll-hide">
+            <div class="container">
+                <div class="nav navbar-nav navbar-left">
+                    <span><a href={TEL.href}><i class="fa fa-phone"></i> {TEL.guiones}</a></span><hr>
+                    <span><a href={`mailto:${CORREO}`}>{CORREO}</a></span><hr>
+                    <span><a href="/corporate/contact/"><i class="fa fa-map-marker"></i> {DIRECCION.calle}, {DIRECCION.ciudad}, SLP.</a></span><hr>
+                    <span><a href="/corporate/contact/"><i class="fa fa-calendar"></i> {HORARIO_CORTO}</a></span>
+                </div>
+                <div class="nav navbar-nav navbar-right">
+                    <div class="minisocial-group">
+                        <a href={REDES.facebook} target="_blank" rel="noopener" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+                        <a href={REDES.instagram} target="_blank" rel="noopener" aria-label="Instagram"><i class="fa fa-instagram"></i></a>
+                        <a href={REDES.youtube} target="_blank" rel="noopener" aria-label="YouTube"><i class="fa fa-youtube"></i></a>
+                        <a href={REDES.linkedin} target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a>
+                    </div>
+                    <div class="navbar-left custom-area">
+                        <div class="minisocial-group" id="searchx"><a href="/portafolio/" aria-label="Ver el portafolio"><i class="fa fa-search"></i></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navbar navbar-main">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu-principal"><i class="fa fa-bars"></i></button>
+                    <a class="navbar-brand" href="/">
+                        <img class="logo-default" src="/assets/storage/2016/12/169471652699961817.webp" alt="MYMCE, carpintería en San Luis Potosí" width="935" height="267" fetchpriority="high">
+                        <img class="logo-retina" src="/assets/storage/2016/12/logo-2.webp" alt="MYMCE" width="180" height="51">
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" id="menu-principal">
+                    <ul class="nav navbar-nav" id="main-menu">
+                        <li><a href="/">Inicio</a></li>
+                        <li class="dropdown multi-level">
+                            <a class="dropdown-toggle" href="/corporate/acerca-de-mymce-carpinteria-profesional-en-san-luis-potosi/">Nosotros <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/corporate/acerca-de-mymce-carpinteria-profesional-en-san-luis-potosi/">Acerca de MYMCE</a></li>
+                                <li><a href="/corporate/preguntas-frecuentes/">FAQ (Preguntas Frecuentes)</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown multi-level">
+                            <a class="dropdown-toggle" href="/soluciones/carpinteria-para-particulares/">Carpintería <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/soluciones/carpinteria-para-constructoras/">Carpintería para Constructoras</a></li>
+                                <li><a href="/soluciones/carpinteria-para-arquitectos/">Carpintería para Arquitectos</a></li>
+                                <li><a href="/soluciones/carpinteria-para-cocinistas/">Carpintería para Cocinistas</a></li>
+                                <li><a href="/soluciones/carpinteria-para-particulares/">Carpintería para Clientes Finales</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown multi-level">
+                            <a class="dropdown-toggle" href="/servicios/">Servicios <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/servicios/cocinas/">Diseño y Fabricación de Cocinas Integrales</a></li>
+                                <li><a href="/servicios/closets-vestidores/">Diseño y Fabricación de Closets y Vestidores</a></li>
+                                <li class="dropdown multi-level dropdown-submenu">
+                                    <a class="dropdown-toggle" href="/servicios/diseno-y-fabricacion-de-puertas/">Diseño y Fabricación de Puertas</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="/servicios/puertas-y-piezas-recubiertas-con-foil-pvc/">Puertas y Piezas Recubiertas con Foil PVC</a></li>
+                                        <li><a href="/servicios/puertas-frentes-de-cajon-en-mdf-forrados-con-foil-pvc/">Puertas de Gabinete y Frentes de Cajón Forrados con Foil PVC (ES)</a></li>
+                                        <li><a href="/servicios/pvc-foil-covered-cabinet-doors-drawer-fronts/" hreflang="en">PVC Foil-Covered Cabinet Doors &amp; Drawer Fronts (EN)</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="/servicios/diseno-y-fabricacion-de-muebles-de-bano/">Diseño y Fabricación de Muebles de Baño</a></li>
+                                <li><a href="/servicios/diseno-y-fabricacion-de-escritorios/">Diseño y Fabricación de Escritorios</a></li>
+                                <li><a href="/servicios/maquila-de-partes/">Maquila de Partes</a></li>
+                                <li><a href="/equipamiento/">Venta de Electrodomésticos</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown multi-level mega-tabs">
+                            <a class="dropdown-toggle" href="/portafolio/">Portafolio <span class="caret"></span></a>
+                            <div class="mega-menu dropdown-menu multi-level row">
+                                <div class="tab-box">
+                                    <ul class="nav nav-tabs" role="tablist">
+                                        {PESTANAS.map(([nombre], i) => <li class:list={['menu-obj', { active: i === 0 }]}><a href={`#menu-portafolio-${i}`} role="tab" aria-selected={i === 0 ? 'true' : 'false'} data-pestana={i}>{nombre}</a></li>)}
+                                    </ul>
+                                    {PESTANAS.map(([nombre, grupos], i) => (
+                                        <div class:list={['panel', { active: i === 0 }]} id={`menu-portafolio-${i}`} data-panel={i} role="tabpanel" aria-label={nombre}>
+                                            {grupos.map((g) => (
+                                                <div class="col">
+                                                    <h5>{g.nombre}</h5>
+                                                    <ul class="fa-ul text-s">{g.modelos.map((f) => <li><a href={`/portafolio/${f.slug}/`}>Modelo {f.modelo}</a></li>)}</ul>
+                                                </div>
+                                            ))}
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="/corporate/blog/">Blog</a></li>
+                    </ul>
+                    <div class="nav navbar-nav navbar-right">
+                        <div class="custom-area">
+                            <div class="button-cnt"><a class="btn btn-lg" href="/corporate/contact/">Contáctanos</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

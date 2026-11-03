@@ -1,0 +1,77 @@
+---
+import '../styles/sitio.css';
+import '../styles/propio.css';
+import Cabecera from '../components/Cabecera.astro';
+import Pie from '../components/Pie.astro';
+import { D, WA, LEAD, CONVERSION, MAPA_EMBED, grafo, ruta as migas } from '../data/sitio';
+
+interface Props {
+  title: string;
+  desc: string;
+  ruta: string;
+  img?: string;
+  lang?: string;
+  noindex?: boolean;
+  alternos?: string[][];
+  wa?: string | null;
+  waEtiqueta?: string | null;
+  ld?: object[];
+  migasLd?: [string, string | null][];
+  carrusel?: boolean;
+  videoFix?: boolean;
+}
+const { title, desc, ruta, img = '/assets/storage/2016/12/169471652699961817.webp', lang = 'es-MX', noindex = false, alternos = [], wa, waEtiqueta, ld = [], migasLd, carrusel = false, videoFix = false } = Astro.props;
+const url = D + ruta;
+const ingles = lang.startsWith('en');
+// Solo el par español-inglés de puertas tiene versiones en otro idioma.
+const idiomas = alternos.some(([h]) => h.startsWith('en')) ? alternos : [];
+const datos = grafo(
+  { '@type': 'WebPage', '@id': `${url}#pagina`, url, name: title, description: desc, inLanguage: lang, isPartOf: { '@id': `${D}/#sitio` }, about: { '@id': `${D}/#localbusiness` } },
+  { '@type': 'WebSite', '@id': `${D}/#sitio`, url: `${D}/`, name: 'MYMCE', inLanguage: 'es-MX', publisher: { '@id': `${D}/#localbusiness` } },
+  ...(migasLd ? [migas(migasLd, ruta)] : []),
+  ...ld,
+);
+---
+<!DOCTYPE html>
+<html lang={lang}>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{title}</title>
+    <meta name="description" content={desc}>
+    <meta name="robots" content={noindex ? 'noindex, follow' : 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'}>
+    {!noindex && <link rel="canonical" href={url}>}
+    {idiomas.map(([h, u]) => <link rel="alternate" hreflang={h} href={D + u}>)}
+    <link rel="icon" href="/assets/storage/2016/12/favicon-1.webp">
+    <meta name="theme-color" content="#475a66">
+    <meta property="og:locale" content={ingles ? 'en_US' : 'es_MX'}>
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="MYMCE">
+    <meta property="og:title" content={title}>
+    <meta property="og:description" content={desc}>
+    <meta property="og:url" content={url}>
+    <meta property="og:image" content={D + img}>
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="preload" href="/assets/fonts/source-sans-pro-400.woff2" as="font" type="font/woff2" crossorigin>
+    <script type="application/ld+json" set:html={JSON.stringify(datos).replace(/</g, '\u003c')}></script>
+    <script is:inline src="/assets/js/medicion.js" defer></script>
+</head>
+<body class:list={[{ 'con-carrusel': carrusel, 'con-video': videoFix }]} data-conversion={CONVERSION[ruta] ?? LEAD} data-lead={LEAD}>
+<a class="salto" href="#contenido">{ingles ? 'Skip to content' : 'Saltar al contenido'}</a>
+<div>
+    <Cabecera />
+    <main id="contenido"><slot /></main>
+</div>
+{ruta === '/' && <div class="section-item section-empty no-paddings no-paddings-y no-margins">
+    <div class="content"><div class="row"><div class="col-md-12">
+        <div class="mapa-diferido" data-src={MAPA_EMBED}><p>Cargando mapa...</p></div>
+    </div></div></div>
+</div>}
+<button type="button" class="scroll-top scroll-top-mobile fa fa-sort-asc" aria-label={ingles ? 'Back to top' : 'Volver arriba'}></button>
+<Pie />
+<a href={wa ?? WA.href} class="wa-float" target="_blank" rel="noopener" data-whatsapp={waEtiqueta ?? 'default'} aria-label={ingles ? 'Message us on WhatsApp' : 'Escríbenos por WhatsApp'}><i class="fa fa-whatsapp"></i></a>
+<script>
+    import '../scripts/sitio.js';
+</script>
+</body>
+</html>

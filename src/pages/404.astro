@@ -1,0 +1,10 @@
+---
+import Base from '../layouts/Base.astro';
+import paginas from '../data/paginas.json';
+
+const contenido = import.meta.glob('../contenido/404/index.html', { query: '?raw', import: 'default', eager: true }) as Record<string, string>;
+const p = paginas.find((x) => x.ruta === '/404/')!;
+---
+<Base title={p.title} desc={p.desc} ruta="/404/" noindex>
+    <Fragment set:html={Object.values(contenido)[0]} />
+</Base>

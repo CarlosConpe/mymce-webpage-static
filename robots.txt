@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://www.mymce.com.mx/sitemap_mx.xml

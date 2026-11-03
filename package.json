@@ -1,43 +1,17 @@
 {
-  "name": "simply-static-1-1765817436",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "directories": {
-    "lib": "lib"
-  },
+  "name": "mymce-sitio",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "serve": "serve .",
-    "lint:html": "html-validate \"**/*.html\"",
-    "audit:seo": "lighthouse http://localhost:3000/index.html --view --only-categories=seo,accessibility,best-practices,performance",
-    "check:links": "linkinator --recurse .",
-    "test:seo": "npm run lint:html && npm run check:links",
-    "check:minified": "node scripts/audit_minified_usage.js",
-    "build:assets": "node scripts/minify_assets.js && node scripts/apply_html_fixes.js"
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "check": "node scripts/verificar.mjs",
+    "test": "node --test \"tests/*.test.mjs\""
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
   "dependencies": {
-    "cheerio": "^1.1.2",
-    "clean-css": "^5.3.3",
-    "fs-extra": "^11.3.2",
-    "glob": "^13.0.0",
-    "lunr": "^2.3.9",
-    "sharp": "^0.34.5",
-    "terser": "^5.44.1"
-  },
-  "devDependencies": {
-    "@ffmpeg-installer/ffmpeg": "^1.1.0",
-    "ffmpeg": "^0.0.4",
-    "html-validate": "^10.5.0",
-    "image-size": "^2.0.2",
-    "lighthouse": "^13.0.1",
-    "linkinator": "^7.5.1",
-    "purgecss": "^7.0.2",
-    "serve": "^14.2.5",
-    "sitemap-generator-cli": "^7.5.0"
+    "astro": "^7.4.4",
+    "marked": "^18.1.2"
   }
 }

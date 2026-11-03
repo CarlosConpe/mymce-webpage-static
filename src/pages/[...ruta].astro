@@ -1,0 +1,36 @@
+---
+// Todas las páginas comparten cabecera y pie; el contenido de cada una vive en src/contenido.
+import Base from '../layouts/Base.astro';
+import paginas from '../data/paginas.json';
+import { preguntasLd } from '../data/sitio';
+
+const contenido = import.meta.glob('../contenido/**/index.html', { query: '?raw', import: 'default', eager: true }) as Record<string, string>;
+const NOMBRES: Record<string, string> = { corporate: 'Nosotros', servicios: 'Servicios', soluciones: 'Carpintería', portafolio: 'Portafolio', blog: 'Blog' };
+
+export function getStaticPaths() {
+  return paginas.filter((p) => p.ruta !== '/404/' && p.ruta !== '/').map((p) => ({ params: { ruta: p.ruta.slice(1, -1) }, props: { p } }));
+}
+const { p } = Astro.props as { p: (typeof paginas)[number] };
+const html = contenido[`../contenido/${p.archivo}`];
+
+// Migas para los datos estructurados: cada tramo de la ruta que exista como página.
+const existe = new Set(paginas.map((x) => x.ruta));
+const tramos = p.ruta.split('/').filter(Boolean);
+const migas: [string, string | null][] = [['Inicio', '/']];
+tramos.forEach((_, i) => {
+  const u = '/' + tramos.slice(0, i + 1).join('/') + '/';
+  if (u === p.ruta) migas.push([p.title.split('|')[0].trim(), null]);
+  else if (existe.has(u)) migas.push([NOMBRES[tramos[i]] ?? tramos[i], u]);
+});
+
+// La página de preguntas frecuentes publica sus preguntas también como datos estructurados.
+const ld: object[] = [];
+if (p.ruta === '/corporate/preguntas-frecuentes/') {
+  const faq = [...html.matchAll(/<div class="list-group-item[^"]*">\s*<a[^>]*>([\s\S]*?)<\/a>\s*<div class="panel[^"]*">\s*<div class="inner">([\s\S]*?)<\/div>/g)]
+    .map((m) => [m[1], m[2]].map((t) => t.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim()) as [string, string]);
+  if (faq.length) ld.push(preguntasLd(p.ruta, faq));
+}
+---
+<Base title={p.title} desc={p.desc} ruta={p.ruta} img={p.img || undefined} lang={p.lang === 'en' ? 'en' : 'es-MX'} alternos={p.alternos} wa={p.wa} waEtiqueta={p.waEtiqueta} migasLd={migas} ld={ld} carrusel={p.carrusel} videoFix={p.videoFix}>
+    <Fragment set:html={html} />
+</Base>

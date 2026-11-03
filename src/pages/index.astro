@@ -1,0 +1,12 @@
+---
+import Base from '../layouts/Base.astro';
+// Después de Base: estas reglas de la portada deben ganar a las del sitio.
+import '../styles/portada.css';
+import paginas from '../data/paginas.json';
+
+const contenido = import.meta.glob('../contenido/inicio/index.html', { query: '?raw', import: 'default', eager: true }) as Record<string, string>;
+const p = paginas.find((x) => x.ruta === '/')!;
+---
+<Base title={p.title} desc={p.desc} ruta="/" img={p.img || undefined} wa={p.wa} waEtiqueta={p.waEtiqueta} carrusel={p.carrusel} videoFix={p.videoFix}>
+    <Fragment set:html={Object.values(contenido)[0]} />
+</Base>
