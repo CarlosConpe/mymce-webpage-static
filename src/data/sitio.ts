@@ -3,7 +3,7 @@ import empresa from './empresa.json';
 
 const digitos = (t: string) => t.replace(/\D/g, '');
 export const D = 'https://www.mymce.com.mx';
-export const TEL = { texto: empresa.telefono, href: `tel:+52${digitos(empresa.telefono)}`, intl: `+52 ${empresa.telefono}`, guiones: digitos(empresa.telefono).replace(/(\d{3})(\d{3})(\d{2})(\d{2})/, '$1-$2-$3-$4') };
+export const TEL = { texto: empresa.telefono, href: `tel:+52${digitos(empresa.telefono)}`, intl: `+52 ${empresa.telefono}`, guiones: digitos(empresa.telefono).replace(/(\d{3})(\d{3})(\d{4})/, '$1-$2-$3') };
 export const WA = { texto: empresa.whatsapp, href: `https://wa.me/52${digitos(empresa.whatsapp)}`, intl: `+52 ${empresa.whatsapp}` };
 export const CORREO = empresa.correo;
 export const DIRECCION = { calle: empresa.calle, cp: empresa.cp, ciudad: empresa.ciudad, estado: empresa.estado };

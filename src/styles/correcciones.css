@@ -28,10 +28,9 @@ header .navbar-main .custom-area .btn:hover { background-color: #2a4555; border-
 /* Foil PVC: las puertas de la foto quedaban fuera del cuadro. */
 .header-title[style*="2025/11/x.webp"] { background-position: right center !important; }
 /* Electrodomésticos: el anuncio de fondo trae letras propias del lado derecho; el texto se queda en la mitad oscura. */
-.header-title[style*="2023/08/Diseno-sin-titulo2"] { background-position: left center !important; }
-.header-title[style*="2023/08/Diseno-sin-titulo2"] .title-base { max-width: 60%; }
+.header-title[style*="Diseno-sin-titulo2-horno"] { background-position: left center !important; }
 @media (max-width: 767px) {
-    .header-title[style*="2023/08/Diseno-sin-titulo2"] .title-base { max-width: none; }
+    
     .header-title.white .title-base h1, .header-title.white .title-base p { text-shadow: 0 1px 4px rgba(0, 0, 0, .7); }
 }
 
@@ -58,9 +57,9 @@ header .navbar-main .custom-area .btn:hover { background-color: #2a4555; border-
     .row:has(> .bloque-columna.boxed-inverse + .bloque-columna:is(.boxed, .boxed-inverse)) { display: flex; flex-wrap: wrap; }
     .row:has(> .bloque-columna.boxed-inverse + .bloque-columna:is(.boxed, .boxed-inverse))::before,
     .row:has(> .bloque-columna.boxed-inverse + .bloque-columna:is(.boxed, .boxed-inverse))::after { display: none; }
-    .row:has(> .bloque-columna.white.boxed + .bloque-columna:has(form)) { display: flex; flex-wrap: wrap; }
-    .row:has(> .bloque-columna.white.boxed + .bloque-columna:has(form))::before,
-    .row:has(> .bloque-columna.white.boxed + .bloque-columna:has(form))::after { display: none; }
+    .row:has(> .bloque-columna.white.boxed + .bloque-columna form) { display: flex; flex-wrap: wrap; }
+    .row:has(> .bloque-columna.white.boxed + .bloque-columna form)::before,
+    .row:has(> .bloque-columna.white.boxed + .bloque-columna form)::after { display: none; }
     /* Caja gris que se estiraba a la altura de la lista de al lado con poco texto: el texto va centrado. */
     .bloque-columna.col-md-4.boxed-inverse { display: flex; flex-direction: column; justify-content: center; }
     /* Títulos de dos renglones bajaban el texto de su tarjeta. */
@@ -77,9 +76,6 @@ header .navbar-main .custom-area .btn:hover { background-color: #2a4555; border-
 .bloque-code-block img { display: block; margin: 0 auto; }
 /* Las rayas negras vienen dentro de estas dos fotos. */
 .adv-img-classic-box img[src*="parrilla-campana"], .adv-img-classic-box img[src*="DUETTO_PLUS"] { transform: scale(1.06); }
-/* El letrero del fondo asomaba una letra cortada a la derecha. */
-.header-title[style*="2023/08/Diseno-sin-titulo2"]::after { content: ""; position: absolute; top: 0; right: 0; bottom: 0; left: auto; z-index: 0; width: 35%; background: linear-gradient(90deg, transparent, #1d1d1d 45%); }
-.header-title[style*="2023/08/Diseno-sin-titulo2"] > .overlaybox { z-index: 1; }
 /* La foto de la parrilla trae fondo blanco hueso propio y se veía enmarcada. */
 .advs-box-top-icon-img .img-box img[src*="parrilla"] { mix-blend-mode: multiply; outline: 1px solid #ececec; outline-offset: -1px; }
 /* Renglones de lista sin icono quedaban sangrados distinto que los que sí tienen. */
@@ -226,8 +222,8 @@ footer .fa-ul a { color: inherit; }
     .grid-portfolio > .portfolio-item { width: 50%; }
     .grid-box { display: flex; flex-wrap: wrap; }
     .grid-box::before, .grid-box::after { display: none; }
-    footer .content .row > [class*="col-md-"] { width: 50%; float: left; }
-    footer .content .row > [class*="col-md-"]:nth-child(2n+1) { clear: left; }
+    footer .content > div > .row > .col-md-3 { width: 50% !important; float: left; }
+    footer .content > div > .row > .col-md-3:nth-child(2n+1) { clear: left; }
 }
 @media (max-width: 991px) { .row > .bloque-columna.col-md-12 { clear: both; } .tag-row span:after { display: none; } }
 
@@ -235,7 +231,7 @@ footer .fa-ul a { color: inherit; }
 /* Títulos que dejaban una palabra sola en el último renglón. */
 .title-base h1, .clean-card h3, .advs-box h3 { text-wrap: balance; }
 /* El pie quedaba 15 px más adentro que el contenido entre 1200 y 1540 px. */
-footer.footer-modern > .content { padding-left: 0; padding-right: 0; }
+@media (min-width: 1200px) { footer.footer-modern > .content { padding-left: 0; padding-right: 0; } }
 /* Textos de tarjeta en negro puro cuando el resto es gris. */
 .advs-box-content p.text-s { color: inherit; }
 /* Ubicación y modelo: el texto quedaba más arriba que el centro de su icono. */
@@ -254,11 +250,9 @@ footer.footer-modern > .content { padding-left: 0; padding-right: 0; }
 /* Textos guía de los campos casi ilegibles sobre la caja gris. */
 .form-box .form-control::placeholder, form .form-control::placeholder { color: #6b6b6b; opacity: 1; }
 /* Botones alineados a la derecha que en celular quedaban cargados a un lado. */
-@media (max-width: 767px) { .bloque-button .button-cnt[style*="text-align:right"] { text-align: center !important; } }
+@media (max-width: 991px) { .bloque-button .button-cnt[style*="text-align:right"] { text-align: center !important; } }
 /* Infografía ancha con texto: en celular el texto quedaba de 3 px; los mismos datos van en la lista de arriba. */
-@media (max-width: 767px) { img[src*="upscalemedia-transformed1"], img[src*="Minimo-Mantenimiento"] { display: none; } }
-/* Pantalla grande: el anuncio de fondo de electrodomésticos dejaba ver una palabra cortada. */
-@media (min-width: 1600px) { .header-title[style*="2023/08/Diseno-sin-titulo2"] { background-size: auto 100% !important; background-repeat: no-repeat; background-color: #111; } }
+@media (max-width: 991px) { img[src*="upscalemedia-transformed1"], img[src*="Minimo-Mantenimiento"] { display: none; } }
 /* Línea gris que solo aparecía en tableta y celular entre secciones. */
 @media (max-width: 991px) { .section-empty + .section-empty { border-top: 0; } }
 /* Tarjetas del blog de distinta altura en la misma fila. */
@@ -286,3 +280,130 @@ footer ul.list-unstyled a { color: #555; }
 .grid-box.row { margin-left: 0; margin-right: 0; width: auto; }
 .niche-box-post .img-box img { width: 100%; height: 100%; object-fit: cover; }
 @media (max-width: 767px) { .niche-box-post .img-box { height: auto !important; aspect-ratio: 16 / 10; } }
+/* Pie: en tableta y celular quedaba pegado al borde; el renglón del copyright ocupaba media pantalla. */
+@media (min-width: 768px) and (max-width: 991px) { footer .content .row > .copy-text, footer .copy-row > [class*="col-md-"] { width: 100% !important; float: none; } }
+/* Entre 1200 y 1540 px el contenido iba casi pegado a los bordes. */
+@media (min-width: 1200px) and (max-width: 1540px) { .container { max-width: calc(100% - 60px); } }
+/* Copyright a todo lo ancho en tableta. */
+footer .copy-row > .col-md-12, footer .copy-text { width: 100% !important; float: none !important; clear: both; }
+/* Formularios sobre fondo oscuro: textos guía y etiquetas legibles. */
+.white form .form-control::placeholder, .white .form-box .form-control::placeholder { color: rgba(255, 255, 255, .75); }
+.white form p, .white form label { color: rgba(255, 255, 255, .85); }
+/* Tarjetas de pasos con botón: el texto va pegado al título y el botón abajo. */
+.advs-box-top-icon:has(> .btn) > p { margin-top: 0; margin-bottom: 15px; }
+/* Textos de tarjeta sin clase también en gris. */
+.advs-box-content p { color: inherit; }
+/* Listas verticales con icono: icono y texto centrados entre sí. */
+.bloque-icon-list .vertical-icon-list .list-item > i, .bloque-icon-list .vertical-icon-list .list-item > label { vertical-align: middle; }
+/* Tarjetas con foto: el texto empieza a la misma altura aunque el título ocupe uno o dos renglones. */
+@media (min-width: 768px) { .advs-box-top-icon-img .advs-box-content > h3 { min-height: 2.5em; display: flex; align-items: flex-end; justify-content: center; } }
+/* Galerías de fichas con menos de cuatro fotos: mismo tamaño y centradas. */
+@media (min-width: 768px) {
+    .row:has(> .bloque-columna.col-md-3 > .row > .bloque-image) { display: flex; flex-wrap: wrap; justify-content: center; }
+    .row:has(> .bloque-columna.col-md-3 > .row > .bloque-image)::before, .row:has(> .bloque-columna.col-md-3 > .row > .bloque-image)::after { display: none; }
+}
+/* Celular: ubicación y modelo partidos por el relleno de 50 px. */
+@media (max-width: 767px) { .icon-list.boxed-inverse { padding-left: 20px !important; padding-right: 20px !important; } }
+@media (min-width: 768px) and (max-width: 991px) {
+    /* Cajas con margen propio: al 100 % se salían 15 px. */
+    .row > .bloque-columna[class*="col-md-"][class*="boxed"] { width: calc(100% - 30px) !important; }
+    /* Blog: las tarjetas cortaban el texto. */
+    .grid-box > .grid-item > .niche-box-post { height: auto; overflow: visible; }
+    /* Logos que crecían a todo lo ancho. */
+    .bloque-image img[src*="logo-b25182"] { max-width: 200px; display: block; margin: 0 auto; }
+    /* Categorías de electrodomésticos de dos en dos. */
+    .row > .bloque-columna.col-md-3:has(> .row > .bloque-adv-image-box) { width: 50% !important; }
+    .row:has(> .bloque-columna.col-md-3 > .row > .bloque-adv-image-box) { display: flex; flex-wrap: wrap; }
+    .row:has(> .bloque-columna.col-md-3 > .row > .bloque-adv-image-box)::before, .row:has(> .bloque-columna.col-md-3 > .row > .bloque-adv-image-box)::after { display: none; }
+    /* Videos verticales: sin recortarlos a lo ancho. */
+    .bloque-video video.video-box { width: auto; max-width: 100%; height: 600px; max-height: none; aspect-ratio: 9 / 16; margin: 0 auto; }
+    .bloque-video video.video-box[poster*="1920x1080"] { width: 100%; height: auto; aspect-ratio: 16 / 9; }
+}
+/* Blog en computadora: tarjetas de la misma altura por dentro. */
+.niche-box-post { display: flex; flex-direction: column; }
+.niche-box-post .advs-box-content { flex: 1; }
+/* Formularios en cajas con fondo pizarra puesto en línea. */
+.bloque-columna[style*="background"] form .form-control::placeholder { color: rgba(255, 255, 255, .75); }
+/* Logo blanco del formulario: en tableta y celular, a 160 px. */
+@media (max-width: 991px) { img[src*="logo-b25182"] { max-width: 160px !important; display: block; margin-left: auto; margin-right: auto; } }
+/* Puntos de los carruseles siempre centrados. */
+.flexslider .flex-control-nav { text-align: center !important; }
+/* Justificado: huecos entre palabras también en computadora. */
+.text-justify, .text-justify * { text-align: left !important; }
+.advs-box.text-justify h3, .text-justify .advs-box h3 { text-align: center !important; }
+/* Botones de las tarjetas de servicios en celular, todos del mismo ancho. */
+@media (max-width: 767px) { .bloque-icon-list-simple .btn { display: block; width: 100%; } }
+/* Huecos de más debajo de los carruseles de servicios. */
+.bloque-slider .flexslider { margin-bottom: 0; }
+.bloque-slider .flex-control-nav { position: static; margin-top: 12px; }
+/* Título de sección dentro de una fila de tarjetas: a todo lo ancho. */
+@media (min-width: 768px) { .row:has(> .bloque-columna > .row > .bloque-caja > .advs-box) > .col-md-12 { width: 100%; } }
+/* Videos del carrusel a lo ancho de su casilla. */
+.bloque-slider .slides > li > video { width: 100%; object-fit: cover; }
+/* Blog en tableta: el recuadro de la foto crecía después de calcular la fila y cortaba el texto. */
+@media (max-width: 991px) { .grid-box .niche-box-post .img-box { height: auto !important; aspect-ratio: 16 / 10; } }
+/* Artículos: hueco de más después de cada galería. */
+.bloque-carrusel + .bloque-espacio hr.space { height: 20px; }
+/* Blog: los datos de la tarjeta ocupan lo mismo en las dos de la fila y el título va alineado como el texto. */
+.grid-item .tag-row { min-height: 58px; align-content: flex-start; }
+@media (min-width: 768px) and (max-width: 991px) { .grid-item .tag-row { min-height: 98px; } }
+.grid-item .advs-box-content > h3 { text-align: left; margin-top: 0; }
+/* Franja "¿Necesitas profesionales…?": renglones casi encimados. */
+.bloque-titulo h3 { line-height: 1.3; text-wrap: balance; }
+/* Tableta y celular: los títulos de sección no deben quedar más chicos que los subtítulos. */
+@media (max-width: 991px) { .title-base h2, .bloque-titulo h2 { font-size: 26px; line-height: 1.25; } }
+/* Punto activo del carrusel distinguible. */
+.flex-control-paging li a.flex-active { background-color: #475a66 !important; border-color: #475a66 !important; }
+/* Celular: todos los submenús con la misma sangría. */
+@media (max-width: 991px) { #main-menu .dropdown-menu > li > a, #main-menu .mega-menu .nav-tabs > li > a, #main-menu .mega-menu h5 { padding-left: 30px !important; } #main-menu .mega-menu .fa-ul li a { padding-left: 45px !important; } }
+/* Enlace de las tarjetas centrado también en celular. */
+.advs-box-content > .btn-text { display: table; margin-left: auto; margin-right: auto; }
+/* Visor: el fondo de la página no debe leerse detrás. */
+.visor::backdrop { background: rgba(0, 0, 0, .93); }
+/* Botón Enviar en cajas oscuras: el tema le ponía texto gris. */
+.white form .btn:not(.btn-border), .white form .btn:not(.btn-border) i, .white form button[type="submit"] { color: #355669 !important; }
+.bloque-contact-form + .bloque-espacio + .bloque-titulo { margin-top: 40px; }
+@media (max-width: 991px) { .vertical-row .title-base h2 { font-size: 26px; line-height: 1.3; } }
+/* Video junto al formulario: centrado a la altura de la caja. */
+@media (min-width: 992px) {
+    .row:has(> .bloque-columna form):has(> .bloque-columna.col-md-5 video) { display: flex; flex-wrap: wrap; align-items: center; }
+    .row:has(> .bloque-columna form):has(> .bloque-columna.col-md-5 video)::before, .row:has(> .bloque-columna form):has(> .bloque-columna.col-md-5 video)::after { display: none; }
+    .vertical-row > .row { align-items: flex-start; }
+}
+.con-carrusel .bloque-carrusel .flexslider, .con-carrusel .bloque-slider .flexslider { margin-bottom: 0 !important; }
+@media (max-width: 767px) { .vertical-row .bloque-button .btn { display: block; width: 100%; } }
+.row > .col-md-6 > h4:first-child { margin-top: 25px; }
+/* Equipamiento: botones de la cabecera de la página sin partirse en dos renglones. */
+@media (min-width: 992px) and (max-width: 1439px) { .bloque-columna.col-md-2 .button-cnt .btn { white-space: nowrap; padding-left: 12px; padding-right: 12px; font-size: 14px; } }
+/* Botones redondos de las tarjetas: mismo estilo y tamaño que los demás botones. */
+.btn.circle-button { border-radius: 2px; }
+.btn.circle-button.btn-sm { font-size: 15px; padding: 10px 20px; }
+/* Blog: todos los títulos de tarjeta alineados a la izquierda. */
+.grid-item .advs-box-content > h3 { justify-content: flex-start; }
+.niche-box-post .advs-box-content p { color: inherit; }
+/* Datos del artículo sin separadores que quedan colgando. */
+.tag-row span:after { display: none !important; }
+.tag-row span { margin-right: 18px; }
+/* Contacto: la caja gris ya trae su relleno; el título no necesita margen extra. */
+.bloque-columna.boxed-inverse > .row > .bloque-titulo:first-child { margin-top: 0 !important; }
+/* Franja blanca entre el mapa y el pie. */
+.bloque-code-block:has(.map-lazy-wrapper) + .bloque-espacio, .bloque-code-block:has(.mapa-diferido) + .bloque-espacio { display: none; }
+/* Fichas: la foto o el video de la izquierda con la misma altura en todas. */
+@media (min-width: 992px) {
+    .bloque-columna.col-md-4:has(+ .bloque-columna.col-md-8) .bloque-video video.video-box,
+    .bloque-columna.col-md-4:has(+ .bloque-columna.col-md-8) .bloque-image > img { height: 600px; max-height: none; width: 100%; object-fit: cover; }
+}
+/* Todos los botones de contenido con el mismo azul y sin borde negro. */
+.btn-default, .bloque-button .btn:not(.btn-border), .advs-box .btn-default { background-color: #355669 !important; border-color: #355669 !important; color: #fff !important; }
+.btn-default i, .bloque-button .btn:not(.btn-border) i { color: #fff !important; }
+.bloque-button .btn.btn-border { border-color: #355669 !important; color: #355669 !important; background: transparent !important; }
+.bloque-button .btn.btn-border i { color: #355669 !important; }
+/* Video junto al formulario centrado en su columna. */
+@media (min-width: 992px) { .bloque-columna.col-md-5:has(.bloque-video) { display: flex; flex-direction: column; justify-content: center; } }
+/* Electrodomésticos: la campana sobre blanco con fondo gris para que la tarjeta no se vea abierta. */
+.advs-box .img-box img[src$="2023/07/5.webp"] { object-fit: contain; background: #f5f5f5; }
+/* Portafolio: la barrita bajo el título como en las demás portadas. */
+.pagina-clasica .header-title .title-base h1:before { display: block !important; }
+/* Última fila del portafolio centrada. */
+.grid-portfolio { justify-content: center; }
+@media (max-width: 991px) { .bloque-titulo h2 { font-size: 24px; } .bloque-slider { margin-bottom: 0; } }
