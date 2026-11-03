@@ -92,9 +92,10 @@ window.addEventListener('resize', () => { altoEncabezados(); centraTitulos(); })
 $$('.accordion-list .list-group-item > a').forEach((a) => {
     const panel = a.nextElementSibling;
     if (!panel) return;
-    // Como el tema: el primer elemento de cada acordeón empieza abierto.
+    // Como el tema: data-open indica qué elemento empieza abierto (1 = el primero).
     const lista = a.closest('.accordion-list');
-    if (lista && !lista.querySelector(':scope > .list-group-item > a.active') && lista.querySelector(':scope > .list-group-item > a') === a) a.classList.add('active');
+    const abierto = lista && parseInt(lista.dataset.open, 10);
+    if (abierto && [...lista.querySelectorAll(':scope > .list-group-item > a')][abierto - 1] === a) a.classList.add('active');
     a.setAttribute('role', 'button');
     a.setAttribute('aria-expanded', String(a.classList.contains('active')));
     if (a.classList.contains('active')) panel.style.display = 'block';
@@ -120,7 +121,7 @@ function opciones(texto) {
 $$('.con-carrusel .flexslider').forEach((caja) => {
     const lista = $('.slides', caja);
     const fichas = lista ? [...lista.children] : [];
-    if (fichas.length < 2) return;
+    if (!fichas.length) return;
     const o = opciones(caja.dataset.options);
     // Mismo cálculo del tema: cuántas fotos caben según el ancho mínimo de cada una.
     const esTira = caja.classList.contains('carousel');
@@ -132,7 +133,8 @@ $$('.con-carrusel .flexslider').forEach((caja) => {
         let n = parseInt(o.numItems, 10) || 3;
         if (ancho / n < minimo) n = ancho / 3 > minimo ? 3 : ancho / 2 > minimo ? 2 : 1;
         margen = n === 1 ? 0 : (o.itemMargin !== undefined ? parseInt(o.itemMargin, 10) : 5);
-        return Math.min(n, fichas.length);
+        // Como el tema: el ancho de cada foto sale de n aunque haya menos fotos.
+        return n;
     };
     let actual = 0;
     caja.classList.add('carrusel-listo');
@@ -149,7 +151,7 @@ $$('.con-carrusel .flexslider').forEach((caja) => {
     puntos.className = 'flex-control-nav flex-control-paging';
     const flechas = document.createElement('ul');
     flechas.className = 'flex-direction-nav';
-    flechas.innerHTML = '<li class="flex-nav-prev"><a class="flex-prev" href="#" aria-label="Anterior">Anterior</a></li><li class="flex-nav-next"><a class="flex-next" href="#" aria-label="Siguiente">Siguiente</a></li>';
+    flechas.innerHTML = '<li class="flex-nav-prev"><a class="flex-prev" href="#" aria-label="Anterior"></a></li><li class="flex-nav-next"><a class="flex-next" href="#" aria-label="Siguiente"></a></li>';
     caja.append(flechas);
     if (o.controlNav !== 'false') caja.append(puntos);
 
@@ -159,8 +161,10 @@ $$('.con-carrusel .flexslider').forEach((caja) => {
         const ancho = (ventana.clientWidth - margen * (n - 1)) / n;
         fichas.forEach((li) => { li.style.flex = `0 0 ${ancho}px`; li.style.width = ancho + 'px'; });
         actual = Math.min(actual, paginas() - 1);
-        const primera = Math.min(actual * n, fichas.length - n);
+        const primera = Math.max(0, Math.min(actual * n, fichas.length - n));
         lista.style.transform = `translateX(${-primera * (ancho + margen)}px)`;
+        flechas.hidden = paginas() < 2;
+        puntos.hidden = paginas() < 2;
         if (puntos.children.length !== paginas()) {
             puntos.innerHTML = Array.from({ length: paginas() }, (_, i) => `<li><a href="#" aria-label="Ir a la foto ${i + 1}">${i + 1}</a></li>`).join('');
         }
@@ -242,6 +246,7 @@ $$('.mapa-diferido').forEach((caja) => alVer(caja, () => {
     caja.innerHTML = `<iframe src="${caja.dataset.src}" width="100%" height="450" title="Ubicación de MYMCE en el mapa" loading="lazy" allowfullscreen></iframe>`;
 }));
 $$('video[data-autoplay]').forEach((v) => {
+    if (v.dataset.autoplay === 'escritorio' && !escritorio()) return;
     v.muted = true;
     v.playsInline = true;
     if (sinMovimiento) { v.controls = true; return; }

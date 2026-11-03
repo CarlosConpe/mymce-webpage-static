@@ -19,6 +19,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%2C%20estoy%20buscando%20soluciones%20de%20carpinter%C3%ADa%20y%20mobiliario.%20Me%20interesa%20cotizar%20un%20proyecto%20con%20ustedes.",
   "waEtiqueta": "default",
+  "clasica": false,
   "carrusel": false,
   "videoFix": false
  },
@@ -27,7 +28,7 @@
   "archivo": "corporate/blog/2023/07/04/tendencias-de-color-refleja-tu-personalidad/index.html",
   "title": "Tendencias de color para transformar tu cocina y reflejar tu personalidad",
   "desc": "Tendencias de color para transformar tu cocina y reflejar tu personalidad en San Luis Potosí. Servicio Llave en Mano con materiales premium. Contáctanos para cotizar tu proyecto hoy mismo.",
-  "img": "",
+  "img": "/assets/storage/2023/07/cocina-azul-1200x750.webp",
   "lang": "es",
   "noindex": false,
   "alternos": [
@@ -42,6 +43,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%2C%20estoy%20buscando%20soluciones%20de%20carpinter%C3%ADa%20y%20mobiliario.%20Me%20interesa%20cotizar%20un%20proyecto%20con%20ustedes.",
   "waEtiqueta": "default",
+  "clasica": false,
   "carrusel": false,
   "videoFix": false
  },
@@ -65,6 +67,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%20Grupo%20MYMCE%2C%20quisiera%20cotizar%20un%20Closet%20o%20Vestidor%20a%20medida.",
   "waEtiqueta": "closets",
+  "clasica": false,
   "carrusel": false,
   "videoFix": false
  },
@@ -88,6 +91,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%2C%20estoy%20buscando%20soluciones%20de%20carpinter%C3%ADa%20y%20mobiliario.%20Me%20interesa%20cotizar%20un%20proyecto%20con%20ustedes.",
   "waEtiqueta": "default",
+  "clasica": false,
   "carrusel": true,
   "videoFix": false
  },
@@ -111,6 +115,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%20Grupo%20MYMCE%2C%20estoy%20interesado%20en%20el%20dise%C3%B1o%20y%20fabricaci%C3%B3n%20de%20una%20Cocina%20Integral.",
   "waEtiqueta": "cocinas",
+  "clasica": false,
   "carrusel": true,
   "videoFix": false
  },
@@ -134,6 +139,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%2C%20estoy%20buscando%20soluciones%20de%20carpinter%C3%ADa%20y%20mobiliario.%20Me%20interesa%20cotizar%20un%20proyecto%20con%20ustedes.",
   "waEtiqueta": "default",
+  "clasica": false,
   "carrusel": false,
   "videoFix": false
  },
@@ -157,6 +163,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%2C%20estoy%20buscando%20soluciones%20de%20carpinter%C3%ADa%20y%20mobiliario.%20Me%20interesa%20cotizar%20un%20proyecto%20con%20ustedes.",
   "waEtiqueta": "default",
+  "clasica": false,
   "carrusel": false,
   "videoFix": false
  },
@@ -180,6 +187,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%2C%20estoy%20buscando%20soluciones%20de%20carpinter%C3%ADa%20y%20mobiliario.%20Me%20interesa%20cotizar%20un%20proyecto%20con%20ustedes.",
   "waEtiqueta": "default",
+  "clasica": true,
   "carrusel": false,
   "videoFix": false
  },
@@ -203,6 +211,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%2C%20estoy%20buscando%20soluciones%20de%20carpinter%C3%ADa%20y%20mobiliario.%20Me%20interesa%20cotizar%20un%20proyecto%20con%20ustedes.",
   "waEtiqueta": "default",
+  "clasica": false,
   "carrusel": false,
   "videoFix": false
  },
@@ -225,7 +234,8 @@
    ]
   ],
   "wa": "https://wa.me/524442335607?text=Hola%2C%20me%20interesa%20informaci%C3%B3n%20sobre%20sus%20Electrodom%C3%A9sticos.",
-  "waEtiqueta": null,
+  "waEtiqueta": "electro",
+  "clasica": false,
   "carrusel": false,
   "videoFix": false
  },
@@ -249,6 +259,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%2C%20estoy%20buscando%20soluciones%20de%20carpinter%C3%ADa%20y%20mobiliario.%20Me%20interesa%20cotizar%20un%20proyecto%20con%20ustedes.",
   "waEtiqueta": "default",
+  "clasica": false,
   "carrusel": false,
   "videoFix": false
  },
@@ -272,6 +283,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%20Grupo%20MYMCE%2C%20quisiera%20cotizar%20un%20Closet%20o%20Vestidor%20a%20medida.",
   "waEtiqueta": "closets",
+  "clasica": false,
   "carrusel": false,
   "videoFix": false
  },
@@ -295,6 +307,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%20Grupo%20MYMCE%2C%20quisiera%20cotizar%20un%20Closet%20o%20Vestidor%20a%20medida.",
   "waEtiqueta": "closets",
+  "clasica": false,
   "carrusel": false,
   "videoFix": false
  },
@@ -318,6 +331,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%20Grupo%20MYMCE%2C%20quisiera%20cotizar%20un%20Closet%20o%20Vestidor%20a%20medida.",
   "waEtiqueta": "closets",
+  "clasica": false,
   "carrusel": false,
   "videoFix": false
  },
@@ -341,6 +355,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%20Grupo%20MYMCE%2C%20quisiera%20cotizar%20un%20Closet%20o%20Vestidor%20a%20medida.",
   "waEtiqueta": "closets",
+  "clasica": false,
   "carrusel": false,
   "videoFix": false
  },
@@ -364,6 +379,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%20Grupo%20MYMCE%2C%20quisiera%20cotizar%20un%20Closet%20o%20Vestidor%20a%20medida.",
   "waEtiqueta": "closets",
+  "clasica": false,
   "carrusel": false,
   "videoFix": false
  },
@@ -387,6 +403,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%20Grupo%20MYMCE%2C%20quisiera%20cotizar%20un%20Closet%20o%20Vestidor%20a%20medida.",
   "waEtiqueta": "closets",
+  "clasica": false,
   "carrusel": false,
   "videoFix": false
  },
@@ -410,6 +427,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%20Grupo%20MYMCE%2C%20quisiera%20cotizar%20un%20Closet%20o%20Vestidor%20a%20medida.",
   "waEtiqueta": "closets",
+  "clasica": false,
   "carrusel": false,
   "videoFix": false
  },
@@ -433,6 +451,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%20Grupo%20MYMCE%2C%20quisiera%20cotizar%20un%20Closet%20o%20Vestidor%20a%20medida.",
   "waEtiqueta": "closets",
+  "clasica": false,
   "carrusel": false,
   "videoFix": false
  },
@@ -456,6 +475,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%20Grupo%20MYMCE%2C%20quisiera%20cotizar%20un%20Closet%20o%20Vestidor%20a%20medida.",
   "waEtiqueta": "closets",
+  "clasica": false,
   "carrusel": false,
   "videoFix": false
  },
@@ -479,6 +499,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%20Grupo%20MYMCE%2C%20quisiera%20cotizar%20un%20Closet%20o%20Vestidor%20a%20medida.",
   "waEtiqueta": "closets",
+  "clasica": false,
   "carrusel": false,
   "videoFix": false
  },
@@ -502,6 +523,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%20Grupo%20MYMCE%2C%20quisiera%20cotizar%20un%20Closet%20o%20Vestidor%20a%20medida.",
   "waEtiqueta": "closets",
+  "clasica": false,
   "carrusel": false,
   "videoFix": false
  },
@@ -525,6 +547,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%20Grupo%20MYMCE%2C%20quisiera%20cotizar%20un%20Closet%20o%20Vestidor%20a%20medida.",
   "waEtiqueta": "closets",
+  "clasica": false,
   "carrusel": false,
   "videoFix": false
  },
@@ -548,6 +571,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%20Grupo%20MYMCE%2C%20quisiera%20cotizar%20un%20Closet%20o%20Vestidor%20a%20medida.",
   "waEtiqueta": "closets",
+  "clasica": false,
   "carrusel": false,
   "videoFix": false
  },
@@ -571,6 +595,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%20Grupo%20MYMCE%2C%20quisiera%20cotizar%20un%20Closet%20o%20Vestidor%20a%20medida.",
   "waEtiqueta": "closets",
+  "clasica": false,
   "carrusel": false,
   "videoFix": false
  },
@@ -594,6 +619,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%20Grupo%20MYMCE%2C%20quisiera%20cotizar%20un%20Closet%20o%20Vestidor%20a%20medida.",
   "waEtiqueta": "closets",
+  "clasica": false,
   "carrusel": false,
   "videoFix": false
  },
@@ -617,6 +643,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%20Grupo%20MYMCE%2C%20quisiera%20cotizar%20un%20Closet%20o%20Vestidor%20a%20medida.",
   "waEtiqueta": "closets",
+  "clasica": false,
   "carrusel": false,
   "videoFix": false
  },
@@ -640,6 +667,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%20Grupo%20MYMCE%2C%20quisiera%20cotizar%20un%20Closet%20o%20Vestidor%20a%20medida.",
   "waEtiqueta": "closets",
+  "clasica": false,
   "carrusel": false,
   "videoFix": false
  },
@@ -663,6 +691,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%20Grupo%20MYMCE%2C%20quisiera%20cotizar%20un%20Closet%20o%20Vestidor%20a%20medida.",
   "waEtiqueta": "closets",
+  "clasica": false,
   "carrusel": false,
   "videoFix": false
  },
@@ -686,6 +715,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%20Grupo%20MYMCE%2C%20quisiera%20cotizar%20un%20Closet%20o%20Vestidor%20a%20medida.",
   "waEtiqueta": "closets",
+  "clasica": false,
   "carrusel": false,
   "videoFix": false
  },
@@ -709,6 +739,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%20Grupo%20MYMCE%2C%20quisiera%20cotizar%20un%20Closet%20o%20Vestidor%20a%20medida.",
   "waEtiqueta": "closets",
+  "clasica": false,
   "carrusel": false,
   "videoFix": false
  },
@@ -732,6 +763,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%20Grupo%20MYMCE%2C%20quisiera%20cotizar%20un%20Closet%20o%20Vestidor%20a%20medida.",
   "waEtiqueta": "closets",
+  "clasica": false,
   "carrusel": false,
   "videoFix": false
  },
@@ -755,6 +787,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%20Grupo%20MYMCE%2C%20quisiera%20cotizar%20un%20Closet%20o%20Vestidor%20a%20medida.",
   "waEtiqueta": "closets",
+  "clasica": false,
   "carrusel": false,
   "videoFix": false
  },
@@ -778,6 +811,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%20Grupo%20MYMCE%2C%20quisiera%20cotizar%20un%20Closet%20o%20Vestidor%20a%20medida.",
   "waEtiqueta": "closets",
+  "clasica": false,
   "carrusel": false,
   "videoFix": false
  },
@@ -801,6 +835,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%20Grupo%20MYMCE%2C%20quisiera%20cotizar%20un%20Closet%20o%20Vestidor%20a%20medida.",
   "waEtiqueta": "closets",
+  "clasica": false,
   "carrusel": false,
   "videoFix": false
  },
@@ -824,6 +859,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%20Grupo%20MYMCE%2C%20quisiera%20cotizar%20un%20Closet%20o%20Vestidor%20a%20medida.",
   "waEtiqueta": "closets",
+  "clasica": false,
   "carrusel": false,
   "videoFix": false
  },
@@ -847,6 +883,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%20Grupo%20MYMCE%2C%20quisiera%20cotizar%20un%20Closet%20o%20Vestidor%20a%20medida.",
   "waEtiqueta": "closets",
+  "clasica": false,
   "carrusel": false,
   "videoFix": false
  },
@@ -870,6 +907,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%20Grupo%20MYMCE%2C%20quisiera%20cotizar%20un%20Closet%20o%20Vestidor%20a%20medida.",
   "waEtiqueta": "closets",
+  "clasica": false,
   "carrusel": false,
   "videoFix": false
  },
@@ -893,6 +931,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%20Grupo%20MYMCE%2C%20quisiera%20cotizar%20un%20Closet%20o%20Vestidor%20a%20medida.",
   "waEtiqueta": "closets",
+  "clasica": false,
   "carrusel": false,
   "videoFix": false
  },
@@ -916,6 +955,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%20Grupo%20MYMCE%2C%20quisiera%20cotizar%20un%20Closet%20o%20Vestidor%20a%20medida.",
   "waEtiqueta": "closets",
+  "clasica": false,
   "carrusel": false,
   "videoFix": false
  },
@@ -939,6 +979,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%20Grupo%20MYMCE%2C%20quisiera%20cotizar%20un%20Closet%20o%20Vestidor%20a%20medida.",
   "waEtiqueta": "closets",
+  "clasica": false,
   "carrusel": false,
   "videoFix": false
  },
@@ -962,6 +1003,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%20Grupo%20MYMCE%2C%20quisiera%20cotizar%20un%20Closet%20o%20Vestidor%20a%20medida.",
   "waEtiqueta": "closets",
+  "clasica": false,
   "carrusel": false,
   "videoFix": false
  },
@@ -985,6 +1027,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%20Grupo%20MYMCE%2C%20quisiera%20cotizar%20un%20Closet%20o%20Vestidor%20a%20medida.",
   "waEtiqueta": "closets",
+  "clasica": false,
   "carrusel": false,
   "videoFix": false
  },
@@ -1008,6 +1051,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%20Grupo%20MYMCE%2C%20quisiera%20cotizar%20un%20Closet%20o%20Vestidor%20a%20medida.",
   "waEtiqueta": "closets",
+  "clasica": false,
   "carrusel": false,
   "videoFix": false
  },
@@ -1031,6 +1075,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%20Grupo%20MYMCE%2C%20quisiera%20cotizar%20un%20Closet%20o%20Vestidor%20a%20medida.",
   "waEtiqueta": "closets",
+  "clasica": false,
   "carrusel": false,
   "videoFix": false
  },
@@ -1054,6 +1099,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%20Grupo%20MYMCE%2C%20quisiera%20cotizar%20un%20Closet%20o%20Vestidor%20a%20medida.",
   "waEtiqueta": "closets",
+  "clasica": false,
   "carrusel": false,
   "videoFix": false
  },
@@ -1077,6 +1123,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%20Grupo%20MYMCE%2C%20quisiera%20cotizar%20un%20Closet%20o%20Vestidor%20a%20medida.",
   "waEtiqueta": "closets",
+  "clasica": false,
   "carrusel": false,
   "videoFix": false
  },
@@ -1100,6 +1147,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%20Grupo%20MYMCE%2C%20quisiera%20cotizar%20un%20Closet%20o%20Vestidor%20a%20medida.",
   "waEtiqueta": "closets",
+  "clasica": false,
   "carrusel": false,
   "videoFix": false
  },
@@ -1123,6 +1171,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%20Grupo%20MYMCE%2C%20quisiera%20cotizar%20un%20Closet%20o%20Vestidor%20a%20medida.",
   "waEtiqueta": "closets",
+  "clasica": false,
   "carrusel": false,
   "videoFix": false
  },
@@ -1146,6 +1195,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%20Grupo%20MYMCE%2C%20quisiera%20cotizar%20un%20Closet%20o%20Vestidor%20a%20medida.",
   "waEtiqueta": "closets",
+  "clasica": false,
   "carrusel": false,
   "videoFix": false
  },
@@ -1169,6 +1219,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%20Grupo%20MYMCE%2C%20quisiera%20cotizar%20un%20Closet%20o%20Vestidor%20a%20medida.",
   "waEtiqueta": "closets",
+  "clasica": false,
   "carrusel": false,
   "videoFix": false
  },
@@ -1192,6 +1243,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%20Grupo%20MYMCE%2C%20estoy%20interesado%20en%20el%20dise%C3%B1o%20y%20fabricaci%C3%B3n%20de%20una%20Cocina%20Integral.",
   "waEtiqueta": "cocinas",
+  "clasica": false,
   "carrusel": false,
   "videoFix": false
  },
@@ -1215,6 +1267,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%20Grupo%20MYMCE%2C%20estoy%20interesado%20en%20el%20dise%C3%B1o%20y%20fabricaci%C3%B3n%20de%20una%20Cocina%20Integral.",
   "waEtiqueta": "cocinas",
+  "clasica": false,
   "carrusel": false,
   "videoFix": false
  },
@@ -1238,6 +1291,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%20Grupo%20MYMCE%2C%20estoy%20interesado%20en%20el%20dise%C3%B1o%20y%20fabricaci%C3%B3n%20de%20una%20Cocina%20Integral.",
   "waEtiqueta": "cocinas",
+  "clasica": false,
   "carrusel": false,
   "videoFix": false
  },
@@ -1261,6 +1315,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%20Grupo%20MYMCE%2C%20estoy%20interesado%20en%20el%20dise%C3%B1o%20y%20fabricaci%C3%B3n%20de%20una%20Cocina%20Integral.",
   "waEtiqueta": "cocinas",
+  "clasica": false,
   "carrusel": false,
   "videoFix": false
  },
@@ -1284,6 +1339,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%20Grupo%20MYMCE%2C%20estoy%20interesado%20en%20el%20dise%C3%B1o%20y%20fabricaci%C3%B3n%20de%20una%20Cocina%20Integral.",
   "waEtiqueta": "cocinas",
+  "clasica": false,
   "carrusel": false,
   "videoFix": false
  },
@@ -1307,6 +1363,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%20Grupo%20MYMCE%2C%20estoy%20interesado%20en%20el%20dise%C3%B1o%20y%20fabricaci%C3%B3n%20de%20una%20Cocina%20Integral.",
   "waEtiqueta": "cocinas",
+  "clasica": false,
   "carrusel": false,
   "videoFix": false
  },
@@ -1330,6 +1387,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%20Grupo%20MYMCE%2C%20estoy%20interesado%20en%20el%20dise%C3%B1o%20y%20fabricaci%C3%B3n%20de%20una%20Cocina%20Integral.",
   "waEtiqueta": "cocinas",
+  "clasica": false,
   "carrusel": false,
   "videoFix": false
  },
@@ -1353,6 +1411,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%20Grupo%20MYMCE%2C%20estoy%20interesado%20en%20el%20dise%C3%B1o%20y%20fabricaci%C3%B3n%20de%20una%20Cocina%20Integral.",
   "waEtiqueta": "cocinas",
+  "clasica": false,
   "carrusel": false,
   "videoFix": false
  },
@@ -1376,6 +1435,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%20Grupo%20MYMCE%2C%20estoy%20interesado%20en%20el%20dise%C3%B1o%20y%20fabricaci%C3%B3n%20de%20una%20Cocina%20Integral.",
   "waEtiqueta": "cocinas",
+  "clasica": false,
   "carrusel": false,
   "videoFix": false
  },
@@ -1399,6 +1459,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%20Grupo%20MYMCE%2C%20estoy%20interesado%20en%20el%20dise%C3%B1o%20y%20fabricaci%C3%B3n%20de%20una%20Cocina%20Integral.",
   "waEtiqueta": "cocinas",
+  "clasica": false,
   "carrusel": false,
   "videoFix": false
  },
@@ -1422,6 +1483,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%20Grupo%20MYMCE%2C%20estoy%20interesado%20en%20el%20dise%C3%B1o%20y%20fabricaci%C3%B3n%20de%20una%20Cocina%20Integral.",
   "waEtiqueta": "cocinas",
+  "clasica": false,
   "carrusel": false,
   "videoFix": false
  },
@@ -1445,6 +1507,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%20Grupo%20MYMCE%2C%20estoy%20interesado%20en%20el%20dise%C3%B1o%20y%20fabricaci%C3%B3n%20de%20una%20Cocina%20Integral.",
   "waEtiqueta": "cocinas",
+  "clasica": false,
   "carrusel": false,
   "videoFix": false
  },
@@ -1468,6 +1531,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%20Grupo%20MYMCE%2C%20estoy%20interesado%20en%20el%20dise%C3%B1o%20y%20fabricaci%C3%B3n%20de%20una%20Cocina%20Integral.",
   "waEtiqueta": "cocinas",
+  "clasica": false,
   "carrusel": false,
   "videoFix": false
  },
@@ -1491,6 +1555,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%20Grupo%20MYMCE%2C%20estoy%20interesado%20en%20el%20dise%C3%B1o%20y%20fabricaci%C3%B3n%20de%20una%20Cocina%20Integral.",
   "waEtiqueta": "cocinas",
+  "clasica": false,
   "carrusel": false,
   "videoFix": false
  },
@@ -1514,6 +1579,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%20Grupo%20MYMCE%2C%20estoy%20interesado%20en%20el%20dise%C3%B1o%20y%20fabricaci%C3%B3n%20de%20una%20Cocina%20Integral.",
   "waEtiqueta": "cocinas",
+  "clasica": false,
   "carrusel": false,
   "videoFix": false
  },
@@ -1537,6 +1603,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%20Grupo%20MYMCE%2C%20estoy%20interesado%20en%20el%20dise%C3%B1o%20y%20fabricaci%C3%B3n%20de%20una%20Cocina%20Integral.",
   "waEtiqueta": "cocinas",
+  "clasica": false,
   "carrusel": false,
   "videoFix": false
  },
@@ -1560,6 +1627,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%20Grupo%20MYMCE%2C%20estoy%20interesado%20en%20el%20dise%C3%B1o%20y%20fabricaci%C3%B3n%20de%20una%20Cocina%20Integral.",
   "waEtiqueta": "cocinas",
+  "clasica": false,
   "carrusel": false,
   "videoFix": false
  },
@@ -1583,6 +1651,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%20Grupo%20MYMCE%2C%20estoy%20interesado%20en%20el%20dise%C3%B1o%20y%20fabricaci%C3%B3n%20de%20una%20Cocina%20Integral.",
   "waEtiqueta": "cocinas",
+  "clasica": false,
   "carrusel": false,
   "videoFix": false
  },
@@ -1606,6 +1675,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%20Grupo%20MYMCE%2C%20estoy%20interesado%20en%20el%20dise%C3%B1o%20y%20fabricaci%C3%B3n%20de%20una%20Cocina%20Integral.",
   "waEtiqueta": "cocinas",
+  "clasica": false,
   "carrusel": false,
   "videoFix": false
  },
@@ -1629,6 +1699,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%20Grupo%20MYMCE%2C%20estoy%20interesado%20en%20el%20dise%C3%B1o%20y%20fabricaci%C3%B3n%20de%20una%20Cocina%20Integral.",
   "waEtiqueta": "cocinas",
+  "clasica": false,
   "carrusel": false,
   "videoFix": false
  },
@@ -1652,6 +1723,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%20Grupo%20MYMCE%2C%20estoy%20interesado%20en%20el%20dise%C3%B1o%20y%20fabricaci%C3%B3n%20de%20una%20Cocina%20Integral.",
   "waEtiqueta": "cocinas",
+  "clasica": false,
   "carrusel": false,
   "videoFix": false
  },
@@ -1675,6 +1747,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%20Grupo%20MYMCE%2C%20estoy%20interesado%20en%20el%20dise%C3%B1o%20y%20fabricaci%C3%B3n%20de%20una%20Cocina%20Integral.",
   "waEtiqueta": "cocinas",
+  "clasica": false,
   "carrusel": false,
   "videoFix": false
  },
@@ -1698,6 +1771,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%20Grupo%20MYMCE%2C%20estoy%20interesado%20en%20el%20dise%C3%B1o%20y%20fabricaci%C3%B3n%20de%20una%20Cocina%20Integral.",
   "waEtiqueta": "cocinas",
+  "clasica": false,
   "carrusel": false,
   "videoFix": false
  },
@@ -1721,6 +1795,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%20Grupo%20MYMCE%2C%20estoy%20interesado%20en%20el%20dise%C3%B1o%20y%20fabricaci%C3%B3n%20de%20una%20Cocina%20Integral.",
   "waEtiqueta": "cocinas",
+  "clasica": false,
   "carrusel": false,
   "videoFix": false
  },
@@ -1744,6 +1819,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%20Grupo%20MYMCE%2C%20estoy%20interesado%20en%20el%20dise%C3%B1o%20y%20fabricaci%C3%B3n%20de%20una%20Cocina%20Integral.",
   "waEtiqueta": "cocinas",
+  "clasica": false,
   "carrusel": false,
   "videoFix": false
  },
@@ -1767,6 +1843,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%20Grupo%20MYMCE%2C%20estoy%20interesado%20en%20el%20dise%C3%B1o%20y%20fabricaci%C3%B3n%20de%20una%20Cocina%20Integral.",
   "waEtiqueta": "cocinas",
+  "clasica": false,
   "carrusel": false,
   "videoFix": false
  },
@@ -1790,6 +1867,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%20Grupo%20MYMCE%2C%20estoy%20interesado%20en%20el%20dise%C3%B1o%20y%20fabricaci%C3%B3n%20de%20una%20Cocina%20Integral.",
   "waEtiqueta": "cocinas",
+  "clasica": false,
   "carrusel": false,
   "videoFix": false
  },
@@ -1813,6 +1891,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%20Grupo%20MYMCE%2C%20estoy%20interesado%20en%20el%20dise%C3%B1o%20y%20fabricaci%C3%B3n%20de%20una%20Cocina%20Integral.",
   "waEtiqueta": "cocinas",
+  "clasica": false,
   "carrusel": false,
   "videoFix": false
  },
@@ -1836,6 +1915,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%20Grupo%20MYMCE%2C%20estoy%20interesado%20en%20el%20dise%C3%B1o%20y%20fabricaci%C3%B3n%20de%20una%20Cocina%20Integral.",
   "waEtiqueta": "cocinas",
+  "clasica": false,
   "carrusel": false,
   "videoFix": false
  },
@@ -1859,6 +1939,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%20Grupo%20MYMCE%2C%20estoy%20interesado%20en%20el%20dise%C3%B1o%20y%20fabricaci%C3%B3n%20de%20una%20Cocina%20Integral.",
   "waEtiqueta": "cocinas",
+  "clasica": false,
   "carrusel": false,
   "videoFix": false
  },
@@ -1882,6 +1963,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%20Grupo%20MYMCE%2C%20estoy%20interesado%20en%20el%20dise%C3%B1o%20y%20fabricaci%C3%B3n%20de%20una%20Cocina%20Integral.",
   "waEtiqueta": "cocinas",
+  "clasica": false,
   "carrusel": false,
   "videoFix": false
  },
@@ -1905,6 +1987,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%20Grupo%20MYMCE%2C%20estoy%20interesado%20en%20el%20dise%C3%B1o%20y%20fabricaci%C3%B3n%20de%20una%20Cocina%20Integral.",
   "waEtiqueta": "cocinas",
+  "clasica": false,
   "carrusel": false,
   "videoFix": false
  },
@@ -1928,6 +2011,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%20Grupo%20MYMCE%2C%20estoy%20interesado%20en%20el%20dise%C3%B1o%20y%20fabricaci%C3%B3n%20de%20una%20Cocina%20Integral.",
   "waEtiqueta": "cocinas",
+  "clasica": false,
   "carrusel": false,
   "videoFix": false
  },
@@ -1951,6 +2035,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%20Grupo%20MYMCE%2C%20estoy%20interesado%20en%20el%20dise%C3%B1o%20y%20fabricaci%C3%B3n%20de%20una%20Cocina%20Integral.",
   "waEtiqueta": "cocinas",
+  "clasica": false,
   "carrusel": false,
   "videoFix": false
  },
@@ -1974,6 +2059,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%20Grupo%20MYMCE%2C%20estoy%20interesado%20en%20el%20dise%C3%B1o%20y%20fabricaci%C3%B3n%20de%20una%20Cocina%20Integral.",
   "waEtiqueta": "cocinas",
+  "clasica": false,
   "carrusel": false,
   "videoFix": false
  },
@@ -1997,6 +2083,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%20Grupo%20MYMCE%2C%20estoy%20interesado%20en%20el%20dise%C3%B1o%20y%20fabricaci%C3%B3n%20de%20una%20Cocina%20Integral.",
   "waEtiqueta": "cocinas",
+  "clasica": false,
   "carrusel": false,
   "videoFix": false
  },
@@ -2020,6 +2107,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%20Grupo%20MYMCE%2C%20estoy%20interesado%20en%20el%20dise%C3%B1o%20y%20fabricaci%C3%B3n%20de%20una%20Cocina%20Integral.",
   "waEtiqueta": "cocinas",
+  "clasica": false,
   "carrusel": false,
   "videoFix": false
  },
@@ -2043,6 +2131,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%20Grupo%20MYMCE%2C%20estoy%20interesado%20en%20el%20dise%C3%B1o%20y%20fabricaci%C3%B3n%20de%20una%20Cocina%20Integral.",
   "waEtiqueta": "cocinas",
+  "clasica": false,
   "carrusel": false,
   "videoFix": false
  },
@@ -2066,6 +2155,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%20Grupo%20MYMCE%2C%20estoy%20interesado%20en%20el%20dise%C3%B1o%20y%20fabricaci%C3%B3n%20de%20una%20Cocina%20Integral.",
   "waEtiqueta": "cocinas",
+  "clasica": false,
   "carrusel": false,
   "videoFix": false
  },
@@ -2089,6 +2179,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%20Grupo%20MYMCE%2C%20estoy%20interesado%20en%20el%20dise%C3%B1o%20y%20fabricaci%C3%B3n%20de%20una%20Cocina%20Integral.",
   "waEtiqueta": "cocinas",
+  "clasica": false,
   "carrusel": false,
   "videoFix": false
  },
@@ -2112,6 +2203,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%20Grupo%20MYMCE%2C%20estoy%20interesado%20en%20el%20dise%C3%B1o%20y%20fabricaci%C3%B3n%20de%20una%20Cocina%20Integral.",
   "waEtiqueta": "cocinas",
+  "clasica": false,
   "carrusel": false,
   "videoFix": false
  },
@@ -2135,6 +2227,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%20Grupo%20MYMCE%2C%20estoy%20interesado%20en%20el%20dise%C3%B1o%20y%20fabricaci%C3%B3n%20de%20una%20Cocina%20Integral.",
   "waEtiqueta": "cocinas",
+  "clasica": false,
   "carrusel": false,
   "videoFix": false
  },
@@ -2158,6 +2251,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%20Grupo%20MYMCE%2C%20estoy%20interesado%20en%20el%20dise%C3%B1o%20y%20fabricaci%C3%B3n%20de%20una%20Cocina%20Integral.",
   "waEtiqueta": "cocinas",
+  "clasica": false,
   "carrusel": false,
   "videoFix": false
  },
@@ -2181,6 +2275,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%2C%20estoy%20buscando%20soluciones%20de%20carpinter%C3%ADa%20y%20mobiliario.%20Me%20interesa%20cotizar%20un%20proyecto%20con%20ustedes.",
   "waEtiqueta": "default",
+  "clasica": true,
   "carrusel": false,
   "videoFix": false
  },
@@ -2204,6 +2299,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%20Grupo%20MYMCE%2C%20quisiera%20cotizar%20un%20Closet%20o%20Vestidor%20a%20medida.",
   "waEtiqueta": "closets",
+  "clasica": false,
   "carrusel": true,
   "videoFix": true
  },
@@ -2227,6 +2323,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%20Grupo%20MYMCE%2C%20estoy%20interesado%20en%20el%20dise%C3%B1o%20y%20fabricaci%C3%B3n%20de%20una%20Cocina%20Integral.",
   "waEtiqueta": "cocinas",
+  "clasica": false,
   "carrusel": true,
   "videoFix": true
  },
@@ -2250,6 +2347,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%2C%20estoy%20buscando%20soluciones%20de%20carpinter%C3%ADa%20y%20mobiliario.%20Me%20interesa%20cotizar%20un%20proyecto%20con%20ustedes.",
   "waEtiqueta": "default",
+  "clasica": false,
   "carrusel": false,
   "videoFix": false
  },
@@ -2273,6 +2371,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%2C%20me%20interesan%20sus%20Muebles%20de%20Ba%C3%B1o.",
   "waEtiqueta": "bano",
+  "clasica": false,
   "carrusel": false,
   "videoFix": false
  },
@@ -2296,6 +2395,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%20Grupo%20MYMCE%2C%20busco%20informaci%C3%B3n%20sobre%20Puertas%20Residenciales.",
   "waEtiqueta": "puertas",
+  "clasica": false,
   "carrusel": false,
   "videoFix": false
  },
@@ -2319,6 +2419,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%2C%20estoy%20buscando%20soluciones%20de%20carpinter%C3%ADa%20y%20mobiliario.%20Me%20interesa%20cotizar%20un%20proyecto%20con%20ustedes.",
   "waEtiqueta": "default",
+  "clasica": false,
   "carrusel": true,
   "videoFix": false
  },
@@ -2342,6 +2443,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%2C%20estoy%20buscando%20soluciones%20de%20carpinter%C3%ADa%20y%20mobiliario.%20Me%20interesa%20cotizar%20un%20proyecto%20con%20ustedes.",
   "waEtiqueta": "default",
+  "clasica": false,
   "carrusel": true,
   "videoFix": false
  },
@@ -2365,6 +2467,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%20Grupo%20MYMCE%2C%20busco%20informaci%C3%B3n%20sobre%20Puertas%20Residenciales.",
   "waEtiqueta": "puertas",
+  "clasica": false,
   "carrusel": false,
   "videoFix": false
  },
@@ -2388,6 +2491,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%20Grupo%20MYMCE%2C%20busco%20informaci%C3%B3n%20sobre%20Puertas%20Residenciales.",
   "waEtiqueta": "puertas",
+  "clasica": false,
   "carrusel": false,
   "videoFix": false
  },
@@ -2411,6 +2515,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%2C%20estoy%20buscando%20soluciones%20de%20carpinter%C3%ADa%20y%20mobiliario.%20Me%20interesa%20cotizar%20un%20proyecto%20con%20ustedes.",
   "waEtiqueta": "default",
+  "clasica": false,
   "carrusel": false,
   "videoFix": false
  },
@@ -2434,6 +2539,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%2C%20estoy%20buscando%20soluciones%20de%20carpinter%C3%ADa%20y%20mobiliario.%20Me%20interesa%20cotizar%20un%20proyecto%20con%20ustedes.",
   "waEtiqueta": "default",
+  "clasica": false,
   "carrusel": true,
   "videoFix": true
  },
@@ -2457,6 +2563,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%2C%20estoy%20buscando%20soluciones%20de%20carpinter%C3%ADa%20y%20mobiliario.%20Me%20interesa%20cotizar%20un%20proyecto%20con%20ustedes.",
   "waEtiqueta": "default",
+  "clasica": false,
   "carrusel": true,
   "videoFix": true
  },
@@ -2480,6 +2587,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%2C%20estoy%20buscando%20soluciones%20de%20carpinter%C3%ADa%20y%20mobiliario.%20Me%20interesa%20cotizar%20un%20proyecto%20con%20ustedes.",
   "waEtiqueta": "default",
+  "clasica": false,
   "carrusel": true,
   "videoFix": true
  },
@@ -2503,6 +2611,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%2C%20estoy%20buscando%20soluciones%20de%20carpinter%C3%ADa%20y%20mobiliario.%20Me%20interesa%20cotizar%20un%20proyecto%20con%20ustedes.",
   "waEtiqueta": "default",
+  "clasica": false,
   "carrusel": true,
   "videoFix": true
  },
@@ -2526,6 +2635,7 @@
   ],
   "wa": "https://wa.me/524442335607?text=Hola%2C%20estoy%20buscando%20soluciones%20de%20carpinter%C3%ADa%20y%20mobiliario.%20Me%20interesa%20cotizar%20un%20proyecto%20con%20ustedes.",
   "waEtiqueta": "default",
+  "clasica": false,
   "carrusel": false,
   "videoFix": false
  }

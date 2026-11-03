@@ -22,10 +22,25 @@
 .salto:focus { left: 16px; top: 16px; }
 
 /* Carruseles: el tema ocultaba las diapositivas hasta que su script las mostraba */
-.flexslider .slides > li:first-child, .carrusel-listo .slides > li { display: block; }
+.flexslider .slides > li:first-child, .con-carrusel .flexslider.carrusel-listo .slides > li { display: block; }
 .carrusel-listo .flex-viewport { overflow: hidden; }
 
 /* Mapa de la portada: se carga al llegar a él */
 .mapa-diferido { width: 100%; height: 450px; background: #f0f0f0; display: flex; align-items: center; justify-content: center; }
 .mapa-diferido p { color: #666; }
 .mapa-diferido iframe { border: 0; display: block; }
+
+/* Botón Contáctanos de la cabecera, como lo dejaba el tema */
+.navbar-main .custom-area .btn { display: block; }
+
+/* Fondo de la página, que antes iba en un atributo style del body */
+body { background-color: #f5f5f5; }
+
+/* El tema fijaba .container en 1510 px desde 1200 px de pantalla y el contenido se salía por la derecha */
+.container { max-width: 100%; }
+
+/* Portafolio: filas parejas aunque un título ocupe dos renglones */
+.grid-portfolio { display: flex; flex-wrap: wrap; }
+.grid-portfolio > .portfolio-item { float: none; display: flex; }
+.grid-portfolio > .portfolio-item[hidden] { display: none; }
+.grid-portfolio .clean-card { width: 100%; }

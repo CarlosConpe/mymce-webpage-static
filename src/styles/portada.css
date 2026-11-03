@@ -1,4 +1,5 @@
 /* Solo la página de inicio */
+/* Solo la página de inicio */
 .title-base hr{width:50px;height:3px;background-color:#694d94;border:none;margin-top:0}.title-base.text-left hr{margin:0 auto 20px 0;left:0}@media (max-width:992px){.title-base hr{display:none}}@media (max-width:992px){.form-box .space{display:none}}.title-base hr{width:100%;opacity:0;height:5px}.title-base.text-left hr{opacity:1}.title-base hr{background-color:#475a66}
 /* Accessibility Fixes: Maximum specificity overrides */
 button.navbar-toggle { color: #444444 !important; }
@@ -10,7 +11,6 @@ button.navbar-toggle { color: #444444 !important; }
 .btn i, .btn-icon i, button i, .text-right button i { color: #ffffff !important; }
 #OcktM p { color: #333333 !important; }
 .footer-modern .copy-text, .footer-modern p, .footer-modern .col-md-12, footer .copy-text { color: #333333 !important; }
-.current-year, span.current-year { color: #333333 !important; }
 .tag-row, .tag-row span, .tag-row a, .tag-row i, .advs-box .tag-row, .advs-box .tag-row span, .advs-box .tag-row a { color: #333333 !important; }
 .h2-style { font-size: 24px !important; margin: 0 0 10px !important; font-weight: 500 !important; line-height: 1.1 !important; }
 .h3-style { font-size: 14px !important; margin-top: 0 !important; margin-bottom: 10px !important; font-weight: 500 !important; line-height: 1.1 !important; color: inherit !important; }
