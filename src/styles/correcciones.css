@@ -468,3 +468,10 @@ body.pagina-clasica .section-item h2, body.pagina-clasica .section-item h3, body
 .con-carrusel .flex-direction-nav li a:before { border-color: #fff !important; margin-left: 0; }
 .con-carrusel .flex-direction-nav li a.flex-prev:before { margin-left: 6px; }
 .con-carrusel .flex-direction-nav li a.flex-next:before { margin-left: -6px; }
+
+/* Obras reales del portafolio dentro de Cocinas y Closets */
+.bloque-obras .obra-real { margin-bottom: 30px; }
+.bloque-obras .clean-card h3 { font-size: 16px; }
+.bloque-obras > .row { display: flex; flex-wrap: wrap; }
+.bloque-obras .obra-real { display: flex; }
+.bloque-obras .obra-real .clean-card { width: 100%; }
