@@ -477,17 +477,20 @@ body.pagina-clasica .section-item h2, body.pagina-clasica .section-item h3, body
 .bloque-obras .obra-real .clean-card { width: 100%; }
 
 /* Las dos marcas del grupo: selector en la barra de arriba y ambas en el pie. Mismo alto de logo para que pesen igual. */
-/* Va en la franja blanca sobre el logo, que la barra de arriba no usa */
+/* El selector va a la izquierda de la barra gris de arriba, alineado con el logo */
 .marcas { display: none; }
 @media (min-width: 992px) {
-    .navbar-header .marcas { position: absolute; top: 0; left: 40px; z-index: 2; display: flex; height: 22px; }
-    .marcas__marca { display: flex; align-items: center; padding: 0 10px; border-bottom: 2px solid transparent; }
+    .navbar-mini .container { position: relative; }
+    .navbar-mini .marcas { position: absolute; top: 0; left: 15px; z-index: 2; display: flex; align-items: center; height: 36px; }
+    .marcas__marca { display: flex; align-items: center; height: 100%; padding: 0 14px; border-bottom: 2px solid transparent; }
     .marcas__marca:first-child { padding-left: 0; }
-    .marcas__marca + .marcas__marca { border-left: 1px solid #dfe2e4; }
-    .marcas__marca img { height: 10px; width: auto; filter: brightness(0); opacity: .3; transition: opacity .2s; }
+    .marcas__marca + .marcas__marca { border-left: 1px solid #d6d9dc; height: 16px; }
+    .marcas__marca img { height: 15px; width: auto; filter: brightness(0); opacity: .35; transition: opacity .2s; }
     .marcas__marca[aria-current] img { filter: none; opacity: 1; }
-    .marcas__marca:hover img, .marcas__marca:focus-visible img { opacity: .75; }
+    .marcas__marca:hover img, .marcas__marca:focus-visible img { opacity: .8; }
 }
+/* En pantallas medianas el horario no cabe en la barra de arriba; sigue en Contacto */
+@media (max-width: 1199px) { .navbar-mini .mini-horario { display: none; } }
 footer .grupo { display: flex; flex-wrap: wrap; align-items: flex-start; gap: 20px 56px; margin: 10px 0 0; padding: 26px 0; border-top: 1px solid #e3e5e7; }
 footer .grupo__titulo { flex: 0 0 auto; margin: 4px 0 0; color: #333; font-size: 14px; font-weight: 600; }
 footer .grupo__marcas { display: flex; flex-wrap: wrap; gap: 20px 56px; }
