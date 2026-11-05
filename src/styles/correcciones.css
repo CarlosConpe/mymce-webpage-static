@@ -488,6 +488,8 @@ body.pagina-clasica .section-item h2, body.pagina-clasica .section-item h3, body
     .marcas__marca img { height: 15px; width: auto; filter: brightness(0); opacity: .35; transition: opacity .2s; }
     .marcas__marca[aria-current] img { filter: none; opacity: 1; }
     .marcas__marca:hover img, .marcas__marca:focus-visible img { opacity: .8; }
+    /* Aire entre el selector y el logo; de paso el logo queda centrado con el menú */
+    .navbar-main .navbar-brand { position: relative; top: 12px; }
 }
 /* En pantallas medianas el horario no cabe en la barra de arriba; sigue en Contacto */
 @media (max-width: 1199px) { .navbar-mini .mini-horario { display: none; } }
