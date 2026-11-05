@@ -14,12 +14,12 @@ const PESTANAS = [['Cocinas', menuDe('cocina')], ['Closets y Vestidores', menuDe
     <div class="navbar navbar-default mega-menu-fullwidth navbar-fixed-top" role="navigation">
         <div class="navbar-mini scroll-hide">
             <div class="container">
+                <nav class="marcas" aria-label="Marcas de Grupo MYMCE"><a class="marcas__marca" href="/" aria-current="page"><img src="/assets/storage/logos/mymce-marca.webp" alt="MYMCE" width="567" height="160"></a><a class="marcas__marca" href="https://grupomymce.com/" title="CPC: maquila de piezas y muebles sobre diseño para empresas"><img src="/assets/storage/logos/cpc-marca.webp" alt="CPC" width="319" height="160"></a></nav>
                 <div class="nav navbar-nav navbar-left">
-                    <nav class="marcas" aria-label="Marcas de Grupo MYMCE"><a class="marcas__marca" href="/" aria-current="page"><img src="/assets/storage/logos/mymce-marca.webp" alt="MYMCE" width="567" height="160"></a><a class="marcas__marca" href="https://grupomymce.com/" title="CPC: maquila de piezas y muebles sobre diseño para empresas"><img src="/assets/storage/logos/cpc-marca.webp" alt="CPC" width="319" height="160"></a></nav><hr class="marcas__linea">
                     <span><a href={TEL.href}><i class="fa fa-phone"></i> {TEL.guiones}</a></span><hr>
                     <span><a href={`mailto:${CORREO}`}>{CORREO}</a></span><hr>
-                    <span class="mini-direccion"><a href="/corporate/contact/"><i class="fa fa-map-marker"></i> {DIRECCION.calle}, {DIRECCION.ciudad}, SLP.</a></span><hr class="mini-direccion">
-                    <span><a href="/corporate/contact/"><i class="fa fa-calendar"></i> {HORARIO_CORTO}</a></span>
+                    <span><a href="/corporate/contact/"><i class="fa fa-map-marker"></i> {DIRECCION.calle}, {DIRECCION.ciudad}, SLP.</a></span><hr class="mini-horario">
+                    <span class="mini-horario"><a href="/corporate/contact/"><i class="fa fa-calendar"></i> {HORARIO_CORTO}</a></span>
                 </div>
                 <div class="nav navbar-nav navbar-right">
                     <div class="minisocial-group">
