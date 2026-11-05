@@ -475,3 +475,22 @@ body.pagina-clasica .section-item h2, body.pagina-clasica .section-item h3, body
 .bloque-obras > .row { display: flex; flex-wrap: wrap; }
 .bloque-obras .obra-real { display: flex; }
 .bloque-obras .obra-real .clean-card { width: 100%; }
+
+/* Las dos marcas del grupo: CPC junto al logo en escritorio, y ambas en el pie */
+.marca-hermana { display: none; }
+@media (min-width: 992px) {
+    .navbar-header { display: flex; align-items: center; }
+    .marca-hermana { display: flex; align-items: center; height: 34px; margin-left: 6px; padding-left: 14px; border-left: 1px solid #d0d4d7; }
+    .marca-hermana img { width: 62px; height: auto; filter: grayscale(1); opacity: .6; transition: opacity .2s; }
+    .marca-hermana:hover img, .marca-hermana:focus-visible img { opacity: 1; }
+}
+footer .grupo { display: flex; flex-wrap: wrap; align-items: center; gap: 16px 32px; margin: 10px 0 0; padding: 22px 0; border-top: 1px solid #e3e5e7; }
+footer .grupo__titulo { margin: 0; color: #333; font-size: 14px; font-weight: 600; }
+footer .grupo__marcas { display: flex; flex-wrap: wrap; gap: 16px 0; }
+footer .grupo__marca { display: flex; align-items: center; gap: 14px; padding: 0 28px; color: #595959; text-decoration: none; }
+footer .grupo__marca:first-child { padding-left: 0; }
+footer .grupo__marca + .grupo__marca { border-left: 1px solid #e3e5e7; }
+footer .grupo__marca img { height: 34px; width: auto; }
+footer .grupo__marca span { max-width: 22ch; font-size: 13px; line-height: 1.35; }
+footer .grupo__marca:hover span { color: #333; }
+@media (max-width: 700px) { footer .grupo__marcas { flex-direction: column; } footer .grupo__marca { padding: 0; } footer .grupo__marca + .grupo__marca { border-left: 0; } footer .grupo__marca img { height: 28px; } }
