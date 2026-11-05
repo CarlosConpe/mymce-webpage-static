@@ -477,20 +477,20 @@ body.pagina-clasica .section-item h2, body.pagina-clasica .section-item h3, body
 .bloque-obras .obra-real .clean-card { width: 100%; }
 
 /* Las dos marcas del grupo: selector en la barra de arriba y ambas en el pie. Mismo alto de logo para que pesen igual. */
-/* El selector va a la izquierda de la barra gris de arriba, alineado con el logo */
-.marcas { display: none; }
+/* El selector va al inicio de la barra gris, en la línea del teléfono, lejos del logo */
+.marcas, .marcas__linea { display: none; }
 @media (min-width: 992px) {
-    .navbar-mini .container { position: relative; }
-    .navbar-mini .marcas { position: absolute; top: 0; left: 15px; z-index: 2; display: flex; align-items: center; height: 36px; }
-    .marcas__marca { display: flex; align-items: center; height: 100%; padding: 0 14px; border-bottom: 2px solid transparent; }
+    .navbar-mini .marcas { position: relative; z-index: 2; display: inline-flex; align-items: center; vertical-align: middle; margin: 0 10px 0 16px; }
+    .navbar-mini .marcas__linea { display: inline-block; }
+    .marcas__marca { display: flex; align-items: center; padding: 0 12px; }
     .marcas__marca:first-child { padding-left: 0; }
-    .marcas__marca + .marcas__marca { border-left: 1px solid #d6d9dc; height: 16px; }
-    .marcas__marca img { height: 15px; width: auto; filter: brightness(0); opacity: .35; transition: opacity .2s; }
+    .marcas__marca + .marcas__marca { border-left: 1px solid #d6d9dc; }
+    .marcas__marca img { height: 14px; width: auto; filter: brightness(0); opacity: .35; transition: opacity .2s; }
     .marcas__marca[aria-current] img { filter: none; opacity: 1; }
     .marcas__marca:hover img, .marcas__marca:focus-visible img { opacity: .8; }
+    /* Con el selector, la dirección ya no cabe arriba; sigue en el pie y en Contacto */
+    .navbar-mini .mini-direccion { display: none; }
 }
-/* En pantallas medianas el horario no cabe en la barra de arriba; sigue en Contacto */
-@media (max-width: 1199px) { .navbar-mini .mini-horario { display: none; } }
 footer .grupo { display: flex; flex-wrap: wrap; align-items: flex-start; gap: 20px 56px; margin: 10px 0 0; padding: 26px 0; border-top: 1px solid #e3e5e7; }
 footer .grupo__titulo { flex: 0 0 auto; margin: 4px 0 0; color: #333; font-size: 14px; font-weight: 600; }
 footer .grupo__marcas { display: flex; flex-wrap: wrap; gap: 20px 56px; }
