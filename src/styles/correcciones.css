@@ -476,21 +476,25 @@ body.pagina-clasica .section-item h2, body.pagina-clasica .section-item h3, body
 .bloque-obras .obra-real { display: flex; }
 .bloque-obras .obra-real .clean-card { width: 100%; }
 
-/* Las dos marcas del grupo: CPC junto al logo en escritorio, y ambas en el pie */
-.marca-hermana { display: none; }
+/* Las dos marcas del grupo: selector en la barra de arriba y ambas en el pie. Mismo alto de logo para que pesen igual. */
+/* Va en la franja blanca sobre el logo, que la barra de arriba no usa */
+.marcas { display: none; }
 @media (min-width: 992px) {
-    .navbar-header { display: flex; align-items: center; }
-    .marca-hermana { display: flex; align-items: center; height: 34px; margin-left: 6px; padding-left: 14px; border-left: 1px solid #d0d4d7; }
-    .marca-hermana img { width: 62px; height: auto; filter: grayscale(1); opacity: .6; transition: opacity .2s; }
-    .marca-hermana:hover img, .marca-hermana:focus-visible img { opacity: 1; }
+    .navbar-header .marcas { position: absolute; top: 0; left: 40px; z-index: 2; display: flex; height: 22px; }
+    .marcas__marca { display: flex; align-items: center; padding: 0 10px; border-bottom: 2px solid transparent; }
+    .marcas__marca:first-child { padding-left: 0; }
+    .marcas__marca + .marcas__marca { border-left: 1px solid #dfe2e4; }
+    .marcas__marca img { height: 10px; width: auto; filter: brightness(0); opacity: .3; transition: opacity .2s; }
+    .marcas__marca[aria-current] img { filter: none; opacity: 1; }
+    .marcas__marca:hover img, .marcas__marca:focus-visible img { opacity: .75; }
 }
-footer .grupo { display: flex; flex-wrap: wrap; align-items: center; gap: 16px 32px; margin: 10px 0 0; padding: 22px 0; border-top: 1px solid #e3e5e7; }
-footer .grupo__titulo { margin: 0; color: #333; font-size: 14px; font-weight: 600; }
-footer .grupo__marcas { display: flex; flex-wrap: wrap; gap: 16px 0; }
-footer .grupo__marca { display: flex; align-items: center; gap: 14px; padding: 0 28px; color: #595959; text-decoration: none; }
-footer .grupo__marca:first-child { padding-left: 0; }
-footer .grupo__marca + .grupo__marca { border-left: 1px solid #e3e5e7; }
-footer .grupo__marca img { height: 34px; width: auto; }
-footer .grupo__marca span { max-width: 22ch; font-size: 13px; line-height: 1.35; }
+footer .grupo { display: flex; flex-wrap: wrap; align-items: flex-start; gap: 20px 56px; margin: 10px 0 0; padding: 26px 0; border-top: 1px solid #e3e5e7; }
+footer .grupo__titulo { flex: 0 0 auto; margin: 4px 0 0; color: #333; font-size: 14px; font-weight: 600; }
+footer .grupo__marcas { display: flex; flex-wrap: wrap; gap: 20px 56px; }
+footer .grupo__marca { display: flex; flex-direction: column; align-items: flex-start; gap: 10px; color: #595959; text-decoration: none; }
+footer .grupo__marca img { height: 26px; width: auto; filter: brightness(0); opacity: .7; transition: opacity .2s; }
+footer .grupo__marca span { font-size: 13px; line-height: 1.35; }
+footer .grupo__marca:hover { text-decoration: none; }
 footer .grupo__marca:hover span { color: #333; }
-@media (max-width: 700px) { footer .grupo__marcas { flex-direction: column; } footer .grupo__marca { padding: 0; } footer .grupo__marca + .grupo__marca { border-left: 0; } footer .grupo__marca img { height: 28px; } }
+footer .grupo__marca:hover img { opacity: 1; }
+@media (max-width: 700px) { footer .grupo, footer .grupo__marcas { flex-direction: column; } }
