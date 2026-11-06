@@ -173,7 +173,8 @@ $$('.con-carrusel .flexslider').forEach((caja) => {
             puntos.innerHTML = Array.from({ length: paginas() }, (_, i) => `<li><a href="#" aria-label="Ir a la foto ${i + 1}">${i + 1}</a></li>`).join('');
         }
         $$('a', puntos).forEach((a, i) => a.classList.toggle('flex-active', i === actual));
-        fichas.forEach((li, i) => li.setAttribute('aria-hidden', String(i < primera || i >= primera + n)));
+        // Las fichas fuera de vista quedan ocultas también para el teclado, no solo para lectores de pantalla.
+        fichas.forEach((li, i) => { const fuera = i < primera || i >= primera + n; li.setAttribute('aria-hidden', String(fuera)); li.inert = fuera; });
         videos();
     }
     // El carrusel mueve las fichas sin que el navegador avise que entraron a la vista: él mismo arranca los videos que muestra.

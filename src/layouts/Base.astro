@@ -21,8 +21,9 @@ interface Props {
   carrusel?: boolean;
   videoFix?: boolean;
   clasica?: boolean;
+  preload?: string;
 }
-const { title, desc, ruta, img = '/assets/storage/2016/12/169471652699961817.webp', lang = 'es-MX', noindex = false, alternos = [], wa, waEtiqueta, ld = [], migasLd, carrusel = false, videoFix = false, clasica = false } = Astro.props;
+const { title, desc, ruta, img = '/assets/storage/2016/12/169471652699961817.webp', lang = 'es-MX', noindex = false, alternos = [], wa, waEtiqueta, ld = [], migasLd, carrusel = false, videoFix = false, clasica = false, preload } = Astro.props;
 const url = D + ruta;
 const ingles = lang.startsWith('en');
 // Solo el par español-inglés de puertas tiene versiones en otro idioma.
@@ -54,6 +55,7 @@ const datos = grafo(
     <meta property="og:url" content={url}>
     <meta property="og:image" content={D + img}>
     <meta name="twitter:card" content="summary_large_image">
+    {preload && <link rel="preload" as="image" href={preload} fetchpriority="high">}
     <link rel="preload" href="/assets/fonts/source-sans-pro-400.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/assets/fonts/fontawesome-webfont.woff2" as="font" type="font/woff2" crossorigin>
     <script type="application/ld+json" set:html={JSON.stringify(datos).replace(/</g, '\u003c')}></script>

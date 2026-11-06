@@ -23,6 +23,10 @@ tramos.forEach((_, i) => {
   else if (existe.has(u)) migas.push([NOMBRES[tramos[i]] ?? tramos[i], u]);
 });
 
+// La foto grande de arriba es lo primero que se ve: se pide desde el encabezado para que no llegue tarde.
+const PORTADA_PORTAFOLIO = '/assets/storage/2023/08/cocina-17-5-1920x1080.webp';
+const preload = p.ruta === '/portafolio/' ? PORTADA_PORTAFOLIO : html.match(/class="header-title[^"]*"[^>]*background-image:url\(([^)]+)\)/)?.[1];
+
 // La página de preguntas frecuentes publica sus preguntas también como datos estructurados.
 const ld: object[] = [];
 if (p.ruta === '/corporate/preguntas-frecuentes/') {
@@ -31,6 +35,6 @@ if (p.ruta === '/corporate/preguntas-frecuentes/') {
   if (faq.length) ld.push(preguntasLd(p.ruta, faq));
 }
 ---
-<Base title={p.title} desc={p.desc} ruta={p.ruta} img={p.img || undefined} lang={p.lang === 'en' ? 'en' : 'es-MX'} alternos={p.alternos} wa={p.wa} waEtiqueta={p.waEtiqueta} migasLd={migas} ld={ld} carrusel={p.carrusel} videoFix={p.videoFix} clasica={p.clasica}>
+<Base title={p.title} desc={p.desc} ruta={p.ruta} img={p.img || undefined} lang={p.lang === 'en' ? 'en' : 'es-MX'} alternos={p.alternos} wa={p.wa} waEtiqueta={p.waEtiqueta} migasLd={migas} ld={ld} carrusel={p.carrusel} videoFix={p.videoFix} clasica={p.clasica} preload={preload}>
     <Fragment set:html={html} />
 </Base>
