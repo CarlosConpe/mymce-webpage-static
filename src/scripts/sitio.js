@@ -174,7 +174,16 @@ $$('.con-carrusel .flexslider').forEach((caja) => {
         }
         $$('a', puntos).forEach((a, i) => a.classList.toggle('flex-active', i === actual));
         fichas.forEach((li, i) => li.setAttribute('aria-hidden', String(i < primera || i >= primera + n)));
+        videos();
     }
+    // El carrusel mueve las fichas sin que el navegador avise que entraron a la vista: él mismo arranca los videos que muestra.
+    let aLaVista = false;
+    const videos = () => fichas.forEach((li) => $$('video[data-autoplay]', li).forEach((v) => {
+        if (sinMovimiento || (v.dataset.autoplay === 'escritorio' && !escritorio())) return;
+        if (aLaVista && li.getAttribute('aria-hidden') === 'false') v.play().catch(() => { v.controls = true; });
+        else v.pause();
+    }));
+    new IntersectionObserver(([e]) => { aLaVista = e.isIntersecting; videos(); }, { rootMargin: '200px' }).observe(caja);
     const ir = (i) => { actual = (i + paginas()) % paginas(); pinta(); };
     flechas.addEventListener('click', (e) => {
         const a = e.target.closest('a');
@@ -254,6 +263,7 @@ $$('video[data-autoplay]').forEach((v) => {
     v.muted = true;
     v.playsInline = true;
     if (sinMovimiento) { v.controls = true; return; }
+    if (v.closest('.carrusel-listo')) return;
     alVer(v, () => v.play().catch(() => { v.controls = true; }), () => v.pause());
 });
 
