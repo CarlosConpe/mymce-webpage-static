@@ -24,7 +24,7 @@ window.addEventListener('scroll', alDesplazar, { passive: true });
 alDesplazar();
 // La barra es fija: la cabecera guarda su alto para que el contenido no quede debajo.
 const barra = $('header > .navbar');
-const reservar = () => { if (cabecera && barra && window.scrollY < 100) cabecera.style.height = barra.clientHeight + 'px'; };
+const reservar = () => { if (cabecera && barra && window.scrollY < 100) cabecera.style.height = barra.offsetHeight + 'px'; };
 reservar();
 window.addEventListener('resize', reservar);
 arriba?.addEventListener('click', () => window.scrollTo({ top: 0, behavior: sinMovimiento ? 'auto' : 'smooth' }));

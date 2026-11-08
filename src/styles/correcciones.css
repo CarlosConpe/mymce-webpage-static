@@ -494,6 +494,12 @@ body.pagina-clasica .section-item h2, body.pagina-clasica .section-item h3, body
 }
 /* En pantallas medianas el horario no cabe en la barra de arriba; sigue en Contacto */
 @media (max-width: 1199px) { .navbar-mini .mini-horario { display: none; } }
+/* Hasta 992 px la barra no es fija: la cabecera toma su alto real (70 px) desde el primer
+   dibujo, en vez de 52 px que luego corregía sitio.js empujando toda la página. */
+@media (max-width: 992px) { header.fixed-top { height: auto; } }
+/* En escritorio la barra sí es fija: se reserva el alto medido de la barra, que cambia cuando el menú cabe en una línea */
+@media (min-width: 993px) { header.fixed-top { height: 134px; } }
+@media (min-width: 1333px) { header.fixed-top { height: 105px; } }
 /* Teléfono, correo y dirección de la barra de arriba: #777 sobre #f7f7f7 no se lee bien */
 .navbar-mini .nav span a { color: #595959; }
 footer .grupo { display: flex; flex-wrap: wrap; align-items: flex-start; gap: 20px 56px; margin: 10px 0 0; padding: 26px 0; border-top: 1px solid #e3e5e7; }
