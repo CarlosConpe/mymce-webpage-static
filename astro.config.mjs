@@ -37,7 +37,7 @@ const mapaDelSitio = {
 export default defineConfig({
   site,
   trailingSlash: 'always',
-  build: { format: 'directory', inlineStylesheets: 'never' },
+  build: { format: 'directory', inlineStylesheets: 'always' },
   devToolbar: { enabled: false },
   // Todos los scripts van en archivos: la política de seguridad no permite código en línea.
   vite: { build: { assetsInlineLimit: 0 } },
