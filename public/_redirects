@@ -32,6 +32,8 @@
 /diseno-y-fabricacion-de-cocinas-integrales /servicios/cocinas/ 301
 /services/diseno-y-fabricacion-de-closets-y-vestidores /servicios/closets-vestidores/ 301
 /diseno-y-fabricacion-de-closets-y-vestidores /servicios/closets-vestidores/ 301
+/servicios/closets /servicios/closets-vestidores/ 301
+/servicios/closets/ /servicios/closets-vestidores/ 301
 /services/diseno-y-fabricacion-de-puertas /servicios/diseno-y-fabricacion-de-puertas/ 301
 /diseno-y-fabricacion-de-puertas /servicios/diseno-y-fabricacion-de-puertas/ 301
 /services/diseno-y-fabricacion-de-muebles-de-bano /servicios/diseno-y-fabricacion-de-muebles-de-bano/ 301

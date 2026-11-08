@@ -94,7 +94,7 @@ const PESTANAS = [['Cocinas', menuDe('cocina')], ['Closets y Vestidores', menuDe
                                             {grupos.map((g) => (
                                                 <div class="col">
                                                     <h5>{g.nombre}</h5>
-                                                    <ul class="fa-ul text-s">{g.modelos.map((f) => <li><a href={`/portafolio/${f.slug}/`}>Modelo {f.modelo}</a></li>)}</ul>
+                                                    <ul class="fa-ul text-s">{g.modelos.map((f) => <li><a href={`/portafolio/${f.slug}/`}>{i === 0 ? "Cocina" : "Closet"} modelo {f.modelo}</a></li>)}</ul>
                                                 </div>
                                             ))}
                                         </div>

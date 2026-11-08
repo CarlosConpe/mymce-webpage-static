@@ -25,7 +25,7 @@ export const CONVERSION: Record<string, string> = {
 };
 
 export const NEGOCIO = {
-  '@type': 'LocalBusiness',
+  '@type': ['LocalBusiness', 'HomeAndConstructionBusiness'],
   '@id': `${D}/#localbusiness`,
   name: 'MYMCE',
   legalName: 'Cocinas, Puertas y Closets S.A. de C.V.',

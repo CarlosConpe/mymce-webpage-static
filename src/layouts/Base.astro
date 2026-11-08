@@ -49,7 +49,7 @@ const datos = grafo(
     <link rel="icon" href="/assets/storage/2016/12/favicon-1.webp">
     <meta name="theme-color" content="#475a66">
     <meta property="og:locale" content={ingles ? 'en_US' : 'es_MX'}>
-    <meta property="og:type" content="website">
+    <meta property="og:type" content={/^\/corporate\/blog\/\d{4}\//.test(ruta) ? 'article' : 'website'}>
     <meta property="og:site_name" content="MYMCE">
     <meta property="og:title" content={title}>
     <meta property="og:description" content={desc}>

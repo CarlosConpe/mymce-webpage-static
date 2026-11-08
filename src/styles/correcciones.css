@@ -546,7 +546,7 @@ h1.t-d82e92, h2.t-d82e92, h3.t-d82e92, h4.t-d82e92, h5.t-d82e92, h6.t-d82e92 { f
     h1.t-cef0b8, h2.t-cef0b8, h3.t-cef0b8, h4.t-cef0b8, h5.t-cef0b8, h6.t-cef0b8 { font-size: 24px !important; font-weight: 300 !important; line-height: 27px !important; letter-spacing: normal !important; text-transform: none !important; margin-top: 30px !important; margin-bottom: 12px !important; padding-top: 0px !important; padding-bottom: 0px !important; font-family: "Source Sans Pro" !important; color: rgb(76, 76, 76) !important; text-align: start !important; font-style: normal !important;; min-height: 0px !important; max-height: none !important; white-space: normal !important; word-break: normal !important; overflow-wrap: normal !important; vertical-align: baseline !important; position: static !important; top: auto !important; border-bottom-width: 0px !important; border-bottom-style: none !important; border-bottom-color: rgb(76, 76, 76) !important }
 }
 /* Títulos de columna del pie: h2 para el orden de títulos, con el mismo aspecto que tenían */
-footer h2.pie-titulo { font-family: "Source Sans Pro"; font-size: 18px; font-weight: 300; line-height: 23px; letter-spacing: normal; text-transform: none; margin: 0 0 10px; padding: 0; color: rgb(53, 86, 105); }
+footer .pie-titulo { font-family: "Source Sans Pro"; font-size: 18px; font-weight: 300; line-height: 23px; letter-spacing: normal; text-transform: none; margin: 0 0 10px; padding: 0; color: rgb(53, 86, 105); }
 /* Miga de pan: la página actual se lee sobre fondo claro y sobre fondo oscuro */
 .breadcrumb > li.active { opacity: 1 !important; }
 .header-base:not(.white) ol.breadcrumb > li.active { color: #595959 !important; }
@@ -560,6 +560,8 @@ footer h2.pie-titulo { font-family: "Source Sans Pro"; font-size: 18px; font-wei
 .header-title .botones-cotizar .btn-border { color: #fff; border-color: #fff; background: transparent; }
 .header-title .botones-cotizar .btn-border:hover, .header-title .botones-cotizar .btn-border:focus-visible { background: #fff; color: #333; }
 #cotizar, #obras { scroll-margin-top: 90px; }
+@media (min-width: 993px) { #cotizar, #obras { scroll-margin-top: 130px; } }
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible, [tabindex]:focus-visible { outline: 3px solid #2b6cb0 !important; outline-offset: 2px; }
 .header-title .botones-cotizar .btn:not(.btn-border) { background: #fff !important; color: #36474f !important; border-color: #fff; }
 .header-title .botones-cotizar .btn:not(.btn-border) i { color: #36474f !important; }
 /* Con botones, el encabezado crece a lo que necesita en vez de recortar el título */
