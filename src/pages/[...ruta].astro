@@ -1,5 +1,6 @@
 ---
 // Todas las páginas comparten cabecera y pie; el contenido de cada una vive en src/contenido.
+import { existsSync } from 'node:fs';
 import Base from '../layouts/Base.astro';
 import paginas from '../data/paginas.json';
 import { preguntasLd } from '../data/sitio';
@@ -26,6 +27,9 @@ tramos.forEach((_, i) => {
 // La foto grande de arriba es lo primero que se ve: se pide desde el encabezado para que no llegue tarde.
 const PORTADA_PORTAFOLIO = '/assets/storage/2023/08/cocina-17-5-1920x1080.webp';
 const preload = p.ruta === '/portafolio/' ? PORTADA_PORTAFOLIO : html.match(/class="header-title[^"]*"[^>]*background-image:url\(([^)]+)\)/)?.[1];
+// En celular se usa la versión recortada y ligera que crea scripts/portadas-movil.py, si existe.
+const movil = preload?.replace(/\.webp$/, '-movil.webp');
+const preloadMovil = movil && existsSync(`${process.cwd()}/public${movil}`) ? movil : undefined;
 
 // La página de preguntas frecuentes publica sus preguntas también como datos estructurados.
 const ld: object[] = [];
@@ -35,6 +39,6 @@ if (p.ruta === '/corporate/preguntas-frecuentes/') {
   if (faq.length) ld.push(preguntasLd(p.ruta, faq));
 }
 ---
-<Base title={p.title} desc={p.desc} ruta={p.ruta} img={p.img || undefined} lang={p.lang === 'en' ? 'en' : 'es-MX'} alternos={p.alternos} wa={p.wa} waEtiqueta={p.waEtiqueta} migasLd={migas} ld={ld} carrusel={p.carrusel} videoFix={p.videoFix} clasica={p.clasica} preload={preload}>
+<Base title={p.title} desc={p.desc} ruta={p.ruta} img={p.img || undefined} lang={p.lang === 'en' ? 'en' : 'es-MX'} alternos={p.alternos} wa={p.wa} waEtiqueta={p.waEtiqueta} migasLd={migas} ld={ld} carrusel={p.carrusel} videoFix={p.videoFix} clasica={p.clasica} preload={preload} preloadMovil={preloadMovil}>
     <Fragment set:html={html} />
 </Base>

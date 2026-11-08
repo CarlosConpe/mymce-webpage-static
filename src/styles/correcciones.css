@@ -25,6 +25,7 @@ header .navbar-main .custom-area .btn:hover { background-color: #2a4555; border-
 }
 /* Portafolio: la foto de la portada apuntaba a una ruta rota y quedaba un bloque negro. */
 .portada-portafolio:after { background: linear-gradient(rgba(0, 0, 0, .55), rgba(0, 0, 0, .55)), #1d1d1d url(/assets/storage/2023/08/cocina-17-5-1920x1080.webp) center / cover no-repeat !important; }
+@media (max-width: 480px) { .portada-portafolio:after { background: linear-gradient(rgba(0, 0, 0, .55), rgba(0, 0, 0, .55)), #1d1d1d url(/assets/storage/2023/08/cocina-17-5-1920x1080-movil.webp) center / cover no-repeat !important; } }
 /* Foil PVC: las puertas de la foto quedaban fuera del cuadro. */
 .header-title[style*="2025/11/x.webp"] { background-position: right center !important; }
 /* Electrodomésticos: el anuncio de fondo trae letras propias del lado derecho; el texto se queda en la mitad oscura. */
