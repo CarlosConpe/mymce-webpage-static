@@ -554,3 +554,14 @@ footer h2.pie-titulo { font-family: "Source Sans Pro"; font-size: 18px; font-wei
 /* Textos grises con contraste suficiente sobre blanco */
 .title-base p { color: #6b6b6b; }
 .clean-card .category-tag { color: #6b6b6b; }
+/* Botones para cotizar en el encabezado de servicios y soluciones */
+.botones-cotizar { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 22px; }
+.botones-cotizar .btn { margin: 0; }
+.header-title .botones-cotizar .btn-border { color: #fff; border-color: #fff; background: transparent; }
+.header-title .botones-cotizar .btn-border:hover, .header-title .botones-cotizar .btn-border:focus-visible { background: #fff; color: #333; }
+#cotizar, #obras { scroll-margin-top: 90px; }
+.header-title .botones-cotizar .btn:not(.btn-border) { background: #fff !important; color: #36474f !important; border-color: #fff; }
+.header-title .botones-cotizar .btn:not(.btn-border) i { color: #36474f !important; }
+/* Con botones, el encabezado crece a lo que necesita en vez de recortar el título */
+.header-title:has(.botones-cotizar) { height: auto !important; padding: 40px 0 46px; }
+.header-title .botones-cotizar .btn-border i { color: #fff !important; }
