@@ -571,3 +571,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 .nota-formulario { clear: both; margin: 10px 0 0; font-size: 14px; color: #555; }
 .text-right + .nota-formulario { text-align: right; }
 @media (max-width: 767px) { .text-right + .nota-formulario { text-align: left; } }
+/* Títulos del pie como párrafo: mismo color que tenían como h2 */
+footer p.pie-titulo.text-color { color: #2f4a5a; opacity: 1; }
+/* Enlaces dentro de un párrafo: subrayados para distinguirlos del texto */
+.section-item a:not([class]):not(:has(img)), .caption-box p a:not(.btn) { text-decoration: underline; text-underline-offset: 2px; }
+.section-item .bloque-columna a.btn.btn-lg[href="#cotizar"] { background: #36474f !important; color: #fff !important; border-color: #36474f !important; }

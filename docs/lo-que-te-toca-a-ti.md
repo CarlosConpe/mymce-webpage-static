@@ -75,3 +75,7 @@ El disco C se llenó. Ya borré unos 33 GB de carpetas de pruebas. Si quieres m�
 - `Descargas\Telegram Desktop` ocupa 40 GB; revisa qué necesitas.
 - Instaladores repetidos de Ableton en Descargas (~15 GB).
 - Hibernación (25 GB): en PowerShell como administrador, `powercfg /h off`. Solo si no usas hibernar.
+
+## 8. Decisión técnica: compresión contra el script de Cloudflare
+
+Para quitar el error de consola que inyectaba Cloudflare, las páginas llevan `no-transform`. Lighthouse encontró que eso también impide que Cloudflare comprima el HTML: cada página pesa entre 24 y 80 KB más de lo necesario en celular. Mi recomendación es quitar `no-transform`, publicar y medir las dos cosas en vivo. Si el error de consola regresa, buscamos otra forma de bloquear el script. Dime si lo pruebo.
