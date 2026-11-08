@@ -2328,6 +2328,54 @@
   "videoFix": false
  },
  {
+  "ruta": "/servicios/cocinas-y-closets-villa-de-pozos/",
+  "archivo": "servicios/cocinas-y-closets-villa-de-pozos/index.html",
+  "title": "Cocinas Integrales y Closets en Villa de Pozos | MYMCE",
+  "desc": "Cocinas integrales y closets a medida en Villa de Pozos: mira las obras reales que instalamos en Catara y Sirenia y cotiza la tuya con MYMCE.",
+  "img": "/assets/storage/2023/07/laminado-e1689895153463.webp",
+  "lang": "es",
+  "noindex": false,
+  "alternos": [
+   [
+    "es",
+    "/servicios/cocinas-y-closets-villa-de-pozos/"
+   ],
+   [
+    "es-MX",
+    "/servicios/cocinas-y-closets-villa-de-pozos/"
+   ]
+  ],
+  "wa": "https://wa.me/524442335607?text=Hola%20Grupo%20MYMCE%2C%20quisiera%20cotizar%20un%20Closet%20o%20Vestidor%20a%20medida.",
+  "waEtiqueta": "closets",
+  "clasica": false,
+  "carrusel": false,
+  "videoFix": false
+ },
+ {
+  "ruta": "/servicios/cocinas-y-closets-soledad-de-graciano-sanchez/",
+  "archivo": "servicios/cocinas-y-closets-soledad-de-graciano-sanchez/index.html",
+  "title": "Cocinas Integrales y Closets en Soledad | MYMCE",
+  "desc": "Cocinas integrales y closets a medida en Soledad de Graciano Sánchez: mira las obras reales que instalamos en Valle Real y cotiza la tuya con MYMCE.",
+  "img": "/assets/storage/2023/07/laminado-e1689895153463.webp",
+  "lang": "es",
+  "noindex": false,
+  "alternos": [
+   [
+    "es",
+    "/servicios/cocinas-y-closets-soledad-de-graciano-sanchez/"
+   ],
+   [
+    "es-MX",
+    "/servicios/cocinas-y-closets-soledad-de-graciano-sanchez/"
+   ]
+  ],
+  "wa": "https://wa.me/524442335607?text=Hola%20Grupo%20MYMCE%2C%20quisiera%20cotizar%20un%20Closet%20o%20Vestidor%20a%20medida.",
+  "waEtiqueta": "closets",
+  "clasica": false,
+  "carrusel": false,
+  "videoFix": false
+ },
+ {
   "ruta": "/servicios/cocinas/",
   "archivo": "servicios/cocinas/index.html",
   "title": "Fábrica de Cocinas Integrales en San Luis Potosí | MYMCE",
