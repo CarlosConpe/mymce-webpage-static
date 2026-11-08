@@ -17,7 +17,7 @@ const html = contenido[`../contenido/${p.archivo}`];
 // Migas para los datos estructurados: cada tramo de la ruta que exista como página.
 const existe = new Set(paginas.map((x) => x.ruta));
 const tramos = p.ruta.split('/').filter(Boolean);
-const migas: [string, string | null][] = [['Inicio', '/']];
+const migas: [string, string | null][] = [[p.lang === 'en' ? 'Home' : 'Inicio', p.lang === 'en' ? '/en/' : '/']];
 tramos.forEach((_, i) => {
   const u = '/' + tramos.slice(0, i + 1).join('/') + '/';
   if (u === p.ruta) migas.push([p.title.split('|')[0].trim(), null]);
@@ -44,7 +44,7 @@ const negocio = { '@id': `${D}/#localbusiness` };
 if (fecha) ld.push({ '@type': 'BlogPosting', '@id': `${D}${p.ruta}#articulo`, headline: p.title.split('|')[0].trim(), description: p.desc, datePublished: fecha, dateModified: fecha, author: negocio, publisher: negocio, image: D + (p.img || '/assets/storage/2016/12/169471652699961817.webp'), mainEntityOfPage: `${D}${p.ruta}`, inLanguage: 'es-MX' });
 // Las páginas de servicios describen el servicio que se ofrece y en qué zonas.
 const h1 = html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/)?.[1].replace(/<[^>]+>/g, '').trim();
-if (p.ruta.startsWith('/servicios/') && p.ruta !== '/servicios/' && h1) ld.push({ '@type': 'Service', '@id': `${D}${p.ruta}#servicio`, name: h1, description: p.desc, provider: negocio, areaServed: NEGOCIO.areaServed, url: `${D}${p.ruta}` });
+if ((p.ruta.startsWith('/servicios/') && p.ruta !== '/servicios/' || /^\/en\/.+/.test(p.ruta)) && h1) ld.push({ '@type': 'Service', '@id': `${D}${p.ruta}#servicio`, name: h1, description: p.desc, provider: negocio, areaServed: NEGOCIO.areaServed, url: `${D}${p.ruta}` });
 ---
 <Base title={p.title} desc={p.desc} ruta={p.ruta} img={p.img || undefined} lang={p.lang === 'en' ? 'en' : 'es-MX'} alternos={p.alternos} wa={p.wa} waEtiqueta={p.waEtiqueta} migasLd={migas} ld={ld} carrusel={p.carrusel} videoFix={p.videoFix} clasica={p.clasica} preload={preload} preloadMovil={preloadMovil}>
     <Fragment set:html={html} />

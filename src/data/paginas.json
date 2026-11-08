@@ -2,7 +2,7 @@
  {
   "ruta": "/corporate/acerca-de-mymce-carpinteria-profesional-en-san-luis-potosi/",
   "archivo": "corporate/acerca-de-mymce-carpinteria-profesional-en-san-luis-potosi/index.html",
-  "title": "Acerca de MYMCE: Carpintería Premium en San Luis Potosí | MYMCE",
+  "title": "Carpintería en San Luis Potosí desde 1987 | MYMCE",
   "desc": "Grupo MYMCE es una empresa 100% mexicana que diseña y fabrica cocinas, closets, puertas y muebles de baño en San Luis Potosí desde 1987.",
   "img": "/assets/storage/2023/07/logo-b25182a6ba332cf6a342eb4a73974ef2-1.webp",
   "lang": "es",
@@ -74,7 +74,7 @@
  {
   "ruta": "/corporate/blog/2023/07/17/tendencias-de-color/",
   "archivo": "corporate/blog/2023/07/17/tendencias-de-color/index.html",
-  "title": "Tendencias de Color Llave en Mano | SLP | MYMCE",
+  "title": "Tendencias de Color para tu Casa | Blog | MYMCE",
   "desc": "Tendencias de color para muebles y decoración inspiradas en la niebla, la nieve y el viento: tonos, materiales y combinaciones para tu casa.",
   "img": "/assets/storage/2016/12/logo-2.webp",
   "lang": "es",
@@ -146,7 +146,7 @@
  {
   "ruta": "/corporate/blog/",
   "archivo": "corporate/blog/index.html",
-  "title": "Blog Llave en Mano | SLP | MYMCE",
+  "title": "Blog de Cocinas y Closets | MYMCE",
   "desc": "Blog de MYMCE: ideas y consejos de carpintería y diseño de interiores para cocinas integrales, closets y colores de tu casa en San Luis Potosí.",
   "img": "/assets/storage/2023/07/1-2.webp",
   "lang": "es",
@@ -170,7 +170,7 @@
  {
   "ruta": "/corporate/contact/",
   "archivo": "corporate/contact/index.html",
-  "title": "Contacto en San Luis Potosí Llave en Mano | SLP | MYMCE",
+  "title": "Contacto | Cocinas y Closets en San Luis Potosí | MYMCE",
   "desc": "Contacta a Cocinas, Puertas y Closets en San Luis Potosí: escríbenos por el formulario, WhatsApp o teléfono y cuéntanos tu proyecto para cotizarlo.",
   "img": "",
   "lang": "es",
@@ -271,16 +271,7 @@
   "img": "/assets/storage/2023/07/Copy-of-VIDEO.00_01_09_05.Imagen-fija0111-1200x750.webp",
   "lang": "es",
   "noindex": false,
-  "alternos": [
-   [
-    "es",
-    "/"
-   ],
-   [
-    "es-MX",
-    "/"
-   ]
-  ],
+  "alternos": [["es-MX", "/"], ["en", "/en/"], ["x-default", "/"]],
   "wa": "https://wa.me/524442335607?text=Hola%2C%20estoy%20buscando%20soluciones%20de%20carpinter%C3%ADa%20y%20mobiliario.%20Me%20interesa%20cotizar%20un%20proyecto%20con%20ustedes.",
   "waEtiqueta": "default",
   "clasica": false,
@@ -290,8 +281,8 @@
  {
   "ruta": "/portafolio/closets-catara-modelo-kahlo/",
   "archivo": "portafolio/closets-catara-modelo-kahlo/index.html",
-  "title": "Closets Catara, Modelo Kahlo en San Luis Potosí | MYMCE",
-  "desc": "Closets a medida para la casa modelo Kahlo del fraccionamiento Catara, San Luis Potosí. Diseño, fabricación e instalación de Grupo MYMCE.",
+  "title": "Closets Catara, Modelo Kahlo en Villa de Pozos | MYMCE",
+  "desc": "Closets a medida para la casa modelo Kahlo del fraccionamiento Catara, Villa de Pozos. Diseño, fabricación e instalación de Grupo MYMCE.",
   "img": "/assets/storage/2023/08/20230708_143117-1-768x1024.webp",
   "lang": "es",
   "noindex": false,
@@ -314,8 +305,8 @@
  {
   "ruta": "/portafolio/closets-catara-modelo-san-david/",
   "archivo": "portafolio/closets-catara-modelo-san-david/index.html",
-  "title": "Closets Catara, Modelo San David en San Luis Potosí | MYMCE",
-  "desc": "Closets a medida para la casa modelo San David del fraccionamiento Catara, San Luis Potosí. Diseño, fabricación e instalación de Grupo MYMCE.",
+  "title": "Closets Catara, Modelo San David en Villa de Pozos | MYMCE",
+  "desc": "Closets a medida para la casa modelo San David del fraccionamiento Catara, Villa de Pozos. Diseño, fabricación e instalación de Grupo MYMCE.",
   "img": "/assets/storage/2023/08/20230708_142117-768x1024.webp",
   "lang": "es",
   "noindex": false,
@@ -338,8 +329,8 @@
  {
   "ruta": "/portafolio/closets-sirenia-modelo-goya/",
   "archivo": "portafolio/closets-sirenia-modelo-goya/index.html",
-  "title": "Closets Sirenia, Modelo Goya en San Luis Potosí | MYMCE",
-  "desc": "Closets a medida para la casa modelo Goya del fraccionamiento Sirenia, San Luis Potosí. Diseño, fabricación e instalación de Grupo MYMCE.",
+  "title": "Closets Sirenia, Modelo Goya en Villa de Pozos | MYMCE",
+  "desc": "Closets a medida para la casa modelo Goya del fraccionamiento Sirenia, Villa de Pozos. Diseño, fabricación e instalación de Grupo MYMCE.",
   "img": "/assets/storage/2023/08/20230708_121906-768x1024.webp",
   "lang": "es",
   "noindex": false,
@@ -362,8 +353,8 @@
  {
   "ruta": "/portafolio/closets-sirenia-modelo-san-alberto/",
   "archivo": "portafolio/closets-sirenia-modelo-san-alberto/index.html",
-  "title": "Closets Sirenia, Modelo San Alberto en San Luis Potosí | MYMCE",
-  "desc": "Closets a medida para la casa modelo San Alberto del fraccionamiento Sirenia, San Luis Potosí. Diseño, fabricación e instalación de Grupo MYMCE.",
+  "title": "Closets Sirenia, modelo San Alberto, Villa de Pozos | MYMCE",
+  "desc": "Closets a medida para la casa modelo San Alberto del fraccionamiento Sirenia, Villa de Pozos. Diseño, fabricación e instalación de Grupo MYMCE.",
   "img": "/assets/storage/2023/08/20230708_113107-1-768x1024.webp",
   "lang": "es",
   "noindex": false,
@@ -386,8 +377,8 @@
  {
   "ruta": "/portafolio/closets-sirenia-modelo-san-david/",
   "archivo": "portafolio/closets-sirenia-modelo-san-david/index.html",
-  "title": "Closets Sirenia, Modelo San David en San Luis Potosí | MYMCE",
-  "desc": "Closets a medida para la casa modelo San David del fraccionamiento Sirenia, San Luis Potosí. Diseño, fabricación e instalación de Grupo MYMCE.",
+  "title": "Closets Sirenia, Modelo San David en Villa de Pozos | MYMCE",
+  "desc": "Closets a medida para la casa modelo San David del fraccionamiento Sirenia, Villa de Pozos. Diseño, fabricación e instalación de Grupo MYMCE.",
   "img": "/assets/storage/2023/08/20230708_122830-768x1024.webp",
   "lang": "es",
   "noindex": false,
@@ -410,8 +401,8 @@
  {
   "ruta": "/portafolio/closets-sirenia-modelo-santa-teresa/",
   "archivo": "portafolio/closets-sirenia-modelo-santa-teresa/index.html",
-  "title": "Closets Sirenia, Modelo Santa Teresa en San Luis Potosí | MYMCE",
-  "desc": "Closets a medida para la casa modelo Santa Teresa del fraccionamiento Sirenia, San Luis Potosí. Diseño, fabricación e instalación de Grupo MYMCE.",
+  "title": "Closets Sirenia, modelo Santa Teresa, Villa de Pozos | MYMCE",
+  "desc": "Closets a medida para la casa modelo Santa Teresa del fraccionamiento Sirenia, Villa de Pozos. Diseño, fabricación e instalación de Grupo MYMCE.",
   "img": "/assets/storage/2023/08/20230708_120836-1-768x1024.webp",
   "lang": "es",
   "noindex": false,
@@ -434,8 +425,8 @@
  {
   "ruta": "/portafolio/closets-valle-real-modelo-buonarroti/",
   "archivo": "portafolio/closets-valle-real-modelo-buonarroti/index.html",
-  "title": "Closets Valle Real, Modelo Buonarroti en San Luis Potosí | MYMCE",
-  "desc": "Closets a medida para la casa modelo Buonarroti del fraccionamiento Valle Real, San Luis Potosí. Diseño, fabricación e instalación de Grupo MYMCE.",
+  "title": "Closets Valle Real, Modelo Buonarroti en Soledad | MYMCE",
+  "desc": "Closets a medida para la casa modelo Buonarroti del fraccionamiento Valle Real, Soledad de Graciano Sánchez. Diseño, fabricación e instalación de Grupo MYMCE.",
   "img": "/assets/storage/2023/08/20230628_141220-1-768x1024.webp",
   "lang": "es",
   "noindex": false,
@@ -458,8 +449,8 @@
  {
   "ruta": "/portafolio/closets-valle-real-modelo-goya/",
   "archivo": "portafolio/closets-valle-real-modelo-goya/index.html",
-  "title": "Closets Valle Real, Modelo Goya en San Luis Potosí | MYMCE",
-  "desc": "Closets a medida para la casa modelo Goya del fraccionamiento Valle Real, San Luis Potosí. Diseño, fabricación e instalación de Grupo MYMCE.",
+  "title": "Closets Valle Real, Modelo Goya en Soledad | MYMCE",
+  "desc": "Closets a medida para la casa modelo Goya del fraccionamiento Valle Real, Soledad de Graciano Sánchez. Diseño, fabricación e instalación de Grupo MYMCE.",
   "img": "/assets/storage/2023/08/20230628_123140-768x1024.webp",
   "lang": "es",
   "noindex": false,
@@ -482,8 +473,8 @@
  {
   "ruta": "/portafolio/closets-valle-real-modelo-san-alberto/",
   "archivo": "portafolio/closets-valle-real-modelo-san-alberto/index.html",
-  "title": "Closets Valle Real, Modelo San Alberto en San Luis Potosí | MYMCE",
-  "desc": "Closets a medida para la casa modelo San Alberto del fraccionamiento Valle Real, San Luis Potosí. Diseño, fabricación e instalación de Grupo MYMCE.",
+  "title": "Closets Valle Real, Modelo San Alberto en Soledad | MYMCE",
+  "desc": "Closets a medida para la casa modelo San Alberto del fraccionamiento Valle Real, Soledad de Graciano Sánchez. Diseño, fabricación e instalación de Grupo MYMCE.",
   "img": "/assets/storage/2023/08/20230628_131233-768x1024.webp",
   "lang": "es",
   "noindex": false,
@@ -506,8 +497,8 @@
  {
   "ruta": "/portafolio/closets-valle-real-modelo-san-david/",
   "archivo": "portafolio/closets-valle-real-modelo-san-david/index.html",
-  "title": "Closets Valle Real, Modelo San David en San Luis Potosí | MYMCE",
-  "desc": "Closets a medida para la casa modelo San David del fraccionamiento Valle Real, San Luis Potosí. Diseño, fabricación e instalación de Grupo MYMCE.",
+  "title": "Closets Valle Real, Modelo San David en Soledad | MYMCE",
+  "desc": "Closets a medida para la casa modelo San David del fraccionamiento Valle Real, Soledad de Graciano Sánchez. Diseño, fabricación e instalación de Grupo MYMCE.",
   "img": "/assets/storage/2023/08/20230628_120115-1-768x1024.webp",
   "lang": "es",
   "noindex": false,
@@ -530,8 +521,8 @@
  {
   "ruta": "/portafolio/closets-valle-real-modelo-santa-teresa/",
   "archivo": "portafolio/closets-valle-real-modelo-santa-teresa/index.html",
-  "title": "Closets, VALLE REAL, Modelo Santa Teresa | MYMCE",
-  "desc": "Closets y cocina a medida en la casa modelo Santa Teresa del fraccionamiento Valle Real, San Luis Potosí. Diseño, fabricación e instalación de MYMCE.",
+  "title": "Closets Valle Real, Modelo Santa Teresa en Soledad | MYMCE",
+  "desc": "Closets y cocina a medida en la casa modelo Santa Teresa del fraccionamiento Valle Real, Soledad de Graciano Sánchez. Diseño, fabricación e instalación de MYMCE.",
   "img": "/assets/storage/2023/08/20230628_124629-1-768x1024.webp",
   "lang": "es",
   "noindex": false,
@@ -554,8 +545,8 @@
  {
   "ruta": "/portafolio/closets-y-vestidores-catara-modelo-botticelli/",
   "archivo": "portafolio/closets-y-vestidores-catara-modelo-botticelli/index.html",
-  "title": "Closets y Vestidores, CATARA, Modelo Botticelli | MYMCE",
-  "desc": "Closets a la medida en las 3 recámaras de la casa modelo Botticelli, fraccionamiento Catara, San Luis Potosí. Carpintería residencial de Grupo MYMCE.",
+  "title": "Closets y vestidores Catara, modelo Botticelli | MYMCE",
+  "desc": "Closets a la medida en las 3 recámaras de la casa modelo Botticelli, fraccionamiento Catara, Villa de Pozos. Carpintería residencial de Grupo MYMCE.",
   "img": "/assets/storage/2023/08/20230708_144911-2-768x1024.webp",
   "lang": "es",
   "noindex": false,
@@ -578,8 +569,8 @@
  {
   "ruta": "/portafolio/closets-y-vestidores-catara-modelo-da-vinci/",
   "archivo": "portafolio/closets-y-vestidores-catara-modelo-da-vinci/index.html",
-  "title": "Closets y Vestidores, CATARA, Modelo Da Vinci | MYMCE",
-  "desc": "Closets y vestidores de la casa modelo Da Vinci en el fraccionamiento Catara, San Luis Potosí, con carpintería a medida de Grupo MYMCE.",
+  "title": "Closets y vestidores Catara, modelo Da Vinci | MYMCE",
+  "desc": "Closets y vestidores de la casa modelo Da Vinci en el fraccionamiento Catara, Villa de Pozos, con carpintería a medida de Grupo MYMCE.",
   "img": "/assets/storage/2023/08/20230708_135056-1-768x1024.webp",
   "lang": "es",
   "noindex": false,
@@ -602,8 +593,8 @@
  {
   "ruta": "/portafolio/closets-y-vestidores-catara-modelo-dali/",
   "archivo": "portafolio/closets-y-vestidores-catara-modelo-dali/index.html",
-  "title": "Closets y Vestidores, CATARA, Modelo Dalí | MYMCE",
-  "desc": "Casa modelo Dalí, Catara: closets a medida en las recámaras del frente y un vestidor amplio en la principal. Carpintería de Grupo MYMCE en SLP.",
+  "title": "Closets y vestidores Dalí, Catara, Villa de Pozos | MYMCE",
+  "desc": "Casa modelo Dalí, Catara: closets a medida en las recámaras del frente y un vestidor amplio en la principal. Carpintería de Grupo MYMCE en Villa de Pozos.",
   "img": "/assets/storage/2023/08/20230708_134311-1-768x1024.webp",
   "lang": "es",
   "noindex": false,
@@ -626,8 +617,8 @@
  {
   "ruta": "/portafolio/closets-y-vestidores-catara-modelo-monet/",
   "archivo": "portafolio/closets-y-vestidores-catara-modelo-monet/index.html",
-  "title": "Closets y Vestidores, CATARA, Modelo Monet | MYMCE",
-  "desc": "Closets, cocina y vestidor principal a medida en la casa modelo Monet del fraccionamiento Catara, San Luis Potosí. Carpintería de Grupo MYMCE.",
+  "title": "Closets y vestidores Monet, Catara, Villa de Pozos | MYMCE",
+  "desc": "Closets, cocina y vestidor principal a medida en la casa modelo Monet del fraccionamiento Catara, Villa de Pozos. Carpintería de Grupo MYMCE.",
   "img": "/assets/storage/2023/08/20230708_141256-768x1024.webp",
   "lang": "es",
   "noindex": false,
@@ -650,8 +641,8 @@
  {
   "ruta": "/portafolio/closets-y-vestidores-catara-modelo-picasso/",
   "archivo": "portafolio/closets-y-vestidores-catara-modelo-picasso/index.html",
-  "title": "Closets y Vestidores, CATARA, Modelo Picasso | MYMCE",
-  "desc": "Closets y vestidores de la casa modelo Picasso, Catara, con 144 m² de construcción en San Luis Potosí. Carpintería a medida de Grupo MYMCE.",
+  "title": "Closets y vestidores Picasso, Catara, Villa de Pozos | MYMCE",
+  "desc": "Closets y vestidores de la casa modelo Picasso, Catara, con 144 m² de construcción en Villa de Pozos. Carpintería a medida de Grupo MYMCE.",
   "img": "/assets/storage/2023/08/20230708_143715-768x1024.webp",
   "lang": "es",
   "noindex": false,
@@ -674,8 +665,8 @@
  {
   "ruta": "/portafolio/closets-y-vestidores-catara-modelo-san-antonio/",
   "archivo": "portafolio/closets-y-vestidores-catara-modelo-san-antonio/index.html",
-  "title": "Closets y Vestidores, CATARA, Modelo San Antonio | MYMCE",
-  "desc": "Casa modelo San Antonio, Catara: recámara principal al frente y secundarias al fondo, con closets a medida de Grupo MYMCE en San Luis Potosí.",
+  "title": "Closets y vestidores Catara, modelo San Antonio | MYMCE",
+  "desc": "Casa modelo San Antonio, Catara: recámara principal al frente y secundarias al fondo, con closets a medida de Grupo MYMCE en Villa de Pozos.",
   "img": "/assets/storage/2023/08/20230708_132656-2-768x1024.webp",
   "lang": "es",
   "noindex": false,
@@ -698,8 +689,8 @@
  {
   "ruta": "/portafolio/closets-y-vestidores-catara-modelo-santa-ana/",
   "archivo": "portafolio/closets-y-vestidores-catara-modelo-santa-ana/index.html",
-  "title": "Closets y Vestidores, CATARA, Modelo Santa Ana | MYMCE",
-  "desc": "Vestidor amplio en la recámara principal y closets a medida en la casa modelo Santa Ana del fraccionamiento Catara, San Luis Potosí. Grupo MYMCE.",
+  "title": "Closets y vestidores Catara, modelo Santa Ana | MYMCE",
+  "desc": "Vestidor amplio en la recámara principal y closets a medida en la casa modelo Santa Ana del fraccionamiento Catara, Villa de Pozos. Grupo MYMCE.",
   "img": "/assets/storage/2023/08/20230708_133449-1-768x1024.webp",
   "lang": "es",
   "noindex": false,
@@ -722,8 +713,8 @@
  {
   "ruta": "/portafolio/closets-y-vestidores-catara-modelo-van-gogh/",
   "archivo": "portafolio/closets-y-vestidores-catara-modelo-van-gogh/index.html",
-  "title": "Closets y Vestidores, CATARA, Modelo Van Gogh | MYMCE",
-  "desc": "Vestidor principal con tres zonas para colgar ropa en la casa modelo Van Gogh, fraccionamiento Catara, San Luis Potosí. Carpintería de Grupo MYMCE.",
+  "title": "Closets y vestidores Catara, modelo Van Gogh | MYMCE",
+  "desc": "Vestidor principal con tres zonas para colgar ropa en la casa modelo Van Gogh, fraccionamiento Catara, Villa de Pozos. Carpintería de Grupo MYMCE.",
   "img": "/assets/storage/2023/08/20230708_140058-768x1024.webp",
   "lang": "es",
   "noindex": false,
@@ -746,7 +737,7 @@
  {
   "ruta": "/portafolio/closets-y-vestidores-imperia-modelo-botticelli/",
   "archivo": "portafolio/closets-y-vestidores-imperia-modelo-botticelli/index.html",
-  "title": "Closets y Vestidores, IMPERIA, Modelo Botticelli | MYMCE",
+  "title": "Closets y vestidores modelo Botticelli, Imperia, SLP | MYMCE",
   "desc": "Closets y vestidores para cada recámara de la casa modelo Botticelli del fraccionamiento Imperia, San Luis Potosí. Carpintería de Grupo MYMCE.",
   "img": "/assets/storage/2024/03/Botticelli-6-1.webp",
   "lang": "es",
@@ -770,7 +761,7 @@
  {
   "ruta": "/portafolio/closets-y-vestidores-imperia-modelo-buonarroti/",
   "archivo": "portafolio/closets-y-vestidores-imperia-modelo-buonarroti/index.html",
-  "title": "Closets y Vestidores, IMPERIA, Modelo Buonarroti | MYMCE",
+  "title": "Closets y vestidores modelo Buonarroti, Imperia, SLP | MYMCE",
   "desc": "Casa modelo Buonarroti, Imperia: 3 recámaras con baño completo, una en planta baja, con closets y vestidores a medida de Grupo MYMCE en SLP.",
   "img": "/assets/storage/2024/03/Buonarroti-1-1.webp",
   "lang": "es",
@@ -794,7 +785,7 @@
  {
   "ruta": "/portafolio/closets-y-vestidores-imperia-modelo-carrington/",
   "archivo": "portafolio/closets-y-vestidores-imperia-modelo-carrington/index.html",
-  "title": "Closets y Vestidores, IMPERIA, Modelo Carrington | MYMCE",
+  "title": "Closets y vestidores modelo Carrington, Imperia, SLP | MYMCE",
   "desc": "Closets y vestidores de la casa modelo Carrington, Imperia, con espacios abiertos y luz natural. Carpintería a medida de Grupo MYMCE en SLP.",
   "img": "/assets/storage/2024/03/Carrington-3.webp",
   "lang": "es",
@@ -818,7 +809,7 @@
  {
   "ruta": "/portafolio/closets-y-vestidores-imperia-modelo-da-vinci/",
   "archivo": "portafolio/closets-y-vestidores-imperia-modelo-da-vinci/index.html",
-  "title": "Closets y Vestidores, IMPERIA, Modelo Da Vinci | MYMCE",
+  "title": "Closets y vestidores modelo Da Vinci, Imperia, SLP | MYMCE",
   "desc": "Closets y vestidores a medida en la casa modelo Da Vinci del fraccionamiento Imperia, San Luis Potosí. Diseño, fabricación e instalación de MYMCE.",
   "img": "/assets/storage/2024/03/Da-Vinci-6.webp",
   "lang": "es",
@@ -842,7 +833,7 @@
  {
   "ruta": "/portafolio/closets-y-vestidores-imperia-modelo-picasso/",
   "archivo": "portafolio/closets-y-vestidores-imperia-modelo-picasso/index.html",
-  "title": "Closets y Vestidores, IMPERIA, Modelo Picasso | MYMCE",
+  "title": "Closets y vestidores modelo Picasso, Imperia, SLP | MYMCE",
   "desc": "Casa modelo Picasso, Imperia: 144 m² construidos en terreno de 130 m², con closets y vestidores a medida de Grupo MYMCE en San Luis Potosí.",
   "img": "/assets/storage/2024/03/Picasso-1.webp",
   "lang": "es",
@@ -866,7 +857,7 @@
  {
   "ruta": "/portafolio/closets-y-vestidores-imperia-modelo-rembrandt/",
   "archivo": "portafolio/closets-y-vestidores-imperia-modelo-rembrandt/index.html",
-  "title": "Closets y Vestidores, IMPERIA, Modelo Rembrandt | MYMCE",
+  "title": "Closets y vestidores modelo Rembrandt, Imperia, SLP | MYMCE",
   "desc": "Casa modelo Rembrandt, Imperia: cada recámara con baño completo y la principal con vestidor y terraza. Closets a medida de Grupo MYMCE en SLP.",
   "img": "/assets/storage/2024/03/Rembrandt-1-1.webp",
   "lang": "es",
@@ -890,7 +881,7 @@
  {
   "ruta": "/portafolio/closets-y-vestidores-imperia-modelo-san-marcos/",
   "archivo": "portafolio/closets-y-vestidores-imperia-modelo-san-marcos/index.html",
-  "title": "Closets y Vestidores, IMPERIA, Modelo San Marcos | MYMCE",
+  "title": "Closets y vestidores modelo San Marcos, Imperia, SLP | MYMCE",
   "desc": "Casa modelo San Marcos, Imperia: dos plantas y recámara principal con balcón, baño y vestidor. Closets a medida de Grupo MYMCE en San Luis Potosí.",
   "img": "/assets/storage/2024/03/San-Marcos-5.webp",
   "lang": "es",
@@ -914,7 +905,7 @@
  {
   "ruta": "/portafolio/closets-y-vestidores-imperia-modelo-san-patricio/",
   "archivo": "portafolio/closets-y-vestidores-imperia-modelo-san-patricio/index.html",
-  "title": "Closets y Vestidores, IMPERIA, Modelo San Patricio | MYMCE",
+  "title": "Closets y vestidores San Patricio, Imperia, SLP | MYMCE",
   "desc": "Closets y vestidores de la casa modelo San Patricio, Imperia, de estilo moderno y minimalista con luz natural. Carpintería de Grupo MYMCE en SLP.",
   "img": "/assets/storage/2024/03/San-Patricio-2-1.webp",
   "lang": "es",
@@ -938,7 +929,7 @@
  {
   "ruta": "/portafolio/closets-y-vestidores-imperia-modelo-santa-ana/",
   "archivo": "portafolio/closets-y-vestidores-imperia-modelo-santa-ana/index.html",
-  "title": "Closets y Vestidores, IMPERIA, Modelo Santa Ana | MYMCE",
+  "title": "Closets y vestidores modelo Santa Ana, Imperia, SLP | MYMCE",
   "desc": "Closets y vestidores pensados para aprovechar cada espacio en la casa modelo Santa Ana del fraccionamiento Imperia, San Luis Potosí. Grupo MYMCE.",
   "img": "/assets/storage/2024/03/Santa-Ana-5.webp",
   "lang": "es",
@@ -962,7 +953,7 @@
  {
   "ruta": "/portafolio/closets-y-vestidores-imperia-modelo-van-gogh/",
   "archivo": "portafolio/closets-y-vestidores-imperia-modelo-van-gogh/index.html",
-  "title": "Closets y Vestidores, IMPERIA, Modelo Van Gogh | MYMCE",
+  "title": "Closets y vestidores modelo Van Gogh, Imperia, SLP | MYMCE",
   "desc": "Closets y vestidores de la casa modelo Van Gogh, Imperia, con grandes ventanas y patio trasero. Carpintería a medida de Grupo MYMCE en SLP.",
   "img": "/assets/storage/2024/03/Van-Gogh-5.webp",
   "lang": "es",
@@ -986,8 +977,8 @@
  {
   "ruta": "/portafolio/closets-y-vestidores-sirenia-modelo-buonarroti/",
   "archivo": "portafolio/closets-y-vestidores-sirenia-modelo-buonarroti/index.html",
-  "title": "Closets y Vestidores, SIRENIA, Modelo Buonarroti | MYMCE",
-  "desc": "Puertas, closets, vestidores y cocina a medida en la casa modelo Buonarroti del fraccionamiento Sirenia, San Luis Potosí. Carpintería de Grupo MYMCE.",
+  "title": "Closets y vestidores Sirenia, modelo Buonarroti | MYMCE",
+  "desc": "Puertas, closets, vestidores y cocina a medida en la casa modelo Buonarroti del fraccionamiento Sirenia, Villa de Pozos. Carpintería de Grupo MYMCE.",
   "img": "/assets/storage/2023/08/20230708_125607-768x1024.webp",
   "lang": "es",
   "noindex": false,
@@ -1010,8 +1001,8 @@
  {
   "ruta": "/portafolio/closets-y-vestidores-sirenia-modelo-monet/",
   "archivo": "portafolio/closets-y-vestidores-sirenia-modelo-monet/index.html",
-  "title": "Closets y Vestidores, SIRENIA, Modelo Monet | MYMCE",
-  "desc": "Cocina, closets y vestidores conectados en la casa modelo Monet del fraccionamiento Sirenia, San Luis Potosí. Carpintería residencial de Grupo MYMCE.",
+  "title": "Closets y vestidores Monet, Sirenia, Villa de Pozos | MYMCE",
+  "desc": "Cocina, closets y vestidores conectados en la casa modelo Monet del fraccionamiento Sirenia, Villa de Pozos. Carpintería residencial de Grupo MYMCE.",
   "img": "/assets/storage/2023/08/20230708_115749-768x1024.webp",
   "lang": "es",
   "noindex": false,
@@ -1034,8 +1025,8 @@
  {
   "ruta": "/portafolio/closets-y-vestidores-sirenia-modelo-rembrandt/",
   "archivo": "portafolio/closets-y-vestidores-sirenia-modelo-rembrandt/index.html",
-  "title": "Closets y Vestidores, SIRENIA, Modelo Rembrandt | MYMCE",
-  "desc": "Vestidor amplio en la recámara principal y closets a medida en la casa modelo Rembrandt, fraccionamiento Sirenia, San Luis Potosí. Grupo MYMCE.",
+  "title": "Closets y vestidores Sirenia, modelo Rembrandt | MYMCE",
+  "desc": "Vestidor amplio en la recámara principal y closets a medida en la casa modelo Rembrandt, fraccionamiento Sirenia, Villa de Pozos. Grupo MYMCE.",
   "img": "/assets/storage/2023/08/20230708_124213-1-768x1024.webp",
   "lang": "es",
   "noindex": false,
@@ -1058,8 +1049,8 @@
  {
   "ruta": "/portafolio/closets-y-vestidores-sirenia-modelo-san-marcos/",
   "archivo": "portafolio/closets-y-vestidores-sirenia-modelo-san-marcos/index.html",
-  "title": "Closets y Vestidores, SIRENIA, Modelo San Marcos | MYMCE",
-  "desc": "Cocina y closets a medida en la casa modelo San Marcos del fraccionamiento Sirenia, San Luis Potosí, con espacios abiertos y luz natural. Grupo MYMCE.",
+  "title": "Closets y vestidores Sirenia, modelo San Marcos | MYMCE",
+  "desc": "Cocina y closets a medida en la casa modelo San Marcos del fraccionamiento Sirenia, Villa de Pozos, con espacios abiertos y luz natural. Grupo MYMCE.",
   "img": "/assets/storage/2023/08/20230708_112403-1-768x1024.webp",
   "lang": "es",
   "noindex": false,
@@ -1082,8 +1073,8 @@
  {
   "ruta": "/portafolio/closets-y-vestidores-sirenia-modelo-san-patricio/",
   "archivo": "portafolio/closets-y-vestidores-sirenia-modelo-san-patricio/index.html",
-  "title": "Closets y Vestidores, SIRENIA, Modelo San Patricio | MYMCE",
-  "desc": "Closets con nichos y cajones, cocina y vestidor principal a medida en la casa modelo San Patricio, Sirenia, San Luis Potosí. Grupo MYMCE.",
+  "title": "Closets y vestidores Sirenia, modelo San Patricio | MYMCE",
+  "desc": "Closets con nichos y cajones, cocina y vestidor principal a medida en la casa modelo San Patricio, Sirenia, Villa de Pozos. Grupo MYMCE.",
   "img": "/assets/storage/2023/08/20230708_110902-3-768x1024.webp",
   "lang": "es",
   "noindex": false,
@@ -1106,8 +1097,8 @@
  {
   "ruta": "/portafolio/closets-y-vestidores-sirenia-modelo-van-gogh/",
   "archivo": "portafolio/closets-y-vestidores-sirenia-modelo-van-gogh/index.html",
-  "title": "Closets y Vestidores, SIRENIA, Modelo Van Gogh | MYMCE",
-  "desc": "Closets empotrados y detalles en madera a medida en la casa modelo Van Gogh del fraccionamiento Sirenia, San Luis Potosí. Carpintería de Grupo MYMCE.",
+  "title": "Closets y vestidores Sirenia, modelo Van Gogh | MYMCE",
+  "desc": "Closets empotrados y detalles en madera a medida en la casa modelo Van Gogh del fraccionamiento Sirenia, Villa de Pozos. Carpintería de Grupo MYMCE.",
   "img": "/assets/storage/2023/08/20230708_114853-1-768x1024.webp",
   "lang": "es",
   "noindex": false,
@@ -1130,8 +1121,8 @@
  {
   "ruta": "/portafolio/closets-y-vestidores-valle-real-modelo-monet/",
   "archivo": "portafolio/closets-y-vestidores-valle-real-modelo-monet/index.html",
-  "title": "Closets y Vestidores, VALLE REAL, Modelo Monet | MYMCE",
-  "desc": "Casa modelo Monet, Valle Real: tres recámaras con closet propio y vestidor en la principal. Carpintería a medida de Grupo MYMCE en San Luis Potosí.",
+  "title": "Closets y vestidores Monet, Valle Real, Soledad | MYMCE",
+  "desc": "Casa modelo Monet, Valle Real: tres recámaras con closet propio y vestidor en la principal. Carpintería a medida de Grupo MYMCE en Soledad de Graciano Sánchez.",
   "img": "/assets/storage/2023/08/20230628_115236-768x1024.webp",
   "lang": "es",
   "noindex": false,
@@ -1154,8 +1145,8 @@
  {
   "ruta": "/portafolio/closets-y-vestidores-valle-real-modelo-rembrandt/",
   "archivo": "portafolio/closets-y-vestidores-valle-real-modelo-rembrandt/index.html",
-  "title": "Closets y Vestidores, VALLE REAL, Modelo Rembrandt | MYMCE",
-  "desc": "Closets en las recámaras y vestidor principal a medida en la casa modelo Rembrandt del fraccionamiento Valle Real, San Luis Potosí. Grupo MYMCE.",
+  "title": "Closets y vestidores Rembrandt, Valle Real, Soledad | MYMCE",
+  "desc": "Closets en las recámaras y vestidor principal a medida en la casa modelo Rembrandt del fraccionamiento Valle Real, Soledad de Graciano Sánchez. Grupo MYMCE.",
   "img": "/assets/storage/2023/08/20230628_112021-1-768x1024.webp",
   "lang": "es",
   "noindex": false,
@@ -1178,8 +1169,8 @@
  {
   "ruta": "/portafolio/closets-y-vestidores-valle-real-modelo-san-marcos/",
   "archivo": "portafolio/closets-y-vestidores-valle-real-modelo-san-marcos/index.html",
-  "title": "Closets y Vestidores, VALLE REAL, Modelo San Marcos | MYMCE",
-  "desc": "Closets y nichos de madera a medida en la sala y recámaras de la casa modelo San Marcos, Valle Real, San Luis Potosí. Carpintería de Grupo MYMCE.",
+  "title": "Closets y vestidores San Marcos, Valle Real, Soledad | MYMCE",
+  "desc": "Closets y nichos de madera a medida en la sala y recámaras de la casa modelo San Marcos, Valle Real, Soledad de Graciano Sánchez. Carpintería de Grupo MYMCE.",
   "img": "/assets/storage/2023/08/20230628_133806-768x1024.webp",
   "lang": "es",
   "noindex": false,
@@ -1202,8 +1193,8 @@
  {
   "ruta": "/portafolio/closets-y-vestidores-valle-real-modelo-san-patricio/",
   "archivo": "portafolio/closets-y-vestidores-valle-real-modelo-san-patricio/index.html",
-  "title": "Closets y Vestidores, VALLE REAL, Modelo San Patricio | MYMCE",
-  "desc": "Cocina con amplio almacenamiento, sala y closets a medida en la casa modelo San Patricio, Valle Real, San Luis Potosí. Carpintería de Grupo MYMCE.",
+  "title": "Closets y vestidores Valle Real, modelo San Patricio | MYMCE",
+  "desc": "Cocina con amplio almacenamiento, sala y closets a medida en la casa modelo San Patricio, Valle Real, Soledad de Graciano Sánchez. Carpintería de Grupo MYMCE.",
   "img": "/assets/storage/2023/08/20230628_135029-1-768x1024.webp",
   "lang": "es",
   "noindex": false,
@@ -1226,8 +1217,8 @@
  {
   "ruta": "/portafolio/closets-y-vestidores-valle-real-modelo-van-gogh/",
   "archivo": "portafolio/closets-y-vestidores-valle-real-modelo-van-gogh/index.html",
-  "title": "Closets y Vestidores, VALLE REAL, Modelo Van Gogh | MYMCE",
-  "desc": "Vestidor de la recámara principal y closets a medida en la casa modelo Van Gogh del fraccionamiento Valle Real, San Luis Potosí. Grupo MYMCE.",
+  "title": "Closets y vestidores Van Gogh, Valle Real, Soledad | MYMCE",
+  "desc": "Vestidor de la recámara principal y closets a medida en la casa modelo Van Gogh del fraccionamiento Valle Real, Soledad de Graciano Sánchez. Grupo MYMCE.",
   "img": "/assets/storage/2023/08/20230628_113558-768x1024.webp",
   "lang": "es",
   "noindex": false,
@@ -1250,8 +1241,8 @@
  {
   "ruta": "/portafolio/cocina-catara-modelo-botticelli/",
   "archivo": "portafolio/cocina-catara-modelo-botticelli/index.html",
-  "title": "Cocina Catara, Modelo Botticelli en San Luis Potosí | MYMCE",
-  "desc": "Cocina integral a medida para la casa modelo Botticelli del fraccionamiento Catara, San Luis Potosí. Diseño, fabricación e instalación de Grupo MYMCE.",
+  "title": "Cocina Catara, Modelo Botticelli en Villa de Pozos | MYMCE",
+  "desc": "Cocina integral a medida para la casa modelo Botticelli del fraccionamiento Catara, Villa de Pozos. Diseño, fabricación e instalación de Grupo MYMCE.",
   "img": "/assets/storage/2023/08/cocinas-17-766x1024.webp",
   "lang": "es",
   "noindex": false,
@@ -1274,8 +1265,8 @@
  {
   "ruta": "/portafolio/cocina-catara-modelo-da-vinci/",
   "archivo": "portafolio/cocina-catara-modelo-da-vinci/index.html",
-  "title": "Cocina Catara, Modelo Da Vinci en San Luis Potosí | MYMCE",
-  "desc": "Cocina integral a medida para la casa modelo Da Vinci del fraccionamiento Catara, San Luis Potosí. Diseño, fabricación e instalación de Grupo MYMCE.",
+  "title": "Cocina Catara, Modelo Da Vinci en Villa de Pozos | MYMCE",
+  "desc": "Cocina integral a medida para la casa modelo Da Vinci del fraccionamiento Catara, Villa de Pozos. Diseño, fabricación e instalación de Grupo MYMCE.",
   "img": "/assets/storage/2023/08/cocina-20-766x1024.webp",
   "lang": "es",
   "noindex": false,
@@ -1298,8 +1289,8 @@
  {
   "ruta": "/portafolio/cocina-catara-modelo-dali/",
   "archivo": "portafolio/cocina-catara-modelo-dali/index.html",
-  "title": "Cocina Catara, Modelo Dalí en San Luis Potosí | MYMCE",
-  "desc": "Cocina integral a medida para la casa modelo Dalí del fraccionamiento Catara, San Luis Potosí. Diseño, fabricación e instalación de Grupo MYMCE.",
+  "title": "Cocina Catara, Modelo Dalí en Villa de Pozos | MYMCE",
+  "desc": "Cocina integral a medida para la casa modelo Dalí del fraccionamiento Catara, Villa de Pozos. Diseño, fabricación e instalación de Grupo MYMCE.",
   "img": "/assets/storage/2023/08/Cocina-10-2-766x1024.webp",
   "lang": "es",
   "noindex": false,
@@ -1322,8 +1313,8 @@
  {
   "ruta": "/portafolio/cocina-catara-modelo-kahlo/",
   "archivo": "portafolio/cocina-catara-modelo-kahlo/index.html",
-  "title": "Cocina Catara, Modelo Kahlo en San Luis Potosí | MYMCE",
-  "desc": "Cocina integral a medida para la casa modelo Kahlo del fraccionamiento Catara, San Luis Potosí. Diseño, fabricación e instalación de Grupo MYMCE.",
+  "title": "Cocina Catara, Modelo Kahlo en Villa de Pozos | MYMCE",
+  "desc": "Cocina integral a medida para la casa modelo Kahlo del fraccionamiento Catara, Villa de Pozos. Diseño, fabricación e instalación de Grupo MYMCE.",
   "img": "/assets/storage/2023/08/cocina-15-3-766x1024.webp",
   "lang": "es",
   "noindex": false,
@@ -1346,8 +1337,8 @@
  {
   "ruta": "/portafolio/cocina-catara-modelo-monet/",
   "archivo": "portafolio/cocina-catara-modelo-monet/index.html",
-  "title": "Cocina Catara, Modelo Monet en San Luis Potosí | MYMCE",
-  "desc": "Cocina integral a medida para la casa modelo Monet del fraccionamiento Catara, San Luis Potosí. Diseño, fabricación e instalación de Grupo MYMCE.",
+  "title": "Cocina Catara, Modelo Monet en Villa de Pozos | MYMCE",
+  "desc": "Cocina integral a medida para la casa modelo Monet del fraccionamiento Catara, Villa de Pozos. Diseño, fabricación e instalación de Grupo MYMCE.",
   "img": "/assets/storage/2023/08/cocina-21-2-766x1024.webp",
   "lang": "es",
   "noindex": false,
@@ -1370,8 +1361,8 @@
  {
   "ruta": "/portafolio/cocina-catara-modelo-picasso/",
   "archivo": "portafolio/cocina-catara-modelo-picasso/index.html",
-  "title": "Cocina Catara, Modelo Picasso en San Luis Potosí | MYMCE",
-  "desc": "Cocina integral a medida para la casa modelo Picasso del fraccionamiento Catara, San Luis Potosí. Diseño, fabricación e instalación de Grupo MYMCE.",
+  "title": "Cocina Catara, Modelo Picasso en Villa de Pozos | MYMCE",
+  "desc": "Cocina integral a medida para la casa modelo Picasso del fraccionamiento Catara, Villa de Pozos. Diseño, fabricación e instalación de Grupo MYMCE.",
   "img": "/assets/storage/2023/08/cocina-26-766x1024.webp",
   "lang": "es",
   "noindex": false,
@@ -1394,8 +1385,8 @@
  {
   "ruta": "/portafolio/cocina-catara-modelo-san-antonio/",
   "archivo": "portafolio/cocina-catara-modelo-san-antonio/index.html",
-  "title": "Cocina Catara, Modelo San Antonio en San Luis Potosí | MYMCE",
-  "desc": "Cocina integral a medida para la casa modelo San Antonio del fraccionamiento Catara, San Luis Potosí. Diseño, fabricación e instalación de Grupo MYMCE.",
+  "title": "Cocina Catara, Modelo San Antonio en Villa de Pozos | MYMCE",
+  "desc": "Cocina integral a medida para la casa modelo San Antonio del fraccionamiento Catara, Villa de Pozos. Diseño, fabricación e instalación de Grupo MYMCE.",
   "img": "/assets/storage/2023/08/cocina-15-8-768x1024.webp",
   "lang": "es",
   "noindex": false,
@@ -1418,8 +1409,8 @@
  {
   "ruta": "/portafolio/cocina-catara-modelo-san-david/",
   "archivo": "portafolio/cocina-catara-modelo-san-david/index.html",
-  "title": "Cocina Catara, Modelo San David en San Luis Potosí | MYMCE",
-  "desc": "Cocina integral a medida para la casa modelo San David del fraccionamiento Catara, San Luis Potosí. Diseño, fabricación e instalación de Grupo MYMCE.",
+  "title": "Cocina Catara, Modelo San David en Villa de Pozos | MYMCE",
+  "desc": "Cocina integral a medida para la casa modelo San David del fraccionamiento Catara, Villa de Pozos. Diseño, fabricación e instalación de Grupo MYMCE.",
   "img": "/assets/storage/2023/08/cocina-11-9-768x1024.webp",
   "lang": "es",
   "noindex": false,
@@ -1442,8 +1433,8 @@
  {
   "ruta": "/portafolio/cocina-catara-modelo-santa-ana/",
   "archivo": "portafolio/cocina-catara-modelo-santa-ana/index.html",
-  "title": "Cocina Catara, Modelo Santa Ana en San Luis Potosí | MYMCE",
-  "desc": "Cocina integral a medida para la casa modelo Santa Ana del fraccionamiento Catara, San Luis Potosí. Diseño, fabricación e instalación de Grupo MYMCE.",
+  "title": "Cocina Catara, Modelo Santa Ana en Villa de Pozos | MYMCE",
+  "desc": "Cocina integral a medida para la casa modelo Santa Ana del fraccionamiento Catara, Villa de Pozos. Diseño, fabricación e instalación de Grupo MYMCE.",
   "img": "/assets/storage/2023/08/cocina-18-5-766x1024.webp",
   "lang": "es",
   "noindex": false,
@@ -1466,8 +1457,8 @@
  {
   "ruta": "/portafolio/cocina-catara-modelo-van-gogh/",
   "archivo": "portafolio/cocina-catara-modelo-van-gogh/index.html",
-  "title": "Cocina Catara, Modelo Van Gogh en San Luis Potosí | MYMCE",
-  "desc": "Cocina integral a medida para la casa modelo Van Gogh del fraccionamiento Catara, San Luis Potosí. Diseño, fabricación e instalación de Grupo MYMCE.",
+  "title": "Cocina Catara, Modelo Van Gogh en Villa de Pozos | MYMCE",
+  "desc": "Cocina integral a medida para la casa modelo Van Gogh del fraccionamiento Catara, Villa de Pozos. Diseño, fabricación e instalación de Grupo MYMCE.",
   "img": "/assets/storage/2023/08/cocina-17-10-766x1024.webp",
   "lang": "es",
   "noindex": false,
@@ -1682,7 +1673,7 @@
  {
   "ruta": "/portafolio/cocina-imperia-modelo-san-alberto/",
   "archivo": "portafolio/cocina-imperia-modelo-san-alberto/index.html",
-  "title": "Cocina Imperia, Modelo San Alberto en San Luis Potosí | MYMCE",
+  "title": "Cocina Imperia, modelo San Alberto, San Luis Potosí | MYMCE",
   "desc": "Cocina integral a medida para la casa modelo San Alberto del fraccionamiento Imperia, San Luis Potosí. Diseño, fabricación e instalación de Grupo MYMCE.",
   "img": "/assets/storage/2024/03/San-Alberto-1-1.webp",
   "lang": "es",
@@ -1730,7 +1721,7 @@
  {
   "ruta": "/portafolio/cocina-imperia-modelo-san-patricio/",
   "archivo": "portafolio/cocina-imperia-modelo-san-patricio/index.html",
-  "title": "Cocina Imperia, Modelo San Patricio en San Luis Potosí | MYMCE",
+  "title": "Cocina Imperia, modelo San Patricio, San Luis Potosí | MYMCE",
   "desc": "Cocina integral a medida para la casa modelo San Patricio del fraccionamiento Imperia, San Luis Potosí. Diseño, fabricación e instalación de Grupo MYMCE.",
   "img": "/assets/storage/2024/03/San-Patricio-1-1.webp",
   "lang": "es",
@@ -1802,8 +1793,8 @@
  {
   "ruta": "/portafolio/cocina-sirenia-modelo-buonarroti/",
   "archivo": "portafolio/cocina-sirenia-modelo-buonarroti/index.html",
-  "title": "Cocina Sirenia, Modelo Buonarroti en San Luis Potosí | MYMCE",
-  "desc": "Cocina integral a medida para la casa modelo Buonarroti del fraccionamiento Sirenia, San Luis Potosí. Diseño, fabricación e instalación de Grupo MYMCE.",
+  "title": "Cocina Sirenia, Modelo Buonarroti en Villa de Pozos | MYMCE",
+  "desc": "Cocina integral a medida para la casa modelo Buonarroti del fraccionamiento Sirenia, Villa de Pozos. Diseño, fabricación e instalación de Grupo MYMCE.",
   "img": "/assets/storage/2023/08/cocina-6-768x1024.webp",
   "lang": "es",
   "noindex": false,
@@ -1826,8 +1817,8 @@
  {
   "ruta": "/portafolio/cocina-sirenia-modelo-goya/",
   "archivo": "portafolio/cocina-sirenia-modelo-goya/index.html",
-  "title": "Cocina Sirenia, Modelo GOYA en San Luis Potosí | MYMCE",
-  "desc": "Cocina integral a medida para la casa modelo GOYA del fraccionamiento Sirenia, San Luis Potosí. Diseño, fabricación e instalación de Grupo MYMCE.",
+  "title": "Cocina Sirenia, Modelo Goya en Villa de Pozos | MYMCE",
+  "desc": "Cocina integral a medida para la casa modelo GOYA del fraccionamiento Sirenia, Villa de Pozos. Diseño, fabricación e instalación de Grupo MYMCE.",
   "img": "/assets/storage/2023/08/cocina-13-766x1024.webp",
   "lang": "es",
   "noindex": false,
@@ -1850,8 +1841,8 @@
  {
   "ruta": "/portafolio/cocina-sirenia-modelo-monet/",
   "archivo": "portafolio/cocina-sirenia-modelo-monet/index.html",
-  "title": "Cocina Sirenia, Modelo Monet en San Luis Potosí | MYMCE",
-  "desc": "Cocina integral a medida para la casa modelo Monet del fraccionamiento Sirenia, San Luis Potosí. Diseño, fabricación e instalación de Grupo MYMCE.",
+  "title": "Cocina Sirenia, Modelo Monet en Villa de Pozos | MYMCE",
+  "desc": "Cocina integral a medida para la casa modelo Monet del fraccionamiento Sirenia, Villa de Pozos. Diseño, fabricación e instalación de Grupo MYMCE.",
   "img": "/assets/storage/2023/08/cocina-15-11-1024x768.webp",
   "lang": "es",
   "noindex": false,
@@ -1874,8 +1865,8 @@
  {
   "ruta": "/portafolio/cocina-sirenia-modelo-rembrandt/",
   "archivo": "portafolio/cocina-sirenia-modelo-rembrandt/index.html",
-  "title": "Cocina Sirenia, Modelo Rembrandt en San Luis Potosí | MYMCE",
-  "desc": "Cocina integral a medida para la casa modelo Rembrandt del fraccionamiento Sirenia, San Luis Potosí. Diseño, fabricación e instalación de Grupo MYMCE.",
+  "title": "Cocina Sirenia, Modelo Rembrandt en Villa de Pozos | MYMCE",
+  "desc": "Cocina integral a medida para la casa modelo Rembrandt del fraccionamiento Sirenia, Villa de Pozos. Diseño, fabricación e instalación de Grupo MYMCE.",
   "img": "/assets/storage/2023/08/cocina-21-5-768x1024.webp",
   "lang": "es",
   "noindex": false,
@@ -1898,8 +1889,8 @@
  {
   "ruta": "/portafolio/cocina-sirenia-modelo-san-alberto/",
   "archivo": "portafolio/cocina-sirenia-modelo-san-alberto/index.html",
-  "title": "Cocina Sirenia, Modelo San Alberto en San Luis Potosí | MYMCE",
-  "desc": "Cocina integral a medida para la casa modelo San Alberto del fraccionamiento Sirenia, San Luis Potosí. Diseño, fabricación e instalación de Grupo MYMCE.",
+  "title": "Cocina Sirenia, Modelo San Alberto en Villa de Pozos | MYMCE",
+  "desc": "Cocina integral a medida para la casa modelo San Alberto del fraccionamiento Sirenia, Villa de Pozos. Diseño, fabricación e instalación de Grupo MYMCE.",
   "img": "/assets/storage/2023/08/cocina-7-766x1024.webp",
   "lang": "es",
   "noindex": false,
@@ -1922,8 +1913,8 @@
  {
   "ruta": "/portafolio/cocina-sirenia-modelo-san-david/",
   "archivo": "portafolio/cocina-sirenia-modelo-san-david/index.html",
-  "title": "Cocina Sirenia, Modelo San David en San Luis Potosí | MYMCE",
-  "desc": "Cocina integral a medida para la casa modelo San David del fraccionamiento Sirenia, San Luis Potosí. Diseño, fabricación e instalación de Grupo MYMCE.",
+  "title": "Cocina Sirenia, Modelo San David en Villa de Pozos | MYMCE",
+  "desc": "Cocina integral a medida para la casa modelo San David del fraccionamiento Sirenia, Villa de Pozos. Diseño, fabricación e instalación de Grupo MYMCE.",
   "img": "/assets/storage/2023/08/cocina-13-2-766x1024.webp",
   "lang": "es",
   "noindex": false,
@@ -1946,8 +1937,8 @@
  {
   "ruta": "/portafolio/cocina-sirenia-modelo-san-marcos/",
   "archivo": "portafolio/cocina-sirenia-modelo-san-marcos/index.html",
-  "title": "Cocina Sirenia, Modelo San Marcos en San Luis Potosí | MYMCE",
-  "desc": "Cocina integral a medida para la casa modelo San Marcos del fraccionamiento Sirenia, San Luis Potosí. Diseño, fabricación e instalación de Grupo MYMCE.",
+  "title": "Cocina Sirenia, Modelo San Marcos en Villa de Pozos | MYMCE",
+  "desc": "Cocina integral a medida para la casa modelo San Marcos del fraccionamiento Sirenia, Villa de Pozos. Diseño, fabricación e instalación de Grupo MYMCE.",
   "img": "/assets/storage/2023/08/cocina-9-3-766x1024.webp",
   "lang": "es",
   "noindex": false,
@@ -1970,8 +1961,8 @@
  {
   "ruta": "/portafolio/cocina-sirenia-modelo-san-patricio/",
   "archivo": "portafolio/cocina-sirenia-modelo-san-patricio/index.html",
-  "title": "Cocina Sirenia, Modelo San Patricio en San Luis Potosí | MYMCE",
-  "desc": "Cocina integral a medida para la casa modelo San Patricio del fraccionamiento Sirenia, San Luis Potosí. Diseño, fabricación e instalación de Grupo MYMCE.",
+  "title": "Cocina Sirenia, modelo San Patricio, Villa de Pozos | MYMCE",
+  "desc": "Cocina integral a medida para la casa modelo San Patricio del fraccionamiento Sirenia, Villa de Pozos. Diseño, fabricación e instalación de Grupo MYMCE.",
   "img": "/assets/storage/2023/08/cocina-4-4-767x1024.webp",
   "lang": "es",
   "noindex": false,
@@ -1994,8 +1985,8 @@
  {
   "ruta": "/portafolio/cocina-sirenia-modelo-santa-teresa/",
   "archivo": "portafolio/cocina-sirenia-modelo-santa-teresa/index.html",
-  "title": "Cocina Sirenia, Modelo Santa Teresa en San Luis Potosí | MYMCE",
-  "desc": "Cocina integral a medida para la casa modelo Santa Teresa del fraccionamiento Sirenia, San Luis Potosí. Diseño, fabricación e instalación de Grupo MYMCE.",
+  "title": "Cocina Sirenia, modelo Santa Teresa, Villa de Pozos | MYMCE",
+  "desc": "Cocina integral a medida para la casa modelo Santa Teresa del fraccionamiento Sirenia, Villa de Pozos. Diseño, fabricación e instalación de Grupo MYMCE.",
   "img": "/assets/storage/2023/08/cocina-12-1-766x1024.webp",
   "lang": "es",
   "noindex": false,
@@ -2018,8 +2009,8 @@
  {
   "ruta": "/portafolio/cocina-sirenia-modelo-van-gogh/",
   "archivo": "portafolio/cocina-sirenia-modelo-van-gogh/index.html",
-  "title": "Cocina Sirenia, Modelo Van Gogh en San Luis Potosí | MYMCE",
-  "desc": "Cocina integral a medida para la casa modelo Van Gogh del fraccionamiento Sirenia, San Luis Potosí. Diseño, fabricación e instalación de Grupo MYMCE.",
+  "title": "Cocina Sirenia, Modelo Van Gogh en Villa de Pozos | MYMCE",
+  "desc": "Cocina integral a medida para la casa modelo Van Gogh del fraccionamiento Sirenia, Villa de Pozos. Diseño, fabricación e instalación de Grupo MYMCE.",
   "img": "/assets/storage/2023/08/cocina-16-2-766x1024.webp",
   "lang": "es",
   "noindex": false,
@@ -2042,8 +2033,8 @@
  {
   "ruta": "/portafolio/cocina-valle-real-modelo-buonarroti/",
   "archivo": "portafolio/cocina-valle-real-modelo-buonarroti/index.html",
-  "title": "Cocina Valle Real, Modelo Buonarroti en San Luis Potosí | MYMCE",
-  "desc": "Cocina integral a medida para la casa modelo Buonarroti del fraccionamiento Valle Real, San Luis Potosí. Diseño, fabricación e instalación de Grupo MYMCE.",
+  "title": "Cocina Valle Real, Modelo Buonarroti en Soledad | MYMCE",
+  "desc": "Cocina integral a medida para la casa modelo Buonarroti del fraccionamiento Valle Real, Soledad. Diseño, fabricación e instalación de Grupo MYMCE.",
   "img": "/assets/storage/2023/08/cocina-15-6-767x1024.webp",
   "lang": "es",
   "noindex": false,
@@ -2066,8 +2057,8 @@
  {
   "ruta": "/portafolio/cocina-valle-real-modelo-goya/",
   "archivo": "portafolio/cocina-valle-real-modelo-goya/index.html",
-  "title": "Cocina Valle Real, Modelo Goya en San Luis Potosí | MYMCE",
-  "desc": "Cocina integral a medida para la casa modelo Goya del fraccionamiento Valle Real, San Luis Potosí. Diseño, fabricación e instalación de Grupo MYMCE.",
+  "title": "Cocina Valle Real, Modelo Goya en Soledad | MYMCE",
+  "desc": "Cocina integral a medida para la casa modelo Goya del fraccionamiento Valle Real, Soledad de Graciano Sánchez. Diseño, fabricación e instalación de Grupo MYMCE.",
   "img": "/assets/storage/2023/08/cocina-9-6-767x1024.webp",
   "lang": "es",
   "noindex": false,
@@ -2090,8 +2081,8 @@
  {
   "ruta": "/portafolio/cocina-valle-real-modelo-monet/",
   "archivo": "portafolio/cocina-valle-real-modelo-monet/index.html",
-  "title": "Cocina Valle Real, Modelo Monet en San Luis Potosí | MYMCE",
-  "desc": "Cocina integral a medida para la casa modelo Monet del fraccionamiento Valle Real, San Luis Potosí. Diseño, fabricación e instalación de Grupo MYMCE.",
+  "title": "Cocina Valle Real, Modelo Monet en Soledad | MYMCE",
+  "desc": "Cocina integral a medida para la casa modelo Monet del fraccionamiento Valle Real, Soledad de Graciano Sánchez. Diseño, fabricación e instalación de Grupo MYMCE.",
   "img": "/assets/storage/2023/08/cocina-18-7-768x1024.webp",
   "lang": "es",
   "noindex": false,
@@ -2114,8 +2105,8 @@
  {
   "ruta": "/portafolio/cocina-valle-real-modelo-rembrandt/",
   "archivo": "portafolio/cocina-valle-real-modelo-rembrandt/index.html",
-  "title": "Cocina Valle Real, Modelo Rembrandt en San Luis Potosí | MYMCE",
-  "desc": "Cocina integral a medida para la casa modelo Rembrandt del fraccionamiento Valle Real, San Luis Potosí. Diseño, fabricación e instalación de Grupo MYMCE.",
+  "title": "Cocina Valle Real, Modelo Rembrandt en Soledad | MYMCE",
+  "desc": "Cocina integral a medida para la casa modelo Rembrandt del fraccionamiento Valle Real, Soledad de Graciano Sánchez. Diseño, fabricación e instalación de Grupo MYMCE.",
   "img": "/assets/storage/2023/08/cocina-17-4-768x1024.webp",
   "lang": "es",
   "noindex": false,
@@ -2138,8 +2129,8 @@
  {
   "ruta": "/portafolio/cocina-valle-real-modelo-san-alberto/",
   "archivo": "portafolio/cocina-valle-real-modelo-san-alberto/index.html",
-  "title": "Cocina Valle Real, Modelo San Alberto en San Luis Potosí | MYMCE",
-  "desc": "Cocina integral a medida para la casa modelo San Alberto del fraccionamiento Valle Real, San Luis Potosí. Diseño, fabricación e instalación de Grupo MYMCE.",
+  "title": "Cocina Valle Real, Modelo San Alberto en Soledad | MYMCE",
+  "desc": "Cocina integral a medida para la casa modelo San Alberto del fraccionamiento Valle Real, Soledad. Diseño, fabricación e instalación de Grupo MYMCE.",
   "img": "/assets/storage/2023/08/cocina-20-1-768x1024.webp",
   "lang": "es",
   "noindex": false,
@@ -2162,8 +2153,8 @@
  {
   "ruta": "/portafolio/cocina-valle-real-modelo-san-david/",
   "archivo": "portafolio/cocina-valle-real-modelo-san-david/index.html",
-  "title": "Cocina Valle Real, Modelo San David en San Luis Potosí | MYMCE",
-  "desc": "Cocina integral a medida para la casa modelo San David del fraccionamiento Valle Real, San Luis Potosí. Diseño, fabricación e instalación de Grupo MYMCE.",
+  "title": "Cocina Valle Real, Modelo San David en Soledad | MYMCE",
+  "desc": "Cocina integral a medida para la casa modelo San David del fraccionamiento Valle Real, Soledad de Graciano Sánchez. Diseño, fabricación e instalación de Grupo MYMCE.",
   "img": "/assets/storage/2023/08/cocina-12-7-768x1024.webp",
   "lang": "es",
   "noindex": false,
@@ -2186,8 +2177,8 @@
  {
   "ruta": "/portafolio/cocina-valle-real-modelo-san-marcos/",
   "archivo": "portafolio/cocina-valle-real-modelo-san-marcos/index.html",
-  "title": "Cocina Valle Real, Modelo San Marcos en San Luis Potosí | MYMCE",
-  "desc": "Cocina integral a medida para la casa modelo San Marcos del fraccionamiento Valle Real, San Luis Potosí. Diseño, fabricación e instalación de Grupo MYMCE.",
+  "title": "Cocina Valle Real, Modelo San Marcos en Soledad | MYMCE",
+  "desc": "Cocina integral a medida para la casa modelo San Marcos del fraccionamiento Valle Real, Soledad. Diseño, fabricación e instalación de Grupo MYMCE.",
   "img": "/assets/storage/2023/08/cocina-14-2-768x1024.webp",
   "lang": "es",
   "noindex": false,
@@ -2210,8 +2201,8 @@
  {
   "ruta": "/portafolio/cocina-valle-real-modelo-san-patricio/",
   "archivo": "portafolio/cocina-valle-real-modelo-san-patricio/index.html",
-  "title": "Cocina Valle Real, Modelo San Patricio en San Luis Potosí | MYMCE",
-  "desc": "Cocina integral a medida para la casa modelo San Patricio del fraccionamiento Valle Real, San Luis Potosí. Diseño, fabricación e instalación de Grupo MYMCE.",
+  "title": "Cocina Valle Real, Modelo San Patricio en Soledad | MYMCE",
+  "desc": "Cocina integral a medida para la casa modelo San Patricio del fraccionamiento Valle Real, Soledad. Diseño, fabricación e instalación de Grupo MYMCE.",
   "img": "/assets/storage/2023/08/cocina-5-14-768x1024.webp",
   "lang": "es",
   "noindex": false,
@@ -2234,8 +2225,8 @@
  {
   "ruta": "/portafolio/cocina-valle-real-modelo-santa-teresa/",
   "archivo": "portafolio/cocina-valle-real-modelo-santa-teresa/index.html",
-  "title": "Cocina Valle Real, Modelo Santa Teresa en San Luis Potosí | MYMCE",
-  "desc": "Cocina integral a medida para la casa modelo Santa Teresa del fraccionamiento Valle Real, San Luis Potosí. Diseño, fabricación e instalación de Grupo MYMCE.",
+  "title": "Cocina Valle Real, Modelo Santa Teresa en Soledad | MYMCE",
+  "desc": "Cocina integral a medida para la casa modelo Santa Teresa del fraccionamiento Valle Real, Soledad. Diseño, fabricación e instalación de Grupo MYMCE.",
   "img": "/assets/storage/2023/08/cocina-1-9-768x1024.webp",
   "lang": "es",
   "noindex": false,
@@ -2258,8 +2249,8 @@
  {
   "ruta": "/portafolio/cocina-valle-real-modelo-van-gogh/",
   "archivo": "portafolio/cocina-valle-real-modelo-van-gogh/index.html",
-  "title": "Cocina Valle Real, Modelo Van Gogh en San Luis Potosí | MYMCE",
-  "desc": "Cocina integral a medida para la casa modelo Van Gogh del fraccionamiento Valle Real, San Luis Potosí. Diseño, fabricación e instalación de Grupo MYMCE.",
+  "title": "Cocina Valle Real, Modelo Van Gogh en Soledad | MYMCE",
+  "desc": "Cocina integral a medida para la casa modelo Van Gogh del fraccionamiento Valle Real, Soledad de Graciano Sánchez. Diseño, fabricación e instalación de Grupo MYMCE.",
   "img": "/assets/storage/2023/08/cocina-26-1-768x1024.webp",
   "lang": "es",
   "noindex": false,
@@ -2306,21 +2297,12 @@
  {
   "ruta": "/servicios/closets-vestidores/",
   "archivo": "servicios/closets-vestidores/index.html",
-  "title": "Fábrica de Closets y Vestidores en San Luis Potosí | MYMCE",
+  "title": "Closets a la Medida y Vestidores en San Luis Potosí | MYMCE",
   "desc": "Fabricamos closets y vestidores a medida en San Luis Potosí: diseño personalizado, herrajes de calidad e instalación. Aprovecha cada espacio. Cotiza hoy.",
   "img": "/assets/storage/2023/07/laminado-e1689895153463.webp",
   "lang": "es",
   "noindex": false,
-  "alternos": [
-   [
-    "es",
-    "/servicios/closets-vestidores/"
-   ],
-   [
-    "es-MX",
-    "/servicios/closets-vestidores/"
-   ]
-  ],
+  "alternos": [["es-MX", "/servicios/closets-vestidores/"], ["en", "/en/closets-wardrobes/"], ["x-default", "/servicios/closets-vestidores/"]],
   "wa": "https://wa.me/524442335607?text=Hola%20Grupo%20MYMCE%2C%20quisiera%20cotizar%20un%20Closet%20o%20Vestidor%20a%20medida.",
   "waEtiqueta": "closets",
   "clasica": false,
@@ -2407,16 +2389,7 @@
   "img": "/assets/storage/2023/07/laminado-e1689895153463.webp",
   "lang": "es",
   "noindex": false,
-  "alternos": [
-   [
-    "es",
-    "/servicios/cocinas/"
-   ],
-   [
-    "es-MX",
-    "/servicios/cocinas/"
-   ]
-  ],
+  "alternos": [["es-MX", "/servicios/cocinas/"], ["en", "/en/kitchens/"], ["x-default", "/servicios/cocinas/"]],
   "wa": "https://wa.me/524442335607?text=Hola%20Grupo%20MYMCE%2C%20estoy%20interesado%20en%20el%20dise%C3%B1o%20y%20fabricaci%C3%B3n%20de%20una%20Cocina%20Integral.",
   "waEtiqueta": "cocinas",
   "clasica": false,
@@ -2742,5 +2715,89 @@
   "clasica": false,
   "carrusel": false,
   "videoFix": false
+ },
+ {
+  "ruta": "/en/",
+  "archivo": "en/index.html",
+  "title": "Custom Kitchens & Closets in San Luis Potosí | MYMCE",
+  "desc": "Custom kitchens, closets and walk-in closets for homes in San Luis Potosí, built in our own plant since 1987. We measure, design and install. Write in English.",
+  "img": "/assets/storage/2023/07/Copy-of-VIDEO.00_01_09_05.Imagen-fija0111-1200x750.webp",
+  "lang": "en",
+  "noindex": false,
+  "alternos": [
+   [
+    "es-MX",
+    "/"
+   ],
+   [
+    "en",
+    "/en/"
+   ],
+   [
+    "x-default",
+    "/"
+   ]
+  ],
+  "wa": "https://wa.me/524442335607?text=Hi%20MYMCE%2C%20I%20would%20like%20a%20quote%20for%20a%20custom%20kitchen%20or%20closets%20for%20my%20home%20in%20San%20Luis%20Potos%C3%AD.",
+  "waEtiqueta": "default",
+  "clasica": false,
+  "carrusel": false,
+  "videoFix": false
+ },
+ {
+  "ruta": "/en/kitchens/",
+  "archivo": "en/kitchens/index.html",
+  "title": "Custom Kitchens in San Luis Potosí, Mexico | MYMCE",
+  "desc": "Made-to-measure kitchens for your home in San Luis Potosí: on-site measuring, design, manufacturing in our own plant since 1987 and installation. Get a quote.",
+  "img": "/assets/storage/2023/07/20230708_144508-1920x1080.webp",
+  "lang": "en",
+  "noindex": false,
+  "alternos": [
+   [
+    "es-MX",
+    "/servicios/cocinas/"
+   ],
+   [
+    "en",
+    "/en/kitchens/"
+   ],
+   [
+    "x-default",
+    "/servicios/cocinas/"
+   ]
+  ],
+  "wa": "https://wa.me/524442335607?text=Hi%20MYMCE%2C%20I%20would%20like%20a%20quote%20for%20a%20custom%20kitchen%20for%20my%20home%20in%20San%20Luis%20Potos%C3%AD.",
+  "waEtiqueta": "cocinas",
+  "clasica": false,
+  "carrusel": true,
+  "videoFix": true
+ },
+ {
+  "ruta": "/en/closets-wardrobes/",
+  "archivo": "en/closets-wardrobes/index.html",
+  "title": "Custom Closets & Wardrobes in San Luis Potosí | MYMCE",
+  "desc": "Built-in closets, wardrobes and walk-in closets made to measure in San Luis Potosí, with soft-close hardware. Built in our own plant since 1987 and installed.",
+  "img": "/assets/storage/2023/07/Copy-of-VIDEO.00_01_30_22.Imagen-fija016-1200x750.webp",
+  "lang": "en",
+  "noindex": false,
+  "alternos": [
+   [
+    "es-MX",
+    "/servicios/closets-vestidores/"
+   ],
+   [
+    "en",
+    "/en/closets-wardrobes/"
+   ],
+   [
+    "x-default",
+    "/servicios/closets-vestidores/"
+   ]
+  ],
+  "wa": "https://wa.me/524442335607?text=Hi%20MYMCE%2C%20I%20would%20like%20a%20quote%20for%20custom%20closets%20or%20a%20walk-in%20closet%20for%20my%20home%20in%20San%20Luis%20Potos%C3%AD.",
+  "waEtiqueta": "closets",
+  "clasica": false,
+  "carrusel": true,
+  "videoFix": true
  }
 ]
