@@ -34,6 +34,7 @@ export const NEGOCIO = {
   logo: `${D}/assets/storage/2016/12/logo-2.webp`,
   image: `${D}/assets/storage/2016/12/169471652699961817.webp`,
   foundingDate: '1987',
+  areaServed: ['San Luis Potosí', 'Soledad de Graciano Sánchez', 'Villa de Pozos', 'Estado de San Luis Potosí'].map((name) => ({ '@type': 'Place', name })),
   email: CORREO,
   telephone: TEL.intl,
   openingHoursSpecification: { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'], opens: empresa.abre, closes: empresa.cierra },
