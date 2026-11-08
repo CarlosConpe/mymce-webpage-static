@@ -567,3 +567,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 /* Con botones, el encabezado crece a lo que necesita en vez de recortar el título */
 .header-title:has(.botones-cotizar) { height: auto !important; padding: 40px 0 46px; }
 .header-title .botones-cotizar .btn-border i { color: #fff !important; }
+/* Aviso debajo del botón de los formularios de cotización */
+.nota-formulario { clear: both; margin: 10px 0 0; font-size: 14px; color: #555; }
+.text-right + .nota-formulario { text-align: right; }
+@media (max-width: 767px) { .text-right + .nota-formulario { text-align: left; } }

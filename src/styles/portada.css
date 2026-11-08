@@ -52,3 +52,12 @@ button.navbar-toggle { color: #444444 !important; }
     .portada-obras .obra-real { margin-bottom: 16px; }
     .portada-obras .clean-card h3 { font-size: 14px; }
 }
+/* Perfiles (constructoras, arquitectos...) como fila de enlaces: el único botón lleno es "Cotiza tu proyecto" */
+.portada-cotizar .btn-border { background-color: transparent !important; color: #355669 !important; border: 2px solid #355669 !important; }
+.portada-cotizar .btn-border i { color: #355669 !important; }
+.portada-cotizar .btn-border:hover, .portada-cotizar .btn-border:focus-visible { background-color: #355669 !important; color: #fff !important; }
+.portada-cotizar .btn-border:hover i, .portada-cotizar .btn-border:focus-visible i { color: #fff !important; }
+.portada-perfiles { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 18px; font-size: 15px; }
+.portada-perfiles span { color: #555; }
+.portada-perfiles a { color: #355669; font-weight: 600; text-decoration: underline; text-underline-offset: 3px; padding: 4px 0; }
+.portada-perfiles a:hover, .portada-perfiles a:focus-visible { color: #1f3540; }
