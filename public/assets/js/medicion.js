@@ -6,9 +6,9 @@ gtag('js', new Date());
 gtag('config', 'AW-11313299378');
 window.dataLayer.push({ 'gtm.start': Date.now(), event: 'gtm.js' });
 
-// Las librerías de Google pesan casi 500 KB y traban el celular mientras se pinta la página.
-// Se cargan con el primer toque, tecla o desplazamiento, o 4 segundos después de cargar.
-// Las conversiones que ocurran antes quedan en dataLayer y se envían al llegar la librería.
+// Las librerías de Google pesan casi 500 KB y traban el celular varios segundos.
+// Se cargan con el primer toque, tecla o desplazamiento: toda conversión (formulario o
+// WhatsApp) pasa por uno de ellos, y lo que se registre antes espera en dataLayer.
 let cargado = false;
 const eventos = ['pointerdown', 'keydown', 'scroll', 'touchstart'];
 function cargar() {
@@ -23,5 +23,3 @@ function cargar() {
     }
 }
 eventos.forEach((e) => addEventListener(e, cargar, { once: true, passive: true }));
-if (document.readyState === 'complete') setTimeout(cargar, 4000);
-else addEventListener('load', () => setTimeout(cargar, 4000), { once: true });

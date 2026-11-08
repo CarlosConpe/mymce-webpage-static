@@ -63,7 +63,7 @@ const datos = grafo(
     <link rel="preload" href="/assets/fonts/source-sans-pro-400.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/assets/fonts/fontawesome-webfont.woff2" as="font" type="font/woff2" crossorigin>
     <script type="application/ld+json" set:html={JSON.stringify(datos).replace(/</g, '\u003c')}></script>
-    <script is:inline src="/assets/js/medicion.js" defer></script>
+    <script is:inline src="/assets/js/medicion.js?v=3" defer></script>
 </head>
 <body class:list={[{ 'con-carrusel': carrusel, 'con-video': videoFix, 'pagina-clasica': clasica }]} data-conversion={CONVERSION[ruta] ?? LEAD} data-lead={LEAD}>
 <a class="salto" href="#contenido">{ingles ? 'Skip to content' : 'Saltar al contenido'}</a>
