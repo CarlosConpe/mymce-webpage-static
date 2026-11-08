@@ -29,3 +29,26 @@ button.navbar-toggle { color: #444444 !important; }
 .collapse.navbar-collapse {
     min-height: 50px; /* Placeholder to prevent 0-height collapse */
 }
+
+/* Botones para cotizar debajo del título principal */
+.portada-cotizar { display: flex; flex-wrap: wrap; gap: 12px; }
+.portada-cotizar .btn { margin: 0; }
+.portada-enlaces { display: flex; flex-wrap: wrap; gap: 10px; margin: 10px 0 20px; }
+.portada-enlaces .btn { margin: 0; }
+/* En celular los servicios van en dos columnas con foto y nombre: el texto completo está en cada página */
+@media (max-width: 767px) {
+    .portada-servicios > .content > .row { display: grid; grid-template-columns: 1fr 1fr; gap: 0 12px; margin: 0; }
+    .portada-servicios > .content > .row::before, .portada-servicios > .content > .row::after { display: none; }
+    .portada-servicios > .content > .row > .col-md-12 { display: none; }
+    .portada-servicios .bloque-columna { width: auto; float: none; padding: 0; }
+    .portada-servicios .advs-box-content { padding: 12px !important; }
+    .portada-servicios .advs-box-content p, .portada-servicios .advs-box-content .btn-text { display: none; }
+    .portada-servicios .advs-box-content h2.h2-style { font-size: 17px !important; line-height: 1.25; margin: 0; hyphens: auto; }
+    .portada-obras .obra-real { width: 50%; float: left; }
+}
+/* Obras reales en celular: fotos más bajas para que la sección no se alargue */
+@media (max-width: 767px) {
+    .portada-obras .clean-card .img-wrap { height: 150px; }
+    .portada-obras .obra-real { margin-bottom: 16px; }
+    .portada-obras .clean-card h3 { font-size: 14px; }
+}
