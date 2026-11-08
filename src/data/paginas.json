@@ -2304,6 +2304,30 @@
   "videoFix": true
  },
  {
+  "ruta": "/servicios/vestidores/",
+  "archivo": "servicios/vestidores/index.html",
+  "title": "Vestidores a la Medida en San Luis Potosí | MYMCE",
+  "desc": "Fábrica de vestidores a la medida en San Luis Potosí desde 1987. Mira 11 vestidores reales en Catara, Imperia, Sirenia y Valle Real, y cotiza el tuyo.",
+  "img": "/assets/storage/2023/07/laminado-e1689895153463.webp",
+  "lang": "es",
+  "noindex": false,
+  "alternos": [
+   [
+    "es",
+    "/servicios/vestidores/"
+   ],
+   [
+    "es-MX",
+    "/servicios/vestidores/"
+   ]
+  ],
+  "wa": "https://wa.me/524442335607?text=Hola%20Grupo%20MYMCE%2C%20quisiera%20cotizar%20un%20Closet%20o%20Vestidor%20a%20medida.",
+  "waEtiqueta": "closets",
+  "clasica": false,
+  "carrusel": false,
+  "videoFix": false
+ },
+ {
   "ruta": "/servicios/cocinas/",
   "archivo": "servicios/cocinas/index.html",
   "title": "Fábrica de Cocinas Integrales en San Luis Potosí | MYMCE",
