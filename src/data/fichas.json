@@ -412,19 +412,13 @@
 "t": "/assets/storage/mini/20230628-120330-1920x1080.webp"
 },
 {
-"src": "/assets/storage/2023/08/20230628_120115-1-768x1024.webp",
+"src": "/assets/storage/2023/08/20230628_120115-1-768x1024-limpia.webp",
 "w": 768,
 "h": 1024,
 "t": "/assets/storage/mini/20230628-120115-1-768x1024.webp"
 },
 {
-"src": "/assets/storage/2023/08/20230628_120152-768x1024.webp",
-"w": 768,
-"h": 1024,
-"t": "/assets/storage/mini/20230628-120152-768x1024.webp"
-},
-{
-"src": "/assets/storage/2023/08/20230628_120318-768x1024.webp",
+"src": "/assets/storage/2023/08/20230628_120318-768x1024-limpia.webp",
 "w": 768,
 "h": 1024,
 "t": "/assets/storage/mini/20230628-120318-768x1024.webp"
@@ -437,8 +431,8 @@
 }
 ],
 "video": {
-"src": "/assets/storage/2023/08/20230628_120207.mp4",
-"poster": "/assets/storage/2023/08/20230628_120115-1-768x1024.webp"
+"src": "/assets/storage/2023/08/20230628_120207-closet.mp4",
+"poster": "/assets/storage/2023/08/20230628_120115-1-768x1024-limpia.webp"
 },
 "fecha": "2023-08-17",
 "vista": "Dos puertas corredizas en tono madera con perfil metálico. El interior blanco tiene dos niveles de tubo para colgar."
