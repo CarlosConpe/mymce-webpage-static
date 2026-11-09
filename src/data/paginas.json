@@ -2,8 +2,8 @@
  {
   "ruta": "/corporate/acerca-de-mymce-carpinteria-profesional-en-san-luis-potosi/",
   "archivo": "corporate/acerca-de-mymce-carpinteria-profesional-en-san-luis-potosi/index.html",
-  "title": "Carpintería en San Luis Potosí desde 1987 | MYMCE",
-  "desc": "Grupo MYMCE es una empresa 100% mexicana que diseña y fabrica cocinas, closets, puertas y muebles de baño en San Luis Potosí desde 1987.",
+  "title": "Carpintería en San Luis Potosí con casi 40 años | MYMCE",
+  "desc": "Grupo MYMCE es una empresa 100% mexicana que diseña y fabrica cocinas, closets, puertas y muebles de baño en San Luis Potosí desde hace casi 40 años.",
   "img": "/assets/storage/2023/07/logo-b25182a6ba332cf6a342eb4a73974ef2-1.webp",
   "lang": "es",
   "noindex": false,
@@ -93,6 +93,78 @@
   "waEtiqueta": "default",
   "clasica": false,
   "carrusel": true,
+  "videoFix": false
+ },
+ {
+  "ruta": "/corporate/blog/2026/11/09/melamina-o-mdf-para-tu-cocina/",
+  "archivo": "corporate/blog/2026/11/09/melamina-o-mdf-para-tu-cocina/index.html",
+  "title": "Melamina o MDF para tu cocina: diferencias | MYMCE",
+  "desc": "Melamina o MDF para tu cocina: qué es cada material, en qué se distinguen, dónde conviene cada uno y por qué muchas cocinas integrales llevan los dos.",
+  "img": "/assets/storage/2023/08/cocina-4-8-1920x1080.webp",
+  "lang": "es",
+  "noindex": false,
+  "alternos": [
+   [
+    "es",
+    "/corporate/blog/2026/11/09/melamina-o-mdf-para-tu-cocina/"
+   ],
+   [
+    "es-MX",
+    "/corporate/blog/2026/11/09/melamina-o-mdf-para-tu-cocina/"
+   ]
+  ],
+  "wa": "https://wa.me/524442335607?text=Hola%20Grupo%20MYMCE%2C%20estoy%20interesado%20en%20el%20dise%C3%B1o%20y%20fabricaci%C3%B3n%20de%20una%20Cocina%20Integral.",
+  "waEtiqueta": "cocinas",
+  "clasica": false,
+  "carrusel": false,
+  "videoFix": false
+ },
+ {
+  "ruta": "/corporate/blog/2026/11/09/closet-o-vestidor-como-elegir/",
+  "archivo": "corporate/blog/2026/11/09/closet-o-vestidor-como-elegir/index.html",
+  "title": "¿Closet o vestidor? Cómo elegir para tu recámara | MYMCE",
+  "desc": "Closet o vestidor: cuándo conviene cada uno, qué espacio pide un vestidor, sus formas más comunes (lineal, en L, en U y pasillo) y preguntas para decidir.",
+  "img": "/assets/storage/2023/08/20230708_133814-1-1920x1080.webp",
+  "lang": "es",
+  "noindex": false,
+  "alternos": [
+   [
+    "es",
+    "/corporate/blog/2026/11/09/closet-o-vestidor-como-elegir/"
+   ],
+   [
+    "es-MX",
+    "/corporate/blog/2026/11/09/closet-o-vestidor-como-elegir/"
+   ]
+  ],
+  "wa": "https://wa.me/524442335607?text=Hola%20Grupo%20MYMCE%2C%20quisiera%20cotizar%20un%20Closet%20o%20Vestidor%20a%20medida.",
+  "waEtiqueta": "closets",
+  "clasica": false,
+  "carrusel": false,
+  "videoFix": false
+ },
+ {
+  "ruta": "/corporate/blog/2026/11/09/como-cuidar-tus-muebles-de-cocina-y-closet/",
+  "archivo": "corporate/blog/2026/11/09/como-cuidar-tus-muebles-de-cocina-y-closet/index.html",
+  "title": "Cómo cuidar tus muebles de cocina y closet | MYMCE",
+  "desc": "Cómo limpiar y cuidar tus muebles de cocina y closet: qué productos usar y cuáles evitar, cómo protegerlos de la humedad y el vapor y cómo ajustar herrajes.",
+  "img": "/assets/storage/2023/08/cocina-9-8-1920x1080.webp",
+  "lang": "es",
+  "noindex": false,
+  "alternos": [
+   [
+    "es",
+    "/corporate/blog/2026/11/09/como-cuidar-tus-muebles-de-cocina-y-closet/"
+   ],
+   [
+    "es-MX",
+    "/corporate/blog/2026/11/09/como-cuidar-tus-muebles-de-cocina-y-closet/"
+   ]
+  ],
+  "wa": "https://wa.me/524442335607?text=Hola%2C%20estoy%20buscando%20soluciones%20de%20carpinter%C3%ADa%20y%20mobiliario.%20Me%20interesa%20cotizar%20un%20proyecto%20con%20ustedes.",
+  "waEtiqueta": "default",
+  "clasica": false,
+  "carrusel": false,
   "videoFix": false
  },
  {
@@ -267,11 +339,24 @@
   "ruta": "/",
   "archivo": "inicio/index.html",
   "title": "Cocinas Integrales, Closets y Puertas en San Luis Potosí | MYMCE",
-  "desc": "Carpintería residencial en San Luis Potosí desde 1987: cocinas integrales, closets, vestidores, puertas, muebles de baño y maquila de partes. Cotiza tu proyecto.",
+  "desc": "Carpintería residencial en San Luis Potosí con casi 40 años de oficio: cocinas integrales, closets, vestidores, puertas, muebles de baño y maquila de partes. Cotiza tu proyecto.",
   "img": "/assets/storage/2023/07/Copy-of-VIDEO.00_01_09_05.Imagen-fija0111-1200x750.webp",
   "lang": "es",
   "noindex": false,
-  "alternos": [["es-MX", "/"], ["en", "/en/"], ["x-default", "/"]],
+  "alternos": [
+   [
+    "es-MX",
+    "/"
+   ],
+   [
+    "en",
+    "/en/"
+   ],
+   [
+    "x-default",
+    "/"
+   ]
+  ],
   "wa": "https://wa.me/524442335607?text=Hola%2C%20estoy%20buscando%20soluciones%20de%20carpinter%C3%ADa%20y%20mobiliario.%20Me%20interesa%20cotizar%20un%20proyecto%20con%20ustedes.",
   "waEtiqueta": "default",
   "clasica": false,
@@ -2302,7 +2387,20 @@
   "img": "/assets/storage/2023/07/laminado-e1689895153463.webp",
   "lang": "es",
   "noindex": false,
-  "alternos": [["es-MX", "/servicios/closets-vestidores/"], ["en", "/en/closets-wardrobes/"], ["x-default", "/servicios/closets-vestidores/"]],
+  "alternos": [
+   [
+    "es-MX",
+    "/servicios/closets-vestidores/"
+   ],
+   [
+    "en",
+    "/en/closets-wardrobes/"
+   ],
+   [
+    "x-default",
+    "/servicios/closets-vestidores/"
+   ]
+  ],
   "wa": "https://wa.me/524442335607?text=Hola%20Grupo%20MYMCE%2C%20quisiera%20cotizar%20un%20Closet%20o%20Vestidor%20a%20medida.",
   "waEtiqueta": "closets",
   "clasica": false,
@@ -2382,6 +2480,102 @@
   "videoFix": false
  },
  {
+  "ruta": "/servicios/cocinas-y-closets-catara/",
+  "archivo": "servicios/cocinas-y-closets-catara/index.html",
+  "title": "Cocinas y closets en Catara, Villa de Pozos | MYMCE",
+  "desc": "Cocinas, closets y vestidores que hicimos en 10 modelos de casa de Catara, Villa de Pozos: Da Vinci, Dalí, Monet, Picasso y más. Busca el tuyo y cotiza.",
+  "img": "/assets/storage/2023/08/cocina-21-1-1920x1080.webp",
+  "lang": "es",
+  "noindex": false,
+  "alternos": [
+   [
+    "es",
+    "/servicios/cocinas-y-closets-catara/"
+   ],
+   [
+    "es-MX",
+    "/servicios/cocinas-y-closets-catara/"
+   ]
+  ],
+  "wa": "https://wa.me/524442335607?text=Hola%2C%20quiero%20cotizar%20una%20cocina%20o%20closet%20para%20mi%20casa%20en%20Catara.%20Mi%20modelo%20de%20casa%20es%3A%20",
+  "waEtiqueta": "default",
+  "clasica": false,
+  "carrusel": false,
+  "videoFix": false
+ },
+ {
+  "ruta": "/servicios/cocinas-y-closets-sirenia/",
+  "archivo": "servicios/cocinas-y-closets-sirenia/index.html",
+  "title": "Cocinas y closets en Sirenia, Villa de Pozos | MYMCE",
+  "desc": "Mira las 10 cocinas y 10 closets que hicimos en Sirenia, Villa de Pozos, por modelo: Goya, Rembrandt, San Marcos, Santa Teresa y más. Cotiza la tuya.",
+  "img": "/assets/storage/2023/08/cocina-17-6-1920x1080.webp",
+  "lang": "es",
+  "noindex": false,
+  "alternos": [
+   [
+    "es",
+    "/servicios/cocinas-y-closets-sirenia/"
+   ],
+   [
+    "es-MX",
+    "/servicios/cocinas-y-closets-sirenia/"
+   ]
+  ],
+  "wa": "https://wa.me/524442335607?text=Hola%2C%20quiero%20cotizar%20una%20cocina%20o%20closet%20para%20mi%20casa%20en%20Sirenia.%20Mi%20modelo%20de%20casa%20es%3A%20",
+  "waEtiqueta": "default",
+  "clasica": false,
+  "carrusel": false,
+  "videoFix": false
+ },
+ {
+  "ruta": "/servicios/cocinas-y-closets-valle-real/",
+  "archivo": "servicios/cocinas-y-closets-valle-real/index.html",
+  "title": "Cocinas y closets en Valle Real, Soledad | MYMCE",
+  "desc": "Obras reales en Valle Real, Soledad de Graciano Sánchez: 10 cocinas y 10 closets por modelo de casa, con fotos y lo que llevó cada una. Cotiza con MYMCE.",
+  "img": "/assets/storage/2023/08/cocina-13-6-1920x1080.webp",
+  "lang": "es",
+  "noindex": false,
+  "alternos": [
+   [
+    "es",
+    "/servicios/cocinas-y-closets-valle-real/"
+   ],
+   [
+    "es-MX",
+    "/servicios/cocinas-y-closets-valle-real/"
+   ]
+  ],
+  "wa": "https://wa.me/524442335607?text=Hola%2C%20quiero%20cotizar%20una%20cocina%20o%20closet%20para%20mi%20casa%20en%20Valle%20Real.%20Mi%20modelo%20de%20casa%20es%3A%20",
+  "waEtiqueta": "default",
+  "clasica": false,
+  "carrusel": false,
+  "videoFix": false
+ },
+ {
+  "ruta": "/servicios/cocinas-y-closets-imperia/",
+  "archivo": "servicios/cocinas-y-closets-imperia/index.html",
+  "title": "Cocinas y closets en Imperia, San Luis Potosí | MYMCE",
+  "desc": "13 cocinas y 10 closets y vestidores en casas de Imperia, San Luis Potosí, ordenados por modelo: Botticelli, Carrington, Rembrandt y más. Cotiza la tuya.",
+  "img": "/assets/storage/2024/03/Picasso-1.webp",
+  "lang": "es",
+  "noindex": false,
+  "alternos": [
+   [
+    "es",
+    "/servicios/cocinas-y-closets-imperia/"
+   ],
+   [
+    "es-MX",
+    "/servicios/cocinas-y-closets-imperia/"
+   ]
+  ],
+  "wa": "https://wa.me/524442335607?text=Hola%2C%20quiero%20cotizar%20una%20cocina%20o%20closet%20para%20mi%20casa%20en%20Imperia.%20Mi%20modelo%20de%20casa%20es%3A%20",
+  "waEtiqueta": "default",
+  "clasica": false,
+  "carrusel": false,
+  "videoFix": false
+ },
+ {
   "ruta": "/servicios/cocinas/",
   "archivo": "servicios/cocinas/index.html",
   "title": "Fábrica de Cocinas Integrales en San Luis Potosí | MYMCE",
@@ -2389,7 +2583,20 @@
   "img": "/assets/storage/2023/07/laminado-e1689895153463.webp",
   "lang": "es",
   "noindex": false,
-  "alternos": [["es-MX", "/servicios/cocinas/"], ["en", "/en/kitchens/"], ["x-default", "/servicios/cocinas/"]],
+  "alternos": [
+   [
+    "es-MX",
+    "/servicios/cocinas/"
+   ],
+   [
+    "en",
+    "/en/kitchens/"
+   ],
+   [
+    "x-default",
+    "/servicios/cocinas/"
+   ]
+  ],
   "wa": "https://wa.me/524442335607?text=Hola%20Grupo%20MYMCE%2C%20estoy%20interesado%20en%20el%20dise%C3%B1o%20y%20fabricaci%C3%B3n%20de%20una%20Cocina%20Integral.",
   "waEtiqueta": "cocinas",
   "clasica": false,
@@ -2672,7 +2879,7 @@
   "ruta": "/soluciones/carpinteria-para-particulares/",
   "archivo": "soluciones/carpinteria-para-particulares/index.html",
   "title": "Carpintería para Clientes Finales en San Luis Potosí | MYMCE",
-  "desc": "Cocinas integrales, puertas, closets y vestidores a medida para tu casa en San Luis Potosí, con diseño, fabricación e instalación de MYMCE desde 1987.",
+  "desc": "Cocinas integrales, puertas, closets y vestidores a medida para tu casa en San Luis Potosí, con diseño, fabricación e instalación de MYMCE, con casi 40 años de oficio.",
   "img": "/assets/storage/2023/08/cocina-15-11-1024x768.webp",
   "lang": "es",
   "noindex": false,
@@ -2720,7 +2927,7 @@
   "ruta": "/en/",
   "archivo": "en/index.html",
   "title": "Custom Kitchens & Closets in San Luis Potosí | MYMCE",
-  "desc": "Custom kitchens, closets and walk-in closets for homes in San Luis Potosí, built in our own plant since 1987. We measure, design and install. Write in English.",
+  "desc": "Custom kitchens, closets and walk-in closets for homes in San Luis Potosí, built in our own plant for almost 40 years. We measure, design and install. Write in English.",
   "img": "/assets/storage/2023/07/Copy-of-VIDEO.00_01_09_05.Imagen-fija0111-1200x750.webp",
   "lang": "en",
   "noindex": false,
@@ -2748,7 +2955,7 @@
   "ruta": "/en/kitchens/",
   "archivo": "en/kitchens/index.html",
   "title": "Custom Kitchens in San Luis Potosí, Mexico | MYMCE",
-  "desc": "Made-to-measure kitchens for your home in San Luis Potosí: on-site measuring, design, manufacturing in our own plant since 1987 and installation. Get a quote.",
+  "desc": "Made-to-measure kitchens for your home in San Luis Potosí: on-site measuring, design, manufacturing in our own plant for almost 40 years and installation. Get a quote.",
   "img": "/assets/storage/2023/07/20230708_144508-1920x1080.webp",
   "lang": "en",
   "noindex": false,
@@ -2776,7 +2983,7 @@
   "ruta": "/en/closets-wardrobes/",
   "archivo": "en/closets-wardrobes/index.html",
   "title": "Custom Closets & Wardrobes in San Luis Potosí | MYMCE",
-  "desc": "Built-in closets, wardrobes and walk-in closets made to measure in San Luis Potosí, with soft-close hardware. Built in our own plant since 1987 and installed.",
+  "desc": "Built-in closets, wardrobes and walk-in closets made to measure in San Luis Potosí, with soft-close hardware. Built in our own plant for almost 40 years and installed.",
   "img": "/assets/storage/2023/07/Copy-of-VIDEO.00_01_30_22.Imagen-fija016-1200x750.webp",
   "lang": "en",
   "noindex": false,

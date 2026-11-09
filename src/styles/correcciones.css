@@ -476,6 +476,14 @@ body.pagina-clasica .section-item h2, body.pagina-clasica .section-item h3, body
 .bloque-obras > .row { display: flex; flex-wrap: wrap; }
 .bloque-obras .obra-real { display: flex; }
 .bloque-obras .obra-real .clean-card { width: 100%; }
+/* Páginas de fraccionamiento: cada modelo de casa con su texto y las fotos de sus obras */
+.bloque-obras .clean-card h4 { font-size: 16px; margin: 0 0 10px; }
+.modelo-fracc { border-top: 1px solid #e6e6e6; padding-top: 25px; scroll-margin-top: 110px; }
+.modelo-fracc__texto { margin-bottom: 20px; }
+.modelo-fracc__texto h3 { margin: 0 0 12px; }
+.modelo-fracc__texto p { margin: 0 0 10px; }
+.pregunta-fracc h3 { font-size: 18px; margin: 0 0 8px; }
+.pregunta-fracc { margin-bottom: 22px; }
 
 /* Las dos marcas del grupo: selector en la barra de arriba y ambas en el pie. Mismo alto de logo para que pesen igual. */
 /* El selector va a la izquierda de la barra gris de arriba, alineado con el logo */
