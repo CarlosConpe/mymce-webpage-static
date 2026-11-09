@@ -74,20 +74,9 @@ function altoEncabezados() {
         el.style.minHeight = Math.max(320, window.innerHeight - (parseInt(el.dataset.subHeight, 10) || 0)) + 'px';
     });
 }
-// El título queda centrado en vertical dentro de su franja con foto.
-function centraTitulos() {
-    // Las portadas de pantalla completa se centran con CSS.
-    $$('.header-title:not(.full-screen-title)').forEach((franja) => {
-        const caja = $('.title-base', franja);
-        if (!caja) return;
-        caja.style.marginTop = '';
-        const libre = franja.clientHeight - caja.offsetHeight;
-        if (libre > 0) caja.style.marginTop = Math.round(libre / 2) + 'px';
-    });
-}
+// El título de las franjas con foto se centra en vertical con CSS (correcciones.css).
 altoEncabezados();
-centraTitulos();
-window.addEventListener('resize', () => { altoEncabezados(); centraTitulos(); });
+window.addEventListener('resize', altoEncabezados);
 
 /* Acordeones */
 $$('.accordion-list .list-group-item > a').forEach((a) => {
@@ -119,7 +108,8 @@ function opciones(texto) {
     return o;
 }
 // Solo en las páginas que tenían carrusel; en las demás la lista se ve tal cual, como antes.
-$$('.con-carrusel .flexslider').forEach((caja) => {
+// Cada carrusel se arma cuando está por verse: armar todos al cargar trababa el celular.
+function armarCarrusel(caja) {
     const lista = $('.slides', caja);
     const fichas = lista ? [...lista.children] : [];
     if (!fichas.length) return;
@@ -209,7 +199,16 @@ $$('.con-carrusel .flexslider').forEach((caja) => {
     window.addEventListener('resize', pinta);
     pinta();
     avanzar();
-});
+}
+const carruseles = $$('.con-carrusel .flexslider');
+const vigia = new IntersectionObserver((es) => es.forEach((e) => {
+    if (!e.isIntersecting) return;
+    vigia.unobserve(e.target);
+    armarCarrusel(e.target);
+}), { rootMargin: '600px 0px' });
+// Los que ya están en pantalla se arman de inmediato, para que no cambien después de pintarse.
+const cercaDeLaVista = carruseles.filter((caja) => caja.getBoundingClientRect().top < window.innerHeight + 600);
+carruseles.forEach((caja) => (cercaDeLaVista.includes(caja) ? armarCarrusel(caja) : vigia.observe(caja)));
 
 /* Visor de fotos para los enlaces .lightbox */
 const fotos = $$('a.lightbox').filter((a) => /\.(webp|jpe?g|png|gif)(\?|$)/i.test(a.getAttribute('href') || ''));
@@ -264,7 +263,8 @@ $$('video[data-autoplay]').forEach((v) => {
     v.muted = true;
     v.playsInline = true;
     if (sinMovimiento) { v.controls = true; return; }
-    if (v.closest('.carrusel-listo')) return;
+    // Los videos de un carrusel los arranca el propio carrusel al armarse.
+    if (v.closest('.con-carrusel .flexslider')) return;
     alVer(v, () => v.play().catch(() => { v.controls = true; }), () => v.pause());
 });
 

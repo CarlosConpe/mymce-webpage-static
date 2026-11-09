@@ -33,6 +33,8 @@ export const NEGOCIO = {
   url: `${D}/`,
   logo: `${D}/assets/storage/2016/12/logo-2.webp`,
   image: `${D}/assets/storage/2016/12/169471652699961817.webp`,
+  description: 'Fábrica de carpintería en San Luis Potosí desde 1987: diseña, fabrica e instala cocinas integrales, closets, vestidores, puertas y muebles de baño, y hace maquila CNC de piezas de MDF y melamina, también forradas con foil PVC.',
+  knowsAbout: ['Cocinas integrales', 'Closets y vestidores', 'Puertas a la medida','Muebles de baño', 'Termoformado de MDF con foil PVC', 'Maquila CNC de piezas de MDF y melamina'],
   foundingDate: '1987',
   areaServed: ['San Luis Potosí', 'Soledad de Graciano Sánchez', 'Villa de Pozos', 'Estado de San Luis Potosí'].map((name) => ({ '@type': 'Place', name })),
   email: CORREO,
