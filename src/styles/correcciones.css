@@ -584,3 +584,19 @@ footer p.pie-titulo.text-color { color: #2f4a5a; opacity: 1; }
 /* Enlaces dentro de un párrafo: subrayados para distinguirlos del texto */
 .section-item a:not([class]):not(:has(img)), .caption-box p a:not(.btn) { text-decoration: underline; text-underline-offset: 2px; }
 .section-item .bloque-columna a.btn.btn-lg[href="#cotizar"] { background: #36474f !important; color: #fff !important; border-color: #36474f !important; }
+/* Banners con foto o video: la misma capa oscura en todos, más fuerte del lado del texto, para que el título y los botones se lean sobre cualquier foto */
+.header-title .bg-overlay.transparent-dark, .header-video .bg-overlay.transparent-dark { inset: 0; width: auto; height: auto; background: linear-gradient(90deg, rgba(16, 24, 29, .86) 0%, rgba(16, 24, 29, .7) 50%, rgba(16, 24, 29, .45) 100%) !important; }
+/* En los banners con video la capa iba debajo del video y no oscurecía nada */
+.header-video .bg-overlay { z-index: 2; }
+@media (max-width: 767px) {
+    .header-title .bg-overlay.transparent-dark, .header-video .bg-overlay.transparent-dark { background: rgba(16, 24, 29, .72) !important; }
+}
+.header-title.white .title-base h1, .header-video.white .title-base h1, .header-title.white .title-base p, .header-video.white .title-base p { text-shadow: 0 1px 3px rgba(0, 0, 0, .35); }
+/* Los botones del banner con video se ven igual que en los de foto */
+.header-video .botones-cotizar .btn-border, .header-video .botones-cotizar .btn-border i { color: #fff !important; border-color: #fff !important; background: transparent !important; }
+.header-video .botones-cotizar .btn-border:hover, .header-video .botones-cotizar .btn-border:focus-visible { background: #fff !important; color: #333 !important; }
+.header-video .botones-cotizar .btn:not(.btn-border) { background: #fff !important; color: #36474f !important; border-color: #fff !important; }
+.header-video .botones-cotizar .btn:not(.btn-border) i { color: #36474f !important; }
+/* Encabezados claros sin foto (contacto, preguntas, privacidad): título y texto más oscuros */
+.header-base:not(.white) .title-base h1 { color: #2f3f48; }
+.header-base:not(.white) .title-base p { color: #555; }

@@ -170,7 +170,7 @@ function armarCarrusel(caja) {
     // El carrusel mueve las fichas sin que el navegador avise que entraron a la vista: él mismo arranca los videos que muestra.
     let aLaVista = false;
     const videos = () => fichas.forEach((li) => $$('video[data-autoplay]', li).forEach((v) => {
-        if (sinMovimiento || (v.dataset.autoplay === 'escritorio' && !escritorio())) return;
+        if (v.dataset.autoplay === 'escritorio' && !escritorio()) return;
         if (aLaVista && li.getAttribute('aria-hidden') === 'false') v.play().catch(() => { v.controls = true; });
         else v.pause();
     }));
@@ -259,10 +259,12 @@ $$('.mapa-diferido').forEach((caja) => alVer(caja, () => {
     caja.innerHTML = `<iframe src="${caja.dataset.src}" width="100%" height="450" title="Ubicación de MYMCE en el mapa" loading="lazy" allowfullscreen></iframe>`;
 }));
 $$('video[data-autoplay]').forEach((v) => {
-    if (v.dataset.autoplay === 'escritorio' && !escritorio()) return;
+    // En celular estos videos no arrancan solos: con controles se pueden reproducir en vez de quedar como foto fija.
+    if (v.dataset.autoplay === 'escritorio' && !escritorio()) { v.controls = true; return; }
     v.muted = true;
     v.playsInline = true;
-    if (sinMovimiento) { v.controls = true; return; }
+    // Son clips cortos sin sonido: arrancan aunque el equipo pida menos animación, pero con controles para pausarlos.
+    if (sinMovimiento) v.controls = true;
     // Los videos de un carrusel los arranca el propio carrusel al armarse.
     if (v.closest('.con-carrusel .flexslider')) return;
     alVer(v, () => v.play().catch(() => { v.controls = true; }), () => v.pause());
