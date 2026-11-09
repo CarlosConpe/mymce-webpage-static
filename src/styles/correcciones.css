@@ -600,3 +600,11 @@ footer p.pie-titulo.text-color { color: #2f4a5a; opacity: 1; }
 /* Encabezados claros sin foto (contacto, preguntas, privacidad): título y texto más oscuros */
 .header-base:not(.white) .title-base h1 { color: #2f3f48; }
 .header-base:not(.white) .title-base p { color: #555; }
+
+/* Íconos decorativos de línea delgada (src/data/iconos.ts) */
+.ico-linea { fill: none; stroke: #355669; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; flex: none; }
+.ico-lista { width: 26px; height: 26px; margin-right: 14px; vertical-align: middle; }
+.list-item:has(> .ico-lista) { display: flex; align-items: flex-start; }
+.list-item > .ico-lista { margin-top: 2px; }
+.list-item > .ico-lista + label { padding-left: 0 !important; }
+.ico-caja { display: block; width: 36px; height: 36px; margin: 0 auto 16px; }

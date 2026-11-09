@@ -5,6 +5,7 @@ import Base from '../layouts/Base.astro';
 import paginas from '../data/paginas.json';
 import { D, NEGOCIO, preguntasLd } from '../data/sitio';
 import { conVariantes } from '../data/imagenes';
+import { conIconos } from '../data/iconos';
 
 const contenido = import.meta.glob('../contenido/**/index.html', { query: '?raw', import: 'default', eager: true }) as Record<string, string>;
 const NOMBRES: Record<string, string> = { corporate: 'Nosotros', servicios: 'Servicios', soluciones: 'Carpintería', portafolio: 'Portafolio', blog: 'Blog' };
@@ -55,5 +56,5 @@ const h1 = html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/)?.[1].replace(/<[^>]+>/g, '').
 if ((p.ruta.startsWith('/servicios/') && p.ruta !== '/servicios/' || /^\/en\/.+/.test(p.ruta)) && h1) ld.push({ '@type': 'Service', '@id': `${D}${p.ruta}#servicio`, name: h1, description: p.desc, provider: negocio, areaServed: NEGOCIO.areaServed, url: `${D}${p.ruta}` });
 ---
 <Base title={p.title} desc={p.desc} ruta={p.ruta} img={p.img || undefined} lang={p.lang === 'en' ? 'en' : 'es-MX'} alternos={p.alternos} wa={p.wa} waEtiqueta={p.waEtiqueta} migasLd={migas} ld={ld} carrusel={p.carrusel} videoFix={p.videoFix} clasica={p.clasica} preload={preload} preloadMovil={preloadMovil}>
-    <Fragment set:html={conVariantes(html)} />
+    <Fragment set:html={conIconos(conVariantes(html))} />
 </Base>
