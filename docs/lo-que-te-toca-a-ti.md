@@ -53,11 +53,7 @@ Sin esto no puedo terminar algunas páginas, y no invento nada:
 - **Foto de un escritorio hecho por ustedes.** La tarjeta de Escritorios todavía usa una foto de oficina tipo banco de imágenes.
 - **Fotos de muebles de baño ya instalados.**
 - **Fotos de piezas con foil PVC** (puertas o frentes terminados).
-- **Tiempo de entrega** típico de una cocina y de un closet.
-- **Garantía:** qué cubre y cuánto dura.
-- **Electrodomésticos:** ¿los siguen vendiendo o los quito de la página?
 - **Foil PVC en el portafolio:** ¿cuáles de las cocinas del portafolio llevan foil?
 - **Maquila:** ¿atienden solo en el estado o en todo el país?
-- **Atención en inglés:** las páginas en inglés dicen "escríbenos en inglés por WhatsApp". ¿Alguien del equipo contesta en inglés? Si no, lo cambio.
 
-Mándamelo por aquí como vaya saliendo, no hace falta juntarlo todo.
+Tiempos de entrega, garantía, electrodomésticos e inglés ya los tomé del FAQ. Mándame lo demás como vaya saliendo, no hace falta juntarlo todo.
