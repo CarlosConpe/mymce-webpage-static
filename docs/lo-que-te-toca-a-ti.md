@@ -29,13 +29,9 @@ Actualizado el 9 de noviembre de 2026. Todo lo que estaba en la rama ya está pu
 
 ## 2. Ficha de Google Business de MYMCE
 
-En https://business.google.com:
+Todo está listo para copiar y pegar en [google-business/ficha.md](google-business/ficha.md): nombre, dirección, teléfonos, descripción, categorías, servicios, horario, zonas y atributos. Entra a https://business.google.com y llénala con ese archivo abierto al lado.
 
-1. **Nombre, dirección y teléfono** iguales a los del pie de la página: MYMCE, Av. Promoción 110, Industrial San Luis, San Luis Potosí, S.L.P., y el mismo teléfono. Una letra distinta ya cuenta como otro negocio para Google.
-2. **Sitio web:** `https://www.mymce.com.mx/`.
-3. **Zonas de servicio:** San Luis Potosí, Soledad de Graciano Sánchez y Villa de Pozos.
-4. **Fotos:** sube fotos de obras terminadas seguido, una o dos por semana. Cocinas, closets, vestidores, muebles de baño.
-5. **Publicaciones:** una o dos al mes. Sirven las guías nuevas del blog con su enlace, o una obra recién terminada.
+Las cuatro publicaciones de diciembre, con su foto y su enlace, están en [google-business/publicaciones-2026-12.md](google-business/publicaciones-2026-12.md). Sube una cada martes.
 
 ## 3. Directorios (una tarde)
 
@@ -57,3 +53,17 @@ Sin esto no puedo terminar algunas páginas, y no invento nada:
 - **Maquila:** ¿atienden solo en el estado o en todo el país?
 
 Tiempos de entrega, garantía, electrodomésticos e inglés ya los tomé del FAQ. Mándame lo demás como vaya saliendo, no hace falta juntarlo todo.
+
+## 5. Activar la medición de clientes (10 minutos)
+
+El sitio ya cuenta los clics a WhatsApp, teléfono, correo y formularios por página, pero solo los guarda cuando conectas una base de datos gratis de Cloudflare. Los pasos están en [medicion.md](medicion.md):
+
+1. Crear la base D1 `mymce-clics`.
+2. Conectarla al proyecto de Pages con el nombre `DB`.
+3. Activar Cloudflare Web Analytics en el mismo proyecto.
+
+## 6. Usar las plantillas y los PDF de venta
+
+- [plantillas-respuesta.md](plantillas-respuesta.md) tiene los mensajes para WhatsApp y correo, desde el primer contacto hasta el seguimiento. Cambia lo que va entre [CORCHETES] antes de mandar.
+- En `docs/ventas/` hay un PDF por fraccionamiento (Catara, Sirenia, Valle Real, Imperia) con las obras de cada modelo de casa. Mándalo por WhatsApp a quien te escriba desde ese fraccionamiento, o imprímelo para la visita.
+
