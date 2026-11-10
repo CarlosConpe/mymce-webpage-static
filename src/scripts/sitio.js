@@ -10,6 +10,11 @@ function conversion(envio) {
     if (envio && typeof window.gtag === 'function') window.gtag('event', 'conversion', { send_to: envio });
 }
 
+// Conteo propio de contactos por página: solo el tipo y la ruta, sin cookies ni datos de la persona.
+function contar(tipo) {
+    try { navigator.sendBeacon?.('/api/clic', JSON.stringify({ tipo, pagina: location.pathname })); } catch {}
+}
+
 /* Cabecera: compacta al bajar, menú en celular y submenús */
 const cabecera = $('header');
 const mini = $('.navbar-mini');
@@ -274,10 +279,13 @@ $$('video[data-autoplay]').forEach((v) => {
 $$('[data-progress]').forEach((el) => { el.style.width = el.dataset.progress + '%'; });
 $$('.counter[data-to]').forEach((el) => { el.textContent = el.dataset.to; });
 
-/* WhatsApp y teléfono cuentan como contacto */
+/* WhatsApp y teléfono cuentan como contacto; el correo solo entra al conteo propio */
 document.addEventListener('click', (e) => {
-    const a = e.target.closest('a[href^="https://wa.me/"], a[href^="tel:"]');
+    const a = e.target.closest('a[href^="https://wa.me/"], a[href^="tel:"], a[href^="mailto:"]');
     if (!a) return;
+    const tipo = a.href.startsWith('tel:') ? 'telefono' : a.href.startsWith('mailto:') ? 'correo' : 'whatsapp';
+    contar(tipo);
+    if (tipo === 'correo') return;
     conversion(document.body.dataset.lead);
     if (a.dataset.whatsapp && typeof window.gtag === 'function') {
         window.gtag('event', 'whatsapp_click', { event_category: 'contact', event_label: a.dataset.whatsapp });
@@ -318,6 +326,7 @@ $$('form[data-formulario]').forEach((form) => {
             const r = await fetch('/api/send-email', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(datos) });
             if (!r.ok) throw new Error(String(r.status));
             conversion(document.body.dataset.conversion);
+            contar('formulario');
             form.reset();
             exito?.classList.add('show');
         } catch {
