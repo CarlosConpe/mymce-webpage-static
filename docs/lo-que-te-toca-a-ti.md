@@ -58,6 +58,6 @@ Sin esto no puedo terminar algunas páginas, y no invento nada:
 - **Electrodomésticos:** ¿los siguen vendiendo o los quito de la página?
 - **Foil PVC en el portafolio:** ¿cuáles de las cocinas del portafolio llevan foil?
 - **Maquila:** ¿atienden solo en el estado o en todo el país?
-- **"Exportación":** tres páginas dicen que exportan directo (Acerca de MYMCE, la de puertas y frentes con foil PVC, y su versión en inglés). ¿Es cierto hoy? Si no, lo quito.
+- **Atención en inglés:** las páginas en inglés dicen "escríbenos en inglés por WhatsApp". ¿Alguien del equipo contesta en inglés? Si no, lo cambio.
 
 Mándamelo por aquí como vaya saliendo, no hace falta juntarlo todo.
