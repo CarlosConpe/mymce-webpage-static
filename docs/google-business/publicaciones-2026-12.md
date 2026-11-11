@@ -56,7 +56,7 @@ Los gabinetes de abajo van en tono roble claro y la cubierta es negra. Arriba pu
 
 Las vitrinas sirven para tener a la vista la vajilla o los vasos que se usan seguido, y la barra da un lugar para comer sin ocupar el comedor.
 
-Todas las piezas se cortan con maquinaria CNC en nuestra planta y las instala nuestro propio equipo. La cocina lleva garantía y las condiciones vienen en la cotización.
+Todas las piezas se cortan con maquinaria CNC en nuestra planta y las instala nuestro propio equipo. La cocina tiene un año de garantía, que no cubre daños por mal uso.
 
 ¿Tu casa en Sirenia es San Marcos u otro modelo? Mira las obras del fraccionamiento y mándanos tu plano para cotizar.
 ```

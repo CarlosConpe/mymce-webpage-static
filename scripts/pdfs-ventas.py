@@ -153,15 +153,18 @@ for clave, (frac, municipio, ruta) in FR.items():
         c.setFillColor(AZUL); c.setFont('Helvetica-Bold', 12); c.drawString(M + 32, y, t)
         y = parrafo(c, d, M + 32, y - 16, W - 2 * M - 32, tam=10.5) - 10
     y -= 6
-    c.setFillColor(CLARO); c.rect(M, y - 112, W - 2 * M, 112, fill=1, stroke=0)
+    c.setFillColor(CLARO); c.rect(M, y - 160, W - 2 * M, 160, fill=1, stroke=0)
     c.setFont('Helvetica-Bold', 12); c.setFillColor(AZUL); c.drawString(M + 14, y - 22, 'Bueno saber')
-    datos = ['Todos nuestros productos llevan garantía; las condiciones vienen en la cotización.',
-             'El plazo de entrega se acuerda contigo antes de empezar.',
+    datos = ['Normalmente entregamos en unas 3 semanas hábiles; en proyectos grandes, la fecha va en la cotización.',
+             'Un año de garantía. No cubre daños por mal uso; arreglarlos tiene costo adicional.',
+             'Te mandamos la cotización desde unas horas hasta una semana después, según el tamaño del proyecto.',
+             'Todas las fotos son de obras que instalamos.',
              'Pagos: transferencia, tarjeta de crédito o débito, cheque o efectivo.',
              'La consulta es gratis. También vendemos electrodomésticos para cocina.']
     yy = y - 42
     for d in datos:
-        c.setFillColor(GRIS); c.setFont('Helvetica', 10.5); c.drawString(M + 14, yy, '•  ' + d); yy -= 17
+        c.setFillColor(GRIS); c.setFont('Helvetica', 10.5); c.drawString(M + 14, yy, '•')
+        yy = parrafo(c, d, M + 26, yy, W - 2 * M - 40, tam=10.5, interlinea=1.35) - 3
     pie(c, pag, frac); c.showPage(); pag += 1
 
     # Una página por modelo

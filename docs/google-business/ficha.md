@@ -1,7 +1,7 @@
 ---
 type: doc
 status: active
-updated: 2026-11-10
+updated: 2026-11-11
 tags: [mymce, google-business-profile, ficha-google, nap, seo-local]
 relatedTo: [lo-que-te-toca-a-ti, publicaciones-2026-12, plantillas-respuesta]
 ---
@@ -28,10 +28,10 @@ Todo está listo para copiar y pegar en https://business.google.com. Los datos d
 
 En el nombre va solo "MYMCE". Google castiga los nombres con palabras de relleno, como "MYMCE Cocinas Integrales SLP".
 
-## Descripción (704 de 750 caracteres)
+## Descripción (740 de 750 caracteres)
 
 ```
-MYMCE es una fábrica de carpintería en San Luis Potosí con casi 40 años de trabajo. Diseñamos, fabricamos e instalamos a la medida cocinas integrales, closets, vestidores, puertas, muebles de baño y escritorios. Vamos a tu casa a medir, hacemos el diseño contigo y cortamos las piezas con maquinaria CNC en nuestra planta de la zona Industrial San Luis. La instalación la hace nuestro propio equipo. Trabajamos en San Luis Potosí, Soledad de Graciano Sánchez y Villa de Pozos, y tenemos 83 obras publicadas en los fraccionamientos Catara, Sirenia, Valle Real e Imperia. También vendemos electrodomésticos para cocina y hacemos maquila de piezas para carpinteros y talleres. La primera consulta es gratis.
+MYMCE es una fábrica de carpintería en San Luis Potosí con casi 40 años de trabajo. Diseñamos, fabricamos e instalamos a la medida cocinas integrales, closets, vestidores, puertas, muebles de baño y escritorios. Vamos a tu casa a medir, hacemos el diseño contigo y cortamos las piezas con maquinaria CNC en nuestra planta de la zona Industrial San Luis. La instalación la hace nuestro propio equipo. Trabajamos en San Luis Potosí, Soledad de Graciano Sánchez y Villa de Pozos, y tenemos 83 obras publicadas en los fraccionamientos Catara, Sirenia, Valle Real e Imperia. También vendemos electrodomésticos para cocina y hacemos maquila de piezas para carpinteros y talleres. Garantía de un año, sin cubrir daños por mal uso. Consulta gratis.
 ```
 
 La descripción no lleva teléfono ni enlaces, porque Google los rechaza en ese campo.
@@ -95,6 +95,15 @@ Marca solo los que sean ciertos. Si alguno no aparece en tu ficha, sáltalo.
 - Consulta gratuita / cotización gratis: sí.
 - Atención en inglés: sí, por WhatsApp.
 - Citas en línea o por mensaje: sí, por WhatsApp.
+
+## Preguntas y respuestas
+
+Si alguien pregunta en la ficha, o para la sección de preguntas, usa estas respuestas tal cual:
+
+- **¿Cuánto tardan en entregar?** Normalmente entregamos en unas 3 semanas hábiles. En proyectos más grandes te damos la fecha exacta en la cotización.
+- **¿Tienen garantía?** Te damos un año de garantía. No cubre daños por mal uso: cualquier arreglo por mal uso tiene costo adicional.
+- **¿Cuánto tardan en mandar la cotización?** Te mandamos la cotización desde unas horas hasta una semana después, según el tamaño del proyecto.
+- **¿Las fotos son de trabajos suyos?** Sí. Todas las fotos son de obras que instalamos.
 
 ## Fotos
 

@@ -1,7 +1,7 @@
 ---
 type: doc
 status: active
-updated: 2026-11-10
+updated: 2026-11-11
 tags: [mymce, ventas, whatsapp, correo, plantillas, seguimiento]
 relatedTo: [ficha, medicion, lo-que-te-toca-a-ti]
 ---
@@ -126,6 +126,8 @@ Si no tienes plano, con esto basta:
 - Dónde están puertas, ventanas, contactos y tomas de agua o gas.
 
 Una foto de frente al espacio ayuda mucho. Si prefieres, vamos a medir nosotros: dime qué día te queda bien.
+
+Te mandamos la cotización desde unas horas hasta una semana después, según el tamaño del proyecto.
 ```
 
 ## 3. Agendar la visita para medir
@@ -155,8 +157,8 @@ Hola, [NOMBRE]. Te recuerdo que mañana [DÍA] a las [HORA] vamos a medir tu [CO
 
 Total: [PRECIO] [CON O SIN IVA]
 Incluye: [QUÉ INCLUYE: diseño, fabricación, instalación, materiales, herrajes]
-Tiempo de entrega: [PLAZO ACORDADO]
-Garantía: [CONDICIONES]
+Tiempo de entrega: normalmente unas 3 semanas hábiles. [EN PROYECTOS GRANDES, LA FECHA EXACTA]
+Garantía: un año. No cubre daños por mal uso: cualquier arreglo por mal uso tiene costo adicional.
 Formas de pago: transferencia, tarjeta de crédito o débito, cheque o efectivo. [ANTICIPO Y PAGOS]
 
 Revísala con calma. Si quieres cambiar algo del diseño o del material, lo ajustamos.
@@ -173,8 +175,8 @@ Te adjunto la cotización y el diseño de tu [PROYECTO].
 
 - Total: [PRECIO] [CON O SIN IVA]
 - Incluye: [QUÉ INCLUYE]
-- Tiempo de entrega: [PLAZO ACORDADO]
-- Garantía: [CONDICIONES]
+- Tiempo de entrega: normalmente unas 3 semanas hábiles. [EN PROYECTOS GRANDES, LA FECHA EXACTA]
+- Garantía: un año. No cubre daños por mal uso: cualquier arreglo por mal uso tiene costo adicional.
 - Formas de pago: transferencia, tarjeta de crédito o débito, cheque o efectivo. [ANTICIPO Y PAGOS]
 
 Si quieres cambiar algo, contéstame este correo o escríbeme por WhatsApp al 444 233 5607.
