@@ -120,6 +120,54 @@
   "videoFix": false
  },
  {
+  "ruta": "/corporate/blog/2026/11/10/que-determina-el-precio-de-un-closet-a-medida/",
+  "archivo": "corporate/blog/2026/11/10/que-determina-el-precio-de-un-closet-a-medida/index.html",
+  "title": "Qué determina el precio de un closet a medida | MYMCE",
+  "desc": "Qué mueve el precio de un closet a medida: medidas, material, puertas abatibles o corredizas, interiores, herrajes e instalación, y cómo comparar cotizaciones.",
+  "img": "/assets/storage/2023/08/20230708_112403-1920x1080.webp",
+  "lang": "es",
+  "noindex": false,
+  "alternos": [
+   [
+    "es",
+    "/corporate/blog/2026/11/10/que-determina-el-precio-de-un-closet-a-medida/"
+   ],
+   [
+    "es-MX",
+    "/corporate/blog/2026/11/10/que-determina-el-precio-de-un-closet-a-medida/"
+   ]
+  ],
+  "wa": "https://wa.me/524442335607?text=Hola%20Grupo%20MYMCE%2C%20quisiera%20cotizar%20un%20Closet%20o%20Vestidor%20a%20medida.",
+  "waEtiqueta": "closets",
+  "clasica": false,
+  "carrusel": false,
+  "videoFix": false
+ },
+ {
+  "ruta": "/corporate/blog/2026/11/10/cocina-en-l-en-u-lineal-o-con-isla/",
+  "archivo": "corporate/blog/2026/11/10/cocina-en-l-en-u-lineal-o-con-isla/index.html",
+  "title": "Cocina en L, en U, lineal o con isla: cómo elegir | MYMCE",
+  "desc": "Cocina en L, en U, lineal, con isla, con península o de dos frentes: qué forma conviene según tu espacio, con cocinas reales de San Luis Potosí.",
+  "img": "/assets/storage/2023/08/cocina-12-1920x1080.webp",
+  "lang": "es",
+  "noindex": false,
+  "alternos": [
+   [
+    "es",
+    "/corporate/blog/2026/11/10/cocina-en-l-en-u-lineal-o-con-isla/"
+   ],
+   [
+    "es-MX",
+    "/corporate/blog/2026/11/10/cocina-en-l-en-u-lineal-o-con-isla/"
+   ]
+  ],
+  "wa": "https://wa.me/524442335607?text=Hola%20Grupo%20MYMCE%2C%20estoy%20interesado%20en%20el%20dise%C3%B1o%20y%20fabricaci%C3%B3n%20de%20una%20Cocina%20Integral.",
+  "waEtiqueta": "cocinas",
+  "clasica": false,
+  "carrusel": false,
+  "videoFix": false
+ },
+ {
   "ruta": "/corporate/blog/2026/11/09/closet-o-vestidor-como-elegir/",
   "archivo": "corporate/blog/2026/11/09/closet-o-vestidor-como-elegir/index.html",
   "title": "¿Closet o vestidor? Cómo elegir para tu recámara | MYMCE",
@@ -2408,6 +2456,30 @@
   "videoFix": true
  },
  {
+  "ruta": "/servicios/closets-de-melamina/",
+  "archivo": "servicios/closets-de-melamina/index.html",
+  "title": "Closets de Melamina a Medida en San Luis Potosí | MYMCE",
+  "desc": "Closets de melamina a medida en San Luis Potosí: qué es la melamina, en qué se distingue de un closet armable, cuidados y closets reales de nuestro portafolio.",
+  "img": "/assets/storage/2023/08/20230708_122310-1920x1080.webp",
+  "lang": "es",
+  "noindex": false,
+  "alternos": [
+   [
+    "es",
+    "/servicios/closets-de-melamina/"
+   ],
+   [
+    "es-MX",
+    "/servicios/closets-de-melamina/"
+   ]
+  ],
+  "wa": "https://wa.me/524442335607?text=Hola%20Grupo%20MYMCE%2C%20quisiera%20cotizar%20un%20Closet%20o%20Vestidor%20a%20medida.",
+  "waEtiqueta": "closets",
+  "clasica": false,
+  "carrusel": false,
+  "videoFix": false
+ },
+ {
   "ruta": "/servicios/vestidores/",
   "archivo": "servicios/vestidores/index.html",
   "title": "Vestidores Walk-in a la Medida en San Luis Potosí | MYMCE",
@@ -2604,6 +2676,30 @@
   "videoFix": true
  },
  {
+  "ruta": "/servicios/cocinas-integrales-modernas/",
+  "archivo": "servicios/cocinas-integrales-modernas/index.html",
+  "title": "Cocinas Integrales Modernas en San Luis Potosí | MYMCE",
+  "desc": "43 cocinas integrales modernas que hicimos en San Luis Potosí, agrupadas por estilo: blanco con madera, toda en madera, detalles en negro, gris y azul.",
+  "img": "/assets/storage/2023/08/cocina-13-1-1920x1080.webp",
+  "lang": "es",
+  "noindex": false,
+  "alternos": [
+   [
+    "es",
+    "/servicios/cocinas-integrales-modernas/"
+   ],
+   [
+    "es-MX",
+    "/servicios/cocinas-integrales-modernas/"
+   ]
+  ],
+  "wa": "https://wa.me/524442335607?text=Hola%20Grupo%20MYMCE%2C%20estoy%20interesado%20en%20el%20dise%C3%B1o%20y%20fabricaci%C3%B3n%20de%20una%20Cocina%20Integral.",
+  "waEtiqueta": "cocinas",
+  "clasica": false,
+  "carrusel": false,
+  "videoFix": false
+ },
+ {
   "ruta": "/servicios/diseno-y-fabricacion-de-escritorios/",
   "archivo": "servicios/diseno-y-fabricacion-de-escritorios/index.html",
   "title": "Escritorios a Medida en San Luis Potosí | MYMCE",
@@ -2697,6 +2793,30 @@
   "waEtiqueta": "default",
   "clasica": false,
   "carrusel": true,
+  "videoFix": false
+ },
+ {
+  "ruta": "/servicios/muebles-a-medida/",
+  "archivo": "servicios/muebles-a-medida/index.html",
+  "title": "Muebles a Medida en San Luis Potosí: Carpintería | MYMCE",
+  "desc": "Muebles a medida en San Luis Potosí: cocinas, closets, vestidores, muebles de baño, puertas y escritorios. Carpintería con planta propia y casi 40 años.",
+  "img": "/assets/storage/2023/08/20230708_125410-1920x1080.webp",
+  "lang": "es",
+  "noindex": false,
+  "alternos": [
+   [
+    "es",
+    "/servicios/muebles-a-medida/"
+   ],
+   [
+    "es-MX",
+    "/servicios/muebles-a-medida/"
+   ]
+  ],
+  "wa": "https://wa.me/524442335607?text=Hola%2C%20estoy%20buscando%20soluciones%20de%20carpinter%C3%ADa%20y%20mobiliario.%20Me%20interesa%20cotizar%20un%20proyecto%20con%20ustedes.",
+  "waEtiqueta": "default",
+  "clasica": false,
+  "carrusel": false,
   "videoFix": false
  },
  {
