@@ -8,6 +8,8 @@ relatedTo: [pendientes-del-dueno, estrategia-primer-lugar, plan-ventas-seo]
 
 # Lo que te toca a ti (mymce.com.mx)
 
+> Esta lista ya no se actualiza. La vigente, para los dos sitios, está en `mymce-webpage-static - Copy (3)/docs/lo-que-me-toca.md`.
+
 Actualizado el 9 de noviembre de 2026. Todo lo que estaba en la rama ya está publicado. Lo que sigue necesita tu cuenta de Google, tus fotos o un dato que solo tú sabes. Va en orden de impacto.
 
 ## 1. Google Search Console (15 minutos, una sola vez)
