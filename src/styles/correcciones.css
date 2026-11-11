@@ -477,7 +477,7 @@ body.pagina-clasica .section-item h2, body.pagina-clasica .section-item h3, body
 .bloque-obras .obra-real { display: flex; }
 .bloque-obras .obra-real .clean-card { width: 100%; }
 /* Páginas de fraccionamiento: cada modelo de casa con su texto y las fotos de sus obras */
-.bloque-obras .clean-card h4 { font-size: 16px; margin: 0 0 10px; }
+.bloque-obras .clean-card h3, .bloque-obras .clean-card h4 { font-size: 16px; margin: 0 0 10px; }
 .modelo-fracc { border-top: 1px solid #e6e6e6; padding-top: 25px; scroll-margin-top: 110px; }
 .modelo-fracc__texto { margin-bottom: 20px; }
 .modelo-fracc__texto h3 { margin: 0 0 12px; }
@@ -616,3 +616,7 @@ footer p.pie-titulo.text-color { color: #2f4a5a; opacity: 1; }
 .list-item > .ico-lista { margin-top: 2px; }
 .list-item > .ico-lista + label { padding-left: 0 !important; }
 .ico-caja { display: block; width: 36px; height: 36px; margin: 0 auto 16px; }
+
+/* La lista de fichas mide lo que una página del carrusel: si ella misma recorta, las fichas de la segunda página
+   se quedan fuera aunque el carrusel se mueva. Solo el marco (.flex-viewport) debe recortar. */
+.con-carrusel .flexslider.carrusel-listo .slides { overflow: visible; }
