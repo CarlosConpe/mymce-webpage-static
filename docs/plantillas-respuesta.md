@@ -158,7 +158,7 @@ Hola, [NOMBRE]. Te recuerdo que mañana [DÍA] a las [HORA] vamos a medir tu [CO
 Total: [PRECIO] [CON O SIN IVA]
 Incluye: [QUÉ INCLUYE: diseño, fabricación, instalación, materiales, herrajes]
 Tiempo de entrega: normalmente unas 3 semanas hábiles. [EN PROYECTOS GRANDES, LA FECHA EXACTA]
-Garantía: un año. No cubre daños por mal uso: cualquier arreglo por mal uso tiene costo adicional.
+Garantía: 12 meses en fabricación, recubrimiento, acabado e instalación; herrajes, la de su fabricante (mínimo 12 meses). No cubre mal uso ni desgaste normal: cualquier arreglo por mal uso tiene costo adicional. Detalles: www.mymce.com.mx/corporate/garantia/
 Formas de pago: transferencia, tarjeta de crédito o débito, cheque o efectivo. [ANTICIPO Y PAGOS]
 
 Revísala con calma. Si quieres cambiar algo del diseño o del material, lo ajustamos.
@@ -176,7 +176,7 @@ Te adjunto la cotización y el diseño de tu [PROYECTO].
 - Total: [PRECIO] [CON O SIN IVA]
 - Incluye: [QUÉ INCLUYE]
 - Tiempo de entrega: normalmente unas 3 semanas hábiles. [EN PROYECTOS GRANDES, LA FECHA EXACTA]
-- Garantía: un año. No cubre daños por mal uso: cualquier arreglo por mal uso tiene costo adicional.
+- Garantía: 12 meses en fabricación, recubrimiento, acabado e instalación; herrajes, la de su fabricante (mínimo 12 meses). No cubre mal uso ni desgaste normal: cualquier arreglo por mal uso tiene costo adicional. Detalles: www.mymce.com.mx/corporate/garantia/
 - Formas de pago: transferencia, tarjeta de crédito o débito, cheque o efectivo. [ANTICIPO Y PAGOS]
 
 Si quieres cambiar algo, contéstame este correo o escríbeme por WhatsApp al 444 233 5607.

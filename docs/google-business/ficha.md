@@ -101,7 +101,7 @@ Marca solo los que sean ciertos. Si alguno no aparece en tu ficha, sáltalo.
 Si alguien pregunta en la ficha, o para la sección de preguntas, usa estas respuestas tal cual:
 
 - **¿Cuánto tardan en entregar?** Normalmente entregamos en unas 3 semanas hábiles. En proyectos más grandes te damos la fecha exacta en la cotización.
-- **¿Tienen garantía?** Te damos un año de garantía. No cubre daños por mal uso: cualquier arreglo por mal uso tiene costo adicional.
+- **¿Tienen garantía?** Sí: 12 meses en fabricación, recubrimiento, acabado e instalación desde la entrega, y en herrajes la de su fabricante, con mínimo 12 meses. No cubre mal uso ni desgaste normal; cualquier arreglo por mal uso tiene costo adicional. Detalles en www.mymce.com.mx/corporate/garantia/
 - **¿Cuánto tardan en mandar la cotización?** Te mandamos la cotización desde unas horas hasta una semana después, según el tamaño del proyecto.
 - **¿Las fotos son de trabajos suyos?** Sí. Todas las fotos son de obras que instalamos.
 

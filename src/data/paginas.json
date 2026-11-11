@@ -312,6 +312,30 @@
   "videoFix": false
  },
  {
+  "ruta": "/corporate/garantia/",
+  "archivo": "corporate/garantia/index.html",
+  "title": "Garantía de tus Muebles | MYMCE",
+  "desc": "Garantía de 12 meses en fabricación, recubrimiento, acabado e instalación de tus muebles MYMCE; herrajes según su fabricante. Qué no cubre y cómo pedirla.",
+  "img": "",
+  "lang": "es",
+  "noindex": false,
+  "alternos": [
+   [
+    "es",
+    "/corporate/garantia/"
+   ],
+   [
+    "es-MX",
+    "/corporate/garantia/"
+   ]
+  ],
+  "wa": "https://wa.me/524442335607?text=Hola%2C%20estoy%20buscando%20soluciones%20de%20carpinter%C3%ADa%20y%20mobiliario.%20Me%20interesa%20cotizar%20un%20proyecto%20con%20ustedes.",
+  "waEtiqueta": "default",
+  "clasica": true,
+  "carrusel": false,
+  "videoFix": false
+ },
+ {
   "ruta": "/corporate/politica-privacidad/",
   "archivo": "corporate/politica-privacidad/index.html",
   "title": "Política de Privacidad | MYMCE",

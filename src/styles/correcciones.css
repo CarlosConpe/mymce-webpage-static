@@ -478,6 +478,12 @@ body.pagina-clasica .section-item h2, body.pagina-clasica .section-item h3, body
 .bloque-obras .obra-real .clean-card { width: 100%; }
 /* Páginas de fraccionamiento: cada modelo de casa con su texto y las fotos de sus obras */
 .bloque-obras .clean-card h3, .bloque-obras .clean-card h4 { font-size: 16px; margin: 0 0 10px; }
+/* Tabla de vigencias de la garantía; en celular se desplaza de lado en vez de apretar las columnas. */
+.tabla-garantia { overflow-x: auto; margin: 0 0 20px; }
+.tabla-garantia table { width: 100%; min-width: 520px; border-collapse: collapse; }
+.tabla-garantia th, .tabla-garantia td { border: 1px solid #dde3e7; padding: 10px 12px; text-align: left; vertical-align: top; }
+.tabla-garantia th { background: #355669; color: #fff; font-weight: 600; }
+.tabla-garantia tbody tr:nth-child(even) { background: #f5f7f8; }
 .modelo-fracc { border-top: 1px solid #e6e6e6; padding-top: 25px; scroll-margin-top: 110px; }
 .modelo-fracc__texto { margin-bottom: 20px; }
 .modelo-fracc__texto h3 { margin: 0 0 12px; }
