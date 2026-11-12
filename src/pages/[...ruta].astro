@@ -3,7 +3,7 @@
 import { existsSync } from 'node:fs';
 import Base from '../layouts/Base.astro';
 import paginas from '../data/paginas.json';
-import { D, NEGOCIO, preguntasLd, videosLd } from '../data/sitio';
+import { D, preguntasLd, videosLd } from '../data/sitio';
 import { conVariantes } from '../data/imagenes';
 import { conIconos } from '../data/iconos';
 
@@ -56,7 +56,19 @@ if (fecha) ld.push({ '@type': 'BlogPosting', '@id': `${D}${p.ruta}#articulo`, he
 // Las páginas de servicios describen el servicio que se ofrece y en qué zonas.
 const h1 = html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/)?.[1].replace(/<[^>]+>/g, '').trim();
 ld.push(...videosLd(html, p.ruta, p.title.split('|')[0].trim(), p.desc));
-if ((p.ruta.startsWith('/servicios/') && p.ruta !== '/servicios/' || /^\/en\/.+/.test(p.ruta)) && h1) ld.push({ '@type': 'Service', '@id': `${D}${p.ruta}#servicio`, name: h1, description: p.desc, provider: negocio, areaServed: NEGOCIO.areaServed, url: `${D}${p.ruta}` });
+// Las páginas de fraccionamiento y de municipio dicen exactamente dónde se da el servicio; las demás, toda la zona.
+const ciudad = (name: string) => ({ '@type': 'City', name, containedInPlace: { '@type': 'State', name: 'San Luis Potosí' } });
+const fracc = (name: string, municipio: string) => ({ '@type': 'Place', name: `Fraccionamiento ${name}`, containedInPlace: ciudad(municipio) });
+const ZONA: Record<string, object[]> = {
+  '/servicios/cocinas-y-closets-catara/': [fracc('Catara', 'Villa de Pozos'), ciudad('Villa de Pozos')],
+  '/servicios/cocinas-y-closets-sirenia/': [fracc('Sirenia', 'Villa de Pozos'), ciudad('Villa de Pozos')],
+  '/servicios/cocinas-y-closets-valle-real/': [fracc('Valle Real', 'Soledad de Graciano Sánchez'), ciudad('Soledad de Graciano Sánchez')],
+  '/servicios/cocinas-y-closets-imperia/': [fracc('Imperia', 'San Luis Potosí'), ciudad('San Luis Potosí')],
+  '/servicios/cocinas-y-closets-villa-de-pozos/': [ciudad('Villa de Pozos')],
+  '/servicios/cocinas-y-closets-soledad-de-graciano-sanchez/': [ciudad('Soledad de Graciano Sánchez')],
+};
+const zonaGeneral = [ciudad('San Luis Potosí'), ciudad('Soledad de Graciano Sánchez'), ciudad('Villa de Pozos')];
+if ((p.ruta.startsWith('/servicios/') && p.ruta !== '/servicios/' || /^\/en\/.+/.test(p.ruta)) && h1) ld.push({ '@type': 'Service', '@id': `${D}${p.ruta}#servicio`, name: h1, description: p.desc, provider: negocio, areaServed: ZONA[p.ruta] ?? zonaGeneral, url: `${D}${p.ruta}` });
 ---
 <Base title={p.title} desc={p.desc} ruta={p.ruta} img={p.img || undefined} lang={p.lang === 'en' ? 'en' : 'es-MX'} alternos={p.alternos} wa={p.wa} waEtiqueta={p.waEtiqueta} migasLd={migas} ld={ld} carrusel={p.carrusel} videoFix={p.videoFix} clasica={p.clasica} preload={preload} preloadMovil={preloadMovil}>
     <Fragment set:html={conIconos(conVariantes(html))} />
