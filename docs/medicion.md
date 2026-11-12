@@ -74,3 +74,12 @@ Para saber qué páginas convierten mejor, cruza los contactos de una página co
 
 1. Abre cualquier página de www.mymce.com.mx y toca el botón de WhatsApp.
 2. En la consola de D1 corre `SELECT * FROM clics ORDER BY dia DESC LIMIT 5;`. Debe aparecer la página con `whatsapp` y total 1.
+
+## Avisar a Bing con IndexNow
+
+IndexNow le avisa a Bing (y a los buscadores que usan su índice, como Copilot) qué páginas cambiaron, para que no esperen a volver a rastrear. Google no lo usa; para Google siguen el sitemap y Search Console.
+
+- La clave está en `public/ce2bdd8a826f903e373d55c7e6c89d4e.txt` y se publica con el sitio. No la borres ni la cambies.
+- Unos minutos después de cada publicación corre `npm run avisar-indexnow`. El script lee el sitemap en vivo, compara una huella de cada página con la de la vez anterior (guardada en `.indexnow/estado.json`, fuera de git) y manda solo las páginas nuevas, las que cambiaron y las que salieron del sitemap.
+- `npm run avisar-indexnow -- --prueba` muestra qué mandaría sin avisar. `-- --todas` manda todas.
+- La primera vez en cada computadora manda las 129 páginas, porque no hay huellas guardadas. Es normal y no tiene costo.

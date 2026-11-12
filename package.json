@@ -8,6 +8,7 @@
     "build": "astro build",
     "preview": "astro preview",
     "check": "node scripts/verificar.mjs",
+    "avisar-indexnow": "node scripts/avisar-indexnow.mjs",
     "test": "node --test \"tests/*.test.mjs\""
   },
   "dependencies": {
