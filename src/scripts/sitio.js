@@ -174,9 +174,12 @@ function armarCarrusel(caja) {
     }
     // El carrusel mueve las fichas sin que el navegador avise que entraron a la vista: él mismo arranca los videos que muestra.
     let aLaVista = false;
-    const videos = () => fichas.forEach((li) => $$('video[data-autoplay]', li).forEach((v) => {
-        if (v.dataset.autoplay === 'escritorio' && !escritorio()) return;
-        if (aLaVista && li.getAttribute('aria-hidden') === 'false') v.play().catch(() => { v.controls = true; });
+    const videos = () => fichas.forEach((li) => $$('video', li).forEach((v) => {
+        const visible = aLaVista && li.getAttribute('aria-hidden') === 'false';
+        // Las fichas del carrusel son copias que no vigila el observador de pósters: el póster se pone al mostrarlas.
+        if (visible && !v.poster && v.dataset.poster) v.poster = v.dataset.poster;
+        if (!v.hasAttribute('data-autoplay') || (v.dataset.autoplay === 'escritorio' && !escritorio())) return;
+        if (visible) v.play().catch(() => { v.controls = true; });
         else v.pause();
     }));
     new IntersectionObserver(([e]) => { aLaVista = e.isIntersecting; videos(); }, { rootMargin: '200px' }).observe(caja);
@@ -263,6 +266,8 @@ $$('.mapa-diferido').forEach((caja) => alVer(caja, () => {
     if (caja.querySelector('iframe')) return;
     caja.innerHTML = `<iframe src="${caja.dataset.src}" width="100%" height="450" title="Ubicación de MYMCE en el mapa" loading="lazy" allowfullscreen></iframe>`;
 }));
+// El póster de cada video se pide al acercarse a la pantalla, para que no compita con la foto de arriba.
+$$('video[data-poster]').forEach((v) => alVer(v, () => { if (!v.poster) v.poster = v.dataset.poster; }));
 $$('video[data-autoplay]').forEach((v) => {
     // En celular estos videos no arrancan solos: con controles se pueden reproducir en vez de quedar como foto fija.
     if (v.dataset.autoplay === 'escritorio' && !escritorio()) { v.controls = true; return; }

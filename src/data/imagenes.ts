@@ -25,6 +25,13 @@ function anchoWebp(f: string): number {
   return 0;
 }
 
+// Los pósters de video se piden hasta que el video se acerca (src/scripts/sitio.js). Se puede dejar
+// el primero con su póster cuando está en la primera pantalla, como en la portada.
+export function conPosterDiferido(html: string, dejarPrimero = false): string {
+  let n = 0;
+  return html.replace(/<video\b[^>]*>/g, (v) => (n++ === 0 && dejarPrimero ? v : v.replace(/\sposter="/, ' data-poster="')));
+}
+
 export function conVariantes(html: string, avif = true): string {
   return html.replace(/<img\b[^>]*>/g, (img) => {
     if (!img.includes('loading="lazy"') || /\ssrcset=/.test(img)) return img;

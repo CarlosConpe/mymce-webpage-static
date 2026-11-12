@@ -3,7 +3,7 @@ import Base from '../layouts/Base.astro';
 // Después de Base: estas reglas de la portada deben ganar a las del sitio.
 import '../styles/portada.css';
 import paginas from '../data/paginas.json';
-import { conVariantes } from '../data/imagenes';
+import { conVariantes, conPosterDiferido } from '../data/imagenes';
 import { conIconos } from '../data/iconos';
 import { conPorQue } from '../data/porque';
 import { videosLd } from '../data/sitio';
@@ -13,5 +13,5 @@ const p = paginas.find((x) => x.ruta === '/')!;
 const html = Object.values(contenido)[0];
 ---
 <Base title={p.title} desc={p.desc} ruta="/" img={p.img || undefined} alternos={p.alternos} wa={p.wa} waEtiqueta={p.waEtiqueta} ld={videosLd(html, '/', p.title.split('|')[0].trim(), p.desc)} carrusel={p.carrusel} videoFix={p.videoFix}>
-    <Fragment set:html={conIconos(conVariantes(conPorQue(html, '/'), false))} />
+    <Fragment set:html={conIconos(conPosterDiferido(conVariantes(conPorQue(html, '/'), false), true))} />
 </Base>
