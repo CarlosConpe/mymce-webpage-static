@@ -25,16 +25,19 @@ function anchoWebp(f: string): number {
   return 0;
 }
 
-export function conVariantes(html: string): string {
+export function conVariantes(html: string, avif = true): string {
   return html.replace(/<img\b[^>]*>/g, (img) => {
     if (!img.includes('loading="lazy"') || /\ssrcset=/.test(img)) return img;
     const src = img.match(/\ssrc="(\/assets\/storage\/[^"]+)\.webp"/)?.[1];
     const ancho = src ? anchoWebp(`${src}.webp`) : 0;
     if (!src || !ancho) return img;
     const chicas = ANCHOS.filter((a) => a < ancho && existe(`${src}-${a}w.webp`));
-    if (!chicas.length) return img;
-    const srcset = [...chicas.map((a) => `${src}-${a}w.webp ${a}w`), `${src}.webp ${ancho}w`].join(', ');
+    const juego = (ext: string, anchos: number[]) => [...anchos.map((a) => `${src}-${a}w.${ext} ${a}w`), `${src}.${ext} ${ancho}w`].join(', ');
     // "auto" toma el ancho real en pantalla; los navegadores que no lo entienden usan 100vw y bajan la grande, como antes.
-    return img.replace(/<img\b/, `<img srcset="${srcset}" sizes="auto, 100vw"`);
+    const conSrcset = chicas.length ? img.replace(/<img\b/, `<img srcset="${juego('webp', chicas)}" sizes="auto, 100vw"`) : img;
+    // AVIF (scripts/variantes-avif.mjs) pesa menos; el navegador que no la entiende se queda con el WebP del <img>.
+    if (!avif || !existe(`${src}.avif`)) return conSrcset;
+    const conAvif = chicas.filter((a) => existe(`${src}-${a}w.avif`));
+    return `<picture><source type="image/avif" srcset="${juego('avif', conAvif)}" sizes="auto, 100vw">${conSrcset}</picture>`;
   });
 }

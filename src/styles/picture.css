@@ -1,0 +1,10 @@
+/*  Generado por scripts/css-picture.mjs. No editar a mano.  */picture{display:contents}.thumbnail a> picture > img,.thumbnail> picture > img{display:block;max-width:100%;height:auto}.nav>li>a> picture > img{max-width:none}.navbar-brand> picture > img{display:block}.thumbnail a> picture > img,.thumbnail> picture > img{margin-left:auto;margin-right:auto}.navbar-brand.center> picture > img{display:inline-block}.tab-box .panel>.row> picture > img{padding:0;margin:0 15px}.con-carrusel .flexslider li>a> picture > img,.con-carrusel .flexslider li> picture > img{width:100%;display:block}.con-carrusel .flexslider .slides [class*=col-md-]> picture > img{max-width:100%}@media (max-width:992px){.con-carrusel .flexslider .slides>li>.img-box>span> picture > img{height:auto}}
+.bloque-image > picture > img { width: 100%; height: auto; }
+.flexslider .slides > li > picture > img { width: 100%; height: auto; aspect-ratio: 8 / 5; object-fit: cover; }
+@media (min-width: 992px) {
+    .bloque-columna.col-md-4:has(+ .bloque-columna.col-md-8) .bloque-image > picture > img { height: 600px; max-height: none; width: 100%; object-fit: cover; }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .bloque-columna.col-md-4:has(+ .bloque-columna.col-md-8) .bloque-image > picture > img { height: 600px; width: 450px; max-width: 100%; object-fit: cover; display: block; margin: 0 auto; }
+}
+@media (max-width: 767px) { .bloque-columna.col-md-4:has(+ .bloque-columna.col-md-8) .bloque-image > picture > img { height: 480px; width: 100%; object-fit: cover; } }
