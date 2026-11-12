@@ -1,5 +1,6 @@
 // Datos de la empresa: salen de empresa.json.
 import empresa from './empresa.json';
+import videos from './videos.json';
 
 const digitos = (t: string) => t.replace(/\D/g, '');
 export const D = 'https://www.mymce.com.mx';
@@ -63,6 +64,31 @@ export function ruta(items: [string, string | null][], path: string) {
 
 export function grafo(...nodos: object[]) {
   return { '@context': 'https://schema.org', '@graph': [NEGOCIO, ...nodos] };
+}
+
+// Videos propios con datos para Google: el promocional donde se puede reproducir y el de cada obra del portafolio.
+// Los de fondo de las páginas de servicio son decorativos y no se marcan. Duración y fecha salen de scripts/videos-datos.py.
+export function videosLd(html: string, ruta: string, titulo: string, desc: string) {
+  const datos = videos as Record<string, { duracion: string; fecha: string }>;
+  return [...html.matchAll(/<video([^>]*)>([\s\S]*?)<\/video>/g)].flatMap(([, attrs, dentro], i) => {
+    const src = (dentro.match(/<source[^>]*src="([^"]+)"/) ?? attrs.match(/\ssrc="([^"]+)"/))?.[1] ?? '';
+    const dato = datos[src];
+    const promo = src.endsWith('mymce-promocional.mp4');
+    if (!dato || (promo ? !/\scontrols/.test(attrs) : !ruta.startsWith('/portafolio/'))) return [];
+    const poster = attrs.match(/poster="([^"]+)"/)?.[1];
+    return [{
+      '@type': 'VideoObject',
+      '@id': `${D}${ruta}#video-${i + 1}`,
+      name: promo ? 'MYMCE: cocinas, closets y puertas a la medida en San Luis Potosí' : `Video de la obra: ${titulo}`,
+      description: promo ? 'Diseñamos tu proyecto, lo fabricamos en nuestra planta de San Luis Potosí con maquinaria CNC y lo instalamos en tu casa. Cocinas, closets y puertas a la medida.' : desc,
+      ...(poster && { thumbnailUrl: D + poster }),
+      contentUrl: D + src,
+      uploadDate: `${dato.fecha}T00:00:00-06:00`,
+      duration: dato.duracion,
+      inLanguage: 'es-MX',
+      publisher: { '@id': `${D}/#localbusiness` },
+    }];
+  });
 }
 
 export function preguntasLd(path: string, faq: [string, string][]) {
