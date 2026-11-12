@@ -60,7 +60,7 @@ Agrégalos en "Servicios" → "Agregar servicio personalizado". Cada descripció
 | Closets empotrados | Closets a la medida para cada recámara, con puertas abatibles o corredizas, cajones, entrepaños y zapateras. |
 | Vestidores | Vestidores abiertos o walk-in con zonas de colgado largo y corto, cajoneras y zapateras, según la ropa que tienes. |
 | Muebles de baño | Gabinetes y muebles para lavabo a la medida, con materiales que aguantan la humedad. |
-| Puertas a la medida | Puertas de madera, melamina, laminado, chapa de madera o MDF forrado con foil PVC, para casas y desarrollos. |
+| Puertas a la medida | Puertas de interior en melamina, laminado, chapa de madera o MDF forrado con foil PVC, para casas y desarrollos. |
 | Puertas y frentes con foil PVC | Puertas y frentes de cajón en MDF forrados con foil PVC para cocina, closet o baño. Se limpian fácil y aguantan la humedad. |
 | Escritorios a la medida | Escritorios para home office, recámaras u oficinas, con la altura, los cajones y las repisas que pida tu espacio. |
 | Electrodomésticos para cocina | Parrillas, estufas, campanas, hornos, microondas, fregaderos, monomandos y kits, por pieza o al mayoreo. |

@@ -881,7 +881,7 @@ Cotiza la tuya por WhatsApp al 444 233 5607.
 - **Descripción:**
 
 ```
-Vestidor en L, closets de puertas abatibles y mueble flotante con panel de madera, casa modelo San Patricio de Valle Real, Soledad de Graciano Sánchez.
+Vestidor en L, closets de puertas abatibles y mueble flotante con panel en tono madera, casa modelo San Patricio de Valle Real, Soledad de Graciano Sánchez.
 Diseñamos, fabricamos en nuestra planta de San Luis Potosí e instalamos esta obra en Valle Real, Soledad de Graciano Sánchez.
 Fotos y detalles de la obra: https://www.mymce.com.mx/portafolio/closets-y-vestidores-valle-real-modelo-san-patricio/
 Cotiza la tuya por WhatsApp al 444 233 5607.

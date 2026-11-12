@@ -96,7 +96,7 @@ MYMCE · WhatsApp 444 233 5607 · Tel. 444 102 3917
 ```
 ¡Hola, [NOMBRE]! Gracias por escribir a MYMCE. Con gusto te ayudamos con el mueble de tu baño.
 
-¿Me mandas una foto del baño y el ancho del espacio donde va el mueble? Dime también si el lavabo ya lo tienes o si lo vamos a considerar en el diseño.
+¿Me mandas una foto del baño y el ancho del espacio donde va el mueble? Dime también si el lavabo ya lo tienes o si prefieres que lo consigamos nosotros; también lo podemos hacer de superficie sólida. Y si te gusta flotante o de piso.
 
 Para el baño recomendamos materiales que aguantan la humedad, como el MDF con foil PVC.
 ```
@@ -111,7 +111,7 @@ Para el baño recomendamos materiales que aguantan la humedad, como el MDF con f
 ¿Me ayudas con esto?
 1. ¿Cuántas puertas son y para qué? (recámaras, baño, closet, cocina)
 2. Medidas aproximadas de alto y ancho de cada una.
-3. El acabado que te gusta: madera, melamina, laminado, chapa de madera o MDF con foil PVC. Si tienes una foto de referencia, mándamela.
+3. El acabado que te gusta: melamina, laminado, chapa de madera o MDF con foil PVC. Si tienes una foto de referencia, mándamela.
 4. ¿Es casa particular o un desarrollo con varias casas?
 ```
 
