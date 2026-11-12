@@ -39,7 +39,7 @@ const ld: object[] = [];
 const limpio = (t: string) => t.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').replace(/\s+([.,;:])/g, '$1').trim();
 const faq = (p.ruta === '/corporate/preguntas-frecuentes/'
   ? [...html.matchAll(/<div class="list-group-item[^"]*">\s*<a[^>]*>([\s\S]*?)<\/a>\s*<div class="panel[^"]*">\s*<div class="inner">([\s\S]*?)<\/div>/g)].map((m) => [m[1], m[2]])
-  : [...html.matchAll(/<h3>\s*(¿[^<]+\?)\s*<\/h3>\s*(?:<p>([\s\S]*?)<\/p>|<div>([\s\S]*?)<\/div>)/g)].map((m) => [m[1], m[2] ?? m[3]])
+  : [...html.matchAll(/<h3>\s*([^<]+\?)\s*<\/h3>\s*(?:<p>([\s\S]*?)<\/p>|<div>([\s\S]*?)<\/div>)/g)].map((m) => [m[1], m[2] ?? m[3]])
 ).map((par) => par.map(limpio) as [string, string]).filter(([, r]) => r);
 if (faq.length >= (p.ruta === '/corporate/preguntas-frecuentes/' ? 1 : 2)) ld.push(preguntasLd(p.ruta, faq));
 // Los artículos del blog llevan su fecha (sale de la ruta); el mapa del sitio la usa como lastmod.
