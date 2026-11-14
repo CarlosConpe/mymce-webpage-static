@@ -630,3 +630,8 @@ footer p.pie-titulo.text-color { color: #2f4a5a; opacity: 1; }
 /* El flotante se esconde mientras se ve el botón de WhatsApp de la cabecera (src/scripts/sitio.js) */
 .wa-float { transition: opacity .2s, transform .2s, visibility .2s; }
 .wa-float.wa-float--oculto { opacity: 0; visibility: hidden; transform: scale(.8); pointer-events: none; }
+
+/* Pie de foto en las galerías de obras. */
+.foto-obra { margin: 0; }
+.foto-obra img { width: 100%; height: auto; display: block; }
+.foto-obra figcaption { font-size: 14px; line-height: 1.35; color: #555; padding: 6px 2px 0; }
