@@ -6,6 +6,8 @@ import paginas from '../data/paginas.json';
 import { D, preguntasLd, videosLd, videosDePagina, SERVICIOS, GARANTIA, CREDITO, MARCA } from '../data/sitio';
 import fechas from '../data/fechas.json';
 import og from '../data/og.json';
+import { OBRAS, FRACCS, obraDe, hermanas } from '../data/obras';
+import { WA } from '../data/sitio';
 import { conVariantes, conPosterDiferido, conPortadaImg } from '../data/imagenes';
 import { conIconos } from '../data/iconos';
 import { conPorQue } from '../data/porque';
@@ -22,12 +24,26 @@ const html = contenido[`../contenido/${p.archivo}`];
 // Migas para los datos estructurados: cada tramo de la ruta que exista como página.
 const existe = new Set(paginas.map((x) => x.ruta));
 const tramos = p.ruta.split('/').filter(Boolean);
-const migas: [string, string | null][] = [[p.lang === 'en' ? 'Home' : 'Inicio', p.lang === 'en' ? '/en/' : '/']];
+let migas: [string, string | null][] = [[p.lang === 'en' ? 'Home' : 'Inicio', p.lang === 'en' ? '/en/' : '/']];
 tramos.forEach((_, i) => {
   const u = '/' + tramos.slice(0, i + 1).join('/') + '/';
   if (u === p.ruta) migas.push([p.title.split('|')[0].trim(), null]);
   else if (existe.has(u)) migas.push([NOMBRES[tramos[i]] ?? tramos[i], u]);
 });
+
+// Obras y fraccionamientos: las migas siguen el camino de una familia (zona > fraccionamiento > obra), visibles y en el marcado.
+const obra = obraDe(p.ruta);
+const fraccPagina = Object.values(FRACCS).find((f) => f.url === p.ruta);
+if (obra) {
+  const F = FRACCS[obra.fracc];
+  migas = [['Inicio', '/'], ...(F.zona ? [[F.zona.nombre, F.zona.url] as [string, string]] : []), [F.nombre, F.url], [obra.nombre, null]];
+} else if (fraccPagina) {
+  migas = [['Inicio', '/'], ...(fraccPagina.zona ? [[fraccPagina.zona.nombre, fraccPagina.zona.url] as [string, string]] : []), [fraccPagina.nombre, null]];
+}
+const esc = (s: string) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;');
+const navMigas = obra || fraccPagina
+  ? `<nav class="migas" aria-label="Estás en"><ol>${migas.map(([n, u]) => (u ? `<li><a href="${u}">${esc(n)}</a></li>` : `<li aria-current="page">${esc(n)}</li>`)).join('')}</ol></nav>`
+  : '';
 
 // La foto grande de arriba es lo primero que se ve: se pide desde el encabezado para que no llegue tarde.
 const PORTADA_PORTAFOLIO = '/assets/storage/2023/08/cocina-17-5-1920x1080.webp';
@@ -80,7 +96,42 @@ const ZONA: Record<string, object[]> = {
 const zonaGeneral = [ciudad('San Luis Potosí'), ciudad('Soledad de Graciano Sánchez'), ciudad('Villa de Pozos')];
 // Si la página habla de la garantía, la oferta del servicio la incluye.
 if ((p.ruta.startsWith('/servicios/') && p.ruta !== '/servicios/' || /^\/en\/.+/.test(p.ruta)) && h1) ld.push({ '@type': 'Service', '@id': `${D}${p.ruta}#servicio`, name: h1, ...(SERVICIOS[p.ruta] && { serviceType: SERVICIOS[p.ruta] }), description: p.desc, provider: negocio, brand: { '@id': MARCA['@id'] }, areaServed: ZONA[p.ruta] ?? zonaGeneral, url: `${D}${p.ruta}`, ...(html.includes('/corporate/garantia/') && { offers: { '@type': 'Offer', warranty: { '@id': GARANTIA['@id'] }, areaServed: ZONA[p.ruta] ?? zonaGeneral } }) });
+// Lo que se agrega al contenido de la página (no cambia los datos estructurados de arriba).
+let cuerpo = html;
+// Las páginas de encabezado clásico ya traen migas escritas (Inicio / Portafolio / Modelo): se cambian por las de zona.
+if (navMigas) cuerpo = /<ol class="breadcrumb b">[\s\S]*?<\/ol>/.test(cuerpo)
+  ? cuerpo.replace(/<ol class="breadcrumb b">[\s\S]*?<\/ol>/, navMigas)
+  : cuerpo.replace(/(<div class="title-base">\s*)/, `$1${navMigas}`);
+// Artículos del blog: firma y fechas visibles, las mismas del marcado.
+const largo = (d: string) => new Date(`${d}T12:00:00`).toLocaleDateString('es-MX', { day: 'numeric', month: 'long', year: 'numeric' });
+if (fecha) cuerpo = cuerpo.replace(/(<div class="title-base">[\s\S]*?<\/h1>(?:\s*<p>[\s\S]*?<\/p>)?)/, `$1<p class="firma-articulo">Por el <a href="/corporate/acerca-de-mymce-carpinteria-profesional-en-san-luis-potosi/">Equipo de MYMCE</a> · Publicado el <time datetime="${fecha}">${largo(fecha)}</time>${fechaMod !== fecha ? ` · Actualizado el <time datetime="${fechaMod}">${largo(fechaMod)}</time>` : ''}</p>`);
+// Fichas de obra: la otra obra de la misma casa y vecinas del mismo fraccionamiento.
+if (obra) {
+  const { mismaCasa, vecinas } = hermanas(obra);
+  const F = FRACCS[obra.fracc];
+  const li = (x: (typeof OBRAS)[number]) => `<li><a href="${x.ruta}">${esc(x.nombre)} en ${F.nombre}</a></li>`;
+  cuerpo += `<div class="section-item section-empty obras-hermanas"><div class="content container"><div class="row"><div class="col-md-12">`
+    + (mismaCasa.length ? `<h2>En esta misma casa</h2><ul>${mismaCasa.map(li).join('')}</ul>` : '')
+    + `<h2>Más obras en ${F.nombre}</h2><ul>${vecinas.map(li).join('')}</ul>`
+    + `<p>Todas las obras de este fraccionamiento están en <a href="${F.url}">cocinas y closets en ${F.nombre}</a>.</p></div></div></div></div>`;
+}
+// Portafolio: "Encuentra tu casa" por fraccionamiento y modelo. Sin JavaScript se queda oculto y se ven todas las obras.
+if (p.ruta === '/portafolio/') {
+  cuerpo = cuerpo.replace(/<div class="col-md-4 portfolio-item ([^"]*)"([^>]*)>(\s*<div class="clean-card">\s*<a class="img-wrap" href="([^"]+)")/g, (m, cls, resto, dentro, href) => {
+    const o = obraDe(href);
+    return o ? `<div class="col-md-4 portfolio-item ${cls}" data-fracc="${o.fracc}" data-modelo="${esc(o.modelo)}"${resto}>${dentro}` : m;
+  });
+  const modelos = [...new Set(OBRAS.map((o) => o.modelo))].sort((a, b) => a.localeCompare(b, 'es'));
+  const opciones = (pares: [string, string][]) => pares.map(([v, n]) => `<option value="${esc(v)}">${esc(n)}</option>`).join('');
+  const form = `<form class="encuentra-casa" hidden data-wa="${WA.href}" data-fraccs='${esc(JSON.stringify(Object.fromEntries(Object.entries(FRACCS).map(([k, f]) => [k, { nombre: f.nombre, url: f.url }]))))}'>`
+    + `<h3>Encuentra tu casa</h3><div class="encuentra-campos">`
+    + `<label>Fraccionamiento <select name="fracc"><option value="">Todos</option>${opciones(Object.entries(FRACCS).map(([k, f]) => [k, f.nombre]))}</select></label>`
+    + `<label>Modelo de casa <select name="modelo"><option value="">Todos</option>${opciones(modelos.map((m) => [m, m]))}</select></label></div>`
+    + `<p class="encuentra-total" aria-live="polite"></p>`
+    + `<p class="encuentra-sin" hidden>Todavía no tenemos fotos de esa casa en el portafolio, pero sí la podemos hacer. <a class="btn btn-default" target="_blank" rel="noopener" href="${WA.href}">Escríbenos por WhatsApp</a></p></form>`;
+  cuerpo = cuerpo.replace(/(<div aria-label="Filtros" class="btn-group" role="group">[\s\S]*?<\/div>)/, `$1${form}`);
+}
 ---
 <Base title={p.title} desc={p.desc} ruta={p.ruta} img={p.img || undefined} lang={p.lang === 'en' ? 'en' : 'es-MX'} alternos={p.alternos} wa={p.wa} waEtiqueta={p.waEtiqueta} migasLd={migas} ld={ld} carrusel={p.carrusel} videoFix={p.videoFix} clasica={p.clasica} preload={preload} preloadMovil={preloadMovil} videos={videosDePagina(html, p.ruta)}>
-    <Fragment set:html={conIconos(conPosterDiferido(conVariantes(conPortadaImg(conPorQue(html, p.ruta), h1 ?? p.title.split('|')[0].trim()))))} />
+    <Fragment set:html={conIconos(conPosterDiferido(conVariantes(conPortadaImg(conPorQue(cuerpo, p.ruta), h1 ?? p.title.split('|')[0].trim()))))} />
 </Base>

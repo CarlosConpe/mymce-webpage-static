@@ -251,14 +251,46 @@ $$('a.protected-email[data-u][data-d]').forEach((a) => {
     a.textContent = correo;
 });
 
-/* Filtros del portafolio */
+/* Filtros del portafolio: tipo (botones) y "Encuentra tu casa" (fraccionamiento y modelo). Sin JS se ven todas. */
 const filtros = $$('[data-filtro]');
+const encuentra = $('.encuentra-casa');
+let tipo = 'all';
+const filtrar = () => {
+    const fr = encuentra?.elements.fracc.value ?? '';
+    const mo = encuentra?.elements.modelo.value ?? '';
+    let n = 0;
+    $$('.portfolio-item').forEach((item) => {
+        const ve = (tipo === 'all' || item.classList.contains(`cat-${tipo}`)) && (!fr || item.dataset.fracc === fr) && (!mo || item.dataset.modelo === mo);
+        item.hidden = !ve;
+        if (ve) n++;
+    });
+    if (!encuentra) return;
+    const fraccs = JSON.parse(encuentra.dataset.fraccs);
+    const sin = $('.encuentra-sin', encuentra);
+    const total = $('.encuentra-total', encuentra);
+    const f = fraccs[fr];
+    total.textContent = fr || mo ? (n === 1 ? '1 obra coincide. ' : `${n} obras coinciden. `) : '';
+    if (f) {
+        const a = document.createElement('a');
+        a.href = f.url;
+        a.textContent = `Ver la página de ${f.nombre}`;
+        total.append(a);
+    }
+    sin.hidden = n > 0;
+    // El mensaje lleva lo que la familia eligió, para no preguntarle de nuevo.
+    const casa = [mo && `una casa modelo ${mo}`, f && `en ${f.nombre}`].filter(Boolean).join(' ');
+    $('a', sin).href = `${encuentra.dataset.wa}?text=${encodeURIComponent(`Hola, tengo ${casa || 'una casa'}. Quiero cotizar.`)}`;
+};
 filtros.forEach((b) => b.addEventListener('click', () => {
     filtros.forEach((x) => x.classList.toggle('active', x === b));
-    $$('.portfolio-item').forEach((item) => {
-        item.hidden = b.dataset.filtro !== 'all' && !item.classList.contains(`cat-${b.dataset.filtro}`);
-    });
+    tipo = b.dataset.filtro;
+    filtrar();
 }));
+if (encuentra) {
+    encuentra.hidden = false;
+    encuentra.addEventListener('change', filtrar);
+    encuentra.addEventListener('submit', (e) => e.preventDefault());
+}
 
 /* Lo que se carga al estar a la vista: mapa y videos */
 const alVer = (el, si, no) => new IntersectionObserver((es) => es.forEach((e) => (e.isIntersecting ? si(e) : no?.(e))), { rootMargin: '200px' }).observe(el);
