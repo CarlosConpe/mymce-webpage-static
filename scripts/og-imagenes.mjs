@@ -4,13 +4,13 @@
 // Las páginas que comparten fuente comparten archivo. Resultado: public/assets/og/*.jpg y src/data/og.json.
 // Uso: node scripts/og-imagenes.mjs
 import sharp from 'sharp';
-import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'node:fs';
+import { readFileSync, writeFileSync, mkdirSync, existsSync, readdirSync, unlinkSync } from 'node:fs';
 import { basename } from 'node:path';
 
 sharp.cache(false);
 const paginas = JSON.parse(readFileSync('src/data/paginas.json', 'utf8'));
 const POR_DEFECTO = '/assets/storage/2023/08/cocina-17-1-1920x1080.webp';
-const NO_FOTO = /logo|169471652699961817|removebg|Diseno-sin-titulo2\.webp|laminado-e/;
+const NO_FOTO = /logo|removebg|Diseno-sin-titulo2\.webp|laminado-e/;
 mkdirSync('public/assets/og', { recursive: true });
 
 const ancho = async (f) => (existsSync('public' + f) ? (await sharp(readFileSync('public' + f)).metadata()).width : 0);
@@ -32,5 +32,7 @@ for (const p of paginas) {
   }
   og[p.ruta] = destino;
 }
+// Las que ya no usa ninguna página (por ejemplo, tras renombrar su foto) se quitan.
+for (const f of readdirSync('public/assets/og')) if (!hechos.has(`/assets/og/${f}`)) unlinkSync(`public/assets/og/${f}`);
 writeFileSync('src/data/og.json', JSON.stringify(og, null, 1) + '\n');
 console.log(`${Object.keys(og).length} páginas, ${hechos.size} imágenes en public/assets/og`);

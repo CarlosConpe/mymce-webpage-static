@@ -73,7 +73,7 @@ export const NEGOCIO = {
   logo: LOGO,
   brand: { '@id': MARCA['@id'] },
   hasOfferCatalog: { '@id': `${D}/#catalogo` },
-  image: `${D}/assets/storage/2016/12/169471652699961817.webp`,
+  image: `${D}/assets/storage/2016/12/logo-mymce-carpinteria.webp`,
   description: 'Fábrica de carpintería en San Luis Potosí con casi 40 años de oficio: diseña, fabrica e instala cocinas integrales, closets, vestidores, puertas y muebles de baño, y hace maquila CNC de piezas de MDF y melamina, también forradas con foil PVC.',
   knowsAbout: ['Cocinas integrales', 'Closets y vestidores', 'Puertas a la medida','Muebles de baño', 'Termoformado de MDF con foil PVC', 'Maquila CNC de piezas de MDF y melamina'],
   foundingDate: '1987',

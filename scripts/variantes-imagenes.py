@@ -10,7 +10,7 @@ RAIZ = Path(__file__).resolve().parent.parent
 PUBLICO = RAIZ / 'public'
 ANCHOS = (400, 600)      # deben coincidir con ANCHOS en src/data/imagenes.ts
 MINIMO = 700             # solo fotos más anchas que esto
-LOGO = '/assets/storage/2016/12/169471652699961817.webp'
+LOGO = '/assets/storage/2016/12/logo-mymce-carpinteria.webp'
 ANCHOS_LOGO = (280,)  # a 560 casi no se ahorra; deben coincidir con el srcset del logo en Cabecera.astro y Pie.astro
 
 fotos = set()
