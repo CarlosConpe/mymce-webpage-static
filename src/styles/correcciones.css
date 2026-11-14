@@ -671,3 +671,11 @@ footer p.pie-titulo.text-color { color: #2f4a5a; opacity: 1; }
 .encuentra-sin { margin: 10px 0 0; }
 .encuentra-sin[hidden] { display: none; }
 .encuentra-sin .btn { margin-top: 8px; }
+
+/* Menú de fraccionamientos: cada zona con sus fraccionamientos debajo. */
+#main-menu .menu-zonas .menu-zona > a { font-weight: 600; }
+#main-menu .menu-zonas .menu-zona ul { list-style: none; padding: 0 0 4px 14px; margin: 0; }
+#main-menu .menu-zonas .menu-zona ul a { display: block; padding: 6px 20px; min-height: 24px; color: inherit; }
+#main-menu .menu-zonas .menu-zona ul a:hover, #main-menu .menu-zonas .menu-zona ul a:focus-visible { background: #f2f2f2; }
+#main-menu .menu-empresas > a { opacity: .85; }
+@media (min-width: 992px) and (max-width: 1199px) { #main-menu > li > a { padding-left: 10px; padding-right: 10px; } }

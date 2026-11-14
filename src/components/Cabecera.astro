@@ -1,14 +1,36 @@
 ---
-import fichas from '../data/fichas.json';
 import { TEL, CORREO, DIRECCION, HORARIO_CORTO, REDES } from '../data/sitio';
 
-// El menú del portafolio sale de las fichas: por fraccionamiento, en el orden de siempre.
-const FRACCIONAMIENTOS = [['catara', 'Catara'], ['sirenia', 'Sirenia'], ['valle-real', 'Valle Real'], ['imperia', 'Imperia']];
-const menuDe = (tipo: string) => FRACCIONAMIENTOS.map(([id, nombre]) => ({
-  nombre,
-  modelos: fichas.filter((f) => f.frac === id && f.tipo === tipo).sort((a, b) => b.modelo.localeCompare(a.modelo, 'es')),
-}));
-const PESTANAS = [['Cocinas', menuDe('cocina')], ['Closets y Vestidores', menuDe('closet')]] as const;
+// Menú para familias: servicios, fraccionamientos por zona y portafolio (con "Encuentra tu casa").
+// Las 83 obras ya no van en el menú: cada una está enlazada desde su fraccionamiento y desde el portafolio.
+// Las páginas para empresas siguen en el sitio, agrupadas en "Empresas".
+const SERVICIOS = [
+  ['/servicios/cocinas/', 'Cocinas integrales'],
+  ['/servicios/cocinas-integrales-modernas/', 'Estilos de cocina moderna'],
+  ['/servicios/closets-vestidores/', 'Closets'],
+  ['/servicios/vestidores/', 'Vestidores'],
+  ['/servicios/closets-de-melamina/', 'Closets de melamina'],
+  ['/servicios/diseno-y-fabricacion-de-puertas/', 'Puertas'],
+  ['/servicios/diseno-y-fabricacion-de-muebles-de-bano/', 'Muebles de baño'],
+  ['/servicios/diseno-y-fabricacion-de-escritorios/', 'Escritorios'],
+  ['/servicios/muebles-a-medida/', 'Muebles a la medida'],
+  ['/soluciones/carpinteria-para-particulares/', 'Carpintería para tu casa'],
+  ['/equipamiento/', 'Electrodomésticos'],
+];
+const ZONAS: [string, string, [string, string][]][] = [
+  ['/servicios/cocinas-y-closets-villa-de-pozos/', 'Villa de Pozos', [['/servicios/cocinas-y-closets-catara/', 'Catara'], ['/servicios/cocinas-y-closets-sirenia/', 'Sirenia']]],
+  ['/servicios/cocinas-y-closets-soledad-de-graciano-sanchez/', 'Soledad de Graciano Sánchez', [['/servicios/cocinas-y-closets-valle-real/', 'Valle Real']]],
+  ['/servicios/cocinas-y-closets-imperia/', 'San Luis Potosí: Imperia', []],
+];
+const EMPRESAS = [
+  ['/soluciones/carpinteria-para-constructoras/', 'Constructoras'],
+  ['/soluciones/carpinteria-para-arquitectos/', 'Arquitectos'],
+  ['/soluciones/carpinteria-para-cocinistas/', 'Cocinistas'],
+  ['/servicios/maquila-de-partes/', 'Maquila de partes'],
+  ['/servicios/puertas-y-piezas-recubiertas-con-foil-pvc/', 'Puertas y piezas con foil PVC'],
+  ['/servicios/puertas-frentes-de-cajon-en-mdf-forrados-con-foil-pvc/', 'Frentes de cajón con foil PVC'],
+  ['/servicios/pvc-foil-covered-cabinet-doors-drawer-fronts/', 'PVC foil cabinet doors (English)', 'en'],
+];
 ---
 <header class="scroll-change fixed-top">
     <div class="navbar navbar-default mega-menu-fullwidth navbar-fixed-top" role="navigation">
@@ -45,63 +67,39 @@ const PESTANAS = [['Cocinas', menuDe('cocina')], ['Closets y Vestidores', menuDe
                 </div>
                 <div class="collapse navbar-collapse" id="menu-principal">
                     <ul class="nav navbar-nav" id="main-menu">
-                        <li><a href="/">Inicio</a></li>
+                        <li class="dropdown multi-level">
+                            <a class="dropdown-toggle" href="/servicios/">Servicios <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                {SERVICIOS.map(([u, n]) => <li><a href={u}>{n}</a></li>)}
+                            </ul>
+                        </li>
+                        <li class="dropdown multi-level">
+                            <a class="dropdown-toggle" href="/servicios/cocinas-y-closets-villa-de-pozos/">Fraccionamientos <span class="caret"></span></a>
+                            <ul class="dropdown-menu menu-zonas">
+                                {ZONAS.map(([u, n, fraccs]) => (
+                                    <li class="menu-zona"><a href={u}>{n}</a>
+                                        {fraccs.length > 0 && <ul>{fraccs.map(([fu, fn]) => <li><a href={fu}>{fn}</a></li>)}</ul>}
+                                    </li>
+                                ))}
+                            </ul>
+                        </li>
+                        <li><a href="/portafolio/">Portafolio</a></li>
                         <li class="dropdown multi-level">
                             <a class="dropdown-toggle" href="/corporate/acerca-de-mymce-carpinteria-profesional-en-san-luis-potosi/">Nosotros <span class="caret"></span></a>
                             <ul class="dropdown-menu">
                                 <li><a href="/corporate/acerca-de-mymce-carpinteria-profesional-en-san-luis-potosi/">Acerca de MYMCE</a></li>
-                                <li><a href="/corporate/preguntas-frecuentes/">FAQ (Preguntas Frecuentes)</a></li>
+                                <li><a href="/corporate/garantia/">Garantía</a></li>
+                                <li><a href="/corporate/preguntas-frecuentes/">Preguntas frecuentes</a></li>
+                                <li><a href="/corporate/contact/">Contacto</a></li>
                             </ul>
-                        </li>
-                        <li class="dropdown multi-level">
-                            <a class="dropdown-toggle" href="/soluciones/carpinteria-para-particulares/">Carpintería <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="/soluciones/carpinteria-para-constructoras/">Carpintería para Constructoras</a></li>
-                                <li><a href="/soluciones/carpinteria-para-arquitectos/">Carpintería para Arquitectos</a></li>
-                                <li><a href="/soluciones/carpinteria-para-cocinistas/">Carpintería para Cocinistas</a></li>
-                                <li><a href="/soluciones/carpinteria-para-particulares/">Carpintería para Clientes Finales</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown multi-level">
-                            <a class="dropdown-toggle" href="/servicios/">Servicios <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="/servicios/cocinas/">Diseño y Fabricación de Cocinas Integrales</a></li>
-                                <li><a href="/servicios/closets-vestidores/">Diseño y Fabricación de Closets y Vestidores</a></li>
-                                <li><a href="/servicios/vestidores/">Vestidores a la Medida</a></li>
-                                <li class="dropdown multi-level dropdown-submenu">
-                                    <a class="dropdown-toggle" href="/servicios/diseno-y-fabricacion-de-puertas/">Diseño y Fabricación de Puertas</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="/servicios/puertas-y-piezas-recubiertas-con-foil-pvc/">Puertas y Piezas Recubiertas con Foil PVC</a></li>
-                                        <li><a href="/servicios/puertas-frentes-de-cajon-en-mdf-forrados-con-foil-pvc/">Puertas de Gabinete y Frentes de Cajón Forrados con Foil PVC</a></li>
-                                        <li><a href="/servicios/pvc-foil-covered-cabinet-doors-drawer-fronts/" hreflang="en">PVC Foil-Covered Cabinet Doors &amp; Drawer Fronts (English)</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="/servicios/diseno-y-fabricacion-de-muebles-de-bano/">Diseño y Fabricación de Muebles de Baño</a></li>
-                                <li><a href="/servicios/diseno-y-fabricacion-de-escritorios/">Diseño y Fabricación de Escritorios</a></li>
-                                <li><a href="/equipamiento/">Venta de Electrodomésticos</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown multi-level mega-tabs">
-                            <a class="dropdown-toggle" href="/portafolio/">Portafolio <span class="caret"></span></a>
-                            <div class="mega-menu dropdown-menu multi-level row">
-                                <div class="tab-box">
-                                    <ul class="nav nav-tabs" role="tablist">
-                                        {PESTANAS.map(([nombre], i) => <li class:list={['menu-obj', { active: i === 0 }]}><a href={`#menu-portafolio-${i}`} role="tab" aria-selected={i === 0 ? 'true' : 'false'} data-pestana={i}>{nombre}</a></li>)}
-                                    </ul>
-                                    {PESTANAS.map(([nombre, grupos], i) => (
-                                        <div class:list={['panel', { active: i === 0 }]} id={`menu-portafolio-${i}`} data-panel={i} role="tabpanel" aria-label={nombre}>
-                                            {grupos.map((g) => (
-                                                <div class="col">
-                                                    <h5>{g.nombre}</h5>
-                                                    <ul class="fa-ul text-s">{g.modelos.map((f) => <li><a href={`/portafolio/${f.slug}/`}>{i === 0 ? "Cocina" : "Closet"} modelo {f.modelo}</a></li>)}</ul>
-                                                </div>
-                                            ))}
-                                        </div>
-                                    ))}
-                                </div>
-                            </div>
                         </li>
                         <li><a href="/corporate/blog/">Blog</a></li>
+                        <li class="dropdown multi-level menu-empresas">
+                            <a class="dropdown-toggle" href="/soluciones/carpinteria-para-constructoras/">Empresas <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                {EMPRESAS.map(([u, n, idioma]) => <li><a href={u} hreflang={idioma}>{n}</a></li>)}
+                            </ul>
+                        </li>
                     </ul>
                     <div class="nav navbar-nav navbar-right">
                         <div class="custom-area">

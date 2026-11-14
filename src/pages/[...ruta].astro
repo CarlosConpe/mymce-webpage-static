@@ -74,7 +74,7 @@ if (p.ruta === '/corporate/blog/') ld.push({ '@type': 'Blog', '@id': BLOG, name:
 // El portafolio es la lista de las obras; cada obra marca sus fotos con el crédito de MYMCE.
 if (p.ruta === '/portafolio/') ld.push({ '@type': 'ItemList', '@id': `${D}/portafolio/#obras`, name: 'Obras de MYMCE', itemListElement: paginas.filter((x) => x.ruta.startsWith('/portafolio/') && x.ruta !== '/portafolio/').map((x, i) => ({ '@type': 'ListItem', position: i + 1, url: `${D}${x.ruta}`, name: x.title.split('|')[0].trim() })) });
 const esObra = p.ruta.startsWith('/portafolio/') && p.ruta !== '/portafolio/';
-if (esObra) [...html.matchAll(/<img[^>]*>/g)].forEach((m, i) => {
+if (esObra) [...html.matchAll(/<img\b[^>]*>/g)].forEach((m, i) => {
   const src = m[0].match(/\ssrc="(\/assets\/storage\/[^"]+)"/)?.[1];
   if (src) ld.push({ '@type': 'ImageObject', '@id': `${D}${p.ruta}#foto-${i + 1}`, contentUrl: D + src, caption: m[0].match(/\salt="([^"]*)"/)?.[1], ...CREDITO });
 });
