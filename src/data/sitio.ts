@@ -25,6 +25,44 @@ export const CONVERSION: Record<string, string> = {
   '/soluciones/carpinteria-para-particulares/': `${ADS}/RsXcCPz_nN0YELL_zJIq`,
 };
 
+// Nodos con @id fijo: cada página los menciona por su @id y el nodo completo vive en un solo lugar.
+const LOGO = { '@type': 'ImageObject', '@id': `${D}/#logo`, url: `${D}/assets/storage/2016/12/logo-2.webp`, contentUrl: `${D}/assets/storage/2016/12/logo-2.webp`, caption: 'MYMCE' };
+export const MARCA = { '@type': 'Brand', '@id': `${D}/#marca-mymce`, name: 'MYMCE', logo: { '@id': `${D}/#logo` } };
+export const PROMO = `${D}/#video-promocional`;
+export const GARANTIA = { '@type': 'WarrantyPromise', '@id': `${D}/corporate/garantia/#garantia`, durationOfWarranty: { '@type': 'QuantitativeValue', value: 12, unitCode: 'MON' }, url: `${D}/corporate/garantia/` };
+// Las fotos son de obras que instaló MYMCE.
+export const CREDITO = { creator: { '@id': `${D}/#localbusiness` }, creditText: 'MYMCE', copyrightNotice: '© Cocinas, Puertas y Closets S.A. de C.V.', copyrightHolder: { '@id': `${D}/#localbusiness` } };
+
+// Qué servicio describe cada página (serviceType) y cuáles entran al catálogo del negocio.
+export const SERVICIOS: Record<string, string> = {
+  '/servicios/cocinas/': 'Cocinas integrales a la medida',
+  '/servicios/cocinas-integrales-modernas/': 'Cocinas integrales modernas',
+  '/servicios/closets-vestidores/': 'Closets a la medida',
+  '/servicios/vestidores/': 'Vestidores a la medida',
+  '/servicios/closets-de-melamina/': 'Closets de melamina',
+  '/servicios/diseno-y-fabricacion-de-puertas/': 'Puertas de interior a la medida',
+  '/servicios/diseno-y-fabricacion-de-muebles-de-bano/': 'Muebles de baño a la medida',
+  '/servicios/diseno-y-fabricacion-de-escritorios/': 'Escritorios a la medida',
+  '/servicios/muebles-a-medida/': 'Muebles a la medida',
+  '/servicios/maquila-de-partes/': 'Maquila CNC de piezas de MDF y melamina',
+  '/servicios/puertas-y-piezas-recubiertas-con-foil-pvc/': 'Puertas y piezas de MDF con foil PVC',
+  '/servicios/puertas-frentes-de-cajon-en-mdf-forrados-con-foil-pvc/': 'Puertas y frentes de cajón con foil PVC',
+  '/servicios/cocinas-y-closets-villa-de-pozos/': 'Cocinas integrales y closets a la medida',
+  '/servicios/cocinas-y-closets-soledad-de-graciano-sanchez/': 'Cocinas integrales y closets a la medida',
+  '/servicios/cocinas-y-closets-catara/': 'Cocinas integrales y closets a la medida',
+  '/servicios/cocinas-y-closets-sirenia/': 'Cocinas integrales y closets a la medida',
+  '/servicios/cocinas-y-closets-valle-real/': 'Cocinas integrales y closets a la medida',
+  '/servicios/cocinas-y-closets-imperia/': 'Cocinas integrales y closets a la medida',
+};
+const EN_CATALOGO = ['/servicios/cocinas/', '/servicios/closets-vestidores/', '/servicios/vestidores/', '/servicios/diseno-y-fabricacion-de-puertas/', '/servicios/diseno-y-fabricacion-de-muebles-de-bano/', '/servicios/muebles-a-medida/', '/servicios/maquila-de-partes/'];
+// Va en la portada; las demás páginas lo mencionan por su @id desde el negocio.
+export const CATALOGO = {
+  '@type': 'OfferCatalog',
+  '@id': `${D}/#catalogo`,
+  name: 'Servicios de MYMCE',
+  itemListElement: EN_CATALOGO.map((u) => ({ '@type': 'Offer', itemOffered: { '@type': 'Service', '@id': `${D}${u}#servicio`, name: SERVICIOS[u], url: `${D}${u}` }, warranty: { '@id': GARANTIA['@id'] } })),
+};
+
 export const NEGOCIO = {
   '@type': ['LocalBusiness', 'HomeAndConstructionBusiness'],
   '@id': `${D}/#localbusiness`,
@@ -32,7 +70,9 @@ export const NEGOCIO = {
   legalName: 'Cocinas, Puertas y Closets S.A. de C.V.',
   alternateName: ['MYMCE Carpintería', 'Grupo MYMCE'],
   url: `${D}/`,
-  logo: `${D}/assets/storage/2016/12/logo-2.webp`,
+  logo: LOGO,
+  brand: { '@id': MARCA['@id'] },
+  hasOfferCatalog: { '@id': `${D}/#catalogo` },
   image: `${D}/assets/storage/2016/12/169471652699961817.webp`,
   description: 'Fábrica de carpintería en San Luis Potosí con casi 40 años de oficio: diseña, fabrica e instala cocinas integrales, closets, vestidores, puertas y muebles de baño, y hace maquila CNC de piezas de MDF y melamina, también forradas con foil PVC.',
   knowsAbout: ['Cocinas integrales', 'Closets y vestidores', 'Puertas a la medida','Muebles de baño', 'Termoformado de MDF con foil PVC', 'Maquila CNC de piezas de MDF y melamina'],
@@ -42,7 +82,8 @@ export const NEGOCIO = {
   telephone: TEL.intl,
   openingHoursSpecification: { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'], opens: empresa.abre, closes: empresa.cierra },
   sameAs: [empresa.facebook, empresa.instagram, empresa.youtube, empresa.linkedin],
-  hasMap: MAPA,
+  hasMap: 'https://maps.google.com/?cid=7983712911562961443',
+  geo: { '@type': 'GeoCoordinates', latitude: 22.1075157, longitude: -100.9121575 },
   address: {
     '@type': 'PostalAddress',
     streetAddress: DIRECCION.calle,
@@ -63,7 +104,7 @@ export function ruta(items: [string, string | null][], path: string) {
 }
 
 export function grafo(...nodos: object[]) {
-  return { '@context': 'https://schema.org', '@graph': [NEGOCIO, ...nodos] };
+  return { '@context': 'https://schema.org', '@graph': [NEGOCIO, LOGO, MARCA, ...nodos] };
 }
 
 // Videos propios con datos para Google: el promocional donde se puede reproducir y el de cada obra del portafolio.
@@ -74,11 +115,11 @@ export function videosLd(html: string, ruta: string, titulo: string, desc: strin
     const src = (dentro.match(/<source[^>]*src="([^"]+)"/) ?? attrs.match(/\ssrc="([^"]+)"/))?.[1] ?? '';
     const dato = datos[src];
     const promo = src.endsWith('mymce-promocional.mp4');
-    if (!dato || (promo ? !/\scontrols/.test(attrs) : !ruta.startsWith('/portafolio/'))) return [];
+    if (!dato || (promo ? !/\scontrols/.test(attrs) || ruta !== '/' : !ruta.startsWith('/portafolio/'))) return [];
     const poster = attrs.match(/poster="([^"]+)"/)?.[1];
     return [{
       '@type': 'VideoObject',
-      '@id': `${D}${ruta}#video-${i + 1}`,
+      '@id': promo ? PROMO : `${D}${ruta}#video-${i + 1}`,
       name: promo ? 'MYMCE: cocinas, closets y puertas a la medida en San Luis Potosí' : `Video de la obra: ${titulo}`,
       description: promo ? 'Diseñamos tu proyecto, lo fabricamos en nuestra planta de San Luis Potosí con maquinaria CNC y lo instalamos en tu casa. Cocinas, closets y puertas a la medida.' : desc,
       ...(poster && { thumbnailUrl: D + poster }),
@@ -87,7 +128,19 @@ export function videosLd(html: string, ruta: string, titulo: string, desc: strin
       duration: dato.duracion,
       inLanguage: 'es-MX',
       publisher: { '@id': `${D}/#localbusiness` },
+      ...(promo && { creator: { '@id': `${D}/#localbusiness` } }),
     }];
+  });
+}
+
+// @id de los videos que la página muestra con controles: el promocional siempre con el mismo.
+export function videosDePagina(html: string, ruta: string) {
+  const datos = videos as Record<string, unknown>;
+  return [...html.matchAll(/<video([^>]*)>([\s\S]*?)<\/video>/g)].flatMap(([, attrs, dentro], i) => {
+    const src = (dentro.match(/<source[^>]*src="([^"]+)"/) ?? attrs.match(/\ssrc="([^"]+)"/))?.[1] ?? '';
+    if (!datos[src]) return [];
+    if (src.endsWith('mymce-promocional.mp4')) return /\scontrols/.test(attrs) ? [PROMO] : [];
+    return ruta.startsWith('/portafolio/') ? [`${D}${ruta}#video-${i + 1}`] : [];
   });
 }
 

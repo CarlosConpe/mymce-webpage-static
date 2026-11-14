@@ -3,6 +3,7 @@ import { readFileSync, writeFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 
 const site = 'https://www.mymce.com.mx';
+const fechas = JSON.parse(readFileSync(new URL('./src/data/fechas.json', import.meta.url), 'utf8'));
 
 // Mapa del sitio en /sitemap_mx.xml, el nombre ya registrado en robots.txt y Search Console.
 const mapaDelSitio = {
@@ -22,7 +23,8 @@ const mapaDelSitio = {
         .map((p) => (p.endsWith('/') ? p : p + '/'))
         .sort()
         .map((p) => {
-          const fecha = (leer(p).match(/"datePublished":"(\d{4}-\d{2}-\d{2})/) || [])[1];
+          // Fecha del último commit que cambió el contenido de la página (npm run fechas); si falta, la de publicación del artículo.
+          const fecha = fechas[p] ?? (leer(p).match(/"datePublished":"(\d{4}-\d{2}-\d{2})/) || [])[1];
           return `  <url>\n    <loc>${site}${p}</loc>${fecha ? `\n    <lastmod>${fecha}</lastmod>` : ''}${imagenes(p)}\n  </url>`;
         })
         .join('\n');

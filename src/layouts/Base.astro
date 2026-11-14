@@ -5,7 +5,8 @@ import '../styles/correcciones.css';
 import '../styles/picture.css';
 import Cabecera from '../components/Cabecera.astro';
 import Pie from '../components/Pie.astro';
-import { D, WA, LEAD, CONVERSION, MAPA_EMBED, grafo, ruta as migas } from '../data/sitio';
+import { D, WA, LEAD, CONVERSION, MAPA_EMBED, CREDITO, grafo, ruta as migas } from '../data/sitio';
+import fechas from '../data/fechas.json';
 
 interface Props {
   title: string;
@@ -24,14 +25,24 @@ interface Props {
   clasica?: boolean;
   preload?: string;
   preloadMovil?: string;
+  videos?: string[];
 }
-const { title, desc, ruta, img = '/assets/storage/2016/12/169471652699961817.webp', lang = 'es-MX', noindex = false, alternos = [], wa, waEtiqueta, ld = [], migasLd, carrusel = false, videoFix = false, clasica = false, preload, preloadMovil } = Astro.props;
+const { title, desc, ruta, img = '/assets/storage/2016/12/169471652699961817.webp', lang = 'es-MX', noindex = false, alternos = [], wa, waEtiqueta, ld = [], migasLd, carrusel = false, videoFix = false, clasica = false, preload, preloadMovil, videos = [] } = Astro.props;
 const url = D + ruta;
 const ingles = lang.startsWith('en');
 // Solo el par español-inglés de puertas tiene versiones en otro idioma.
 const idiomas = alternos.some(([h]) => h.startsWith('en')) ? alternos : [];
+// Solo las fotos del portafolio llevan crédito de MYMCE: en otras páginas puede haber fotos de catálogo.
+// Tipo de página para los datos estructurados; la fecha es la del último commit que cambió su contenido (scripts/fechas-git.mjs).
+const tipo = ruta === '/corporate/contact/' ? 'ContactPage'
+  : ruta.startsWith('/corporate/acerca-de-mymce') ? 'AboutPage'
+  : ruta === '/portafolio/' || ruta === '/corporate/blog/' || /^\/servicios\/cocinas-y-closets-/.test(ruta) ? 'CollectionPage'
+  : 'WebPage';
+const modificada = (fechas as Record<string, string>)[ruta];
+const imagen = { '@type': 'ImageObject', '@id': `${url}#imagen-principal`, url: D + img, contentUrl: D + img, ...(ruta.startsWith('/portafolio/') && CREDITO) };
 const datos = grafo(
-  { '@type': 'WebPage', '@id': `${url}#pagina`, url, name: title, description: desc, inLanguage: lang, isPartOf: { '@id': `${D}/#sitio` }, about: { '@id': `${D}/#localbusiness` } },
+  { '@type': tipo, '@id': `${url}#pagina`, url, name: title, description: desc, inLanguage: lang, isPartOf: { '@id': `${D}/#sitio` }, about: { '@id': `${D}/#localbusiness` }, primaryImageOfPage: { '@id': imagen['@id'] }, ...(migasLd && { breadcrumb: { '@id': `${url}#ruta` } }), ...(modificada && { dateModified: modificada }), ...(videos.length && { video: videos.map((v) => ({ '@id': v })) }) },
+  imagen,
   { '@type': 'WebSite', '@id': `${D}/#sitio`, url: `${D}/`, name: 'MYMCE', inLanguage: 'es-MX', publisher: { '@id': `${D}/#localbusiness` } },
   ...(migasLd ? [migas(migasLd, ruta)] : []),
   ...ld,
