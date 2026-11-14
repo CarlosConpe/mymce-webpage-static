@@ -626,3 +626,7 @@ footer p.pie-titulo.text-color { color: #2f4a5a; opacity: 1; }
 /* La lista de fichas mide lo que una página del carrusel: si ella misma recorta, las fichas de la segunda página
    se quedan fuera aunque el carrusel se mueva. Solo el marco (.flex-viewport) debe recortar. */
 .con-carrusel .flexslider.carrusel-listo .slides { overflow: visible; }
+
+/* El flotante se esconde mientras se ve el botón de WhatsApp de la cabecera (src/scripts/sitio.js) */
+.wa-float { transition: opacity .2s, transform .2s, visibility .2s; }
+.wa-float.wa-float--oculto { opacity: 0; visibility: hidden; transform: scale(.8); pointer-events: none; }

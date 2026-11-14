@@ -262,6 +262,13 @@ filtros.forEach((b) => b.addEventListener('click', () => {
 
 /* Lo que se carga al estar a la vista: mapa y videos */
 const alVer = (el, si, no) => new IntersectionObserver((es) => es.forEach((e) => (e.isIntersecting ? si(e) : no?.(e))), { rootMargin: '200px' }).observe(el);
+
+// Mientras el botón de WhatsApp de la cabecera está a la vista, el flotante sobra y en celular tapa los enlaces de abajo.
+{
+    const flotante = $('.wa-float');
+    const deCabecera = $$('a[href*="wa.me"]').find((a) => a !== flotante && !a.closest('footer') && a.getBoundingClientRect().top < innerHeight);
+    if (flotante && deCabecera) new IntersectionObserver(([e]) => flotante.classList.toggle('wa-float--oculto', e.isIntersecting)).observe(deCabecera);
+}
 $$('.mapa-diferido').forEach((caja) => alVer(caja, () => {
     if (caja.querySelector('iframe')) return;
     caja.innerHTML = `<iframe src="${caja.dataset.src}" width="100%" height="450" title="Ubicación de MYMCE en el mapa" loading="lazy" allowfullscreen></iframe>`;
