@@ -27,9 +27,9 @@ header .navbar-main .custom-area .btn:hover { background-color: #2a4555; border-
 .portada-portafolio:after { background: linear-gradient(rgba(0, 0, 0, .55), rgba(0, 0, 0, .55)), #1d1d1d url(/assets/storage/2023/08/cocina-17-5-1920x1080.webp) center / cover no-repeat !important; }
 @media (max-width: 480px) { .portada-portafolio:after { background: linear-gradient(rgba(0, 0, 0, .55), rgba(0, 0, 0, .55)), #1d1d1d url(/assets/storage/2023/08/cocina-17-5-1920x1080-movil.webp) center / cover no-repeat !important; } }
 /* Foil PVC: las puertas de la foto quedaban fuera del cuadro. */
-.header-title[style*="2025/11/x.webp"] { background-position: right center !important; }
+.header-title[data-portada*="2025/11/x.webp"] .portada-foto { object-position: right center; }
 /* Electrodomésticos: el anuncio de fondo trae letras propias del lado derecho; el texto se queda en la mitad oscura. */
-.header-title[style*="Diseno-sin-titulo2-horno"] { background-position: left center !important; }
+.header-title[data-portada*="Diseno-sin-titulo2-horno"] .portada-foto { object-position: left center; }
 @media (max-width: 767px) {
     
     .header-title.white .title-base h1, .header-title.white .title-base p { text-shadow: 0 1px 4px rgba(0, 0, 0, .7); }
@@ -445,7 +445,7 @@ footer .copy-row > .col-md-12, footer .copy-text { width: 100% !important; float
 /* Al ocultar la infografía en tableta y celular, el título siguiente conserva su espacio. */
 @media (max-width: 991px) { .bloque-code-block:has(img[src*="Minimo-Mantenimiento"]) + .bloque-titulo, .bloque-code-block:has(img[src*="upscalemedia-transformed1"]) + .bloque-titulo, .bloque-code-block:has(img[src*="Minimo-Mantenimiento"]) + .bloque-espacio + .bloque-titulo, .bloque-code-block:has(img[src*="upscalemedia-transformed1"]) + .bloque-espacio + .bloque-titulo { margin-top: 70px; } }
 /* Portadas de foil: texto blanco legible sobre la madera clara. */
-.header-title[style*="2025/11/x.webp"] .title-base h1, .header-title[style*="2025/11/x.webp"] .title-base p { text-shadow: 0 1px 4px rgba(0, 0, 0, .7); }
+.header-title[data-portada*="2025/11/x.webp"] .title-base h1, .header-title[data-portada*="2025/11/x.webp"] .title-base p { text-shadow: 0 1px 4px rgba(0, 0, 0, .7); }
 /* Foto junto al formulario centrada en su columna. */
 @media (min-width: 992px) { .bloque-columna.col-md-5:has(> .row > .bloque-image) { display: flex; flex-direction: column; justify-content: center; } }
 /* Listas verticales con icono: el icono a la altura del primer renglón. */
@@ -635,3 +635,6 @@ footer p.pie-titulo.text-color { color: #2f4a5a; opacity: 1; }
 .foto-obra { margin: 0; }
 .foto-obra img { width: 100%; height: auto; display: block; }
 .foto-obra figcaption { font-size: 14px; line-height: 1.35; color: #555; padding: 6px 2px 0; }
+
+/* Foto de portada como <img> (conPortadaImg): ocupa el encabezado igual que el fondo de antes. */
+.portada-foto { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; max-width: none; }

@@ -32,6 +32,34 @@ export function conPosterDiferido(html: string, dejarPrimero = false): string {
   return html.replace(/<video\b[^>]*>/g, (v) => (n++ === 0 && dejarPrimero ? v : v.replace(/\sposter="/, ' data-poster="')));
 }
 
+// Alto real del archivo WebP, para que la foto de portada reserve su espacio.
+function altoWebp(f: string): number {
+  if (!existe(f)) return 0;
+  const b = Buffer.alloc(30);
+  const fd = openSync(PUBLICO + f, 'r');
+  readSync(fd, b, 0, 30, 0);
+  closeSync(fd);
+  const tipo = b.toString('ascii', 12, 16);
+  if (tipo === 'VP8 ') return b.readUInt16LE(28) & 0x3fff;
+  if (tipo === 'VP8L') return 1 + (((b[24] & 0x0f) << 10) | (b[23] << 2) | (b[22] >> 6));
+  if (tipo === 'VP8X') return 1 + b.readUIntLE(27, 3);
+  return 0;
+}
+
+// La foto grande de arriba va como <img> y no como fondo: así Google la indexa y entra al mapa de imágenes.
+// En celular se ofrece la versión recortada (scripts/portadas-movil.py) si existe.
+export function conPortadaImg(html: string, alt: string): string {
+  return html.replace(/(<div class="header-title[^"]*"[^>]*?) style="background-image:url\(([^)]+)\)"([^>]*>)/, (_, ini, src, fin) => {
+    const ancho = anchoWebp(src), alto = altoWebp(src);
+    const medidas = ancho && alto ? ` width="${ancho}" height="${alto}"` : '';
+    const limpio = alt.replace(/<[^>]+>/g, '').replace(/&nbsp;/g, ' ').replace(/\s+/g, ' ').trim().replace(/"/g, '&quot;');
+    const img = `<img class="portada-foto" src="${src}" alt="${limpio}"${medidas} fetchpriority="high">`;
+    const movil = src.replace(/\.webp$/, '-movil.webp');
+    const foto = existe(movil) ? `<picture><source media="(max-width: 480px)" srcset="${movil}">${img}</picture>` : img;
+    return `${ini} data-portada="${src}"${fin}${foto}`;
+  });
+}
+
 export function conVariantes(html: string, avif = true): string {
   return html.replace(/<img\b[^>]*>/g, (img) => {
     if (!img.includes('loading="lazy"') || /\ssrcset=/.test(img)) return img;

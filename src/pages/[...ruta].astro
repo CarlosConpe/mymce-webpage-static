@@ -5,7 +5,8 @@ import Base from '../layouts/Base.astro';
 import paginas from '../data/paginas.json';
 import { D, preguntasLd, videosLd, videosDePagina, SERVICIOS, GARANTIA, CREDITO, MARCA } from '../data/sitio';
 import fechas from '../data/fechas.json';
-import { conVariantes, conPosterDiferido } from '../data/imagenes';
+import og from '../data/og.json';
+import { conVariantes, conPosterDiferido, conPortadaImg } from '../data/imagenes';
 import { conIconos } from '../data/iconos';
 import { conPorQue } from '../data/porque';
 
@@ -51,7 +52,7 @@ const negocio = { '@id': `${D}/#localbusiness` };
 const modificada = (fechas as Record<string, string>)[p.ruta];
 const fechaMod = fecha && modificada && modificada > fecha ? modificada : fecha;
 const BLOG = `${D}/corporate/blog/#blog`;
-if (fecha) ld.push({ '@type': 'BlogPosting', '@id': `${D}${p.ruta}#articulo`, headline: p.title.split('|')[0].trim(), description: p.desc, datePublished: fecha, dateModified: fechaMod, author: { '@type': 'Organization', name: 'Equipo de MYMCE', url: `${D}/corporate/acerca-de-mymce-carpinteria-profesional-en-san-luis-potosi/`, parentOrganization: negocio }, publisher: negocio, image: D + (p.img || '/assets/storage/2016/12/169471652699961817.webp'), mainEntityOfPage: { '@id': `${D}${p.ruta}#pagina` }, isPartOf: { '@id': BLOG }, inLanguage: 'es-MX' });
+if (fecha) ld.push({ '@type': 'BlogPosting', '@id': `${D}${p.ruta}#articulo`, headline: p.title.split('|')[0].trim(), description: p.desc, datePublished: fecha, dateModified: fechaMod, author: { '@type': 'Organization', name: 'Equipo de MYMCE', url: `${D}/corporate/acerca-de-mymce-carpinteria-profesional-en-san-luis-potosi/`, parentOrganization: negocio }, publisher: negocio, image: D + ((og as Record<string, string>)[p.ruta] ?? p.img ?? '/assets/storage/2016/12/169471652699961817.webp'), mainEntityOfPage: { '@id': `${D}${p.ruta}#pagina` }, isPartOf: { '@id': BLOG }, inLanguage: 'es-MX' });
 // La portada del blog es el nodo Blog con sus artículos.
 if (p.ruta === '/corporate/blog/') ld.push({ '@type': 'Blog', '@id': BLOG, name: 'Blog de MYMCE', url: `${D}/corporate/blog/`, publisher: negocio, inLanguage: 'es-MX', blogPost: paginas.filter((x) => /^\/corporate\/blog\/\d{4}\//.test(x.ruta)).map((x) => ({ '@id': `${D}${x.ruta}#articulo` })) });
 // El portafolio es la lista de las obras; cada obra marca sus fotos con el crédito de MYMCE.
@@ -81,5 +82,5 @@ const zonaGeneral = [ciudad('San Luis Potosí'), ciudad('Soledad de Graciano Sá
 if ((p.ruta.startsWith('/servicios/') && p.ruta !== '/servicios/' || /^\/en\/.+/.test(p.ruta)) && h1) ld.push({ '@type': 'Service', '@id': `${D}${p.ruta}#servicio`, name: h1, ...(SERVICIOS[p.ruta] && { serviceType: SERVICIOS[p.ruta] }), description: p.desc, provider: negocio, brand: { '@id': MARCA['@id'] }, areaServed: ZONA[p.ruta] ?? zonaGeneral, url: `${D}${p.ruta}`, ...(html.includes('/corporate/garantia/') && { offers: { '@type': 'Offer', warranty: { '@id': GARANTIA['@id'] }, areaServed: ZONA[p.ruta] ?? zonaGeneral } }) });
 ---
 <Base title={p.title} desc={p.desc} ruta={p.ruta} img={p.img || undefined} lang={p.lang === 'en' ? 'en' : 'es-MX'} alternos={p.alternos} wa={p.wa} waEtiqueta={p.waEtiqueta} migasLd={migas} ld={ld} carrusel={p.carrusel} videoFix={p.videoFix} clasica={p.clasica} preload={preload} preloadMovil={preloadMovil} videos={videosDePagina(html, p.ruta)}>
-    <Fragment set:html={conIconos(conPosterDiferido(conVariantes(conPorQue(html, p.ruta))))} />
+    <Fragment set:html={conIconos(conPosterDiferido(conVariantes(conPortadaImg(conPorQue(html, p.ruta), h1 ?? p.title.split('|')[0].trim()))))} />
 </Base>

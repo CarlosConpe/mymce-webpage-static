@@ -7,6 +7,7 @@ import Cabecera from '../components/Cabecera.astro';
 import Pie from '../components/Pie.astro';
 import { D, WA, LEAD, CONVERSION, MAPA_EMBED, CREDITO, grafo, ruta as migas } from '../data/sitio';
 import fechas from '../data/fechas.json';
+import og from '../data/og.json';
 
 interface Props {
   title: string;
@@ -39,6 +40,8 @@ const tipo = ruta === '/corporate/contact/' ? 'ContactPage'
   : ruta === '/portafolio/' || ruta === '/corporate/blog/' || /^\/servicios\/cocinas-y-closets-/.test(ruta) ? 'CollectionPage'
   : 'WebPage';
 const modificada = (fechas as Record<string, string>)[ruta];
+// Imagen de 1200 x 630 para compartir (scripts/og-imagenes.mjs); si la página no tiene, la de siempre.
+const ogImg = (og as Record<string, string>)[ruta];
 const imagen = { '@type': 'ImageObject', '@id': `${url}#imagen-principal`, url: D + img, contentUrl: D + img, ...(ruta.startsWith('/portafolio/') && CREDITO) };
 const datos = grafo(
   { '@type': tipo, '@id': `${url}#pagina`, url, name: title, description: desc, inLanguage: lang, isPartOf: { '@id': `${D}/#sitio` }, about: { '@id': `${D}/#localbusiness` }, primaryImageOfPage: { '@id': imagen['@id'] }, ...(migasLd && { breadcrumb: { '@id': `${url}#ruta` } }), ...(modificada && { dateModified: modificada }), ...(videos.length && { video: videos.map((v) => ({ '@id': v })) }) },
@@ -66,12 +69,14 @@ const datos = grafo(
     <meta property="og:title" content={title}>
     <meta property="og:description" content={desc}>
     <meta property="og:url" content={url}>
-    <meta property="og:image" content={D + img}>
+    <meta property="og:image" content={D + (ogImg ?? img)}>
+    {ogImg && <meta property="og:image:width" content="1200">}
+    {ogImg && <meta property="og:image:height" content="630">}
+    <meta property="og:image:alt" content={title.split('|')[0].trim()}>
     <meta name="twitter:card" content="summary_large_image">
     {preload && !preloadMovil && <link rel="preload" as="image" href={preload} fetchpriority="high">}
     {preloadMovil && <link rel="preload" as="image" href={preload} fetchpriority="high" media="(min-width: 481px)">}
     {preloadMovil && <link rel="preload" as="image" href={preloadMovil} fetchpriority="high" media="(max-width: 480px)">}
-    {preloadMovil && <style is:inline set:html={`@media (max-width:480px){.header-title[style*="${preload}"]{background-image:url(${preloadMovil})!important}}`}></style>}
     <link rel="preload" href="/assets/fonts/source-sans-pro-400.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/assets/fonts/fontawesome-webfont.woff2" as="font" type="font/woff2" crossorigin>
     <script type="application/ld+json" set:html={JSON.stringify(datos).replace(/</g, '\u003c')}></script>
