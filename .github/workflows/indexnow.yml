@@ -1,0 +1,54 @@
+name: Aviso a IndexNow
+
+# Después de cada push a master, Cloudflare Pages publica el sitio. Este flujo espera a que el
+# deploy termine y corre scripts/avisar-indexnow.mjs, que compara el sitio en vivo con la huella
+# de la vez anterior y avisa solo las páginas nuevas, cambiadas o quitadas. La huella se guarda
+# en la caché de GitHub entre una corrida y otra. No necesita secretos.
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+    inputs:
+      todas:
+        description: 'Mandar todas las páginas del sitemap'
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+concurrency:
+  group: indexnow
+  cancel-in-progress: false
+
+jobs:
+  avisar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      - name: Recuperar la huella de la vez anterior
+        uses: actions/cache/restore@v4
+        with:
+          path: .indexnow
+          key: indexnow-${{ github.run_id }}
+          restore-keys: indexnow-
+
+      # Cloudflare suele publicar en menos de un minuto; se deja margen para no comparar contra la versión vieja.
+      - name: Esperar a que Cloudflare publique
+        if: github.event_name == 'push'
+        run: sleep 240
+
+      - name: Avisar a IndexNow
+        run: node scripts/avisar-indexnow.mjs ${{ inputs.todas && '--todas' || '' }}
+
+      - name: Guardar la huella
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: .indexnow
+          key: indexnow-${{ github.run_id }}
