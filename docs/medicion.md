@@ -1,7 +1,7 @@
 ---
 type: doc
 status: active
-updated: 2026-11-10
+updated: 2026-11-18
 tags: [mymce, medicion, cloudflare-d1, cloudflare-web-analytics, pages-functions, contactos]
 relatedTo: [lo-que-te-toca-a-ti, plan-ventas-seo]
 ---
@@ -80,6 +80,6 @@ Para saber qué páginas convierten mejor, cruza los contactos de una página co
 IndexNow le avisa a Bing (y a los buscadores que usan su índice, como Copilot) qué páginas cambiaron, para que no esperen a volver a rastrear. Google no lo usa; para Google siguen el sitemap y Search Console.
 
 - La clave está en `public/ce2bdd8a826f903e373d55c7e6c89d4e.txt` y se publica con el sitio. No la borres ni la cambies.
-- Unos minutos después de cada publicación corre `npm run avisar-indexnow`. El script lee el sitemap en vivo, compara una huella de cada página con la de la vez anterior (guardada en `.indexnow/estado.json`, fuera de git) y manda solo las páginas nuevas, las que cambiaron y las que salieron del sitemap.
-- `npm run avisar-indexnow -- --prueba` muestra qué mandaría sin avisar. `-- --todas` manda todas.
-- La primera vez en cada computadora manda las 129 páginas, porque no hay huellas guardadas. Es normal y no tiene costo.
+- El aviso es automático. Después de cada push a `master`, GitHub corre `.github/workflows/indexnow.yml`: espera a que Cloudflare termine de publicar, lee el sitemap en vivo, compara la huella de cada página con la de la vez anterior y manda solo las páginas nuevas, las que cambiaron y las que salieron del sitemap. La huella se guarda en la caché de GitHub. No hay que correr nada a mano.
+- Para mandar todas las páginas, corre el flujo a mano desde la pestaña Actions de GitHub con la opción "Mandar todas las páginas del sitemap".
+- El script `npm run avisar-indexnow` sigue disponible para pruebas en tu computadora: `-- --prueba` muestra qué mandaría sin avisar y `-- --todas` manda todas. En local la huella se guarda en `.indexnow/estado.json` (fuera de git), así que la primera vez manda todas las páginas.

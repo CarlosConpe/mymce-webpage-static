@@ -5,7 +5,7 @@ Sitio para familias de San Luis Potosí que buscan cocinas, closets, vestidores,
 ## Cómo trabajar aquí
 
 - Astro estático en Cloudflare Pages. Rama de trabajo: `astro/sitio-residencial`.
-- El contenido de cada página está en `src/contenido/**/index.html` y sus datos (título, descripción, idiomas) en `src/data/paginas.json`. Los iconos `fa fa-*` solo se ven si existen en `src/data/iconos.ts`.
+- El contenido de cada página está en `src/contenido/**/index.html` y sus datos (título, descripción, idiomas) en `src/data/paginas.json`. Un icono `fa fa-*` se ve si `src/data/iconos.ts` lo cambia por SVG o si su glifo está en la fuente de `src/styles/sitio.css` (o en `correcciones.css`); si no está en ninguno, no se ve.
 - Antes de publicar, corre los tres y que pasen: `npm run build`, `npm run check` ("Sin errores.") y `npm test`.
 - Publicar es `git push origin HEAD:master`, y solo con aprobación explícita del dueño.
 - IndexNow avisa solo después de cada push (`.github/workflows/indexnow.yml`). Google solo usa el sitemap y Search Console.
