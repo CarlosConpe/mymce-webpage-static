@@ -7,6 +7,8 @@ import { TEL, CORREO, DIRECCION, HORARIO_CORTO, REDES } from '../data/sitio';
 const SERVICIOS = [
   ['/servicios/cocinas/', 'Cocinas integrales'],
   ['/servicios/cocinas-integrales-modernas/', 'Estilos de cocina moderna'],
+  ['/servicios/fabricantes-de-cocinas-integrales-san-luis-potosi/', 'Fabricantes de cocinas'],
+  ['/servicios/cocinas-integrales-economicas-san-luis-potosi/', 'Cocinas económicas'],
   ['/servicios/closets-vestidores/', 'Closets'],
   ['/servicios/vestidores/', 'Vestidores'],
   ['/servicios/closets-de-melamina/', 'Closets de melamina'],
@@ -31,17 +33,31 @@ const EMPRESAS = [
   ['/servicios/puertas-frentes-de-cajon-en-mdf-forrados-con-foil-pvc/', 'Frentes de cajón con foil PVC'],
   ['/servicios/pvc-foil-covered-cabinet-doors-drawer-fronts/', 'PVC foil cabinet doors (English)', 'en'],
 ];
+// Las páginas en inglés llevan su propio menú en inglés, para que la página completa esté en un solo idioma.
+const { ingles = false, espanol = '/' } = Astro.props as { ingles?: boolean; espanol?: string };
+const MENU_EN: [string, string, string?][] = [
+  ['/en/', 'Home'],
+  ['/en/kitchens/', 'Custom kitchens'],
+  ['/en/closets-wardrobes/', 'Closets and wardrobes'],
+  ['/servicios/pvc-foil-covered-cabinet-doors-drawer-fronts/', 'PVC foil cabinet doors'],
+  ['/portafolio/', 'Portfolio (in Spanish)', 'es'],
+];
 ---
 <header class="scroll-change fixed-top">
     <div class="navbar navbar-default mega-menu-fullwidth navbar-fixed-top" role="navigation">
         <div class="navbar-mini scroll-hide">
             <div class="container">
-                <nav class="marcas" aria-label="Marcas de Grupo MYMCE"><a class="marcas__marca" href="/" aria-current="page"><img src="/assets/storage/logos/mymce-marca.webp" alt="MYMCE" width="567" height="160"></a><a class="marcas__marca" href="https://grupomymce.com/" title="CPC: maquila de piezas y muebles sobre diseño para empresas"><img src="/assets/storage/logos/cpc-marca.webp" alt="CPC" width="319" height="160"></a></nav>
+                <nav class="marcas" aria-label={ingles ? 'Grupo MYMCE brands' : 'Marcas de Grupo MYMCE'}><a class="marcas__marca" href={ingles ? '/en/' : '/'} aria-current="page"><img src="/assets/storage/logos/mymce-marca.webp" alt="MYMCE" width="567" height="160"></a><a class="marcas__marca" href="https://grupomymce.com/" title="CPC: maquila de piezas y muebles sobre diseño para empresas"><img src="/assets/storage/logos/cpc-marca.webp" alt="CPC" width="319" height="160"></a></nav>
                 <div class="nav navbar-nav navbar-left">
                     <span><a href={TEL.href}><i class="fa fa-phone"></i> {TEL.guiones}</a></span><hr>
                     <span><a href={`mailto:${CORREO}`}>{CORREO}</a></span><hr>
-                    <span><a href="/corporate/contact/"><i class="fa fa-map-marker"></i> {DIRECCION.calle}, {DIRECCION.ciudad}, SLP.</a></span><hr class="mini-horario">
-                    <span class="mini-horario"><a href="/corporate/contact/"><i class="fa fa-calendar"></i> {HORARIO_CORTO}</a></span><hr><span><a href="/en/" hreflang="en" lang="en">English</a></span>
+                    <span><a href={ingles ? '/en/#contact' : '/corporate/contact/'}><i class="fa fa-map-marker"></i> {DIRECCION.calle}, {DIRECCION.ciudad}, SLP.</a></span><hr class="mini-horario">
+                    {ingles
+                        ? <span class="mini-horario"><a href="/en/#contact"><i class="fa fa-calendar"></i> {HORARIO_CORTO.replace('Lun - Vie', 'Mon - Fri')}</a></span>
+                        : <span class="mini-horario"><a href="/corporate/contact/"><i class="fa fa-calendar"></i> {HORARIO_CORTO}</a></span>}
+                    <hr>{ingles
+                        ? <span><a href={espanol} hreflang="es-MX" lang="es-MX">Español</a></span>
+                        : <span><a href="/en/" hreflang="en" lang="en">English</a></span>}
                 </div>
                 <div class="nav navbar-nav navbar-right">
                     <div class="minisocial-group">
@@ -51,7 +67,7 @@ const EMPRESAS = [
                         <a href={REDES.linkedin} target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a>
                     </div>
                     <div class="navbar-left custom-area">
-                        <div class="minisocial-group" id="searchx"><a href="/portafolio/" aria-label="Ver el portafolio"><i class="fa fa-search"></i></a></div>
+                        <div class="minisocial-group" id="searchx"><a href="/portafolio/" aria-label={ingles ? 'See the portfolio (in Spanish)' : 'Ver el portafolio'}><i class="fa fa-search"></i></a></div>
                     </div>
                 </div>
             </div>
@@ -59,13 +75,18 @@ const EMPRESAS = [
         <div class="navbar navbar-main">
             <div class="container">
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu-principal"><i class="fa fa-bars"></i></button>
-                    <a class="navbar-brand" href="/">
-                        <img class="logo-default" src="/assets/storage/2016/12/logo-mymce-carpinteria.webp" srcset="/assets/storage/2016/12/logo-mymce-carpinteria-280w.webp 280w, /assets/storage/2016/12/logo-mymce-carpinteria.webp 935w" sizes="140px" alt="MYMCE, carpintería en San Luis Potosí" width="935" height="267" fetchpriority="high">
+                    <button type="button" class="navbar-toggle" aria-label={ingles ? 'Open menu' : 'Abrir menú'} aria-expanded="false" aria-controls="menu-principal"><i class="fa fa-bars"></i></button>
+                    <a class="navbar-brand" href={ingles ? '/en/' : '/'}>
+                        <img class="logo-default" src="/assets/storage/2016/12/logo-mymce-carpinteria.webp" srcset="/assets/storage/2016/12/logo-mymce-carpinteria-280w.webp 280w, /assets/storage/2016/12/logo-mymce-carpinteria.webp 935w" sizes="140px" alt={ingles ? 'MYMCE, custom carpentry in San Luis Potosí' : 'MYMCE, carpintería en San Luis Potosí'} width="935" height="267" fetchpriority="high">
                         <img class="logo-retina" src="/assets/storage/2016/12/logo-2.webp" alt="MYMCE" width="180" height="51">
                     </a>
                 </div>
                 <div class="collapse navbar-collapse" id="menu-principal">
+                    {ingles ? (
+                    <ul class="nav navbar-nav" id="main-menu">
+                        {MENU_EN.map(([u, n, idioma]) => <li><a href={u} hreflang={idioma}>{n}</a></li>)}
+                    </ul>
+                    ) : (
                     <ul class="nav navbar-nav" id="main-menu">
                         <li class="dropdown multi-level">
                             <a class="dropdown-toggle" href="/servicios/">Servicios <span class="caret"></span></a>
@@ -101,9 +122,10 @@ const EMPRESAS = [
                             </ul>
                         </li>
                     </ul>
+                    )}
                     <div class="nav navbar-nav navbar-right">
                         <div class="custom-area">
-                            <div class="button-cnt"><a class="btn btn-lg" href="/corporate/contact/">Contáctanos</a></div>
+                            <div class="button-cnt">{ingles ? <a class="btn btn-lg" href="/en/#contact">Contact us</a> : <a class="btn btn-lg" href="/corporate/contact/">Contáctanos</a>}</div>
                         </div>
                     </div>
                 </div>

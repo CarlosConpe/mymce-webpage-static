@@ -33,6 +33,8 @@ const url = D + ruta;
 const ingles = lang.startsWith('en');
 // Solo el par español-inglés de puertas tiene versiones en otro idioma.
 const idiomas = alternos.some(([h]) => h.startsWith('en')) ? alternos : [];
+// En las páginas en inglés, el enlace "Español" lleva a su versión en español.
+const espanol = alternos.find(([h]) => h === 'es-MX')?.[1] ?? '/';
 // Solo las fotos del portafolio llevan crédito de MYMCE: en otras páginas puede haber fotos de catálogo.
 // Tipo de página para los datos estructurados; la fecha es la del último commit que cambió su contenido (scripts/fechas-git.mjs).
 const tipo = ruta === '/corporate/contact/' ? 'ContactPage'
@@ -46,7 +48,7 @@ const imagen = { '@type': 'ImageObject', '@id': `${url}#imagen-principal`, url: 
 const datos = grafo(
   { '@type': tipo, '@id': `${url}#pagina`, url, name: title, description: desc, inLanguage: lang, isPartOf: { '@id': `${D}/#sitio` }, about: { '@id': `${D}/#localbusiness` }, primaryImageOfPage: { '@id': imagen['@id'] }, ...(migasLd && { breadcrumb: { '@id': `${url}#ruta` } }), ...(modificada && { dateModified: modificada }), ...(videos.length && { video: videos.map((v) => ({ '@id': v })) }) },
   imagen,
-  { '@type': 'WebSite', '@id': `${D}/#sitio`, url: `${D}/`, name: 'MYMCE', inLanguage: 'es-MX', publisher: { '@id': `${D}/#localbusiness` } },
+  { '@type': 'WebSite', '@id': `${D}/#sitio`, url: `${D}/`, name: 'MYMCE', inLanguage: ['es-MX', 'en'], publisher: { '@id': `${D}/#localbusiness` } },
   ...(migasLd ? [migas(migasLd, ruta)] : []),
   ...ld,
 );
@@ -85,7 +87,7 @@ const datos = grafo(
 <body class:list={[{ 'con-carrusel': carrusel, 'con-video': videoFix, 'pagina-clasica': clasica }]} data-conversion={CONVERSION[ruta] ?? LEAD} data-lead={LEAD}>
 <a class="salto" href="#contenido">{ingles ? 'Skip to content' : 'Saltar al contenido'}</a>
 <div>
-    <Cabecera />
+    <Cabecera ingles={ingles} espanol={espanol} />
     <main id="contenido"><slot /></main>
 </div>
 {ruta === '/' && <div class="section-item section-empty no-paddings no-paddings-y no-margins">
@@ -94,7 +96,7 @@ const datos = grafo(
     </div></div></div>
 </div>}
 <button type="button" class="scroll-top scroll-top-mobile fa fa-sort-asc" aria-label={ingles ? 'Back to top' : 'Volver arriba'}></button>
-<Pie />
+<Pie ingles={ingles} />
 <a href={wa ?? WA.href} class="wa-float" target="_blank" rel="noopener" data-whatsapp={waEtiqueta ?? 'default'} aria-label={ingles ? 'Message us on WhatsApp' : 'Escríbenos por WhatsApp'}><i class="fa fa-whatsapp"></i></a>
 <script>
     import '../scripts/sitio.js';

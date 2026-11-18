@@ -1,6 +1,7 @@
 // Datos de la empresa: salen de empresa.json.
 import empresa from './empresa.json';
 import videos from './videos.json';
+import paginas from './paginas.json';
 
 const digitos = (t: string) => t.replace(/\D/g, '');
 export const D = 'https://www.mymce.com.mx';
@@ -31,12 +32,17 @@ export const MARCA = { '@type': 'Brand', '@id': `${D}/#marca-mymce`, name: 'MYMC
 export const PROMO = `${D}/#video-promocional`;
 export const GARANTIA = { '@type': 'WarrantyPromise', '@id': `${D}/corporate/garantia/#garantia`, durationOfWarranty: { '@type': 'QuantitativeValue', value: 12, unitCode: 'MON' }, url: `${D}/corporate/garantia/` };
 // Las fotos son de obras que instaló MYMCE.
-export const CREDITO = { creator: { '@id': `${D}/#localbusiness` }, creditText: 'MYMCE', copyrightNotice: '© Cocinas, Puertas y Closets S.A. de C.V.', copyrightHolder: { '@id': `${D}/#localbusiness` } };
+export const CREDITO = { creator: { '@id': `${D}/#localbusiness` }, creditText: 'MYMCE', copyrightNotice: '© Cocinas, Puertas y Closets S.A. de C.V.', copyrightHolder: { '@id': `${D}/#empresa` } };
+// Zona donde damos servicio cuando la página no habla de un municipio o fraccionamiento en particular.
+const ciudad = (name: string) => ({ '@type': 'City', name, containedInPlace: { '@type': 'State', name: 'San Luis Potosí' } });
+export const ZONA_GENERAL = [ciudad('San Luis Potosí'), ciudad('Soledad de Graciano Sánchez'), ciudad('Villa de Pozos')];
 
 // Qué servicio describe cada página (serviceType) y cuáles entran al catálogo del negocio.
 export const SERVICIOS: Record<string, string> = {
   '/servicios/cocinas/': 'Cocinas integrales a la medida',
   '/servicios/cocinas-integrales-modernas/': 'Cocinas integrales modernas',
+  '/servicios/fabricantes-de-cocinas-integrales-san-luis-potosi/': 'Fabricación de cocinas integrales',
+  '/servicios/cocinas-integrales-economicas-san-luis-potosi/': 'Cocinas integrales a la medida',
   '/servicios/closets-vestidores/': 'Closets a la medida',
   '/servicios/vestidores/': 'Vestidores a la medida',
   '/servicios/closets-de-melamina/': 'Closets de melamina',
@@ -60,15 +66,19 @@ export const CATALOGO = {
   '@type': 'OfferCatalog',
   '@id': `${D}/#catalogo`,
   name: 'Servicios de MYMCE',
-  itemListElement: EN_CATALOGO.map((u) => ({ '@type': 'Offer', itemOffered: { '@type': 'Service', '@id': `${D}${u}#servicio`, name: SERVICIOS[u], url: `${D}${u}` }, warranty: { '@id': GARANTIA['@id'] } })),
+  // Cada servicio del catálogo lleva su descripción (la de su página), quién lo da y dónde.
+  itemListElement: EN_CATALOGO.map((u) => ({ '@type': 'Offer', itemOffered: { '@type': 'Service', '@id': `${D}${u}#servicio`, name: SERVICIOS[u], description: paginas.find((p) => p.ruta === u)?.desc, provider: { '@id': `${D}/#localbusiness` }, areaServed: ZONA_GENERAL, url: `${D}${u}` }, warranty: { '@id': GARANTIA['@id'] } })),
 };
+
+// La empresa dueña de la marca: solo como entidad, sin página propia en este sitio.
+export const EMPRESA = { '@type': 'Organization', '@id': `${D}/#empresa`, name: 'Cocinas, Puertas y Closets S.A. de C.V.', legalName: 'Cocinas, Puertas y Closets S.A. de C.V.', brand: { '@id': MARCA['@id'] } };
 
 export const NEGOCIO = {
   '@type': ['LocalBusiness', 'HomeAndConstructionBusiness'],
   '@id': `${D}/#localbusiness`,
   name: 'MYMCE',
-  legalName: 'Cocinas, Puertas y Closets S.A. de C.V.',
-  alternateName: ['MYMCE Carpintería', 'Grupo MYMCE'],
+  alternateName: 'MYMCE Carpintería',
+  parentOrganization: { '@id': `${D}/#empresa` },
   url: `${D}/`,
   logo: LOGO,
   brand: { '@id': MARCA['@id'] },
@@ -76,7 +86,6 @@ export const NEGOCIO = {
   image: `${D}/assets/storage/2016/12/logo-mymce-carpinteria.webp`,
   description: 'Fábrica de carpintería en San Luis Potosí con casi 40 años de oficio: diseña, fabrica e instala cocinas integrales, closets, vestidores, puertas y muebles de baño, y hace maquila CNC de piezas de MDF y melamina, también forradas con foil PVC.',
   knowsAbout: ['Cocinas integrales', 'Closets y vestidores', 'Puertas a la medida','Muebles de baño', 'Termoformado de MDF con foil PVC', 'Maquila CNC de piezas de MDF y melamina'],
-  foundingDate: '1987',
   areaServed: ['San Luis Potosí', 'Soledad de Graciano Sánchez', 'Villa de Pozos', 'Estado de San Luis Potosí'].map((name) => ({ '@type': 'Place', name })),
   email: CORREO,
   telephone: TEL.intl,
@@ -104,7 +113,7 @@ export function ruta(items: [string, string | null][], path: string) {
 }
 
 export function grafo(...nodos: object[]) {
-  return { '@context': 'https://schema.org', '@graph': [NEGOCIO, LOGO, MARCA, ...nodos] };
+  return { '@context': 'https://schema.org', '@graph': [NEGOCIO, EMPRESA, LOGO, MARCA, ...nodos] };
 }
 
 // Videos propios con datos para Google: el promocional donde se puede reproducir y el de cada obra del portafolio.

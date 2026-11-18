@@ -1,6 +1,8 @@
 ---
 import { TEL, WA, CORREO, DIRECCION, HORARIO_CORTO, REDES } from '../data/sitio';
 const anio = new Date().getFullYear();
+// Las páginas en inglés llevan el pie en inglés, con enlaces a las páginas en inglés.
+const { ingles = false } = Astro.props as { ingles?: boolean };
 ---
 <footer class="footer-modern">
     <div class="content">
@@ -8,7 +10,7 @@ const anio = new Date().getFullYear();
             <div class="row">
                 <div class="col-md-3 footer-left">
                     <img src="/assets/storage/2016/12/logo-mymce-carpinteria.webp" srcset="/assets/storage/2016/12/logo-mymce-carpinteria-280w.webp 280w, /assets/storage/2016/12/logo-mymce-carpinteria.webp 935w" sizes="200px" alt="MYMCE" width="935" height="267" loading="lazy" class="pie-logo">
-                    <p class="text-s">Cocinas, closets, vestidores y muebles de baño a la medida de tu casa, hechos en nuestra planta de San Luis Potosí.</p>
+                    <p class="text-s">{ingles ? 'Custom kitchens, closets, walk-in closets and bathroom vanities for your home, built in our own plant in San Luis Potosí.' : 'Cocinas, closets, vestidores y muebles de baño a la medida de tu casa, hechos en nuestra planta de San Luis Potosí.'}</p>
                     <div class="btn-group social-group btn-group-icons">
                         <a href={REDES.facebook} target="_blank" rel="noopener" aria-label="Facebook"><i class="fa fa-facebook text-xs circle"></i></a>
                         <a href={REDES.linkedin} target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa fa-linkedin text-xs circle"></i></a>
@@ -16,15 +18,27 @@ const anio = new Date().getFullYear();
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <p class="text-color pie-titulo">Contacto</p>
+                    <p class="text-color pie-titulo">{ingles ? 'Contact' : 'Contacto'}</p>
                     <ul class="fa-ul text-s">
                         <li><i class="fa-li fa fa-map-marker"></i>{DIRECCION.calle},<br>{DIRECCION.ciudad}, {DIRECCION.estado}</li>
                         <li><i class="fa-li fa fa-phone"></i><a href={TEL.href}>+52 {TEL.texto.replace(/ /g, '-')}</a></li>
                         <li><i class="fa-li fa fa-whatsapp"></i><a href={WA.href} target="_blank" rel="noopener" data-whatsapp="pie">WhatsApp {WA.texto.replace(/ /g, '-')}</a></li>
                         <li><i class="fa-li fa fa-envelope"></i><a href={`mailto:${CORREO}`}>{CORREO}</a></li>
-                        <li><i class="fa-li fa fa-clock-o"></i>{HORARIO_CORTO}</li>
+                        <li><i class="fa-li fa fa-clock-o"></i>{ingles ? HORARIO_CORTO.replace('Lun - Vie', 'Mon - Fri') : HORARIO_CORTO}</li>
                     </ul>
                 </div>
+                {ingles ? (
+                <div class="col-md-3">
+                    <p class="text-color pie-titulo">Menu</p>
+                    <ul class="text-s list-unstyled">
+                        <li><a href="/en/">Home</a></li>
+                        <li><a href="/en/#contact">Ask for a quote</a></li>
+                        <li><a href="/portafolio/" hreflang="es">Portfolio (in Spanish)</a></li>
+                        <li><a href="/corporate/garantia/" hreflang="es">Warranty (in Spanish)</a></li>
+                        <li><a href="/" hreflang="es-MX" lang="es-MX">Sitio en español</a></li>
+                    </ul>
+                </div>
+                ) : (
                 <div class="col-md-3">
                     <p class="text-color pie-titulo">Menú</p>
                     <ul class="text-s list-unstyled">
@@ -37,33 +51,47 @@ const anio = new Date().getFullYear();
                         <li><a href="/corporate/politica-privacidad/">Política de Privacidad</a></li>
                     </ul>
                 </div>
+                )}
+                {ingles ? (
+                <div class="col-md-3">
+                    <p class="text-color pie-titulo">Services</p>
+                    <ul class="text-s list-unstyled">
+                        <li><a href="/en/kitchens/">Custom kitchens</a></li>
+                        <li><a href="/en/closets-wardrobes/">Closets and wardrobes</a></li>
+                        <li><a href="/servicios/pvc-foil-covered-cabinet-doors-drawer-fronts/">PVC foil cabinet doors and drawer fronts</a></li>
+                    </ul>
+                </div>
+                ) : (
                 <div class="col-md-3">
                     <p class="text-color pie-titulo">Servicios</p>
                     <ul class="text-s list-unstyled">
                         <li><a href="/servicios/muebles-a-medida/">Muebles a la medida</a></li>
                         <li><a href="/servicios/cocinas/">Cocinas Integrales</a></li>
-                        <li><a href="/servicios/closets-vestidores/">Closets y Vestidores</a></li>
+                        <li><a href="/servicios/fabricantes-de-cocinas-integrales-san-luis-potosi/">Fabricantes de cocinas integrales</a></li>
+                        <li><a href="/servicios/cocinas-integrales-economicas-san-luis-potosi/">Cocinas integrales económicas</a></li>
+                        <li><a href="/servicios/closets-vestidores/">Closets a la medida</a></li>
+                        <li><a href="/servicios/vestidores/">Vestidores</a></li>
                         <li><a href="/servicios/diseno-y-fabricacion-de-puertas/">Puertas</a></li>
                         <li><a href="/servicios/diseno-y-fabricacion-de-muebles-de-bano/">Muebles de Baño</a></li>
-                        <li><a href="/servicios/vestidores/">Vestidores</a></li>
                         <li><a href="/servicios/cocinas-y-closets-villa-de-pozos/">Cocinas y closets en Villa de Pozos</a></li>
                         <li><a href="/servicios/cocinas-y-closets-soledad-de-graciano-sanchez/">Cocinas y closets en Soledad</a></li>
                         <li><a href="/servicios/maquila-de-partes/">Maquila de partes para talleres</a></li>
                     </ul>
                 </div>
+                )}
             </div>
             <div class="grupo">
                 <p class="grupo__titulo">Grupo MYMCE</p>
                 <div class="grupo__marcas">
-                    <a class="grupo__marca" href="/" aria-current="true"><img src="/assets/storage/logos/mymce-marca.webp" alt="MYMCE" width="567" height="160" loading="lazy" decoding="async"><span>Cocinas, closets y puertas para tu casa</span></a>
-                    <a class="grupo__marca" href="https://grupomymce.com/"><img src="/assets/storage/logos/cpc-marca.webp" alt="CPC" width="319" height="160" loading="lazy" decoding="async"><span>Maquila de piezas y muebles sobre diseño para empresas</span></a>
+                    <a class="grupo__marca" href={ingles ? '/en/' : '/'} aria-current="true"><img src="/assets/storage/logos/mymce-marca.webp" alt="MYMCE" width="567" height="160" loading="lazy" decoding="async"><span>{ingles ? 'Kitchens, closets and doors for your home' : 'Cocinas, closets y puertas para tu casa'}</span></a>
+                    <a class="grupo__marca" href="https://grupomymce.com/"><img src="/assets/storage/logos/cpc-marca.webp" alt="CPC" width="319" height="160" loading="lazy" decoding="async"><span>{ingles ? 'Parts machining and furniture built to your design, for businesses' : 'Maquila de piezas y muebles sobre diseño para empresas'}</span></a>
                 </div>
             </div>
         </div>
         <div class="row copy-row">
             <div class="col-md-12 copy-text">
-                © {anio} Cocinas, Puertas y Closets. Todos los derechos reservados.<br>
-                <span class="copy-grupo">Una empresa de Grupo MYMCE</span>
+                © {anio} Cocinas, Puertas y Closets. {ingles ? 'All rights reserved.' : 'Todos los derechos reservados.'}<br>
+                <span class="copy-grupo">{ingles ? 'A Grupo MYMCE company' : 'Una empresa de Grupo MYMCE'}</span>
             </div>
         </div>
     </div>
