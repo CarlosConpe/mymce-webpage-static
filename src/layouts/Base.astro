@@ -5,7 +5,7 @@ import '../styles/correcciones.css';
 import '../styles/picture.css';
 import Cabecera from '../components/Cabecera.astro';
 import Pie from '../components/Pie.astro';
-import { D, WA, LEAD, CONVERSION, MAPA_EMBED, CREDITO, grafo, ruta as migas } from '../data/sitio';
+import { D, WA, TEL, LEAD, CONVERSION, MAPA_EMBED, CREDITO, grafo, ruta as migas } from '../data/sitio';
 import fechas from '../data/fechas.json';
 import og from '../data/og.json';
 
@@ -27,8 +27,9 @@ interface Props {
   preload?: string;
   preloadMovil?: string;
   videos?: string[];
+  cotizar?: boolean;
 }
-const { title, desc, ruta, img = '/assets/storage/2016/12/logo-mymce-carpinteria.webp', lang = 'es-MX', noindex = false, alternos = [], wa, waEtiqueta, ld = [], migasLd, carrusel = false, videoFix = false, clasica = false, preload, preloadMovil, videos = [] } = Astro.props;
+const { title, desc, ruta, img = '/assets/storage/2016/12/logo-mymce-carpinteria.webp', lang = 'es-MX', noindex = false, alternos = [], wa, waEtiqueta, ld = [], migasLd, carrusel = false, videoFix = false, clasica = false, preload, preloadMovil, videos = [], cotizar = false } = Astro.props;
 const url = D + ruta;
 const ingles = lang.startsWith('en');
 // Solo el par español-inglés de puertas tiene versiones en otro idioma.
@@ -97,6 +98,12 @@ const datos = grafo(
 </div>}
 <button type="button" class="scroll-top scroll-top-mobile fa fa-sort-asc" aria-label={ingles ? 'Back to top' : 'Volver arriba'}></button>
 <Pie ingles={ingles} />
+{/* Celular: barra fija con Cotizar, Llamar y WhatsApp (specs/formularios-que-venden.md). Cotizar baja al formulario de la página o va a contacto. */}
+<nav class="barra-movil" aria-label={ingles ? 'Quick contact' : 'Contacto rápido'}>
+    <a href={cotizar ? '#cotizar' : '/corporate/contact/#cotizar'} data-barra="cotizar"><i class="fa fa-edit"></i>{ingles ? 'Quote' : 'Cotizar'}</a>
+    <a href={TEL.href} data-barra="llamar"><i class="fa fa-phone"></i>{ingles ? 'Call' : 'Llamar'}</a>
+    <a href={wa ?? WA.href} target="_blank" rel="noopener" data-whatsapp="barra-movil"><i class="fa fa-whatsapp"></i>WhatsApp</a>
+</nav>
 <a href={wa ?? WA.href} class="wa-float" target="_blank" rel="noopener" data-whatsapp={waEtiqueta ?? 'default'} aria-label={ingles ? 'Message us on WhatsApp' : 'Escríbenos por WhatsApp'}><i class="fa fa-whatsapp"></i></a>
 <script>
     import '../scripts/sitio.js';

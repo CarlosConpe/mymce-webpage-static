@@ -9,6 +9,7 @@ import og from '../data/og.json';
 import { OBRAS, FRACCS, obraDe, hermanas } from '../data/obras';
 import { WA } from '../data/sitio';
 import { conVariantes, conPosterDiferido, conPortadaImg } from '../data/imagenes';
+import { conFormulario, tieneFormulario } from '../data/formulario';
 import { conIconos } from '../data/iconos';
 import { conPorQue } from '../data/porque';
 
@@ -132,6 +133,6 @@ if (p.ruta === '/portafolio/') {
   cuerpo = cuerpo.replace(/(<div aria-label="Filtros" class="btn-group" role="group">[\s\S]*?<\/div>)/, `$1${form}`);
 }
 ---
-<Base title={p.title} desc={p.desc} ruta={p.ruta} img={p.img || undefined} lang={p.lang === 'en' ? 'en' : 'es-MX'} alternos={p.alternos} wa={p.wa} waEtiqueta={p.waEtiqueta} migasLd={migas} ld={ld} carrusel={p.carrusel} videoFix={p.videoFix} clasica={p.clasica} preload={preload} preloadMovil={preloadMovil} videos={videosDePagina(html, p.ruta)}>
-    <Fragment set:html={conIconos(conPosterDiferido(conVariantes(conPortadaImg(conPorQue(cuerpo, p.ruta), h1 ?? p.title.split('|')[0].trim()))))} />
+<Base cotizar={tieneFormulario(html)} title={p.title} desc={p.desc} ruta={p.ruta} img={p.img || undefined} lang={p.lang === 'en' ? 'en' : 'es-MX'} alternos={p.alternos} wa={p.wa} waEtiqueta={p.waEtiqueta} migasLd={migas} ld={ld} carrusel={p.carrusel} videoFix={p.videoFix} clasica={p.clasica} preload={preload} preloadMovil={preloadMovil} videos={videosDePagina(html, p.ruta)}>
+    <Fragment set:html={conIconos(conPosterDiferido(conVariantes(conPortadaImg(conFormulario(conPorQue(cuerpo, p.ruta), p.ruta, p.lang === 'en'), h1 ?? p.title.split('|')[0].trim()))))} />
 </Base>

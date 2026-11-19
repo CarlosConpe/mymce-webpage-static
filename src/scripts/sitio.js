@@ -336,7 +336,7 @@ document.addEventListener('click', (e) => {
     }
 });
 
-/* Formularios */
+/* Formularios (src/data/formulario.ts): aviso junto al campo que falta, pantalla de gracias y WhatsApp con lo enviado. */
 const CAMPOS = {
     name: /^(nombre|name)\b/i,
     apellido: /^apellido/i,
@@ -344,14 +344,45 @@ const CAMPOS = {
     phone: /^(tel[eé]fono|phone)/i,
     message: /^(mensaje|message)\b/i,
 };
+const enIngles = document.documentElement.lang.startsWith('en');
+const AVISOS = enIngles
+    ? { nombre: 'Write your name so we know who to ask for.', tel: 'Write a phone or WhatsApp number with at least 10 digits.', correo: 'Check your email address, or leave it empty.' }
+    : { nombre: 'Escribe tu nombre para saber por quién preguntar.', tel: 'Escribe un teléfono o WhatsApp de al menos 10 dígitos.', correo: 'Revisa tu correo o déjalo vacío.' };
+const marcar = (input, mensaje) => {
+    const error = input && document.getElementById(`${input.id}-error`);
+    if (!input || !error) return;
+    input.setAttribute('aria-invalid', mensaje ? 'true' : 'false');
+    if (mensaje) input.setAttribute('aria-describedby', error.id);
+    else input.removeAttribute('aria-describedby');
+    error.textContent = mensaje || '';
+    error.hidden = !mensaje;
+};
+const revisar = (form) => {
+    const nombre = form.elements.Nombre;
+    const tel = form.elements['Teléfono'];
+    const correo = form.elements.Correo;
+    const fallas = [];
+    if (nombre && !nombre.value.trim()) fallas.push([nombre, AVISOS.nombre]);
+    if (tel && tel.value.replace(/\D/g, '').length < 10) fallas.push([tel, AVISOS.tel]);
+    if (correo && correo.value.trim() && !correo.checkValidity()) fallas.push([correo, AVISOS.correo]);
+    [nombre, tel, correo].forEach((x) => marcar(x, (fallas.find(([c]) => c === x) || [])[1]));
+    return fallas;
+};
 $$('form[data-formulario]').forEach((form) => {
-    const exito = $('.success-box', form);
     const fallo = $('.error-box', form);
     const cargando = $('.cf-loader', form);
+    const gracias = form.nextElementSibling?.classList.contains('form-gracias') ? form.nextElementSibling : null;
+    // El aviso se quita en cuanto la persona corrige el campo.
+    form.addEventListener('input', (e) => { if (e.target.getAttribute('aria-invalid') === 'true') marcar(e.target, ''); });
     form.addEventListener('submit', async (e) => {
         e.preventDefault();
         const enviar = $('button[type="submit"]', form);
-        [exito, fallo].forEach((x) => x?.classList.remove('show'));
+        fallo?.classList.remove('show');
+        const fallas = revisar(form);
+        if (fallas.length) {
+            fallas[0][0].focus();
+            return;
+        }
         cargando?.classList.add('show');
         if (enviar) enviar.disabled = true;
         const datos = { name: '', email: '', phone: '', message: '', otherDetails: {} };
@@ -368,11 +399,27 @@ $$('form[data-formulario]').forEach((form) => {
         datos.otherDetails['Página'] = location.pathname;
         try {
             const r = await fetch('/api/send-email', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(datos) });
-            if (!r.ok) throw new Error(String(r.status));
+            if (!r.ok) {
+                // El servidor explica qué faltó ("Revisa tu correo", "Demasiados envíos…"): se muestra tal cual.
+                const motivo = await r.json().then((j) => j.error).catch(() => '');
+                if (motivo && fallo) $('.alert', fallo).textContent = motivo;
+                throw new Error(String(r.status));
+            }
             conversion(document.body.dataset.conversion);
             contar('formulario');
+            if (gracias) {
+                // WhatsApp de seguimiento con lo que mandó, para no preguntarle de nuevo.
+                const quiere = datos.otherDetails['Quiere cotizar'];
+                const texto = enIngles
+                    ? `Hi, I just sent a quote request${quiere ? ` for: ${quiere}` : ''}. My name is ${datos.name}.${datos.message ? ` ${datos.message}` : ''}`
+                    : `Hola, acabo de mandar una solicitud de cotización${quiere ? ` de: ${quiere}` : ''}. Soy ${datos.name}.${datos.message ? ` ${datos.message}` : ''}`;
+                const wa = $('[data-wa-listo]', gracias);
+                if (wa) wa.href = `${form.dataset.wa}?text=${encodeURIComponent(texto)}`;
+                form.hidden = true;
+                gracias.hidden = false;
+                gracias.focus();
+            }
             form.reset();
-            exito?.classList.add('show');
         } catch {
             fallo?.classList.add('show');
         } finally {
@@ -381,3 +428,15 @@ $$('form[data-formulario]').forEach((form) => {
         }
     });
 });
+
+/* WhatsApp con contexto: los enlaces sin texto propio dicen de qué página viene la persona. */
+{
+    const h1 = $('h1')?.textContent.replace(/\s+/g, ' ').trim();
+    if (h1) {
+        const texto = enIngles ? `Hi, I'm coming from your page "${h1}" and I'd like a quote.` : `Hola, vengo de su página "${h1}" y quiero cotizar.`;
+        $$('a[href^="https://wa.me/"]').forEach((a) => {
+            if (a.hasAttribute('data-wa-listo') || a.href.includes('text=')) return;
+            a.href = `${a.href.split('?')[0]}?text=${encodeURIComponent(texto)}`;
+        });
+    }
+}

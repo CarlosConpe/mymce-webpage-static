@@ -4,6 +4,7 @@ import Base from '../layouts/Base.astro';
 import '../styles/portada.css';
 import paginas from '../data/paginas.json';
 import { conVariantes, conPosterDiferido } from '../data/imagenes';
+import { conFormulario } from '../data/formulario';
 import { conIconos } from '../data/iconos';
 import { conPorQue } from '../data/porque';
 import { videosLd, videosDePagina, CATALOGO } from '../data/sitio';
@@ -12,6 +13,6 @@ const contenido = import.meta.glob('../contenido/inicio/index.html', { query: '?
 const p = paginas.find((x) => x.ruta === '/')!;
 const html = Object.values(contenido)[0];
 ---
-<Base title={p.title} desc={p.desc} ruta="/" img={p.img || undefined} alternos={p.alternos} wa={p.wa} waEtiqueta={p.waEtiqueta} ld={[CATALOGO, ...videosLd(html, '/', p.title.split('|')[0].trim(), p.desc)]} videos={videosDePagina(html, '/')} carrusel={p.carrusel} videoFix={p.videoFix}>
-    <Fragment set:html={conIconos(conPosterDiferido(conVariantes(conPorQue(html, '/'), false), true))} />
+<Base cotizar title={p.title} desc={p.desc} ruta="/" img={p.img || undefined} alternos={p.alternos} wa={p.wa} waEtiqueta={p.waEtiqueta} ld={[CATALOGO, ...videosLd(html, '/', p.title.split('|')[0].trim(), p.desc)]} videos={videosDePagina(html, '/')} carrusel={p.carrusel} videoFix={p.videoFix}>
+    <Fragment set:html={conIconos(conPosterDiferido(conVariantes(conFormulario(conPorQue(html, '/'), '/'), false), true))} />
 </Base>

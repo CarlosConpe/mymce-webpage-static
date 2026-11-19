@@ -679,3 +679,45 @@ footer p.pie-titulo.text-color { color: #2f4a5a; opacity: 1; }
 #main-menu .menu-zonas .menu-zona ul a:hover, #main-menu .menu-zonas .menu-zona ul a:focus-visible { background: #f2f2f2; }
 #main-menu .menu-empresas > a { opacity: .85; }
 @media (min-width: 992px) and (max-width: 1199px) { #main-menu > li > a { padding-left: 10px; padding-right: 10px; } }
+
+/* Formulario de cotización (src/data/formulario.ts). */
+.form-cotizar .chips { border: 0; padding: 0; margin: 0 0 14px; }
+.form-cotizar .chips legend { border: 0; font-size: 17px; font-weight: 600; margin-bottom: 8px; color: inherit; }
+.form-cotizar .chip { display: inline-block; margin: 0 6px 8px 0; cursor: pointer; font-weight: 400; }
+.form-cotizar .chip input { position: absolute; opacity: 0; width: 1px; height: 1px; }
+.form-cotizar .chip span { display: inline-block; min-height: 40px; line-height: 22px; padding: 9px 14px; border: 1px solid #b9b9b9; border-radius: 20px; background: #fff; color: #333; }
+.form-cotizar .chip input:checked + span { background: #36474f; border-color: #36474f; color: #fff; }
+.form-cotizar .chip input:focus-visible + span { outline: 3px solid #1a73e8; outline-offset: 2px; }
+.form-cotizar .campo { margin-bottom: 12px; }
+.form-cotizar .campo label { display: block; font-weight: 600; margin-bottom: 4px; color: inherit; }
+.form-cotizar .campo-nota { font-weight: 400; opacity: .75; }
+.form-cotizar .form-control[aria-invalid="true"] { border-color: #c62828; box-shadow: 0 0 0 1px #c62828; }
+.form-cotizar .campo-error { color: #c62828; font-size: 14px; margin: 4px 0 0; }
+.section-bg-color .form-cotizar .campo-error, .white .form-cotizar .campo-error { color: #ffcdd2; }
+.form-cotizar .form-enviar { display: flex; align-items: center; gap: 12px; margin-top: 6px; }
+.form-cotizar .form-enviar .cf-loader { width: 36px; height: 36px; }
+.form-cotizar .form-alt { margin-top: 6px; }
+.form-cotizar .form-alt a { text-decoration: underline; }
+.form-gracias { padding: 20px; border: 1px solid #cfd8dc; border-radius: 6px; background: #f5f8f9; color: #263238; }
+.form-gracias[hidden] { display: none; }
+.form-gracias h3 { margin-top: 0; }
+.form-gracias ol { padding-left: 20px; margin-bottom: 12px; }
+.form-gracias li { margin: 6px 0; }
+.form-gracias:focus { outline: 3px solid #1a73e8; outline-offset: 2px; }
+
+/* Barra fija de contacto en celular; el WhatsApp flotante se oculta ahí porque la barra ya lo trae. */
+.barra-movil { display: none; }
+@media (max-width: 767px) {
+    .barra-movil { display: grid; grid-template-columns: repeat(3, 1fr); position: fixed; left: 0; right: 0; bottom: 0; z-index: 995; background: #fff; border-top: 1px solid #ddd; box-shadow: 0 -2px 8px rgba(0, 0, 0, .08); padding-bottom: env(safe-area-inset-bottom); }
+    .barra-movil a { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; min-height: 56px; font-size: 13px; font-weight: 600; color: #36474f; text-decoration: none; }
+    .barra-movil a + a { border-left: 1px solid #eee; }
+    .barra-movil a[data-whatsapp] { background: #1f8f4e; color: #fff; }
+    .barra-movil .fa { font-size: 20px; }
+    .wa-float { display: none !important; }
+    body { padding-bottom: 56px; }
+    .scroll-top-mobile { bottom: 70px !important; }
+}
+.form-gracias h3, .form-gracias p, .form-gracias li { color: #263238 !important; text-shadow: none; }
+.form-gracias a.btn.btn-lg[data-wa-listo] { background: #1f8f4e !important; border-color: #1f8f4e !important; color: #fff !important; }
+.form-gracias a.btn.btn-lg[data-wa-listo] .fa { color: #fff !important; }
+.barra-movil a[data-whatsapp] .fa { color: #fff !important; }
