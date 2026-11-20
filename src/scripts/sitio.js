@@ -429,6 +429,21 @@ $$('form[data-formulario]').forEach((form) => {
     });
 });
 
+/* "Cotizar" (barra de celular y botones de la página) baja al formulario desde aquí y no con el #cotizar del enlace:
+   Safari en iPhone no vuelve a bajar si la dirección ya termina en #cotizar. Al llegar, el cursor queda en el primer campo. */
+document.addEventListener('click', (e) => {
+    const a = e.target.closest('a[href="#cotizar"]');
+    const form = a && document.getElementById('cotizar');
+    if (!form) return;
+    e.preventDefault();
+    const destino = form.hidden && form.nextElementSibling?.classList.contains('form-gracias') ? form.nextElementSibling : form;
+    destino.scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'start' });
+    history.replaceState(null, '', '#cotizar');
+    const primero = destino === form ? form.querySelector('input[name="Nombre"]') : destino;
+    // El foco espera a que termine el desplazamiento para no cortarlo ni abrir el teclado antes de tiempo.
+    setTimeout(() => primero?.focus({ preventScroll: true }), 600);
+});
+
 /* WhatsApp con contexto: los enlaces sin texto propio dicen de qué página viene la persona. */
 {
     const h1 = $('h1')?.textContent.replace(/\s+/g, ' ').trim();
