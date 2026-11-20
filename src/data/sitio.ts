@@ -77,7 +77,7 @@ export const NEGOCIO = {
   '@type': ['LocalBusiness', 'HomeAndConstructionBusiness'],
   '@id': `${D}/#localbusiness`,
   name: 'MYMCE',
-  alternateName: 'MYMCE Carpintería',
+  alternateName: ['MYMCE Carpintería', 'Cocinas, Puertas y Closets'],
   parentOrganization: { '@id': `${D}/#empresa` },
   url: `${D}/`,
   logo: LOGO,
