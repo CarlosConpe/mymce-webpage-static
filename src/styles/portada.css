@@ -61,3 +61,10 @@ button.navbar-toggle { color: #444444 !important; }
 .portada-perfiles span { color: #555; }
 .portada-perfiles a { color: #355669; font-weight: 600; text-decoration: underline; text-underline-offset: 3px; padding: 4px 0; }
 .portada-perfiles a:hover, .portada-perfiles a:focus-visible { color: #1f3540; }
+/* Venta fuerte: verde solo en las acciones (va aquí para ganarle a la regla general de .btn de arriba) */
+.portada-cotizar .btn:not(.btn-border), .quiero-asi, .form-cotizar button[type="submit"] { background-color: #1e7f3c !important; border-color: #1e7f3c !important; color: #fff !important; }
+.portada-cotizar .btn:not(.btn-border):hover, .quiero-asi:hover, .form-cotizar button[type="submit"]:hover { background-color: #166030 !important; border-color: #166030 !important; }
+.portada-cotizar .btn.btn-border { background-color: #fff !important; color: #1e7f3c !important; border: 2px solid #1e7f3c !important; }
+.portada-cotizar .btn.btn-border i { color: #1e7f3c !important; }
+.cta-banda--color .portada-cotizar .btn.btn-border { background-color: transparent !important; color: #fff !important; border-color: #fff !important; }
+.cta-banda--color .portada-cotizar .btn.btn-border i { color: #fff !important; }
