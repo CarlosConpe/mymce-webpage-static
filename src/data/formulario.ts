@@ -33,7 +33,12 @@ const TEXTOS = {
     ejemplo: 'Por ejemplo: modelo de casa, fraccionamiento o medidas aproximadas',
     boton: 'Pedir mi cotización gratis',
     nota: 'Es gratis y sin compromiso. Te respondemos desde unas horas hasta una semana, según el tamaño del proyecto, de lunes a viernes de 9:00 a 18:00.',
-    alt: '¿Prefieres WhatsApp?', altLink: 'Escríbenos aquí',
+    alt: '¿Prefieres WhatsApp?', altLink: 'Mándanos fotos y medidas aproximadas',
+    confianza: {
+      familia: ['Cotización gratis y sin compromiso', 'Garantía de 12 meses', 'Lo fabricamos en nuestra planta de San Luis Potosí y lo instalamos nosotros'],
+      empresa: ['Pieza muestra antes de producir', 'Cotización desglosada', 'Fecha de entrega en la cotización'],
+    },
+    sigue: 'Después: te contactamos, medimos, fabricamos en unas 3 semanas hábiles e instalamos. En proyectos grandes la fecha va en la cotización.',
     error: 'No se pudo enviar. Inténtalo otra vez o escríbenos por WhatsApp.',
     gracias: '¡Listo! Recibimos tu solicitud',
     pasos: ['Revisamos lo que nos mandaste.', 'Te llamamos o te escribimos de lunes a viernes, de 9:00 a 18:00, para agendar la medición.', 'Medimos, diseñamos contigo y te damos tu cotización.'],
@@ -47,7 +52,12 @@ const TEXTOS = {
     ejemplo: 'For example: quantities, sizes or delivery city',
     boton: 'Request my free quote',
     nota: 'Free and with no obligation. We reply within a few hours to a week, depending on the project size, Monday to Friday, 9:00 to 18:00 (Mexico time).',
-    alt: 'Prefer WhatsApp?', altLink: 'Message us here',
+    alt: 'Prefer WhatsApp?', altLink: 'Send us photos and rough measurements',
+    confianza: {
+      familia: ['Free quote, no obligation', '12-month warranty', 'Made in our own plant in San Luis Potosí'],
+      empresa: ['Sample piece before production', 'Itemized quote', 'Delivery date stated in the quote'],
+    },
+    sigue: 'Usual lead time is about 3 business weeks. For large projects, the date is set in the quote.',
     error: 'It could not be sent. Please try again or message us on WhatsApp.',
     gracias: 'Done! We received your request',
     pasos: ['We review what you sent.', 'We call or message you Monday to Friday, 9:00 to 18:00, to go over the details.', 'We send you your quote.'],
@@ -71,8 +81,10 @@ function formulario(ruta: string, ingles: boolean) {
     + campo('f-correo', t.correo, false, `<input class="form-control" id="f-correo" name="Correo" type="email" autocomplete="email">`)
     + (empresa ? campo('f-empresa', t.empresa, false, `<input class="form-control" id="f-empresa" name="Empresa" type="text" autocomplete="organization">`) : '')
     + campo('f-mensaje', t.mensaje, false, `<textarea class="form-control" id="f-mensaje" name="Mensaje" rows="3" placeholder="${t.ejemplo}"></textarea>`)
+    + `<ul class="form-confianza">${t.confianza[empresa ? 'empresa' : 'familia'].map((c) => `<li>${c}</li>`).join('')}</ul>`
     + `<div class="form-enviar"><button class="btn btn-lg" type="submit">${t.boton}</button><img alt="" aria-hidden="true" class="cf-loader" height="200" loading="lazy" src="/assets/img/loader.svg" width="200"></div>`
     + `<p class="nota-formulario">${t.nota}</p>`
+    + `<p class="nota-formulario form-sigue">${t.sigue}</p>`
     + `<p class="form-alt">${t.alt} <a href="${WA.href}" target="_blank" rel="noopener" data-whatsapp="formulario">${t.altLink}</a></p>`
     + `<div class="error-box" role="alert"><div class="alert alert-warning">${t.error}</div></div>`
     + `</form>`
