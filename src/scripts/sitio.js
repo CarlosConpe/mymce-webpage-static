@@ -368,11 +368,6 @@ const revisar = (form) => {
     [nombre, tel, correo].forEach((x) => marcar(x, (fallas.find(([c]) => c === x) || [])[1]));
     return fallas;
 };
-// Portada: "¿Qué quieres hacer?" deja marcada la opción en el formulario.
-$$('[data-elige]').forEach((a) => a.addEventListener('click', () => {
-  const r = document.querySelector('form[data-formulario] input[name="Quiere cotizar"][value="' + a.dataset.elige + '"]');
-  if (r) r.checked = true;
-}));
 $$('form[data-formulario]').forEach((form) => {
     const fallo = $('.error-box', form);
     const cargando = $('.cf-loader', form);

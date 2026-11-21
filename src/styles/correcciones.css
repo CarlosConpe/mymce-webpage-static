@@ -724,15 +724,3 @@ footer p.pie-titulo.text-color { color: #2f4a5a; opacity: 1; }
 .form-gracias a.btn.btn-lg[data-wa-listo] { background: #1f8f4e !important; border-color: #1f8f4e !important; color: #fff !important; }
 .form-gracias a.btn.btn-lg[data-wa-listo] .fa { color: #fff !important; }
 .barra-movil a[data-whatsapp] .fa { color: #fff !important; }
-
-/* Portada que vende: foto primero en celular, datos de confianza y "¿Qué quieres hacer?" */
-.portada-datos { list-style: none; padding: 0; margin: 14px 0 0; display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 15px; color: #333; }
-.portada-datos li::before { content: "\2713  "; color: #2e7d32; font-weight: 700; }
-.portada-elige { margin-top: 18px; }
-.portada-elige p { margin: 0 0 8px; font-weight: 600; color: #222; }
-.portada-elige a { display: inline-block; margin: 0 8px 8px 0; padding: 10px 14px; border: 1px solid #bbb; border-radius: 4px; color: #222; text-decoration: none; background: #fff; }
-.portada-elige a:hover, .portada-elige a:focus-visible { border-color: #222; }
-@media (max-width: 991px) { .portada-media { order: -1; } }
-@media (max-width: 767px) { .portada-obras .obra-real { width: 50%; float: left; } }
-@media (max-width: 991px) { .bloque-columna.col-md-5:has(+ .portada-media) > .row > .bloque-espacio:first-child { display: none; } .portada-media .bloque-video { margin-bottom: 0; } }
-@media (max-width: 991px) { .section-item#cotizar > .content > .row { display: flex; flex-direction: column; } .section-item#cotizar .bloque-columna.col-md-4.boxed-inverse { order: -1; margin-bottom: 30px; } }
