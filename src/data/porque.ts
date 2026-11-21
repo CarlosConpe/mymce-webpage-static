@@ -55,8 +55,7 @@ const plazo = (en: boolean) =>
       '<li><i class="text-xl fa fa-star"></i><div><h3>Garantía de 12 meses</h3><p>En fabricación, recubrimiento, acabado e instalación, desde el acta de entrega-recepción. <a href="/corporate/garantia/">Ver qué cubre la garantía</a>.</p></div></li>\n') +
   '</ul></div>\n</div>\n</div>\n</div>\n';
 
-// Se mete en el límite de una sección, para no romper la rejilla: en la portada antes de las obras
-// reales, en los servicios antes de sus preguntas frecuentes y, si no hay, al final.
+// Se mete en el límite de una sección, para no romper la rejilla: en la portada antes del formulario, en los servicios antes de sus preguntas frecuentes y, si no hay, al final.
 function meter(html: string, ancla: number, bloqueHtml: string) {
   const corte = ancla > 0 ? html.lastIndexOf('<div class="section-item', ancla) : -1;
   return corte > 0 ? html.slice(0, corte) + bloqueHtml + html.slice(corte) : html + bloqueHtml;
@@ -64,5 +63,5 @@ function meter(html: string, ancla: number, bloqueHtml: string) {
 export function conPorQue(html: string, ruta: string): string {
   if (PLAZO_ES.has(ruta) || PLAZO_EN.has(ruta)) return meter(html, html.search(/<h2[^>]*>\s*Preguntas/), plazo(PLAZO_EN.has(ruta)));
   if (!RUTAS.has(ruta)) return html;
-  return meter(html, ruta === '/' ? html.indexOf('<h2>Obras reales en San Luis Potosí</h2>') : html.search(/<h2>Preguntas frecuentes sobre [^<]+<\/h2>/), bloque());
+  return meter(html, ruta === '/' ? html.indexOf('id="cotizar"') : html.search(/<h2>Preguntas frecuentes sobre [^<]+<\/h2>/), bloque());
 }
