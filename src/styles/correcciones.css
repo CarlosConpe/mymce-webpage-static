@@ -726,3 +726,6 @@ footer p.pie-titulo.text-color { color: #2f4a5a; opacity: 1; }
 .barra-movil a[data-whatsapp] .fa { color: #fff !important; }
 /* Los logos no se recortan como foto: la regla de 600 px con object-fit: cover es para fotos de columna */
 .bloque-columna .bloque-image > img[src*="/logo-"], .bloque-columna .bloque-image > picture > img[src*="/logo-"] { height: auto !important; width: 150px !important; max-width: 100%; object-fit: contain !important; display: block; margin: 0 auto; }
+/* Menos aire entre secciones: el tema daba 80 px arriba y abajo a cada bloque (160-260 px de blanco entre secciones) */
+.container.content, .section-bg-image > .content, .section-empty > .content { padding-top: 48px; padding-bottom: 48px; }
+@media (max-width: 768px) { .container.content, .section-bg-image > .content, .section-empty > .content { padding-top: 32px; padding-bottom: 32px; } }
