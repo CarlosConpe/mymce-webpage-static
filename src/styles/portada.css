@@ -61,3 +61,37 @@ button.navbar-toggle { color: #444444 !important; }
 .portada-perfiles span { color: #555; }
 .portada-perfiles a { color: #355669; font-weight: 600; text-decoration: underline; text-underline-offset: 3px; padding: 4px 0; }
 .portada-perfiles a:hover, .portada-perfiles a:focus-visible { color: #1f3540; }
+
+/* Botones para cotizar en verde (mismos botones y textos). Selector largo para ganarle a portada.css y correcciones.css */
+html body .section-item a.btn.btn-cotizar.btn-cotizar[href], html body #cotizar.section-item button.btn[type="submit"] { background-color: #2e7d32 !important; border-color: #2e7d32 !important; color: #fff !important; }
+html body .section-item a.btn.btn-cotizar.btn-cotizar[href]:hover, html body .section-item a.btn.btn-cotizar.btn-cotizar[href]:focus-visible, html body #cotizar.section-item button.btn[type="submit"]:hover, html body #cotizar.section-item button.btn[type="submit"]:focus-visible { background-color: #1b5e20 !important; border-color: #1b5e20 !important; color: #fff !important; }
+html body .section-item .btn.btn-cotizar i, html body #cotizar.section-item button.btn[type="submit"] i { color: #fff !important; }
+
+/* En celular y tableta, el video de cocina va primero y el título justo debajo, sin hueco */
+@media (max-width: 991px) {
+    .portada-hero .bloque-columna.col-md-7 { order: -1; width: 100%; padding-top: 12px; margin-bottom: 14px; }
+    .portada-hero .bloque-columna.col-md-5 { width: 100%; margin-top: 0; }
+    .portada-hero .bloque-columna.col-md-12:first-child { display: none; }
+    .portada-hero .bloque-columna.col-md-5 > .row > .bloque-espacio:first-child { display: none; }
+}
+
+/* Franja de confianza debajo de los botones de la portada */
+.portada-confianza ul { list-style: none; margin: 14px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px 18px; font-size: 15px; color: #333; }
+.portada-confianza li { margin: 0; }
+.portada-confianza li::before { content: "✓ "; color: #2e7d32; font-weight: 700; }
+
+/* Escala única de letra en la portada: título de sección, título de tarjeta, texto, botón y dato chico.
+   El H1 y el formulario (compartido con otras páginas) no cambian. */
+.section-item h2:not(.h2-style):not(.text-m), .section-item .bloque-titulo > h3:not(.h3-style), .section-item h4.text-l, .section-item .caption-box > h3 { font-size: 30px !important; font-weight: 400 !important; line-height: 1.25 !important; }
+.section-item h2.h2-style, .section-item div:not([class]) > h3, .section-item .clean-card h3, .section-item .clean-card h3 a, .section-item .niche-box-post h3, .section-item .niche-box-post h3 a.text-m, .section-item .bloque-titulo > h3.h3-style { font-size: 20px !important; font-weight: 500 !important; line-height: 1.3 !important; }
+.section-item h2.text-m { font-size: 16px !important; font-weight: 600 !important; }
+.section-item :is(p, li, .bloque-texto > div):not(form *):not(.bd-month), .section-item .btn-text, .portada-perfiles, .portada-confianza ul, .section-item .accordion-list .panel .inner > div { font-size: 16px !important; font-weight: 400 !important; }
+.section-item .accordion-list .list-group-item > a { font-size: 16px !important; font-weight: 500 !important; }
+.section-item .btn { font-size: 16px !important; font-weight: 500 !important; }
+.section-item .bd-month, .section-item .etiqueta, .section-item .text-s, .section-item .tag-row a { font-size: 14px !important; font-weight: 400 !important; }
+@media (max-width: 767px) {
+    .section-item h2:not(.h2-style):not(.text-m), .section-item .bloque-titulo > h3:not(.h3-style), .section-item h4.text-l, .section-item .caption-box > h3 { font-size: 26px !important; }
+    .section-item h2.h2-style, .section-item div:not([class]) > h3, .section-item .niche-box-post h3, .section-item .niche-box-post h3 a.text-m, .section-item .bloque-titulo > h3.h3-style { font-size: 17px !important; }
+    .portada-servicios .advs-box-content h2.h2-style { font-size: 17px !important; }
+    .section-item .clean-card h3, .section-item .clean-card h3 a { font-size: 15px !important; }
+}

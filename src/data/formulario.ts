@@ -31,7 +31,7 @@ const TEXTOS = {
     nombre: 'Nombre', tel: 'WhatsApp o teléfono', correo: 'Correo', empresa: 'Empresa', mensaje: '¿Algo más que debamos saber?',
     obligatorio: '(obligatorio)', opcional: '(opcional)',
     ejemplo: 'Por ejemplo: modelo de casa, fraccionamiento o medidas aproximadas',
-    boton: 'Pedir mi cotización gratis',
+    boton: 'Pedir mi cotización',
     nota: 'Es gratis y sin compromiso. Te respondemos desde unas horas hasta una semana, según el tamaño del proyecto, de lunes a viernes de 9:00 a 18:00.',
     alt: '¿Prefieres WhatsApp?', altLink: 'Mándanos fotos y medidas aproximadas',
     confianza: {
