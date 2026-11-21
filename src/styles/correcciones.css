@@ -724,3 +724,5 @@ footer p.pie-titulo.text-color { color: #2f4a5a; opacity: 1; }
 .form-gracias a.btn.btn-lg[data-wa-listo] { background: #1f8f4e !important; border-color: #1f8f4e !important; color: #fff !important; }
 .form-gracias a.btn.btn-lg[data-wa-listo] .fa { color: #fff !important; }
 .barra-movil a[data-whatsapp] .fa { color: #fff !important; }
+/* Los logos no se recortan como foto: la regla de 600 px con object-fit: cover es para fotos de columna */
+.bloque-columna .bloque-image > img[src*="/logo-"], .bloque-columna .bloque-image > picture > img[src*="/logo-"] { height: auto !important; width: 150px !important; max-width: 100%; object-fit: contain !important; display: block; margin: 0 auto; }
