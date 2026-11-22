@@ -433,7 +433,8 @@ $$('form[data-formulario]').forEach((form) => {
    Safari en iPhone no vuelve a bajar si la dirección ya termina en #cotizar. Al llegar, el cursor queda en el primer campo. */
 document.addEventListener('click', (e) => {
     const a = e.target.closest('a[href="#cotizar"]');
-    const form = a && document.getElementById('cotizar');
+    // En la portada la sección también se llama #cotizar y va antes: se busca el formulario mismo.
+    const form = a && (document.querySelector('form[data-formulario]') || document.getElementById('cotizar'));
     if (!form) return;
     e.preventDefault();
     const destino = form.hidden && form.nextElementSibling?.classList.contains('form-gracias') ? form.nextElementSibling : form;
