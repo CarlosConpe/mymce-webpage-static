@@ -3,35 +3,22 @@ import { TEL, CORREO, DIRECCION, HORARIO_CORTO, REDES } from '../data/sitio';
 
 // Menú para familias: servicios, fraccionamientos por zona y portafolio (con "Encuentra tu casa").
 // Las 83 obras ya no van en el menú: cada una está enlazada desde su fraccionamiento y desde el portafolio.
-// Las páginas para empresas siguen en el sitio, agrupadas en "Empresas".
+// Un solo enlace por servicio: las páginas de apoyo (cocinas modernas, económicas, fabricantes, vestidores,
+// closets de melamina, carpintería para tu casa) siguen en el sitio y se enlazan desde su página principal y /servicios/.
+// Las páginas para empresas siguen en el sitio; el menú solo lleva un enlace "Para empresas".
 const SERVICIOS = [
   ['/servicios/cocinas/', 'Cocinas integrales'],
-  ['/servicios/cocinas-integrales-modernas/', 'Estilos de cocina moderna'],
-  ['/servicios/fabricantes-de-cocinas-integrales-san-luis-potosi/', 'Fabricantes de cocinas'],
-  ['/servicios/cocinas-integrales-economicas-san-luis-potosi/', 'Cocinas económicas'],
-  ['/servicios/closets-vestidores/', 'Closets'],
-  ['/servicios/vestidores/', 'Vestidores'],
-  ['/servicios/closets-de-melamina/', 'Closets de melamina'],
+  ['/servicios/closets-vestidores/', 'Closets y vestidores'],
   ['/servicios/diseno-y-fabricacion-de-puertas/', 'Puertas'],
   ['/servicios/diseno-y-fabricacion-de-muebles-de-bano/', 'Muebles de baño'],
   ['/servicios/diseno-y-fabricacion-de-escritorios/', 'Escritorios'],
   ['/servicios/muebles-a-medida/', 'Muebles a la medida'],
-  ['/soluciones/carpinteria-para-particulares/', 'Carpintería para tu casa'],
   ['/equipamiento/', 'Electrodomésticos'],
 ];
 const ZONAS: [string, string, [string, string][]][] = [
   ['/servicios/cocinas-y-closets-villa-de-pozos/', 'Villa de Pozos', [['/servicios/cocinas-y-closets-catara/', 'Catara'], ['/servicios/cocinas-y-closets-sirenia/', 'Sirenia']]],
   ['/servicios/cocinas-y-closets-soledad-de-graciano-sanchez/', 'Soledad de Graciano Sánchez', [['/servicios/cocinas-y-closets-valle-real/', 'Valle Real']]],
-  ['/servicios/cocinas-y-closets-imperia/', 'San Luis Potosí: Imperia', []],
-];
-const EMPRESAS = [
-  ['/soluciones/carpinteria-para-constructoras/', 'Constructoras'],
-  ['/soluciones/carpinteria-para-arquitectos/', 'Arquitectos'],
-  ['/soluciones/carpinteria-para-cocinistas/', 'Cocinistas'],
-  ['/servicios/maquila-de-partes/', 'Maquila de partes'],
-  ['/servicios/puertas-y-piezas-recubiertas-con-foil-pvc/', 'Puertas y piezas con foil PVC'],
-  ['/servicios/puertas-frentes-de-cajon-en-mdf-forrados-con-foil-pvc/', 'Frentes de cajón con foil PVC'],
-  ['/servicios/pvc-foil-covered-cabinet-doors-drawer-fronts/', 'PVC foil cabinet doors (English)', 'en'],
+  ['/servicios/cocinas-y-closets-imperia/', 'Imperia', []],
 ];
 // Las páginas en inglés llevan su propio menú en inglés, para que la página completa esté en un solo idioma.
 const { ingles = false, espanol = '/' } = Astro.props as { ingles?: boolean; espanol?: string };
@@ -111,16 +98,10 @@ const MENU_EN: [string, string, string?][] = [
                                 <li><a href="/corporate/acerca-de-mymce-carpinteria-profesional-en-san-luis-potosi/">Acerca de MYMCE</a></li>
                                 <li><a href="/corporate/garantia/">Garantía</a></li>
                                 <li><a href="/corporate/preguntas-frecuentes/">Preguntas frecuentes</a></li>
-                                <li><a href="/corporate/contact/">Contacto</a></li>
+                                <li><a href="/corporate/blog/">Blog</a></li>
                             </ul>
                         </li>
-                        <li><a href="/corporate/blog/">Blog</a></li>
-                        <li class="dropdown multi-level menu-empresas">
-                            <a class="dropdown-toggle" href="/soluciones/carpinteria-para-constructoras/">Empresas <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                {EMPRESAS.map(([u, n, idioma]) => <li><a href={u} hreflang={idioma}>{n}</a></li>)}
-                            </ul>
-                        </li>
+                        <li class="menu-empresas"><a href="/soluciones/carpinteria-para-constructoras/">Para empresas</a></li>
                     </ul>
                     )}
                     <div class="nav navbar-nav navbar-right">
