@@ -71,13 +71,28 @@ export const CATALOGO = {
 };
 
 // La empresa dueña de la marca: solo como entidad, sin página propia en este sitio.
-export const EMPRESA = { '@type': 'Organization', '@id': `${D}/#empresa`, name: 'Cocinas, Puertas y Closets S.A. de C.V.', legalName: 'Cocinas, Puertas y Closets S.A. de C.V.', brand: { '@id': MARCA['@id'] } };
+// Lleva los datos de contacto completos porque Google y Ahrefs marcan incompleta una Organization sin url, logo ni dirección.
+export const EMPRESA = {
+  '@type': 'Organization',
+  '@id': `${D}/#empresa`,
+  name: 'Cocinas, Puertas y Closets S.A. de C.V.',
+  legalName: 'Cocinas, Puertas y Closets S.A. de C.V.',
+  alternateName: 'MYMCE',
+  url: `${D}/`,
+  logo: { '@id': LOGO['@id'] },
+  brand: { '@id': MARCA['@id'] },
+  subOrganization: { '@id': `${D}/#localbusiness` },
+  email: CORREO,
+  telephone: TEL.intl,
+  sameAs: [empresa.facebook, empresa.instagram, empresa.youtube, empresa.linkedin],
+  address: { '@type': 'PostalAddress', streetAddress: DIRECCION.calle, addressLocality: DIRECCION.ciudad, addressRegion: DIRECCION.estado, postalCode: DIRECCION.cp, addressCountry: 'MX' },
+};
 
 export const NEGOCIO = {
   '@type': ['LocalBusiness', 'HomeAndConstructionBusiness'],
   '@id': `${D}/#localbusiness`,
   name: 'MYMCE',
-  alternateName: ['MYMCE Carpintería', 'Cocinas, Puertas y Closets'],
+  alternateName: ['MYMCE Carpintería', 'Cocinas, Puertas y Closets', 'Cocinas, Puertas y Closets S.A. de C.V.'],
   parentOrganization: { '@id': `${D}/#empresa` },
   url: `${D}/`,
   logo: LOGO,
