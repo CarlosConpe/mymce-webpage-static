@@ -714,14 +714,14 @@ footer p.pie-titulo.text-color { color: #2f4a5a; opacity: 1; }
     .barra-movil { display: grid; grid-template-columns: repeat(3, 1fr); position: fixed; left: 0; right: 0; bottom: 0; z-index: 995; background: #fff; border-top: 1px solid #ddd; box-shadow: 0 -2px 8px rgba(0, 0, 0, .08); padding-bottom: env(safe-area-inset-bottom); }
     .barra-movil a { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; min-height: 56px; font-size: 13px; font-weight: 600; color: #36474f; text-decoration: none; }
     .barra-movil a + a { border-left: 1px solid #eee; }
-    .barra-movil a[data-whatsapp] { background: #1f8f4e; color: #fff; }
+    .barra-movil a[data-whatsapp] { background: #1a7f45; color: #fff; }
     .barra-movil .fa { font-size: 20px; }
     .wa-float { display: none !important; }
     body { padding-bottom: 56px; }
     .scroll-top-mobile { bottom: 70px !important; }
 }
 .form-gracias h3, .form-gracias p, .form-gracias li { color: #263238 !important; text-shadow: none; }
-.form-gracias a.btn.btn-lg[data-wa-listo] { background: #1f8f4e !important; border-color: #1f8f4e !important; color: #fff !important; }
+.form-gracias a.btn.btn-lg[data-wa-listo] { background: #1a7f45 !important; border-color: #1a7f45 !important; color: #fff !important; }
 .form-gracias a.btn.btn-lg[data-wa-listo] .fa { color: #fff !important; }
 .barra-movil a[data-whatsapp] .fa { color: #fff !important; }
 /* Los logos no se recortan como foto: la regla de 600 px con object-fit: cover es para fotos de columna */
